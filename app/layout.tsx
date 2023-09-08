@@ -1,6 +1,8 @@
-import Header from './Components/Header'
-import './globals.css'
 import type { Metadata } from 'next'
+import './globals.css'
+
+import Footer from './Components/Footer'
+import Header from './Components/Header'
 
 export const metadata: Metadata = {
   title: 'Ciudades Sustentables | LabXXI',
@@ -17,6 +19,7 @@ export default function RootLayout ({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
