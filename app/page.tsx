@@ -9,6 +9,7 @@ export default function Home () {
           alt="Imagen de portada"
           width={1440}
           height={370}
+          priority
         />
       </section>
       <div className="flex flex-col justify-center items-center text-center my-20 lg:my-40 px-8">

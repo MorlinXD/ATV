@@ -21,6 +21,13 @@ export default function Footer () {
       height={167}
       priority
     />
+    <Image
+      src="/footer-logos2.png"
+      alt="Logos de socios del programa Healthy Cities Ecuador"
+      width={1440}
+      height={167}
+      priority
+    />
     </footer>
   )
 }
