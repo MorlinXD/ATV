@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Header () {
   return (
-    <header className='px-8 py-4 w-full bg-white'>
+    <header className='px-8 py-4 w-full bg-white shadow-header'>
         <Image
           src="/images/logo-hce.png"
           alt="Logo Healthy Cities Ecuador"

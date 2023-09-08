@@ -12,7 +12,18 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
+      },
+      boxShadow: {
+        header: '0px 4px 4px rgba(0, 0, 0, 0.05)'
       }
+    },
+    colors: {
+      black: '#101010',
+      white: '#FFFFFF',
+      hcadarkblue: '#02536C',
+      hcalightblue: '#74C5CD',
+      hcasilver: '#E8E7E7',
+      ecsilver: '#ACADAD'
     }
   },
   plugins: []
