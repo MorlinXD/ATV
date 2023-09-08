@@ -5,7 +5,7 @@ export default function Home () {
     <main className="flex min-h-screen flex-col items-center mt-16">
       <section>
         <Image
-          src="/images/hero.png"
+          src="/hero.png"
           alt="Imagen de portada"
           width={1440}
           height={370}

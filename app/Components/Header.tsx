@@ -4,7 +4,7 @@ export default function Header () {
   return (
     <header className='px-8 py-4 w-full bg-white shadow-header'>
         <Image
-          src="/images/logo-hce.png"
+          src="/logo-hce.png"
           alt="Logo Healthy Cities Ecuador"
           width={160}
           height={122}
