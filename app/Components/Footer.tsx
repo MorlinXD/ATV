@@ -15,17 +15,10 @@ export default function Footer () {
       </div>
     </div>
     <Image
-      src="/footer-logos.png"
+      src="/footer-img.png"
       alt="Logos de socios del programa Healthy Cities Ecuador"
       width={1440}
-      height={167}
-      priority
-    />
-    <Image
-      src="/footer-logos2.png"
-      alt="Logos de socios del programa Healthy Cities Ecuador"
-      width={1440}
-      height={167}
+      height={400}
       priority
     />
     </footer>
