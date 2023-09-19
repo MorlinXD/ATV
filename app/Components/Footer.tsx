@@ -14,13 +14,15 @@ export default function Footer () {
         </div> */}
       </div>
     </div>
-    <Image
-      src="/footer-img.png"
-      alt="Logos de socios del programa Healthy Cities Ecuador"
-      width={1440}
-      height={400}
-      priority
-    />
+    <div className='container mx-auto'>
+      <Image
+        src="/footer-img.png"
+        alt="Logos de socios del programa Healthy Cities Ecuador"
+        width={1440}
+        height={400}
+        priority
+      />
+    </div>
     </footer>
   )
 }
