@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import ButtonOne from './Components/ButtonOne'
 
 export default function Home () {
   return (
@@ -12,29 +13,39 @@ export default function Home () {
           priority
         />
       </section>
-      <div className="flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
-        <h1 className='text-3xl text-hcadarkblue font-bold mt-10'>¡Queremos escuchar tu voz!</h1>
-        <h3 className='text-2xl text-black mt-10'>
-          Estamos construyendo este espacio para que participes y seas un agente de cambio en tu ciudad.
-        </h3>
-        <h3 className='text-2xl text-black mt-10'>
-          Mientras tanto, te contamos un poco sobre la Iniciativa Alza Tu Voz:
-        </h3>
-        <h3 className='text-2xl text-black mt-10'>
+
+      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-10'>¡Alza tu Voz!</h1>
+        <p className='text-xl text-black mt-10 text-justify'>
           El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) es una iniciativa de
-          Fundación Botnar para contribuir al cambio en los sistemas de las ciudades promoviendo la equidad y la
-          participación juvenil. En mayo de 2022, se lanzó la fase II del programa HCA, con el objetivo principal
-          de abordar las necesidades de salud y bienestar de los jóvenes (de 14 a 19 años), y Ecuador ha sido
-          seleccionado como uno de los países donde se ejecutará a través de la Iniciativa Alza Tu Voz.
-        </h3>
-        <h3 className='text-2xl text-black mt-10'>
-          Alza Tu Voz es implementado en Quevedo y Riobamba por LAB XXI, en alianza con socios locales como
-          la Alcaldía Ciudadana de Riobamba, la Alcaldía Ciudadana de Quevedo, la Escuela Superior Politécnica
-          de Chimborazo, Fundación Datalat y con el apoyo de aliados estratégicos como Fat Flow Music.
-        </h3>
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-16'>¡Espéranos muy pronto!</h1>
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-16'>¡Tu voz y tus ideas pueden marcar la diferencia!</h1>
-      </div>
+          Fundación Botnar para contribuir a la Agenda 2030 y a la implementación de los Objetivos de Desarrollo
+          Sostenible a nivel global, en particular a través de los ODS 3, 11 y 17. A partir de mayo de 2022, se
+          lanzó la fase II del programa HCA, con el objetivo principal de abordar las necesidades de salud y
+          bienestar de los jóvenes (de 14 a 19 años), y Ecuador ha sido seleccionado como uno de los países
+          objetivo donde se ejecutará el programa HCA.
+        </p>
+        <p className='text-xl text-black mt-10 text-justify'>
+          En Ecuador el programa Ciudades Saludables para Adolescentes toma forma a través de la Iniciativa Alza Tu Voz
+          que es implementada por LAB XXI y sus socios locales en Quevedo y Riobamba. El programa busca que los jóvenes
+          se conviertan en agentes de cambio en sus ciudades, levantando su voz y siendo parte del cambio. Estamos diseñando
+          un programa que los impacte a ellos y a ellas en alianza con actors locales, logrando así un rescatar
+          lo mejor de cada sector: jóvenes, sector público, academia, sociedad civil y sector privado.
+        </p>
+      </section>
+
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <h2 className='text-3xl text-left text-hcadarkblue font-bold mt-10'>Biblioteca comunitaria</h2>
+        <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
+          <p className='text-xl text-black mt-10 text-justify'>
+            En este espacio encuentra recursos de utilidad para contribuir a la construcción de ciudades saludables.
+          </p>
+          <ButtonOne
+            label='Ver más...'
+            link='#'
+          />
+
+        </div>
+      </section>
     </main>
   )
 }
