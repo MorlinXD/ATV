@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import ButtonOne from './Components/ButtonOne'
+import ButtonTwo from './Components/ButtonTwo'
 
 export default function Home () {
   return (
@@ -43,7 +44,36 @@ export default function Home () {
             label='Ver más...'
             link='#'
           />
+        </div>
+      </section>
 
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <h2 className='text-3xl text-left text-hcadarkblue font-bold mt-10'>¿Dónde trabajamos?</h2>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/quevedo-map.png"
+              alt="Mapa de la ciudad de Quevedo"
+              width={310}
+              height={310}
+            />
+            <ButtonTwo
+              label='Quevedo'
+              link='#'
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/riobamba-map.png"
+              alt="Mapa de la ciudad de Quevedo"
+              width={310}
+              height={310}
+            />
+            <ButtonTwo
+              label='Riobamba'
+              link='#'
+            />
+          </div>
         </div>
       </section>
     </main>
