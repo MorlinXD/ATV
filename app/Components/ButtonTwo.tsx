@@ -11,7 +11,7 @@ const ButtonTwo: FC<Props> = ({ label, link, target }) => {
   return (
     <Link href={link} target={target}>
       <button
-        className="text-lg font-bold text-white py-8 px-32 bg-no-repeat bg-center relative hover:opacity-80 transition-opacity duration-300"
+        className="text-lg font-bold text-white py-10 px-32 bg-no-repeat bg-center relative hover:opacity-80 transition-opacity duration-300"
         style={{ backgroundImage: 'url("images/button-two.png")' }}
       >
           {label}
