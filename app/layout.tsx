@@ -8,7 +8,7 @@ import Header from './Components/Header'
 const openSans = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Ciudades Sustentables | LabXXI',
+  title: 'Ciudades Saludables | LabXXI',
   description: 'Plataforma para el proyecto de LabXXI'
 }
 
