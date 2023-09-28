@@ -220,9 +220,10 @@ export default function PoliticaPrivacidad () {
           en que lo considere oportuno.
         </p>
         <p className="justify-start text-justify p-4 text-lg text-black">
-          Para proceso de baja, consultas, quejas o reclamos podrán ser presentados a traves del correo electrónico
-          <a href="mailto:info@lab-xxi.com" target="_blank" className="font-semibold text-hcadarkblue" rel="noreferrer"> info@lab-xxi.com</a>,
-          la consulta se atenderá en cinco días laborables siempre y cuando cumpla con: descripción completa de la consulta; copia documento
+          Para el proceso de baja, consultas, quejas o reclamos podrán ser presentados a través de los correos electrónicos
+          <a href="mailto:soporte@datalat.org" target="_blank" className="font-semibold text-hcadarkblue" rel="noreferrer"> soporte@datalat.org</a> e
+          <a href="mailto:info@lab-xxi.com" target="_blank" className="font-semibold text-hcadarkblue" rel="noreferrer"> info@lab-xxi.com</a>.
+          La consulta se atenderá en cinco días laborables siempre y cuando cumpla con: descripción completa de la consulta; copia documento
           de identidad del titular; se asume el uso del correo electrónico utilizado para el envío de la solicitud para información oficial.
         </p>
       </div>
