@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import ButtonOne from './Components/ButtonOne'
 import ButtonTwo from './Components/ButtonTwo'
+import MainCarousel from './Components/MainCarousel'
 
 export default function Home () {
   return (
@@ -15,9 +16,9 @@ export default function Home () {
         />
       </section>
 
-      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-10'>¡Alza tu Voz!</h1>
-        <p className='text-xl text-black mt-10 text-justify'>
+      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
+        <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1>
+        {/* <p className='text-xl text-black mt-10 text-justify'>
           El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) es una iniciativa de
           Fundación Botnar para contribuir a la Agenda 2030 y a la implementación de los Objetivos de Desarrollo
           Sostenible a nivel global, en particular a través de los ODS 3, 11 y 17. A partir de mayo de 2022, se
@@ -31,11 +32,12 @@ export default function Home () {
           se conviertan en agentes de cambio en sus ciudades, levantando su voz y siendo parte del cambio. Estamos diseñando
           un programa que los impacte a ellos y a ellas en alianza con actors locales, logrando así un rescatar
           lo mejor de cada sector: jóvenes, sector público, academia, sociedad civil y sector privado.
-        </p>
+        </p> */}
+        <MainCarousel />
       </section>
 
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-bold mt-10'>Biblioteca comunitaria</h2>
+        <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold mt-10'>Conoce nuestras herramientas</h2>
         <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
           <p className='text-xl text-black mt-10 text-justify'>
             En este espacio encuentra recursos de utilidad para contribuir a la construcción de ciudades saludables.
@@ -48,7 +50,7 @@ export default function Home () {
       </section>
 
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-bold mt-10'>¿Dónde trabajamos?</h2>
+        <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold mt-10'>¿Dónde trabajamos?</h2>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image

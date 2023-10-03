@@ -15,6 +15,10 @@ const config: Config = {
       },
       boxShadow: {
         header: '0px 4px 4px rgba(0, 0, 0, 0.05)'
+      },
+      fontFamily: {
+        sans: ['var(--font-opensans)'],
+        marker: ['var(--font-permanent-marker)']
       }
     },
     colors: {
