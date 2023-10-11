@@ -64,7 +64,12 @@ export default function Home () {
       {/* ---------- ¿Dónde trabajamos? ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>¿Dónde trabajamos?</h2>
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
+        <p className='text-black mt-10 text-justify'>
+          ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
+          adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrar a los jóvenes a su comunidad y
+          colaborar con quienes se preocupan por su salud y bienestar.
+        </p>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
               src="/images/quevedo-map.svg"
@@ -74,7 +79,7 @@ export default function Home () {
             />
             <ButtonTwo
               label='Quevedo'
-              link='#'
+              link='/quevedo'
             />
           </div>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
@@ -86,7 +91,7 @@ export default function Home () {
             />
             <ButtonTwo
               label='Riobamba'
-              link='#'
+              link='/riobamba'
             />
           </div>
         </div>
@@ -105,7 +110,7 @@ export default function Home () {
                   <div className="hidden sm:flex w-full bg-hcalightblue h-0.5"></div>
                 </div>
                 <div className="mt-3 sm:pr-8">
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-black text-justify">
                     Recopilamos información directamente de adolescentes y jóvenes sobre lo que necesitan y
                     los obstáculos que enfrentan. Además, trabajamos con el gobierno y  la sociedad civil para
                     comprender los desafíos que afectan el bienestar de los adolescentes y jóvenes.
@@ -122,7 +127,7 @@ export default function Home () {
                   <div className="hidden sm:flex w-full bg-hcalightblue h-0.5"></div>
                 </div>
                 <div className="mt-3 sm:pr-8">
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-black text-justify">
                     Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y
                     Riobamba. Para esto, adolescentes, sector público, sociedad civil y actores locales participan
                     activamente en la definición del impacto de este proyecto y su teoría de cambio.
@@ -139,7 +144,7 @@ export default function Home () {
                   <div className="hidden sm:flex w-full bg-hcalightblue h-0.5"></div>
                 </div>
                 <div className="mt-3 sm:pr-8">
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-black text-justify">
                     El programa que hemos creado va a ser evaluado por la gente que vive aquí en la ciudad. Después
                     de escuchar sus opiniones,  los adolescentes y jóvenes, vamos a mostrar nuestra idea final para
                     hacer que las cosas sucedan a partir del 2024.
@@ -163,7 +168,7 @@ export default function Home () {
               className="w-36 h-auto"
               priority
             />
-          <p className='text-black'>
+          <p className='text-black text-justify'>
             LAB XXI es un laboratorio de innovación social y educativa con más de 10 años trabajando en pro de los y las jóvenes del
             Ecuador. Busca impulsar la construcción de agentes de cambio en todo el país y  ampliar el acceso a las oportunidades para
             todos y todas. Creen en las alianzas multi sector y multi actor como un mecanismo para incrementar su impacto social.
@@ -172,7 +177,7 @@ export default function Home () {
 
         <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Miembros del Consorcio</h3>
 
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 p-8'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
               src="/logos/logo-riobamba.png"
@@ -182,7 +187,7 @@ export default function Home () {
               className="w-36 h-auto"
               priority
             />
-            <p className='mt-5 md:mb-2 md:mt-10 text-black'>
+            <p className='mt-5 md:mb-2 md:mt-10 text-black text-justify'>
               La Alcaldía Ciudadana de Riobamba está comprometida con crear entornos dinámicos y acogedores donde las y los adolescentes
               y jóvenes puedan participar activamente. Brinda apoyo en términos de logística, soporte y recursos en Riobamba. Apoya la
               ejecución de actividades en la ciudad de Riobamba tanto en zonas rurales como urbanas.
@@ -197,7 +202,7 @@ export default function Home () {
               className="w-36 h-auto"
               priority
             />
-            <p className='mt-5 md:mb-2 md:mt-4 text-black'>
+            <p className='mt-5 md:mb-2 md:mt-4 text-black text-justify'>
               La Alcaldía Ciudadana de Quevedo crea espacios dinámicos y acogedores donde las y los adolescentes y jóvenes pueden participar
               activamente en la transformación de su comunidad. Además, está comprometida en brindar apoyo logístico y de soporte en Quevedo
               para apoyar la ejecución del programa Alza Tu Voz en Quevedo.
@@ -205,7 +210,7 @@ export default function Home () {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-10 p-8'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
               src="/logos/logo-espoch.png"
@@ -215,7 +220,7 @@ export default function Home () {
               className="w-36 h-auto"
               priority
             />
-            <p className='mt-5 md:mb-6 md:mt-4 text-black'>
+            <p className='mt-5 md:mb-6 md:mt-4 text-black text-justify'>
               La Escuela Superior Politécnica de Chimborazo colabora desde un enfoque de investigación y talento humano. Su compromiso nos permite
               fortalecer capacidades de jóvenes y adolescentes en temas como comunicación digital e investigación. También apoyan en la generación
               de futuras investigaciones con enfoque en bienestar adolescente.
@@ -230,7 +235,7 @@ export default function Home () {
               className="w-36 h-auto"
               priority
             />
-            <p className='mt-5 md:mb-6 md:mt-10 text-black'>
+            <p className='mt-5 md:mb-6 md:mt-10 text-black text-justify'>
               La Fundación Datalat lidera la creación de mecanismos para la recopilación de información a nivel local, aprovechando medios virtuales y
               promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital. Su enfoque es clave para asegurar que tengamos
               acceso a datos precisos y actualizados sobre jóvenes y adolescentes de Riobamba y Quevedo.

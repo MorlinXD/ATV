@@ -47,7 +47,7 @@ export default function Home () {
             <span className='font-semibold text-hcadarkblue'> ¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</span>
           </p>
           <ButtonOne
-            label='Ver más...'
+            label='Próximamente'
             link='#'
           />
         </div>
@@ -60,7 +60,7 @@ export default function Home () {
             <div className="bg-green-500 p-4 flex justify-center items-center">
               <ButtonTwo
                 label='Quevedo'
-                link='#'
+                link='/quevedo'
               />
             </div>
             {/* <!-- Merged cell on the left side for larger screens --> */}
@@ -76,7 +76,7 @@ export default function Home () {
             <div className="bg-green-500 p-4 flex justify-center items-center">
               <ButtonTwo
                 label='Riobamba'
-                link='#'
+                link='/riobamba'
               />
             </div>
         </div>

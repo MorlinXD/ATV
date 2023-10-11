@@ -20,10 +20,10 @@ export default function Home () {
       <HeroQuevedo>
         <div className="container mx-auto flex flex-col justify-center items-center text-center">
           <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Quevedo</h1>
-          <p className='text-black mt-10 text-justify mx-10 lg:mx-60 text-xl mb-5'>
+          <p className='text-black mt-10 text-justify mx-10 lg:mx-72 text-xl mb-5 leading-10'>
             ¡Oye, tú, joven de Quevedo! Sabemos que eres parte de este súper programa y queremos escuchar
             lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus opiniones?
-            ¡Es súper fácil! Solo dale clic a este enlace y escribe 'HOLA' para que puedas marcar la
+            ¡Es súper fácil! Solo dale clic a este enlace y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas marcar la
             diferencia en tu comunidad. ¡Tu voz cuenta!
           </p>
           <ButtonTwo
