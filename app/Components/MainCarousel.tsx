@@ -1,5 +1,6 @@
+/* eslint-disable react/no-unescaped-entities */
 'use client'
-import { type FC, useState } from 'react'
+import { type FC } from 'react'
 import Image from 'next/image'
 
 interface Props {

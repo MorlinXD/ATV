@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import ButtonOne from './Components/ButtonOne'
 import ButtonTwo from './Components/ButtonTwo'
-import MainCarousel from './Components/MainCarousel'
+// import MainCarousel from './Components/MainCarousel'
 
 export default function Home () {
   return (
@@ -34,7 +34,7 @@ export default function Home () {
           un programa que los impacte a ellos y a ellas en alianza con actors locales, logrando así un rescatar
           lo mejor de cada sector: jóvenes, sector público, academia, sociedad civil y sector privado.
         </p> */}
-        <MainCarousel />
+        {/* <MainCarousel /> */}
       </section>
 
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
