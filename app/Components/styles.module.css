@@ -6,6 +6,14 @@
   z-index: -1;
 }
 
+.bgWrapp {
+  position: absolute;
+  height: 68vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
 .bgText {
   /* margin: 0; */
   /* font-size: 2rem; */

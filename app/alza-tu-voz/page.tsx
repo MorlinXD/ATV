@@ -20,7 +20,7 @@ export default function Home () {
       {/* ---------- Intro ---------- */}
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¡Ecuador en el mapa!</h1>
-        <p className='text-black mt-10 text-center'>
+        <p className='text-black mt-10 text-center text-xl'>
           Ecuador es parte del programa <strong className='text-hcadarkblue'> "Ciudades Saludables para Adolescentes".</strong><br></br>
           ¿Las estrellas del show?
           <strong className='text-hcadarkblue'> ¡Quevedo y Riobamba!</strong>
@@ -185,7 +185,7 @@ export default function Home () {
         <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Grupo Núcleo</h3>
         <div className='flex flex-col md:flex-row justify-center gap-10 items-center mt-10 mx-10 lg:mx-60'>
           <p className=' text-black justify-content items-center text-center'>
-              En cada ciudad se conforma un grupo núcleo con adolescentes y jóvenes lideres en su comunidad para aportar y dar voz a sus
+              En cada ciudad se conforma un grupo núcleo con adolescentes y jóvenes líderes en su comunidad para aportar y dar voz a sus
               ideas durante todo el programa.
           </p>
         </div>
