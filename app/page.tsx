@@ -2,9 +2,23 @@
 import Image from 'next/image'
 import ButtonOne from './Components/ButtonOne'
 import ButtonTwo from './Components/ButtonTwo'
-// import MainCarousel from './Components/MainCarousel'
+import MainCarousel from './Components/MainCarousel'
 
 export default function Home () {
+  const texts = [
+    {
+      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para adolescentes de Quevedo y Riobamba.'
+    },
+    {
+      text: 'Estamos trabajando para que todas las voces de jóvenes y adolescentes sean escuchadas y co-construyamos un programa genial que se implementará de 2024 a 2026.'
+    },
+    {
+      text: 'Te invitamos a ser un agente de cambio, así que ¡prepárate para alzar tu voz y hacer la diferencia!'
+    },
+    {
+      text: 'En Ecuador, LAB XXI implementa la iniciativa liderada por Fundación Botnar en trabajo conjunto con organizaciones, instituciones y aliados locales. '
+    }
+  ]
   return (
     <main className="flex min-h-screen flex-col items-center mt-16">
       <section>
@@ -34,7 +48,7 @@ export default function Home () {
           un programa que los impacte a ellos y a ellas en alianza con actors locales, logrando así un rescatar
           lo mejor de cada sector: jóvenes, sector público, academia, sociedad civil y sector privado.
         </p> */}
-        {/* <MainCarousel /> */}
+        <MainCarousel texts={texts}/>
       </section>
 
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
