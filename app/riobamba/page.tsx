@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
-import HeroRiobamba from '../Components/HeroRiobamba'
 import Carousel from '../Components/Carousel'
 // import BackgroundLayout from '../Components/RiobambaHeroLayout'
 
@@ -14,24 +13,33 @@ export default function Home () {
 
     <main className="flex min-h-screen flex-col items-center mt-16">
       {/* ---------- Hero ---------- */}
+      <section>
+        <Image
+          src="/images/riobamba/hero-riobamba.png"
+          alt="Imagen de portada"
+          width={1920}
+          height={370}
+          priority
+        />
+      </section>
 
-      <HeroRiobamba>
-        <div className="container mx-auto flex flex-col justify-center items-center text-center">
-          <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Riobamba</h1>
-          <p className='text-black mt-10 text-justify mx-10 lg:mx-60 xl:mx-72 text-xl mb-5 leading-10'>
-            ¡Oye, tú, joven de Riobamba! Sabemos que eres parte de este súper programa y queremos
-            escuchar lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus
-            opiniones? ¡Es súper fácil! Solo dale clic a este <strong className='text-hcadarkblue'>enlace</strong> y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas
-            marcar la diferencia en tu comunidad. <strong className='text-hcadarkblue'>¡Tu voz cuenta!</strong>
-          </p>
-          <ButtonTwo
-            label='Enlace a la encuesta'
-            image='/wa.svg'
-            link='https://wa.link/knf8b9'
-            target='_blank'
-          />
-        </div>
-      </HeroRiobamba>
+      {/* ---------- Intro ---------- */}
+      <div className="container mx-auto flex flex-col justify-center items-center text-center">
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Riobamba</h1>
+        <p className='text-black mt-10 text-justify mx-10 lg:mx-60 xl:mx-72 text-xl mb-5 leading-10'>
+          ¡Oye, tú, joven de Riobamba! Sabemos que eres parte de este súper programa y queremos
+          escuchar lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus
+          opiniones? ¡Es súper fácil! Solo dale clic a este <strong className='text-hcadarkblue'>enlace</strong> y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas
+          marcar la diferencia en tu comunidad. <strong className='text-hcadarkblue'>¡Tu voz cuenta!</strong>
+        </p>
+        <ButtonTwo
+          label='Enlace a la encuesta'
+          image='/wa.svg'
+          link='https://wa.link/knf8b9'
+          target='_blank'
+        />
+      </div>
+
       {/* ---------- Grupo nucleo ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Cómo se conformó el grupo núcleo</h1>
@@ -51,6 +59,30 @@ export default function Home () {
         </div>
         <div className='container mx-10 md:mx-96 mb-10'>
           <Carousel images={images} />
+        </div>
+      </section>
+
+      {/* ---------- Testimonios ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
+            <div className="flex justify-center md:p-4">
+              <Image
+                src="/images/riobamba/testimonio-1-riobamba.png"
+                alt="Primer testimonio"
+                width={567}
+                height={298}
+              />
+            </div>
+            <div className='hidden md:block'></div>
+            <div className='hidden md:block'></div>
+            <div className="flex justify-center md:p-4">
+              <Image
+                src="/images/riobamba/testimonio-2-riobamba.png"
+                alt="Segundo testimonio"
+                width={553}
+                height={298}
+              />
+            </div>
         </div>
       </section>
     </main>

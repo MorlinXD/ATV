@@ -9,10 +9,10 @@ export default function Home () {
       {/* ---------- Hero ---------- */}
       <section>
         <Image
-          src="/hero.png"
+          src="/hero-alza-tu-voz.png"
           alt="Imagen de portada"
           width={1440}
-          height={350}
+          height={370}
           priority
         />
       </section>

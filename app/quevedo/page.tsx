@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
-import HeroQuevedo from '../Components/HeroQuevedo'
 // import ImageGallery from '../Components/ImageGallery'
 // import BackgroundLayout from '../Components/RiobambaHeroLayout'
 
@@ -56,23 +55,32 @@ export default function Home () {
 
     <main className="flex min-h-screen flex-col items-center mt-16">
       {/* ---------- Hero ---------- */}
-      <HeroQuevedo>
-        <div className="container mx-auto flex flex-col justify-center items-center text-center">
-          <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Quevedo</h1>
-          <p className='text-black mt-10 text-justify mx-10 lg:mx-72 xl:mx-80 text-xl mb-8 leading-10'>
-            ¡Oye, tú, joven de Quevedo! Sabemos que eres parte de este súper programa y queremos escuchar
-            lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus opiniones?
-            ¡Es súper fácil! Solo dale clic a este <strong className='text-hcadarkblue'>enlace</strong> y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas
-            marcar la diferencia en tu comunidad. <strong className='text-hcadarkblue'>¡Tu voz cuenta!</strong>
-          </p>
-          <ButtonTwo
-            label='Enlace a la encuesta'
-            image='/wa.svg'
-            link='https://wa.link/knf8b9'
-            target='_blank'
-          />
-        </div>
-      </HeroQuevedo>
+      <section>
+        <Image
+          src="/images/quevedo/hero-quevedo.png"
+          alt="Imagen de portada"
+          width={1920}
+          height={370}
+          priority
+        />
+      </section>
+
+      {/* ---------- Intro ---------- */}
+      <div className="container mx-auto flex flex-col justify-center items-center text-center">
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Quevedo</h1>
+        <p className='text-black mt-10 text-justify mx-10 lg:mx-72 xl:mx-80 text-xl mb-8 leading-10'>
+          ¡Oye, tú, joven de Quevedo! Sabemos que eres parte de este súper programa y queremos escuchar
+          lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus opiniones?
+          ¡Es súper fácil! Solo dale clic a este <strong className='text-hcadarkblue'>enlace</strong> y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas
+          marcar la diferencia en tu comunidad. <strong className='text-hcadarkblue'>¡Tu voz cuenta!</strong>
+        </p>
+        <ButtonTwo
+          label='Enlace a la encuesta'
+          image='/wa.svg'
+          link='https://wa.link/knf8b9'
+          target='_blank'
+        />
+      </div>
 
       {/* ---------- Grupo nucleo ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
@@ -97,37 +105,28 @@ export default function Home () {
       </section>
 
       {/* ---------- Testimonios ---------- */}
-      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <div className="grid md:grid-cols-2 grid-rows-3 gap-1">
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
             <div className="flex justify-center md:p-4">
               <Image
                 src="/images/quevedo/testimonio-1-quevedo.png"
                 alt="Primer testimonio"
-                width={640}
-                height={603}
+                width={576}
+                height={311}
               />
             </div>
             <div className='hidden md:block'></div>
             <div className='hidden md:block'></div>
             <div className="flex justify-center md:p-4">
               <Image
-                src="/images/quevedo/testimonio-1-quevedo.png"
+                src="/images/quevedo/testimonio-2-quevedo.png"
                 alt="Segundo testimonio"
-                width={640}
-                height={603}
+                width={553}
+                height={306}
               />
             </div>
-            <div className="flex justify-center md:p-4">
-              <Image
-                src="/images/quevedo/testimonio-1-quevedo.png"
-                alt="Tercer testimonio"
-                width={640}
-                height={603}
-              />
-            </div>
-            <div className='hidden md:block'></div>
         </div>
-      </section> */}
+      </section>
 
       {/* ---------- Galería ---------- */}
       {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
