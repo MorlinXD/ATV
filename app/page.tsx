@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import ButtonOne from './Components/ButtonOne'
-import ButtonTwo from './Components/ButtonTwo'
 import MainCarousel from './Components/MainCarousel'
+import ButtonQuevedo from './Components/ButtonQuevedo'
+import ButtonRiobamba from './Components/ButtonRiobamba'
 
 export default function Home () {
   const texts = [
@@ -23,10 +24,10 @@ export default function Home () {
     <main className="flex min-h-screen flex-col items-center mt-16">
       <section>
         <Image
-          src="/hero.png"
+          src="/hero-home.png"
           alt="Imagen de portada"
           width={1440}
-          height={350}
+          height={370}
           priority
         />
       </section>
@@ -72,7 +73,7 @@ export default function Home () {
         <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
             {/* <!-- The left top cell --> */}
             <div className="bg-green-500 p-4 flex justify-center items-center">
-              <ButtonTwo
+              <ButtonQuevedo
                 label='Quevedo'
                 link='/quevedo'
               />
@@ -88,7 +89,7 @@ export default function Home () {
             </div>
             {/* <!-- The left bottom cell --> */}
             <div className="bg-green-500 p-4 flex justify-center items-center">
-              <ButtonTwo
+              <ButtonRiobamba
                 label='Riobamba'
                 link='/riobamba'
               />

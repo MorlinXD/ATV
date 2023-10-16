@@ -76,14 +76,14 @@ export default function Home () {
             <div className="flex justify-center md:p-4">
               <ImageWithModal
                 src="/images/pilar-salud.svg"
-                alt="First Image"
+                alt="Pilar de salud"
                 content="¿Qué lugares específicos en tu ciudad consideras clave para tu salud? ¿Por qué?"
               />
             </div>
             <div className="flex justify-center md:p-4">
               <ImageWithModal
                 src="/images/pilar-proteccion.svg"
-                alt="First Image"
+                alt="Pilar de protección y aprendizaje"
                 content="
                   ¿En qué parte de la ciudad te sientes seguro/a?
                   ¿Hay lugares en tu ciudad donde no puedas ser tú misma/o?"
@@ -92,7 +92,7 @@ export default function Home () {
             <div className="flex justify-center md:p-4">
               <ImageWithModal
                 src="/images/pilar-pertenencia.svg"
-                alt="First Image"
+                alt="Pilar de pertenencia y participación"
                 content="
                   ¿Hay suficientes lugares para que los jóvenes se reúnan en tu ciudad?
                   ¿Hay algún espacio donde sientas que tu opinión es valorada?"
@@ -101,7 +101,7 @@ export default function Home () {
             <div className="flex justify-center md:p-4">
               <ImageWithModal
                 src="/images/pilar-formacion.svg"
-                alt="First Image"
+                alt="Pilar de formación y empleo"
                 content="
                 ¿En qué lugar puedes aprender algo que te interesa?
                 ¿Hay lugares en tu ciudad donde pudieras trabajar si quisieras?"
@@ -110,7 +110,7 @@ export default function Home () {
             <div className="flex justify-center col-span-2 md:p-4">
               <ImageWithModal
                 src="/images/pilar-agentes.svg"
-                alt="First Image"
+                alt="Pilar de agentes de cambio"
                 content="
                 ¿Piensas que tu ciudad es un espacio seguro para desarrollar tu identidad?
                 ¿Crees que tu ciudad te brinda oportunidades para desarrollar tu  autoestima y resiliencia?"
