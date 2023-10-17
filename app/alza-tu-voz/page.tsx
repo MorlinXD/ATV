@@ -162,12 +162,20 @@ export default function Home () {
 
       {/* ---------- Conócenos ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-20'>¡Así nos organizamos para alzar nuestras voces!</h2>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-10'>¡Así nos organizamos para alzar nuestras voces!</h2>
+        <p className='text-black text-justify'>
+          Para alzar nuestras voces, nos organizamos en un equipo poderoso, liderado por <a href="https://lab-xxi.com/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>LABXXI</a> y
+          aliados locales como la <a href="http://www.gadmriobamba.gob.ec/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>Alcaldía de Riobamba</a>,
+          la  <a href="https://quevedo.gob.ec/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>Alcaldía de Quevedo</a>,
+          la <a href="https://www.espoch.edu.ec/es/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>ESPOCH</a> y
+          la <a href="https://datalat.org" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>Fundación Datalat</a>. Todas las acciones las realizamos junto con los grupos núcleos de jóvenes
+          creados en cada ciudad. ¡Juntos somos imparables!
+        </p>
         <Image
               src="/images/grupo-nucleo.png"
               alt="Foto grupo nucleo"
-              width={1352}
-              height={1381}
+              width={1304}
+              height={1333}
               priority
             />
 
