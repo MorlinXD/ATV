@@ -28,8 +28,8 @@ export default function Header () {
           <Image
             src="/logo-hce.png"
             alt="Logo Healthy Cities Ecuador"
-            width={160}
-            height={122}
+            width={200}
+            height={154}
             priority
           ></Image>
         </Link>
