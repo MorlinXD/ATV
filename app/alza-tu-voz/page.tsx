@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
-import Link from 'next/link'
+// import Link from 'next/link'
 
 export default function Home () {
   return (
@@ -162,8 +162,16 @@ export default function Home () {
 
       {/* ---------- Conócenos ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold'>¡Así nos organizamos para alzar nuestras voces!</h2>
-        <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Lab XXI</h3>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-20'>¡Así nos organizamos para alzar nuestras voces!</h2>
+        <Image
+              src="/images/grupo-nucleo.png"
+              alt="Foto grupo nucleo"
+              width={1352}
+              height={1381}
+              priority
+            />
+
+        {/* <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Lab XXI</h3>
         <div className='flex flex-col md:flex-row justify-center gap-10 items-center mt-10 mx-10 lg:mx-32'>
           <Link href='https://lab-xxi.com/' target='_blank'>
             <Image
@@ -259,7 +267,7 @@ export default function Home () {
               promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.
             </p>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   )

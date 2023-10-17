@@ -34,21 +34,6 @@ export default function Home () {
 
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
         <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1>
-        {/* <p className='text-xl text-black mt-10 text-justify'>
-          El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) es una iniciativa de
-          Fundación Botnar para contribuir a la Agenda 2030 y a la implementación de los Objetivos de Desarrollo
-          Sostenible a nivel global, en particular a través de los ODS 3, 11 y 17. A partir de mayo de 2022, se
-          lanzó la fase II del programa HCA, con el objetivo principal de abordar las necesidades de salud y
-          bienestar de los jóvenes (de 14 a 19 años), y Ecuador ha sido seleccionado como uno de los países
-          objetivo donde se ejecutará el programa HCA.
-        </p>
-        <p className='text-xl text-black mt-10 text-justify'>
-          En Ecuador el programa Ciudades Saludables para Adolescentes toma forma a través de la Iniciativa Alza Tu Voz
-          que es implementada por LAB XXI y sus socios locales en Quevedo y Riobamba. El programa busca que los jóvenes
-          se conviertan en agentes de cambio en sus ciudades, levantando su voz y siendo parte del cambio. Estamos diseñando
-          un programa que los impacte a ellos y a ellas en alianza con actors locales, logrando así un rescatar
-          lo mejor de cada sector: jóvenes, sector público, academia, sociedad civil y sector privado.
-        </p> */}
         <MainCarousel texts={texts}/>
       </section>
 

@@ -57,13 +57,6 @@ export default function Home () {
             priority
           />
         </div>
-        <div className='container mx-10 md:mx-96 mb-10'>
-          <Carousel images={images} />
-        </div>
-      </section>
-
-      {/* ---------- Testimonios ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
             <div className="flex justify-center md:p-4">
               <Image
@@ -84,7 +77,34 @@ export default function Home () {
               />
             </div>
         </div>
+        <div className='container mt-10 mx-10 md:mx-96 mb-10'>
+          <Carousel images={images} />
+        </div>
       </section>
+
+      {/* ---------- Testimonios ---------- */}
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
+            <div className="flex justify-center md:p-4">
+              <Image
+                src="/images/riobamba/testimonio-1-riobamba.png"
+                alt="Primer testimonio"
+                width={567}
+                height={298}
+              />
+            </div>
+            <div className='hidden md:block'></div>
+            <div className='hidden md:block'></div>
+            <div className="flex justify-center md:p-4">
+              <Image
+                src="/images/riobamba/testimonio-2-riobamba.png"
+                alt="Segundo testimonio"
+                width={553}
+                height={298}
+              />
+            </div>
+        </div>
+      </section> */}
     </main>
   )
 }
