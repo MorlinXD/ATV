@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
+import ImageGallery from '../Components/ImageGallery'
 // import BackgroundLayout from '../Components/RiobambaHeroLayout'
 
 export default function Home () {
@@ -9,6 +10,70 @@ export default function Home () {
     '/images/riobamba/riobamba-1.png',
     '/images/riobamba/riobamba-2.png'
   ]
+
+  const galleries = [
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-1.webp',
+      alt: 'Imagen de gallería 1',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-2.webp',
+      alt: 'Imagen de gallería 2',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-3.webp',
+      alt: 'Imagen de gallería 3',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-4.webp',
+      alt: 'Imagen de gallería 4',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-5.webp',
+      alt: 'Imagen de gallería 5',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-6.webp',
+      alt: 'Imagen de gallería 6',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-7.webp',
+      alt: 'Imagen de gallería 7',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-8.webp',
+      alt: 'Imagen de gallería 8',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-9.webp',
+      alt: 'Imagen de gallería 9',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/riobamba/galeria/gal-riobamba-10.webp',
+      alt: 'Imagen de gallería 10',
+      width: 868,
+      height: 1048
+    }
+  ]
+
   return (
 
     <main className="flex min-h-screen flex-col items-center mt-16">
@@ -105,6 +170,14 @@ export default function Home () {
             </div>
         </div>
       </section> */}
+
+      {/* ---------- Galería ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
+        <div className=' mt-10 p-4'>
+          <ImageGallery galleries={galleries} />
+        </div>
+      </section>
     </main>
   )
 }
