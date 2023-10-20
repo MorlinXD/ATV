@@ -16,55 +16,55 @@ export default function Home () {
     {
       src: '/images/quevedo/galeria/gal-quevedo-1.webp',
       alt: 'Imagen de gallería 1',
-      width: 1792,
-      height: 1064
+      width: 1024,
+      height: 1056
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-2.webp',
       alt: 'Imagen de gallería 2',
       width: 868,
-      height: 1056
+      height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-3.webp',
       alt: 'Imagen de gallería 3',
       width: 868,
-      height: 1056
+      height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-4.webp',
       alt: 'Imagen de gallería 4',
-      width: 852,
-      height: 1056
+      width: 868,
+      height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-5.webp',
       alt: 'Imagen de gallería 5',
-      width: 892,
-      height: 1056
+      width: 868,
+      height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-6.webp',
       alt: 'Imagen de gallería 6',
-      width: 1780,
+      width: 1024,
       height: 1056
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-7.webp',
       alt: 'Imagen de gallería 7',
-      width: 1788,
+      width: 1024,
       height: 1056
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-8.webp',
       alt: 'Imagen de gallería 8',
-      width: 856,
+      width: 868,
       height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-9.webp',
       alt: 'Imagen de gallería 9',
-      width: 886,
+      width: 868,
       height: 1048
     }
   ]
