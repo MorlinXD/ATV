@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
-// import ImageGallery from '../Components/ImageGallery'
+import ImageGallery from '../Components/ImageGallery'
 // import BackgroundLayout from '../Components/RiobambaHeroLayout'
 
 export default function Home () {
@@ -12,44 +12,62 @@ export default function Home () {
     '/images/quevedo/quevedo-1.jpg'
   ]
 
-  // const galleries = [
-  //   {
-  //     src: '/images/quevedo/quevedo-1.jpg',
-  //     alt: 'Imagen de gallería 1',
-  //     width: 600,
-  //     height: 400
-  //   },
-  //   {
-  //     src: '/images/quevedo/quevedo-2.jpg',
-  //     alt: 'Imagen de gallería 2',
-  //     width: 600,
-  //     height: 400
-  //   },
-  //   {
-  //     src: '/images/quevedo/quevedo-1.jpg',
-  //     alt: 'Imagen de gallería 1',
-  //     width: 600,
-  //     height: 400
-  //   },
-  //   {
-  //     src: '/images/quevedo/quevedo-2.jpg',
-  //     alt: 'Imagen de gallería 2',
-  //     width: 600,
-  //     height: 400
-  //   },
-  //   {
-  //     src: '/images/quevedo/quevedo-1.jpg',
-  //     alt: 'Imagen de gallería 1',
-  //     width: 600,
-  //     height: 400
-  //   },
-  //   {
-  //     src: '/images/quevedo/quevedo-2.jpg',
-  //     alt: 'Imagen de gallería 2',
-  //     width: 600,
-  //     height: 400
-  //   }
-  // ]
+  const galleries = [
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-1.webp',
+      alt: 'Imagen de gallería 1',
+      width: 1792,
+      height: 1064
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-2.webp',
+      alt: 'Imagen de gallería 2',
+      width: 868,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-3.webp',
+      alt: 'Imagen de gallería 3',
+      width: 868,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-4.webp',
+      alt: 'Imagen de gallería 4',
+      width: 852,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-5.webp',
+      alt: 'Imagen de gallería 5',
+      width: 892,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-6.webp',
+      alt: 'Imagen de gallería 6',
+      width: 1780,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-7.webp',
+      alt: 'Imagen de gallería 7',
+      width: 1788,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-8.webp',
+      alt: 'Imagen de gallería 8',
+      width: 856,
+      height: 1048
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-9.webp',
+      alt: 'Imagen de gallería 9',
+      width: 886,
+      height: 1048
+    }
+  ]
 
   return (
 
@@ -149,12 +167,12 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Galería ---------- */}
-      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galerías por temática</h2>
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>
-      </section> */}
+      </section>
     </main>
   )
 }
