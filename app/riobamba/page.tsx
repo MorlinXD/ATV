@@ -3,7 +3,6 @@ import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
 import ImageGallery from '../Components/ImageGallery'
-// import BackgroundLayout from '../Components/RiobambaHeroLayout'
 
 export default function Home () {
   const images = [
@@ -147,33 +146,9 @@ export default function Home () {
         </div>
       </section>
 
-      {/* ---------- Testimonios ---------- */}
-      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
-            <div className="flex justify-center md:p-4">
-              <Image
-                src="/images/riobamba/testimonio-1-riobamba.png"
-                alt="Primer testimonio"
-                width={567}
-                height={298}
-              />
-            </div>
-            <div className='hidden md:block'></div>
-            <div className='hidden md:block'></div>
-            <div className="flex justify-center md:p-4">
-              <Image
-                src="/images/riobamba/testimonio-2-riobamba.png"
-                alt="Segundo testimonio"
-                width={553}
-                height={298}
-              />
-            </div>
-        </div>
-      </section> */}
-
       {/* ---------- Galería ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Riobamba en acción</h2>
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>

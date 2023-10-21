@@ -1,11 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
-// import Image from 'next/image'
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
 import ImageGallery from '../Components/ImageGallery'
-// import BackgroundLayout from '../Components/RiobambaHeroLayout'
-
 export default function Home () {
   const images = [
     '/images/quevedo/quevedo-2.jpg',
@@ -14,10 +11,10 @@ export default function Home () {
 
   const galleries = [
     {
-      src: '/images/quevedo/galeria/gal-quevedo-1.webp',
-      alt: 'Imagen de gallería 1',
-      width: 1024,
-      height: 1056
+      src: '/images/quevedo/galeria/gal-quevedo-9.webp',
+      alt: 'Imagen de gallería 9',
+      width: 868,
+      height: 1048
     },
     {
       src: '/images/quevedo/galeria/gal-quevedo-2.webp',
@@ -28,12 +25,6 @@ export default function Home () {
     {
       src: '/images/quevedo/galeria/gal-quevedo-3.webp',
       alt: 'Imagen de gallería 3',
-      width: 868,
-      height: 1048
-    },
-    {
-      src: '/images/quevedo/galeria/gal-quevedo-4.webp',
-      alt: 'Imagen de gallería 4',
       width: 868,
       height: 1048
     },
@@ -56,16 +47,10 @@ export default function Home () {
       height: 1056
     },
     {
-      src: '/images/quevedo/galeria/gal-quevedo-8.webp',
-      alt: 'Imagen de gallería 8',
-      width: 868,
-      height: 1048
-    },
-    {
-      src: '/images/quevedo/galeria/gal-quevedo-9.webp',
-      alt: 'Imagen de gallería 9',
-      width: 868,
-      height: 1048
+      src: '/images/quevedo/galeria/gal-quevedo-1.webp',
+      alt: 'Imagen de gallería 1',
+      width: 1024,
+      height: 1056
     }
   ]
 
@@ -142,33 +127,9 @@ export default function Home () {
         </div>
       </section>
 
-      {/* ---------- Testimonios ---------- */}
-      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <div className="grid md:grid-cols-2 grid-rows-2 gap-1">
-            <div className="flex justify-center md:p-4">
-              <Image
-                src="/images/quevedo/testimonio-1-quevedo.png"
-                alt="Primer testimonio"
-                width={576}
-                height={311}
-              />
-            </div>
-            <div className='hidden md:block'></div>
-            <div className='hidden md:block'></div>
-            <div className="flex justify-center md:p-4">
-              <Image
-                src="/images/quevedo/testimonio-2-quevedo.png"
-                alt="Segundo testimonio"
-                width={553}
-                height={306}
-              />
-            </div>
-        </div>
-      </section> */}
-
       {/* ---------- Galería ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Quevedo en acción</h2>
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>
