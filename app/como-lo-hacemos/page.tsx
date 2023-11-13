@@ -5,6 +5,7 @@ import Image from 'next/image'
 // import ButtonTwo from '../Components/ButtonTwo'
 
 import PillarModal from '../Components/PillarModal'
+import ImageGallery from '../Components/ImageGallery'
 
 interface ImageModalProps {
   src: string
@@ -43,12 +44,39 @@ const ImageWithModal: React.FC<ImageModalProps> = ({ src, alt, content }) => {
 export default function Home () {
   // const [isModalOpen, setModalOpen] = useState<boolean>(false)
 
+  const galleries = [
+    {
+      src: '/images/como-lo-hicimos/galeria/gal-como-1.webp',
+      alt: 'Imagen de gallería 1',
+      width: 868,
+      height: 1048
+    },
+    {
+      src: '/images/como-lo-hicimos/galeria/gal-como-2.webp',
+      alt: 'Imagen de gallería 2',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/como-lo-hicimos/galeria/gal-como-4.webp',
+      alt: 'Imagen de gallería 4',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/como-lo-hicimos/galeria/gal-como-5.webp',
+      alt: 'Imagen de gallería 5',
+      width: 1024,
+      height: 1056
+    }
+  ]
+
   return (
     <main className="flex min-h-screen flex-col items-center mt-16">
       {/* ---------- Hero ---------- */}
       <section>
         <Image
-          src="/hero.png"
+          src="/hero-como-lo-hacemos.png"
           alt="Imagen de portada"
           width={1440}
           height={350}
@@ -119,6 +147,13 @@ export default function Home () {
         </div>
       </section>
 
+      {/* ---------- Galería ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
+        <div className=' mt-10 p-4'>
+          <ImageGallery galleries={galleries} />
+        </div>
+      </section>
     </main>
   )
 }
