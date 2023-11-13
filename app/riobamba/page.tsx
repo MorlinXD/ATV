@@ -146,6 +146,35 @@ export default function Home () {
         </div>
       </section>
 
+      {/* ---------- Dashboard de resultados ---------- */}
+      <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Dashboard de resultados</h1>
+        <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
+          {/* <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
+            Somos un grupo de jóvenes de diferentes partes de Riobamba que conocieron acerca de la iniciativa Alza Tu Voz. Nos preocupa  cómo está
+            desarrollándose nuestra ciudad y por eso nos unimos a este increíble programa para dar voces a los adolescentes y jóvenes, y juntos
+            convertir a Riobamba en una ciudad más saludable para todos nosotros.
+          </p> */}
+        </div>
+        <div className="relative w-full min-h-screen hidden md:block" >
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0ZDE0YmMtYmIwMi00ZWUzLWE1NDMtODY5M2U0NTU3ZGQ2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+            className='absolute top-0 left-0 w-full h-full'
+            allowFullScreen={true}
+            name="Dashboard Riobamba"
+          ></iframe>
+        </div>
+        {/* Dashboard responsive */}
+        <div className="relative w-full h-96 md:hidden" >
+          <iframe
+            src="https://app.powerbi.com/view?r=eyJrIjoiODUxMWZmNjUtYzhlNi00NjUxLTlhOGYtMDhhMWNmMjUyYjI0IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+            className='absolute top-0 left-0 w-full h-full'
+            allowFullScreen={true}
+            name="Dashboard Riobamba"
+          ></iframe>
+        </div>
+      </section>
+
       {/* ---------- Galería ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Riobamba en acción</h2>
