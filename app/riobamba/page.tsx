@@ -48,12 +48,6 @@ export default function Home () {
       height: 1056
     },
     {
-      src: '/images/riobamba/galeria/gal-riobamba-7.webp',
-      alt: 'Imagen de gallería 7',
-      width: 868,
-      height: 1048
-    },
-    {
       src: '/images/riobamba/galeria/gal-riobamba-8.webp',
       alt: 'Imagen de gallería 8',
       width: 868,
@@ -148,7 +142,7 @@ export default function Home () {
 
       {/* ---------- Dashboard de resultados ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Dashboard de resultados</h1>
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Mi ciudad y yo - Riobamba en Datos</h1>
         <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
           {/* <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
             Somos un grupo de jóvenes de diferentes partes de Riobamba que conocieron acerca de la iniciativa Alza Tu Voz. Nos preocupa  cómo está
@@ -156,7 +150,7 @@ export default function Home () {
             convertir a Riobamba en una ciudad más saludable para todos nosotros.
           </p> */}
         </div>
-        <div className="relative w-full min-h-screen hidden md:block" >
+        <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
           <iframe
             src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0ZDE0YmMtYmIwMi00ZWUzLWE1NDMtODY5M2U0NTU3ZGQ2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
             className='absolute top-0 left-0 w-full h-full'
@@ -165,13 +159,41 @@ export default function Home () {
           ></iframe>
         </div>
         {/* Dashboard responsive */}
-        <div className="relative w-full h-96 md:hidden" >
+        <div className="relative w-full h-96 lg:hidden" >
           <iframe
             src="https://app.powerbi.com/view?r=eyJrIjoiODUxMWZmNjUtYzhlNi00NjUxLTlhOGYtMDhhMWNmMjUyYjI0IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
             className='absolute top-0 left-0 w-full h-full'
             allowFullScreen={true}
             name="Dashboard Riobamba"
           ></iframe>
+        </div>
+      </section>
+
+      {/* ---------- Mapas parlantes ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Cómo percibimos nuestra ciudad</h2>
+        {/* <p className='text-black mt-10 text-justify'>
+          ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
+          adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrarlos a su comunidad y
+          colaborar con quienes se preocupan por su salud y bienestar.
+        </p> */}
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/riobamba/rio-mapa-parlante-1.png"
+              alt="Mapa parlante la Riobamba que soñamos"
+              width={602}
+              height={535}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/riobamba/rio-mapa-parlante-2.png"
+              alt="Mapa parlante Riobamba transfórmate"
+              width={616}
+              height={535}
+            />
+          </div>
         </div>
       </section>
 

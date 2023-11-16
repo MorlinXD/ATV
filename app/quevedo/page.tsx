@@ -137,7 +137,7 @@ export default function Home () {
             convertir a Riobamba en una ciudad más saludable para todos nosotros.
           </p>
         </div> */}
-        <div className="relative w-full min-h-screen hidden md:block" >
+        <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
           <iframe
             src="https://app.powerbi.com/view?r=eyJrIjoiNDU1NmY4MzUtZDg4ZS00NGY5LWEyZDAtMWMwMWE0NzM3MjM2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
             className='absolute top-0 left-0 w-full h-full'
@@ -146,13 +146,41 @@ export default function Home () {
           ></iframe>
         </div>
         {/* Dashboard responsive */}
-        <div className="relative w-full h-96 md:hidden" >
+        <div className="relative w-full h-96 lg:hidden" >
           <iframe
             src="https://app.powerbi.com/view?r=eyJrIjoiZDc5NmEyMmYtMDQ5MC00MjY3LThjNzMtYmNjNjY1MDkwNjUyIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
             className='absolute top-0 left-0 w-full h-full'
             allowFullScreen={true}
             name="Dashboard Riobamba"
           ></iframe>
+        </div>
+      </section>
+
+      {/* ---------- Mapas parlantes ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Cómo percibimos nuestra ciudad</h2>
+        {/* <p className='text-black mt-10 text-justify'>
+          ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
+          adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrarlos a su comunidad y
+          colaborar con quienes se preocupan por su salud y bienestar.
+        </p> */}
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/quevedo/que-mapa-parlante-1.png"
+              alt="Mapa parlante juntos podemos con el cambio"
+              width={639}
+              height={553}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/quevedo/que-mapa-parlante-1.png"
+              alt="Mapa parlante todos unidos hacemos el cambio"
+              width={639}
+              height={553}
+            />
+          </div>
         </div>
       </section>
 
