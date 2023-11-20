@@ -87,7 +87,7 @@ export default function Home () {
 
       {/* ---------- Grupo nucleo ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Cómo se conformó el grupo núcleo</h1>
+        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo se conformó el grupo núcleo?</h1>
         <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
           <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
             Somos un grupo de jóvenes de diferentes partes de Quevedo que conocieron acerca de la iniciativa Alza Tu Voz. Nos preocupa
@@ -158,7 +158,7 @@ export default function Home () {
 
       {/* ---------- Mapas parlantes ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Cómo percibimos nuestra ciudad</h2>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>¿Cómo percibimos nuestra ciudad?</h2>
         {/* <p className='text-black mt-10 text-justify'>
           ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
           adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrarlos a su comunidad y
@@ -175,7 +175,7 @@ export default function Home () {
           </div>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
-              src="/images/quevedo/que-mapa-parlante-1.png"
+              src="/images/quevedo/que-mapa-parlante-2.png"
               alt="Mapa parlante todos unidos hacemos el cambio"
               width={639}
               height={553}
