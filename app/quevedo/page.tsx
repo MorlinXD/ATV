@@ -3,6 +3,8 @@ import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
 import ImageGallery from '../Components/ImageGallery'
+import { Tab, Tabs } from '../Components/Tabs'
+
 export default function Home () {
   const images = [
     '/images/quevedo/quevedo-2.jpg',
@@ -122,37 +124,17 @@ export default function Home () {
               />
             </div>
         </div>
-        <div className='container mt-10 mx-10 md:mx-96 mb-10'>
+        <div className='container flex flex-col justify-center items-center mt-10 mx-10 gap-10 md:mx-96 mb-10'>
+          <iframe
+            width="1125"
+            height="600"
+            src="https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C"
+            title="Quevedo AlzaTuVoz"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen>
+          </iframe>
           <Carousel images={images} />
-        </div>
-      </section>
-
-      {/* ---------- Dashboard de resultados ---------- */}
-      <section className="container mx-auto flex flex-col justify-center items-center text-center mt-20">
-        <h1 className='text-4xl text-hcadarkblue font-bold my-5 font-marker'>Mi ciudad y yo - Quevedo en Datos</h1>
-        {/* <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
-          <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
-            Somos un grupo de jóvenes de diferentes partes de Riobamba que conocieron acerca de la iniciativa Alza Tu Voz. Nos preocupa  cómo está
-            desarrollándose nuestra ciudad y por eso nos unimos a este increíble programa para dar voces a los adolescentes y jóvenes, y juntos
-            convertir a Riobamba en una ciudad más saludable para todos nosotros.
-          </p>
-        </div> */}
-        <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
-          <iframe
-            src="https://app.powerbi.com/view?r=eyJrIjoiNDU1NmY4MzUtZDg4ZS00NGY5LWEyZDAtMWMwMWE0NzM3MjM2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
-            className='absolute top-0 left-0 w-full h-full'
-            allowFullScreen={true}
-            name="Dashboard Riobamba"
-          ></iframe>
-        </div>
-        {/* Dashboard responsive */}
-        <div className="relative w-full h-96 lg:hidden" >
-          <iframe
-            src="https://app.powerbi.com/view?r=eyJrIjoiZDc5NmEyMmYtMDQ5MC00MjY3LThjNzMtYmNjNjY1MDkwNjUyIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
-            className='absolute top-0 left-0 w-full h-full'
-            allowFullScreen={true}
-            name="Dashboard Riobamba"
-          ></iframe>
         </div>
       </section>
 
@@ -182,6 +164,60 @@ export default function Home () {
             />
           </div>
         </div>
+      </section>
+
+      {/* ---------- Dashboard de resultados ---------- */}
+      <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
+        <h1 className='text-4xl text-hcadarkblue font-bold mb-10 font-marker'>Quevedo en Datos</h1>
+        <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
+          <p className='text-black text-center mt-2 mx-10 lg:mx-20'>
+            Navega por los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi futuro".
+            <br />
+            Da clic en cada encuesta para visualizar los datos más importantes. Puedes filtrarlos por sexo,
+            género, edad, parroquia y condición de discapacidad.
+          </p>
+        </div>
+
+        <Tabs>
+          <Tab label="Mi ciudad y yo">
+            <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDU1NmY4MzUtZDg4ZS00NGY5LWEyZDAtMWMwMWE0NzM3MjM2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Quevedo"
+              ></iframe>
+            </div>
+            {/* Dashboard responsive */}
+            <div className="relative w-full h-96 lg:hidden" >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiZDc5NmEyMmYtMDQ5MC00MjY3LThjNzMtYmNjNjY1MDkwNjUyIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Quevedo"
+              ></iframe>
+            </div>
+          </Tab>
+          <Tab label="Imaginando mi futuro">
+            <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiYmY3N2U0ZTUtMTZkOC00NDZjLTkxNjUtODc3YzRjZTVhMDk3IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Quevedo"
+              ></iframe>
+            </div>
+            {/* Dashboard responsive */}
+            <div className="relative w-full h-96 lg:hidden" >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiMzBkYzY4ZTYtNmIyYS00MWE5LWI0NzUtZDA3YTE4ZTNjMDc3IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Quevedo"
+              ></iframe>
+            </div>
+          </Tab>
+        </Tabs>
       </section>
 
       {/* ---------- Galería ---------- */}
