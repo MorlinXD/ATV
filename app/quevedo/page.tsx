@@ -99,7 +99,7 @@ export default function Home () {
       {/* ---------- Hero ---------- */}
       <section>
         <Image
-          src="/images/quevedo/hero-quevedo.png"
+          src="/images/quevedo/hero-quevedo-1.png"
           alt="Imagen de portada"
           width={1920}
           height={370}
@@ -115,7 +115,7 @@ export default function Home () {
           ¡Te contamos lo que hemos hecho hasta ahora!
           Dale clic en el botón <strong className='text-hcadarkblue'>'Cómo lo hacemos'</strong> para acceder
           a nuestras herramientas. Y, explora nuestros próximos pasos,
-          en el botón<strong className='text-hcadarkblue'>'Lo que se viene'</strong>.
+          en el botón <strong className='text-hcadarkblue'>'Lo que se viene'</strong>.
         </p>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
@@ -188,7 +188,7 @@ export default function Home () {
           Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:
         </p>
         <div className='container mx-auto flex flex-col gap-10'>
-          <VideoCarousel videoUrls={['https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C']} />
+          <VideoCarousel videoUrls={['https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C', 'https://www.youtube.com/embed/EzdcW37eJ30?si=sTow4NdopxYtLvNP']} />
           <p className='text-black text-justify'>
             Conoce nuestro mural:
           </p>
@@ -242,7 +242,7 @@ export default function Home () {
       <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
         <h2 className='text-3xl text-hcadarkblue font-bold font-marker'>Quevedo en Datos</h2>
         <p className='text-black my-10 text-justify px-8 md:px-16'>
-          ¡Nuestra voz es importante! Por eso participamos de encuestas por Whatsapp para contar nuestra
+          ¡Nuestra voz es importante! Por eso, participamos de encuestas por Whatsapp para contar nuestra
           experiencia en Quevedo y cómo pensamos que podríamos mejorarla.
           <br />
           <br />

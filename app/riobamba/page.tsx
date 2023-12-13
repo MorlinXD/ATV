@@ -133,7 +133,7 @@ export default function Home () {
           ¡Te contamos lo que hemos hecho hasta ahora!
           Dale clic en el botón <strong className='text-hcadarkblue'>'Cómo lo hacemos'</strong> para acceder
           a nuestras herramientas. Y, explora nuestros próximos pasos,
-          en el botón<strong className='text-hcadarkblue'>'Lo que se viene'</strong>.
+          en el botón <strong className='text-hcadarkblue'>'Lo que se viene'</strong>.
         </p>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
@@ -260,7 +260,7 @@ export default function Home () {
       <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
         <h2 className='text-3xl text-hcadarkblue font-bold font-marker'>Riobamba en Datos</h2>
         <p className='text-black my-10 text-justify px-8 md:px-16'>
-          ¡Nuestra voz es importante! Por eso participamos de encuestas por Whatsapp para contar nuestra
+          ¡Nuestra voz es importante! Por eso, participamos de encuestas por Whatsapp para contar nuestra
           experiencia en Riobamba y cómo pensamos que podríamos mejorarla.
           <br />
           <br />
