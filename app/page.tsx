@@ -24,7 +24,7 @@ export default function Home () {
     <main className="flex min-h-screen flex-col items-center mt-16">
       <section>
         <Image
-          src="/hero-home.png"
+          src="/hero-home-1.png"
           alt="Imagen de portada"
           width={1440}
           height={370}
@@ -41,14 +41,19 @@ export default function Home () {
         <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold mt-10'>Conoce nuestras herramientas</h2>
         <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
           <p className='text-black mt-10 text-justify'>
-            Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en
-            todo el mundo. En este espacio, vamos a compartir todos los trucos,  herramientas y formatos que estamos usando
+            ¡Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en
+            todo el mundo!
+            <br />
+            <br />
+            En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando
             para hacer que las ciudades sean un mejor lugar para los adolescentes.
+            <br />
+            <br />
             <span className='font-semibold text-hcadarkblue'> ¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</span>
           </p>
           <ButtonOne
-            label='Próximamente'
-            link='#'
+            label='Ver más...'
+            link='/como-lo-hacemos#herramientas'
           />
         </div>
       </section>
@@ -82,36 +87,6 @@ export default function Home () {
         </div>
 
       </section >
-
-      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold mt-10'>¿Dónde trabajamos?</h2>
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8'>
-          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
-            <Image
-              src="/images/quevedo-map.png"
-              alt="Mapa de la ciudad de Quevedo"
-              width={310}
-              height={310}
-            />
-            <ButtonTwo
-              label='Quevedo'
-              link='#'
-            />
-          </div>
-          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
-            <Image
-              src="/images/riobamba-map.png"
-              alt="Mapa de la ciudad de Quevedo"
-              width={310}
-              height={310}
-            />
-            <ButtonTwo
-              label='Riobamba'
-              link='#'
-            />
-          </div>
-        </div>
-      </section> */}
     </main>
   )
 }

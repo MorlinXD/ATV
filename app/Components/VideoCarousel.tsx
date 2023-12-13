@@ -2,31 +2,51 @@
 import React, { useState } from 'react'
 
 interface CarouselProps {
-  images: string[]
+  videoUrls: string[]
 }
 
-const Carousel: React.FC<CarouselProps> = ({ images }) => {
+const VideoCarousel: React.FC<CarouselProps> = ({ videoUrls }) => {
   const [activeIndex, setActiveIndex] = useState(0)
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length)
+    setActiveIndex((prevIndex) => (prevIndex + 1) % videoUrls.length)
   }
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)
+    setActiveIndex((prevIndex) => (prevIndex - 1 + videoUrls.length) % videoUrls.length)
   }
-  return (
 
+  // Convertir la URL de YouTube a una URL de incrustación
+  const getYoutubeEmbedUrl = (url: string) => {
+    // eslint-disable-next-line no-useless-escape, @typescript-eslint/semi
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp)
+
+    if ((match != null) && match[2].length === 11) {
+      return `https://www.youtube.com/embed/${match[2]}`
+    }
+
+    return url
+  }
+
+  return (
     <div id="indicators-carousel" className="relative w-full">
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96 xl:mx-52">
-        {images.map((image, index) => (
-          <div key={index} className={index === activeIndex ? 'block duration-700 ease-in-out' : 'hidden duration-700 ease-in-out'}>
-            <img src={image} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={`Slide ${index + 1}`} />
+      <div className="relative overflow-hidden rounded-lg">
+        {videoUrls.map((url, index) => (
+          <div key={index} className={index === activeIndex ? 'block duration-700 ease-in-out aspect-w-16 aspect-h-9 md:h-96' : 'hidden duration-700 ease-in-out aspect-w-16 aspect-h-9 md:h-96'}>
+            <iframe
+              className="w-full h-full"
+              src={getYoutubeEmbedUrl(url)}
+              title={`Video ${index + 1}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen>
+            </iframe>
           </div>
         ))}
       </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        {images.map((_, index) => (
+        {videoUrls.map((_, index) => (
           <button key={index} type="button" className="w-3 h-3 rounded-full" aria-current={index === activeIndex ? 'true' : 'false'} aria-label={`Slide ${index + 1}`} onClick={() => { setActiveIndex(index) }}></button>
         ))}
       </div>
@@ -50,4 +70,4 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   )
 }
 
-export default Carousel
+export default VideoCarousel

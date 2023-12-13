@@ -17,6 +17,10 @@ const navItems = [
   {
     path: '/quevedo',
     name: 'Quevedo'
+  },
+  {
+    path: '/lo-que-se-viene',
+    name: 'Lo que se viene'
   }
 ]
 

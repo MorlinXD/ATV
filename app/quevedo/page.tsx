@@ -2,13 +2,14 @@
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
+import VideoCarousel from '../Components/VideoCarousel'
 import ImageGallery from '../Components/ImageGallery'
 import { Tab, Tabs } from '../Components/Tabs'
 
 export default function Home () {
   const images = [
-    '/images/quevedo/quevedo-2.jpg',
-    '/images/quevedo/quevedo-1.jpg'
+    '/images/quevedo/quevedo-3.png',
+    '/images/quevedo/quevedo-4.png'
   ]
 
   const galleries = [
@@ -53,6 +54,42 @@ export default function Home () {
       alt: 'Imagen de gallería 1',
       width: 1024,
       height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-10.webp',
+      alt: 'Imagen de gallería 10',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-11.webp',
+      alt: 'Imagen de gallería 11',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-12.webp',
+      alt: 'Imagen de gallería 12',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-13.webp',
+      alt: 'Imagen de gallería 13',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-14.webp',
+      alt: 'Imagen de gallería 14',
+      width: 1024,
+      height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/gal-quevedo-15.webp',
+      alt: 'Imagen de gallería 15',
+      width: 1024,
+      height: 1056
     }
   ]
 
@@ -73,28 +110,43 @@ export default function Home () {
       {/* ---------- Intro ---------- */}
       <div className="container mx-auto flex flex-col justify-center items-center text-center">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Quevedo</h1>
-        <p className='text-black mt-10 text-justify mx-10 lg:mx-72 xl:mx-80 text-xl mb-8 leading-10'>
-          ¡Oye, tú, joven de Quevedo! Sabemos que eres parte de este súper programa y queremos escuchar
-          lo que piensas sobre tu ciudad. Así que, ¿te gustaría ayudarnos a conocer tus opiniones?
-          ¡Es súper fácil! Solo dale clic a este <strong className='text-hcadarkblue'>enlace</strong> y escribe <strong className='text-hcadarkblue'>'HOLA'</strong> para que puedas
-          marcar la diferencia en tu comunidad. <strong className='text-hcadarkblue'>¡Tu voz cuenta!</strong>
+        <p className='text-black mt-10 text-justify mx-10 lg:mx-60 xl:mx-72 text-xl mb-5 leading-10'>
+          Estamos trabajando en conjunto para construir una Quevedo más saludable e incluyente.
+          ¡Te contamos lo que hemos hecho hasta ahora!
+          Dale clic en el botón <strong className='text-hcadarkblue'>'Cómo lo hacemos'</strong> para acceder
+          a nuestras herramientas. Y, explora nuestros próximos pasos,
+          en el botón<strong className='text-hcadarkblue'>'Lo que se viene'</strong>.
         </p>
-        <ButtonTwo
-          label='Enlace a la encuesta'
-          image='/wa.svg'
-          link='https://wa.link/knf8b9'
-          target='_blank'
-        />
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <ButtonTwo
+              label='Cómo lo hacemos'
+              link='/como-lo-hacemos#herramientas'
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <ButtonTwo
+              label='Lo que se viene'
+              link='/lo-que-se-viene'
+            />
+          </div>
+        </div>
       </div>
 
       {/* ---------- Grupo nucleo ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
-        <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo se conformó el grupo núcleo?</h1>
-        <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
+        <h1 className='text-3xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo iniciamos? <br /> ¡Conformamos el grupo núcleo!</h1>
+        <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
           <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
-            Somos un grupo de jóvenes de diferentes partes de Quevedo que conocieron acerca de la iniciativa Alza Tu Voz. Nos preocupa
-            cómo está desarrollándose nuestra ciudad y por eso nos unimos a este increíble programa para dar voces a los adolescentes y jóvenes, y
-            juntos convertir a Quevedo en una ciudad más saludable para todos nosotros.
+            Somos un grupo de adolescentes y jóvenes de diferentes partes de Quevedo que conocimos acerca de la iniciativa "Alza Tu Voz" y
+            vimos una oportunidad de transformar nuestros entornos.
+            <br />
+            <br />
+            Nos interesa aportar al desarrollo de Quevedo, al bienestar de todas y todos los jóvenes. Por esto, nos unimos a este increíble
+            programa, para ser agentes de cambio y levantar nuestras voces e ideas.
+            <br />
+            <br />
+            ¡Juntas y juntos convertiremos a Quevedo en una ciudad más saludable!
           </p>
           <Image
             src="/images/quevedo/quevedo-nucleo.png"
@@ -124,28 +176,33 @@ export default function Home () {
               />
             </div>
         </div>
-        <div className='container flex flex-col justify-center items-center mt-10 mx-10 gap-10 md:mx-96 mb-10'>
-          <iframe
-            width="1125"
-            height="600"
-            src="https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C"
-            title="Quevedo AlzaTuVoz"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen>
-          </iframe>
+      </section>
+
+      {/* ---------- Videos ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        <h2 className='text-3xl text-hcadarkblue font-marker text-center font-bold '>¿Cómo nos sentimos?</h2>
+        <p className='text-black mt-10 text-justify'>
+          ¡Tenemos un montón de historias para contar, y lo hacemos a través del arte! Con un rap y un mural, ¡queremos alzar nuestra voz!
+        </p>
+        <p className='text-black my-10 text-justify'>
+          Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:
+        </p>
+        <div className='container mx-auto flex flex-col gap-10'>
+          <VideoCarousel videoUrls={['https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C']} />
+          <p className='text-black text-justify'>
+            Conoce nuestro mural:
+          </p>
           <Carousel images={images} />
         </div>
       </section>
 
       {/* ---------- Mapas parlantes ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>¿Cómo percibimos nuestra ciudad?</h2>
-        {/* <p className='text-black mt-10 text-justify'>
-          ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
-          adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrarlos a su comunidad y
-          colaborar con quienes se preocupan por su salud y bienestar.
-        </p> */}
+        <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>¿Cómo percibimos nuestra ciudad?</h2>
+        <p className='text-black mt-10 text-justify'>
+          Creamos <strong className='text-hcadarkblue'>mapas parlantes</strong> que cuentan cómo las y los jóvenes y adolescentes nos relacionamos con Quevedo y cómo nos
+          gustaría que se transforme.
+        </p>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
@@ -166,17 +223,35 @@ export default function Home () {
         </div>
       </section>
 
+      {/* ---------- Mapas Interactivo ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>¿Cómo quisiéramos que sea nuestra vida y nuestra ciudad?</h2>
+        <p className='text-black mt-10 text-justify'>
+          Es muy emocionante compartir algunas de las aspiraciones y sueños que surgieron al imaginar nuestro futuro. Es interesante ver cómo varían según la parroquia en la que vivimos.
+        </p>
+        <div className="flex justify-center mt-10">
+          <div className="w-11/12">
+            <div className="relative pt-30 lg:pt-0" style={{ paddingBottom: '100%' }}>
+              <iframe title="Mapa interactivo Quevedo" frameBorder="0" width="1200" height="675" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} src="https://view.genial.ly/6578db60a5c46d001522f86e/dossier-reporting-quevedo" scrolling='no' ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- Dashboard de resultados ---------- */}
       <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
-        <h1 className='text-4xl text-hcadarkblue font-bold mb-10 font-marker'>Quevedo en Datos</h1>
-        <div className='flex flex-col md:flex-row justify-center items-center text-xl gap-6 p-2 lg:p-10'>
-          <p className='text-black text-center mt-2 mx-10 lg:mx-20'>
-            Navega por los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi futuro".
-            <br />
-            Da clic en cada encuesta para visualizar los datos más importantes. Puedes filtrarlos por sexo,
-            género, edad, parroquia y condición de discapacidad.
-          </p>
-        </div>
+        <h2 className='text-3xl text-hcadarkblue font-bold font-marker'>Quevedo en Datos</h2>
+        <p className='text-black my-10 text-justify px-8 md:px-16'>
+          ¡Nuestra voz es importante! Por eso participamos de encuestas por Whatsapp para contar nuestra
+          experiencia en Quevedo y cómo pensamos que podríamos mejorarla.
+          <br />
+          <br />
+          Los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi futuro" tienen datos que
+          dicen mucho sobre nosotros, las y los jóvenes. ¡Y nos ayudan a levantar nuestra voz aún más alto!
+          <br />
+          <br />
+          Conócelos, navegando en el visualizador de datos. ¡Te invitamos a descubrir lo que estamos pensando!
+        </p>
 
         <Tabs>
           <Tab label="Mi ciudad y yo">
@@ -218,11 +293,33 @@ export default function Home () {
             </div>
           </Tab>
         </Tabs>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <ButtonTwo
+              label='Análisis “Mi ciudad y yo”'
+              link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
+              target='_blank'
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <ButtonTwo
+              label='Análisis “Imaginando mi futuro”'
+              link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
+              target='_blank'
+            />
+          </div>
+        </div>
       </section>
 
       {/* ---------- Galería ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Quevedo en acción</h2>
+        <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>Quevedo en acción</h2>
+        <p className='text-black mt-10 text-justify'>
+          ¡Las imágenes hablan más que mil palabras!
+          <br />
+          <br />
+          Estas son algunas fotografías mientras alzamos nuestra voz:
+        </p>
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>

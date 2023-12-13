@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
-// import Link from 'next/link'
 
 export default function Home () {
   return (
