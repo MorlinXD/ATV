@@ -33,36 +33,19 @@ export default function Home () {
           El programa <a href="https://www.fondationbotnar.org/project/the-botnar-healthy-cities-for-adolescents-program/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés)</a> fue lanzado entre 2018 y
           2021 por <strong className='text-hcadarkblue'>Fundación Botnar</strong>, quien a nivel mundial busca propuestas innovadoras que pudieran hacer un gran cambio
           en cómo funcionan las ciudades y fomentar la igualdad.
-          Desde mayo de 2022, comenzó la segunda fase del programa HCA, y su misión principal es conocer las necesidades relacionadas con el
+          Desde mayo de 2022, comenzó la segunda fase del programa HCA, con la misión de conocer las necesidades relacionadas con el
           <strong className='text-hcadarkblue'> bienestar de los y las jóvenes de entre 14 y 19 años</strong>.
         </p>
-        {/* <p className='text-black mt-5 text-justify'>
-          Este programa mundial tiene un súper objetivo: ayudar a lograr el cumplimiento de la <strong className='text-hcadarkblue'>"Agenda 2030"</strong> y poner en práctica los
-          <strong className='text-hcadarkblue'> "Objetivos de Desarrollo Sostenible"</strong> en todo el planeta. En especial, en tres de ellos:
-        </p>
-        <ol className='list-decimal pl-5 text-black mt-5 text-justify'>
-          <li className='mb-2'><strong className='text-hcadarkblue'>ODS 3:</strong> Hacer que todos, sin importar la edad, vivan vidas saludables y se sientan bien.</li>
-          <li className='mb-2'><strong className='text-hcadarkblue'>ODS 11:</strong> Hacer que las ciudades y los lugares donde vivimos sean más incluyentes, seguros, resistentes y amigables con el medio ambiente.</li>
-          <li><strong className='text-hcadarkblue'>ODS 17:</strong> Trabajar juntos en equipo, formando alianzas, para lograr estos objetivos.</li>
-        </ol> */}
-        {/* <p className='text-black mt-5 text-justify'>
-          Desde mayo de 2022, comenzó la segunda fase del programa HCA, y su misión principal es conocer las necesidades relacionadas con el
-          <strong className='text-hcadarkblue'> bienestar de los jóvenes de entre 14 y 19 años</strong>. ¡Y adivina qué! Ecuador ha sido elegido como uno de los lugares donde este programa
-          se va a poner en marcha.
-        </p> */}
         <p className='text-black mt-5 text-justify'>
-          En Ecuador, el programa "Ciudades Saludables para Adolescentes" cobra vida gracias a la iniciativa <strong className='text-hcadarkblue'> "Alza Tu Voz", que es llevada a cabo por el equipo de LAB XXI</strong> en
-          colaboración con socios locales de Quevedo y Riobamba.
-          La primera etapa, que será de septiembre a diciembre de 2023, consiste en escuchar lo que los adolescentes tienen que decir y trabajar juntos con las autoridades y la
-          comunidad para crear un plan que se pondrá en marcha entre 2024 y 2026, para hacer que los jóvenes se conviertan en agentes de cambio en sus ciudades.
+          En Ecuador, el programa "Ciudades Saludables para Adolescentes" cobra vida gracias a la iniciativa <strong className='text-hcadarkblue'> "Alza Tu Voz". </strong>
+          Un proyecto liderado por LAB XXI en colaboración con socios y aliados locales: GAD de Quevedo, GAD de Riobamba, la Escuela Superior Politécnica de Chimborazo (ESPOCH) y Fundación Datalat.
+          Durante la <strong className='text-hcadarkblue'>primera etapa</strong>, que abarcó desde <strong className='text-hcadarkblue'>agosto hasta diciembre de 2023</strong>, creamos
+          oportunidades para que chicos y chicas participen y compartan sus ideas y necesidades. En conjunto, desarrollamos un proyecto que transformará las dos ciudades.
         </p>
-        {/* <p className='text-black mt-5 text-justify'>
-          La primera etapa, que será de septiembre a diciembre de 2023, consiste en escuchar lo que los adolescentes tienen que decir y trabajar juntos con las autoridades y la gente de la
-          comunidad para crear un plan que se pondrá en marcha entre enero de 2024 y 2026, para hacer que los jóvenes se conviertan en agentes de cambio en sus ciudades.
-        </p> */}
-        {/* <p className='text-black mt-5 text-justify'>
-          ¡Es como un <strong className='text-hcadarkblue'>trabajo en equipo</strong> para hacer que las cosas sean aún más increíbles!
-        </p> */}
+        <p className='text-black mt-5 text-justify'>
+          Desde <strong className='text-hcadarkblue'>enero de 2024 hasta junio de 2026</strong>, estamos poniendo en marcha este proyecto en Riobamba y Quevedo. Nuestro objetivo principal es que adolescentes y jóvenes se empoderen
+          e <strong className='text-hcadarkblue'>involucren activamente en la mejora de sus ciudades </strong>. ¡Queremos crear espacios, tanto físicos como digitales, que promuevan la salud y el bienestar!
+        </p>
       </section>
 
       {/* ---------- ¿Dónde trabajamos? ---------- */}
@@ -103,7 +86,10 @@ export default function Home () {
 
       {/* ---------- Etapas ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Etapas</h2>
+        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-10'>¿Cómo construimos el proyecto?</h2>
+        <p className='text-black text-justify'>
+          Te contamos sobre el trabajo que realizamos entre agosto y diciembre de 2023, para construir en conjunto un proyecto que transformará Quevedo y Riobamba.
+        </p>
           <ol className=" px-6 mt-10 items-center sm:flex">
             <li className="relative mb-6 sm:mb-0">
                 <div className="flex items-center">
@@ -132,9 +118,8 @@ export default function Home () {
                 </div>
                 <div className="mt-3 sm:pr-8">
                   <p className="text-sm text-black text-justify">
-                    Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y
-                    Riobamba. Para esto, adolescentes, sector público, sociedad civil y actores locales participan
-                    activamente en la definición del impacto de este proyecto y su teoría de cambio.
+                    Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba. Para esto, adolescentes,
+                    sector público, sociedad civil y actores locales participaron activamente en la <strong className='text-hcadarkblue'>definición del impacto de este proyecto y su teoría de cambio.</strong>
                   </p>
                 </div>
               </li>
@@ -149,9 +134,8 @@ export default function Home () {
                 </div>
                 <div className="mt-3 sm:pr-8">
                   <p className="text-sm text-black text-justify">
-                    El programa que hemos creado va a ser evaluado por la gente que vive aquí en la ciudad. Después
-                    de escuchar sus opiniones, junto con los jóvenes y adolescentes, vamos a mostrar nuestra idea final para
-                    hacer que las cosas sucedan a partir del 2024.
+                    El proyecto creado fue evaluado por personas clave de cada ciudad. Con todos los aportes recolectados, y gracias al trabajo conjunto,
+                    ahora nos encontramos implementando el proyecto desarrollado.
                   </p>
                 </div>
               </li>

@@ -10,16 +10,16 @@ import ButtonTwo from './Components/ButtonTwo'
 export default function Home () {
   const texts = [
     {
-      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para adolescentes de Quevedo y Riobamba.'
+      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para jóvenes y adolescentes de Quevedo y Riobamba.'
     },
     {
-      text: 'Estamos trabajando para que todas las voces de jóvenes y adolescentes sean escuchadas y co-construyamos un programa genial que se implementará de 2024 a 2026.'
+      text: 'Junto a ellas y ellos trabajamos para convertir sus ciudades en lugares más seguros, saludables e interculturales.'
     },
     {
-      text: 'Te invitamos a ser un agente de cambio, así que ¡prepárate para alzar tu voz y hacer la diferencia!'
+      text: '¡Te invitamos a unirte y convertirte en agente de cambio! Tu voz puede marcar la diferencia.'
     },
     {
-      text: 'En Ecuador, LAB XXI implementa la iniciativa liderada por Fundación Botnar en trabajo conjunto con organizaciones, instituciones y aliados locales. '
+      text: 'En Ecuador, LAB XXI lidera la implementación de la iniciativa en trabajo conjunto con organizaciones, instituciones y aliados locales.'
     }
   ]
   return (
@@ -89,7 +89,7 @@ export default function Home () {
             <br />
             <br />
             En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando
-            para hacer que las ciudades sean un mejor lugar para los adolescentes.
+            para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
             <br />
             <br />
             <span className='font-semibold text-hcadarkblue'> ¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</span>

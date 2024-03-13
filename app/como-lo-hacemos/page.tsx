@@ -88,9 +88,9 @@ export default function Home () {
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-28">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo pensamos el bienestar adolescente?</h1>
         <p className='text-black mt-10 text-justify text-xl'>
-          Para nosotros es súper importante entender qué es lo que los <strong className='text-hcadarkblue'>jóvenes y adolescentes </strong>jóvenes y adolescentes necesitan para sentirse mejor,
+          Queremos entender qué es lo que los <strong className='text-hcadarkblue'>jóvenes y adolescentes </strong>jóvenes y adolescentes necesitan para sentirse mejor,
           guiándonos por preguntas que nos ayudan a <strong className='text-hcadarkblue'>comprender </strong> aspectos como la salud, aprendizaje, participación, entre otros.<br></br>
-          Estamos trabajando para dar respuesta a estas preguntas y hacer que los jóvenes y adolescentes cuenten con el respaldo,
+          Estamos trabajando para dar respuesta a estas preguntas y hacer que jóvenes y adolescentes cuenten con el respaldo,
           la confianza y los recursos necesarios para desarrollarse de forma <strong className='text-hcadarkblue'>segura y saludable.</strong>
         </p>
       </section>
