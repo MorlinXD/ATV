@@ -4,6 +4,8 @@ import ButtonOne from './Components/ButtonOne'
 import MainCarousel from './Components/MainCarousel'
 import ButtonQuevedo from './Components/ButtonQuevedo'
 import ButtonRiobamba from './Components/ButtonRiobamba'
+import VideoCarousel from './Components/VideoCarousel'
+import ButtonTwo from './Components/ButtonTwo'
 
 export default function Home () {
   const texts = [
@@ -35,6 +37,47 @@ export default function Home () {
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
         <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1>
         <MainCarousel texts={texts}/>
+      </section>
+
+      {/* ---------- Videos ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        {/* <h2 className='text-3xl text-hcadarkblue font-marker text-center font-bold '>¿Cómo nos sentimos?</h2>
+        <p className='text-black mt-10 text-justify'>
+          ¡Tenemos un montón de historias para contar, y lo hacemos a través del arte! Con un rap y un mural, ¡queremos alzar nuestra voz!
+        </p>
+        <p className='text-black my-10 text-justify'>
+          Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:
+        </p> */}
+        <div className='container mx-auto flex flex-col gap-10'>
+          <VideoCarousel videoUrls={['https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V', 'https://www.youtube.com/embed/wGrxMKPqlWI?si=Giz_HecY0ixUfkUf']} />
+        </div>
+      </section>
+
+      {/* ---------- Mapeo ---------- */}
+      <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
+        <h1 className='text-3xl text-hcadarkblue font-bold mt-5 font-marker'>Mapeo colaborativo en Quevedo y Riobamba</h1>
+        <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
+          <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
+            <span className='font-semibold text-hcadarkblue'>¡Ayúdanos a fortalecer la red de jóvenes y adolescentes en Quevedo y Riobamba!</span>
+            <br />
+            <br />
+            Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con jóvenes y adolescentes,
+            déjanos sus datos aquí!
+            Tu colaboración nos permitirá que más actores se sumen como aliados al proyecto "Alza Tu Voz".
+            <ButtonTwo
+              label='Formulario'
+              link='https://ee.kobotoolbox.org/x/KVdKs7lV'
+              target='_blank'
+            />
+          </p>
+          <Image
+            src="/images/pic-mapeo.png"
+            alt="Foto del grupo nucleo"
+            width={345}
+            height={256}
+            priority
+          />
+        </div>
       </section>
 
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">

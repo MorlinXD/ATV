@@ -26,7 +26,7 @@ export default function Header () {
       <div className="flex flex-wrap justify-between items-center p-4">
         <Link href="/">
           <Image
-            src="/logo-hce.png"
+            src="/logo-hce-2.png"
             alt="Logo Healthy Cities Ecuador"
             width={200}
             height={154}
