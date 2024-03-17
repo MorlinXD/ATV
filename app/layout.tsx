@@ -20,7 +20,7 @@ const permanentMarker = Permanent_Marker({
 
 export const metadata: Metadata = {
   title: 'Ciudades Saludables | LabXXI',
-  description: 'Plataforma para el proyecto de LabXXI'
+  description: 'Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba.'
 }
 
 export default function RootLayout ({
