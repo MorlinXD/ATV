@@ -4,7 +4,6 @@ import ButtonOne from './Components/ButtonOne'
 import MainCarousel from './Components/MainCarousel'
 import ButtonQuevedo from './Components/ButtonQuevedo'
 import ButtonRiobamba from './Components/ButtonRiobamba'
-import VideoCarousel from './Components/VideoCarousel'
 import ButtonTwo from './Components/ButtonTwo'
 
 export default function Home () {
@@ -41,15 +40,13 @@ export default function Home () {
 
       {/* ---------- Videos ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
-        {/* <h2 className='text-3xl text-hcadarkblue font-marker text-center font-bold '>¿Cómo nos sentimos?</h2>
-        <p className='text-black mt-10 text-justify'>
-          ¡Tenemos un montón de historias para contar, y lo hacemos a través del arte! Con un rap y un mural, ¡queremos alzar nuestra voz!
-        </p>
-        <p className='text-black my-10 text-justify'>
-          Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:
-        </p> */}
-        <div className='container mx-auto flex flex-col gap-10'>
-          <VideoCarousel videoUrls={['https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V', 'https://www.youtube.com/embed/wGrxMKPqlWI?si=Giz_HecY0ixUfkUf']} />
+        <div className="relative w-full lg:block" style={{ height: '350px' }} >
+          <iframe
+            src="https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V"
+            className='absolute top-0 left-0 w-full h-full'
+            allowFullScreen={true}
+            name="Dashboard Quevedo"
+          ></iframe>
         </div>
       </section>
 

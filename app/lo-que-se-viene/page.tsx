@@ -15,6 +15,18 @@ export default function LoQueSeViene () {
         />
       </section>
 
+      {/* ---------- Videos ---------- */}
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+        <div className="relative w-full lg:block" style={{ height: '350px' }} >
+          <iframe
+            src="https://www.youtube.com/embed/wGrxMKPqlWI?si=Giz_HecY0ixUfkUf"
+            className='absolute top-0 left-0 w-full h-full'
+            allowFullScreen={true}
+            name="Dashboard Quevedo"
+          ></iframe>
+        </div>
+      </section>
+
       {/* ---------- Intro ---------- */}
       <div className="container mx-auto flex flex-col justify-center items-center text-center">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Lo que se viene</h1>
