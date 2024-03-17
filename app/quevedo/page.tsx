@@ -74,20 +74,8 @@ export default function Home () {
       height: 1056
     },
     {
-      src: '/images/quevedo/galeria/gal-quevedo-13.webp',
-      alt: 'Imagen de gallería 13',
-      width: 1024,
-      height: 1056
-    },
-    {
       src: '/images/quevedo/galeria/gal-quevedo-14.webp',
       alt: 'Imagen de gallería 14',
-      width: 1024,
-      height: 1056
-    },
-    {
-      src: '/images/quevedo/galeria/gal-quevedo-15.webp',
-      alt: 'Imagen de gallería 15',
       width: 1024,
       height: 1056
     }
