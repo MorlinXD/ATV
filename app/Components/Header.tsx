@@ -8,20 +8,6 @@ export default function Header () {
   const [isOpen, setIsOpen] = useState(true)
 
   return (
-  // <header className='flex justify-between items-center px-8 py-4 w-full bg-white shadow-header'>
-  //     <Image
-  //       src="/logo-hce.png"
-  //       alt="Logo Healthy Cities Ecuador"
-  //       width={160}
-  //       height={122}
-  //       priority
-  //     />
-  //     <Navbar />
-  // </header>
-
-    // ---------------------------------------------------------------------
-    // <header className="bg-primary fixed w-full z-20 top-0 left-0 border-b">
-    // <header className="px-8 py-4 w-full shadow-header">
     <header className="container mx-auto">
       <div className="flex flex-wrap justify-between items-center p-4">
         <Link href="/">
