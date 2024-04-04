@@ -27,7 +27,10 @@ const config: Config = {
       hcadarkblue: '#02536C',
       hcalightblue: '#74C5CD',
       hcasilver: '#E8E7E7',
-      ecsilver: '#ACADAD'
+      ecsilver: '#ACADAD',
+      hcanewblue: '#4D7EE8',
+      hcaneworange: '#FFB51B',
+      hcablack: '#222222'
     }
   },
   plugins: []
