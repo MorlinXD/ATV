@@ -22,16 +22,27 @@ export default function Home () {
     }
   ]
   return (
-    <main className="flex min-h-screen flex-col items-center mt-16">
-      <section>
+    <main className="flex min-h-screen flex-col">
+      {/* <section>
         <Image
-          src="/hero-home-1.png"
+          src="/images/young-girl.webp"
           alt="Imagen de portada"
-          width={1440}
-          height={370}
+          width={1920}
+          height={500}
           priority
         />
-      </section>
+      </section> */}
+
+    {/* Hero */}
+    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero.webp\')' }}>
+      <div className="container mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 p-4 md:p-8">
+            <img src="/images/logo-hero.png" alt="Vector Image" className="w-auto h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
 
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
         <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1>
