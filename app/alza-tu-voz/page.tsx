@@ -4,9 +4,9 @@ import ButtonTwo from '../Components/ButtonTwo'
 
 export default function Home () {
   return (
-    <main className="flex min-h-screen flex-col items-center mt-16">
+    <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
-      <section>
+      {/* <section>
         <Image
           src="/hero-alza-tu-voz.png"
           alt="Imagen de portada"
@@ -14,37 +14,65 @@ export default function Home () {
           height={370}
           priority
         />
+      </section> */}
+
+      {/* ---------- Hero ---------- */}
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-atv-hero.webp\')' }}>
       </section>
 
       {/* ---------- Intro ---------- */}
-      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-16">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¡Ecuador en el mapa!</h1>
         <p className='text-black mt-10 text-center text-xl'>
           Ecuador es parte del programa <strong className='text-hcadarkblue'> "Ciudades Saludables para Adolescentes".</strong><br></br>
           ¿Las estrellas del show?
           <strong className='text-hcadarkblue'> ¡Quevedo y Riobamba!</strong>
         </p>
+      </section> */}
+      <section>
+        <div className='container mx-auto flex flex-col md:flex-row justify-center items-center'>
+          <div className="md:w-2/3 text-hcablack mx-4">
+            <h1 className='text-7xl font-bold mb-10'>
+              ¿Qué es<br/> alza tu voz?
+            </h1>
+            <p className='text-2xl mb-6 md:w-[750px]'>
+              "Alza Tu Voz" es un proyecto en el que junto a adolescentes y jóvenes de Quevedo y Riobamba hacemos que sus ciudades sean más chéveres, seguras y saludables.
+              <br />
+              <br />
+              Nos enfocamos en tres aspectos clave: aprender y crecer juntos, participar para ser escuchados, y cuidar nuestra salud mental y bienestar.
+            </p>
+          </div>
+          <div>
+            <Image
+                src="/images/atv-img-1.png"
+                alt="Mapa con lupa"
+                width={630}
+                height={684}
+              />
+          </div>
+        </div>
       </section>
 
       {/* ---------- Acerca del proyecto ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold'>Acerca del proyecto</h2>
-        <p className='text-black mt-10 text-justify'>
-          El programa <a href="https://www.fondationbotnar.org/project/the-botnar-healthy-cities-for-adolescents-program/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés)</a> fue lanzado entre 2018 y
-          2021 por <strong className='text-hcadarkblue'>Fundación Botnar</strong>, quien a nivel mundial busca propuestas innovadoras que pudieran hacer un gran cambio
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16"> */}
+      <section className="container mx-auto flex flex-col justify-center">
+        <h2 className='text-6xl text-left text-hcaneworange font-marker font-bold'>Acerca del<br /> proyecto</h2>
+        <p className='text-hcablack mt-10 text-justify text-2xl'>
+          El programa <a href="https://www.fondationbotnar.org/project/the-botnar-healthy-cities-for-adolescents-program/" target='_blank' rel='noreferrer' className='underline text-hcanewblue'>Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés)</a> fue lanzado entre 2018 y
+          2021 por <strong className='text-hcablack'>Fundación Botnar</strong>, quien a nivel mundial busca propuestas innovadoras que pudieran hacer un gran cambio
           en cómo funcionan las ciudades y fomentar la igualdad.
           Desde mayo de 2022, comenzó la segunda fase del programa HCA, con la misión de conocer las necesidades relacionadas con el
-          <strong className='text-hcadarkblue'> bienestar de los y las jóvenes de entre 14 y 19 años</strong>.
+          <strong className='text-hcablack'> bienestar de los y las jóvenes de entre 14 y 19 años</strong>.
         </p>
-        <p className='text-black mt-5 text-justify'>
-          En Ecuador, el programa "Ciudades Saludables para Adolescentes" cobra vida gracias a la iniciativa <strong className='text-hcadarkblue'> "Alza Tu Voz". </strong>
+        <p className='text-black mt-5 text-justify text-2xl'>
+          En Ecuador, el programa "Ciudades Saludables para Adolescentes" cobra vida gracias a la iniciativa <strong className='text-hcablack'> "Alza Tu Voz". </strong>
           Un proyecto liderado por LAB XXI en colaboración con socios y aliados locales: GAD de Quevedo, GAD de Riobamba, la Escuela Superior Politécnica de Chimborazo (ESPOCH) y Fundación Datalat.
-          Durante la <strong className='text-hcadarkblue'>primera etapa</strong>, que abarcó desde <strong className='text-hcadarkblue'>agosto hasta diciembre de 2023</strong>, creamos
+          Durante la <strong className='text-hcablack'>primera etapa</strong>, que abarcó desde <strong className='text-hcablack'>agosto hasta diciembre de 2023</strong>, creamos
           oportunidades para que chicos y chicas participen y compartan sus ideas y necesidades. En conjunto, desarrollamos un proyecto que transformará las dos ciudades.
         </p>
-        <p className='text-black mt-5 text-justify'>
-          Desde <strong className='text-hcadarkblue'>enero de 2024 hasta junio de 2026</strong>, estamos poniendo en marcha este proyecto en Riobamba y Quevedo. Nuestro objetivo principal es que adolescentes y jóvenes se empoderen
-          e <strong className='text-hcadarkblue'>involucren activamente en la mejora de sus ciudades </strong>. ¡Queremos crear espacios, tanto físicos como digitales, que promuevan la salud y el bienestar!
+        <p className='text-black mt-5 text-justify text-2xl'>
+          Desde <strong className='text-hcablack'>enero de 2024 hasta junio de 2026</strong>, estamos poniendo en marcha este proyecto en Riobamba y Quevedo. Nuestro objetivo principal es que adolescentes y jóvenes se empoderen
+          e <strong className='text-hcablack'>involucren activamente en la mejora de sus ciudades </strong>. ¡Queremos crear espacios, tanto físicos como digitales, que promuevan la salud y el bienestar!
         </p>
       </section>
 
