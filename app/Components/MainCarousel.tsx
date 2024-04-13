@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 interface CarouselProps {
   texts: Array<{
@@ -27,13 +27,14 @@ const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
 
   return (
 
-    <div id="indicators-carousel" className="relative w-full">
-      <div className="className='overflow-hidden mt-10 relative">
+    <div id="indicators-carousel" className=" w-full">
+      <div className="coverflow-hidden">
         {texts.map((e, index) => (
           <div key={index} className={index === activeIndex ? 'block duration-700 ease-in-out' : 'hidden duration-700 ease-in-out'}>
             <div className='flex flex-col justify-center items-center'>
-              <Image src="/carousel1.svg" alt="" width={1139} height={248} className='relative'/>
-              <p className='absolute font-marker text-hcadarkblue text-sm md:text-xl lg:text-3xl p-2 mx-2 lg:p-32 xl:p-48'>{e.text}</p>
+              {/* <Image src="/carousel1.svg" alt="" width={1139} height={248} className='relative'/> */}
+              {/* <p className='absolute font-marker font-bold text-hcablack text-sm md:text-xl lg:text-3xl p-2 mx-2 lg:p-32 xl:p-48'>{e.text}</p> */}
+              <p className='font-bold text-hcablack text-xl md:text-4xl lg:text-6xl p-2 mb-10'>{e.text}</p>
             </div>
           </div>
         ))}
@@ -44,7 +45,7 @@ const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
           <button
             key={index}
             type="button"
-            className={`w-3 h-3 md:w-4 md:h-4 rounded-full ${index === activeIndex ? 'bg-hcadarkblue' : 'bg-hcalightblue'}`}
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full ${index === activeIndex ? 'bg-hcanewblue' : 'bg-hcanewlightblue'}`}
             aria-current={index === activeIndex ? 'true' : 'false'}
             aria-label={`Slide ${index + 1}`}
             onClick={() => { setActiveIndex(index) }}>

@@ -45,46 +45,75 @@ export default function Home () {
     </section>
 
       <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
-        <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1>
+        {/* <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1> */}
         <MainCarousel texts={texts}/>
       </section>
 
+      <section>
+        <Image
+          src="/images/skyline.png"
+          alt="Imagen de portada"
+          width={1920}
+          height={415}
+          priority
+        />
+      </section>
+
       {/* ---------- Videos ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <div className="relative w-full lg:block" style={{ height: '350px' }} >
           <iframe
             src="https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V"
-            className='absolute top-0 left-0 w-full h-full'
+            className='absolute top-0 left-0 w-full h-full rounded-xl'
             allowFullScreen={true}
             name="Dashboard Quevedo"
           ></iframe>
         </div>
       </section>
 
-      {/* ---------- Mapeo ---------- */}
-      <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
-        <h1 className='text-3xl text-hcadarkblue font-bold mt-5 font-marker'>Mapeo colaborativo en Quevedo y Riobamba</h1>
+      {/* ---------- Form and Tools ---------- */}
+      {/* <section className=" flex flex-col justify-center items-center text-center mt-20" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}> */}
+      <section className="w-auto bg-cover" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}>
         <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
-          <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
-            <span className='font-semibold text-hcadarkblue'>¡Ayúdanos a fortalecer la red de jóvenes y adolescentes en Quevedo y Riobamba!</span>
-            <br />
-            <br />
-            Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con jóvenes y adolescentes,
-            déjanos sus datos aquí!
-            Tu colaboración nos permitirá que más actores se sumen como aliados al proyecto "Alza Tu Voz".
-            <ButtonTwo
-              label='Formulario'
-              link='https://ee.kobotoolbox.org/x/KVdKs7lV'
-              target='_blank'
-            />
-          </p>
+          <div className='mx-10 lg:mx-20'>
+            <h2 className='text-4xl text-hcaneworange font-bold mt-10'>¡Ayúdanos a fortalecer la red de jóvenes y adolescentes
+              en <span className='text-hcanewblue'>Quevedo y Riobamba!</span>
+            </h2>
+            <p className='text-hcablack mt-10 text-justify'>
+              <span className='font-semibold text-hcaneworange'>Mapeo Colaborativo</span>
+              <br />
+              Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con jóvenes y adolescentes,
+              déjanos sus datos aquí!
+              Tu colaboración nos permitirá que más actores se sumen como aliados al proyecto "Alza Tu Voz".
+              <ButtonTwo
+                label='Formulario'
+                link='https://ee.kobotoolbox.org/x/KVdKs7lV'
+                target='_blank'
+              />
+            </p>
+          </div>
           <Image
-            src="/images/pic-mapeo.png"
+            src="/images/new-pic-mapeo.webp"
             alt="Foto del grupo nucleo"
-            width={345}
-            height={256}
+            width={518}
+            height={621}
             priority
           />
+        </div>
+
+        <div className="relative text-right bg-cover bg-center py-28 my-36 mx-20" style={{ backgroundImage: "url('/images/tools-background.png')" }}>
+          <div className=" max-w-6xl mx-auto px-4 py-16 my-10 flex flex-col items-end justify-center">
+            <h2 className="text-5xl text-white font-bold mt-20">Conoce nuestras herramientas</h2>
+            <p className="text-xl mt-4 text-white">
+              ¡Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en todo el mundo!
+              En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
+            </p>
+            <p className='font-semibold text-white mb-10'>¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</p>
+            <ButtonTwo
+              label='Ver más...'
+              link='/como-lo-hacemos#herramientas'
+            />
+          </div>
         </div>
       </section>
 

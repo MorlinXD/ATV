@@ -29,6 +29,7 @@ const config: Config = {
       hcasilver: '#E8E7E7',
       ecsilver: '#ACADAD',
       hcanewblue: '#4D7EE8',
+      hcanewlightblue: '#D0DDF8',
       hcaneworange: '#FFB51B',
       hcablack: '#222222'
     }
