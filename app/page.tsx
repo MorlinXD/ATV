@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-import ButtonOne from './Components/ButtonOne'
+// import ButtonOne from './Components/ButtonOne'
 import MainCarousel from './Components/MainCarousel'
 import ButtonQuevedo from './Components/ButtonQuevedo'
 import ButtonRiobamba from './Components/ButtonRiobamba'
@@ -120,20 +120,20 @@ export default function Home () {
       {/* ---------- Where work --------------- */}
       <section className="w-auto bg-cover" style={{ backgroundImage: 'url(\'/images/ww-background.png\')' }}>
         <div className='container mx-auto flex flex-col md:flex-row justify-center h-[61rem] items-center'>
-          <div className="md:w-2/3 text-white mx-4">
+          <div className="md:w-2/3 text-white mx-4 mt-20">
             <h1 className='text-5xl font-bold mb-6'>Conoce dónde trabajamos</h1>
             <p className='text-xl mb-6'>
               El proyecto se implementa en Quevedo y Riobamba, ciudades en la que fomentamos espacios físicos y digitales
               que prioricen la salud y el bienestar de adolescentes y jóvenes.
             </p>
             <div className='flex flex-col md:flex-row'>
-              <ButtonOne
-                label='Ver más...'
-                link='/como-lo-hacemos#herramientas'
+              <ButtonRiobamba
+                label='Riobamba'
+                link='/riobamba'
               />
-              <ButtonOne
-                label='Ver más...'
-                link='/como-lo-hacemos#herramientas'
+              <ButtonQuevedo
+                label='Quevedo'
+                link='/quevedo'
               />
             </div>
           </div>
@@ -147,36 +147,6 @@ export default function Home () {
           </div>
         </div>
       </section>
-
-      <section className='container mx-auto my-5 lg:my-10 px-8 md:px-16'>
-        <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold my-10'>¿Dónde trabajamos?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
-            {/* <!-- The left top cell --> */}
-            <div className="bg-green-500 p-4 flex justify-center items-center">
-              <ButtonQuevedo
-                label='Quevedo'
-                link='/quevedo'
-              />
-            </div>
-            {/* <!-- Merged cell on the left side for larger screens --> */}
-            <div className="md-col-start-2 md:row-span-2 md:col-span-1 p-4 flex justify-center items-center">
-              <Image
-                src="/images/ec-map.png"
-                alt="Mapa de la ciudad de Quevedo"
-                width={640}
-                height={603}
-              />
-            </div>
-            {/* <!-- The left bottom cell --> */}
-            <div className="bg-green-500 p-4 flex justify-center items-center">
-              <ButtonRiobamba
-                label='Riobamba'
-                link='/riobamba'
-              />
-            </div>
-        </div>
-
-      </section >
     </main>
   )
 }
