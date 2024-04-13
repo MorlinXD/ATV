@@ -108,7 +108,7 @@ export default function Home () {
               ¡Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en todo el mundo!
               En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
             </p>
-            <p className='font-semibold text-white 2xl:mb-6'>¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</p>
+            <p className=' text-xl font-semibold text-white 2xl:mb-6'>¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</p>
             <ButtonTwo
               label='Ver más...'
               link='/como-lo-hacemos#herramientas'
@@ -117,24 +117,34 @@ export default function Home () {
         </div>
       </section>
 
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-4xl text-left text-hcadarkblue font-marker font-bold mt-10'>Conoce nuestras herramientas</h2>
-        <div className='flex flex-col md:flex-row justify-center items-center gap-10'>
-          <p className='text-black mt-10 text-justify'>
-            ¡Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en
-            todo el mundo!
-            <br />
-            <br />
-            En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando
-            para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
-            <br />
-            <br />
-            <span className='font-semibold text-hcadarkblue'> ¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</span>
-          </p>
-          <ButtonOne
-            label='Ver más...'
-            link='/como-lo-hacemos#herramientas'
-          />
+      {/* ---------- Where work --------------- */}
+      <section className="w-auto bg-cover" style={{ backgroundImage: 'url(\'/images/ww-background.png\')' }}>
+        <div className='container mx-auto flex flex-col md:flex-row justify-center h-[61rem] items-center'>
+          <div className="md:w-2/3 text-white mx-4">
+            <h1 className='text-5xl font-bold mb-6'>Conoce dónde trabajamos</h1>
+            <p className='text-xl mb-6'>
+              El proyecto se implementa en Quevedo y Riobamba, ciudades en la que fomentamos espacios físicos y digitales
+              que prioricen la salud y el bienestar de adolescentes y jóvenes.
+            </p>
+            <div className='flex flex-col md:flex-row'>
+              <ButtonOne
+                label='Ver más...'
+                link='/como-lo-hacemos#herramientas'
+              />
+              <ButtonOne
+                label='Ver más...'
+                link='/como-lo-hacemos#herramientas'
+              />
+            </div>
+          </div>
+          <div>
+            <Image
+                src="/images/glass.png"
+                alt="Mapa con lupa"
+                width={937}
+                height={885}
+              />
+          </div>
         </div>
       </section>
 
