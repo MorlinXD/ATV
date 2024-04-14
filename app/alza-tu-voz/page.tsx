@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-import ButtonTwo from '../Components/ButtonTwo'
+import AtvTabs from '../Components/AtvTabs'
+// import ButtonTwo from '../Components/ButtonTwo'
 
 export default function Home () {
   return (
@@ -90,15 +91,22 @@ export default function Home () {
         </div>
       </section>
 
+      {/* ---------- Title with svg ---------- */}
+      <section className='flex flex-col md:flex-row'>
+        <div className='w-1/2'>
+          <img src='/images/onda.png' alt="Onda" />
+        </div>
+        <h2 className='text-6xl text-hcaneworange font-bold mx-4'>¿Cómo lo creamos?</h2>
+      </section>
+
       {/* ---------- ¿Dónde trabajamos? ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>¿Dónde trabajamos?</h2>
-        <p className='text-black mt-10 text-justify'>
-          ¡Trabajamos en Quevedo y Riobamba! Elegimos estas ciudades porque, a pesar de los obstáculos que enfrentan los
-          adolescentes y jóvenes, sabemos que tienen una buena oportunidad para integrarlos a su comunidad y
-          colaborar con quienes se preocupan por su salud y bienestar.
+        <p className='text-hcablack text-2xl text-center'>
+          Centramos nuestras acciones en comprender las necesidades de adolescentes y jóvenes para mejorar su bienestar.
+          Nos guiamos mediante preguntas que nos permitieron abordar aspectos clave como la salud, la protección, el aprendizaje,
+          el sentido de pertenencia y participación, la formación y empleo, así como su capacidad para ser agentes de cambio.
         </p>
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+        {/* <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <Image
               src="/images/quevedo-map.svg"
@@ -122,6 +130,32 @@ export default function Home () {
               label='Riobamba'
               link='/riobamba'
             />
+          </div>
+        </div> */}
+      </section>
+
+      <section>
+        <div className='container mx-auto flex flex-col md:flex-row gap-20'>
+          <div className="md:w-1/3 mx-4">
+            <Image
+                src="/images/atv-img-2.png"
+                alt="Mapa con lupa"
+                width={595}
+                height={1080}
+              />
+          </div>
+          <div className='md:w-2/3 bg-hcanewblue rounded-[4rem] mx-4'>
+            <div className='p-4 flex flex-col mt-20 mb-4'>
+              <h3 className='text-4xl font-bold text-white mb-8'>Este fue nuestro proceso</h3>
+              <p className='text-2xl text-white mb-8 text-justify'>
+                Durante el período entre julio y diciembre de 2023, llevamos a cabo la primera fase,
+                donde fomentamos la participación activa de adolescentes y jóvenes de Quevedo y Riobamba
+                en la co-creación del proyecto "Alza Tu Voz".
+              </p>
+              <div>
+                <AtvTabs />
+              </div>
+            </div>
           </div>
         </div>
       </section>
