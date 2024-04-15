@@ -1,9 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import AtvTabs from '../Components/AtvTabs'
+import Carousel from '../Components/Carousel'
 // import ButtonTwo from '../Components/ButtonTwo'
 
 export default function Home () {
+  const images = [
+    '/images/riobamba/riobamba-1.png',
+    '/images/riobamba/riobamba-2.png'
+  ]
   return (
     <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
@@ -193,6 +198,18 @@ export default function Home () {
             height={1333}
             priority
           />
+        </div>
+      </section>
+
+      {/* ---------- Grupo núcleo ----------  */}
+      <section>
+        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
+          <h2 className='text-6xl text-center text-hcaneworange font-bold '>!Nuestros grupos núcleo son<br /> los protagonistas¡</h2>
+          <p className='text-hcablack text-2xl text-center mt-10 mb-20'>
+            Cada ciudad cuenta con un grupo núcleo con adolescentes y jóvenes lideres en su comunidad para aportar,
+            dar voz a sus ideas e incidir durante todo el proyecto
+          </p>
+          <Carousel images={images} />
         </div>
       </section>
 
