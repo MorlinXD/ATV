@@ -113,9 +113,9 @@ export default function Home () {
 
   return (
 
-    <main className="flex min-h-screen flex-col items-center mt-16">
+    <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
-      <section>
+      {/* <section>
         <Image
           src="/images/riobamba/hero-riobamba.png"
           alt="Imagen de portada"
@@ -123,10 +123,44 @@ export default function Home () {
           height={370}
           priority
         />
-      </section>
+      </section> */}
+
+      {/* ---------- Hero ----------- */}
+    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero.webp\')' }}>
+      <div className="container mx-auto px-4 py-12">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2 p-4 md:p-8">
+            <img src="/images/logo-hero.png" alt="Vector Image" className="w-auto h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- Intro ---------- */}
+    <section className='container mx-auto flex flex-col justify-center items-center '>
+      <div className='flex flex-col items-center'>
+        <Image
+          src="/images/rocket-icon.svg"
+          alt="Rocket icon"
+          width={75}
+          height={75}
+        />
+        <h3 className='text-4xl mt-4 font-bold text-hcablack'>¿Cómo iniciamos?</h3>
+      </div>
+      <h2 className='text-6xl mt-4 font-bold text-hcanewblue text-center'>¡Conformamos el grupo núcleo en <strong className='text-hcaneworange'>Riobamba!</strong></h2>
+      <p className='text-2xl mt-4 text-hcablack text-center'>
+        Somos un grupo de adolescentes y jóvenes de diferentes partes de Riobamba que conocimos acerca de la iniciativa "Alza Tu Voz" y
+        vimos una oportunidad de transformar nuestros entornos.
+        <br />
+        <br />
+        Nos interesa aportar al desarrollo de Riobamba, al bienestar de todas y todos los jóvenes. Por esto, nos unimos a este increíble
+        programa, para ser agentes de cambio y levantar nuestras voces e ideas.
+      </p>
+      <p className='text-2xl mt-4 text-hcablack font-bold text-center'>¡Juntas y juntos convertiremos a Riobamba en una ciudad más saludable!</p>
+    </section>
 
       {/* ---------- Intro ---------- */}
-      <div className="container mx-auto flex flex-col justify-center items-center text-center">
+      {/* <div className="container mx-auto flex flex-col justify-center items-center text-center">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Riobamba</h1>
         <p className='text-black mt-10 text-justify mx-10 lg:mx-60 xl:mx-72 text-xl mb-5 leading-10'>
           Estamos trabajando en conjunto para construir una Riobamba más saludable e incluyente.
@@ -149,7 +183,7 @@ export default function Home () {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* ---------- Grupo nucleo ---------- */}
       <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
