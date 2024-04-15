@@ -134,18 +134,24 @@ export default function Home () {
         </div> */}
       </section>
 
-      <section>
-        <div className='container mx-auto flex flex-col md:flex-row gap-20'>
-          <div className="md:w-1/3 mx-4">
-            <Image
+      {/* Este fue nuestro proceso */}
+      <section className='relative'>
+        <div className='container mx-auto flex flex-col md:flex-row gap-10 md:gap-20'>
+          <div className="md:w-1/3 mx-4 relative">
+            {/* <Image
                 src="/images/atv-img-2.png"
                 alt="Mapa con lupa"
                 width={595}
                 height={1080}
-              />
+              /> */}
+              <iframe
+              src="https://www.youtube.com/embed/wGrxMKPqlWI?si=9Id0xjvGZYZp6zbP"
+              className='w-full h-96 md:h-full rounded-[4rem]'
+              name="Video"
+            ></iframe>
           </div>
           <div className='md:w-2/3 bg-hcanewblue rounded-[4rem] mx-4'>
-            <div className='p-4 flex flex-col mt-20 mb-4'>
+            <div className='p-2 md:p-8 flex flex-col mt-20 mb-10 md:mb-4'>
               <h3 className='text-4xl font-bold text-white mb-8'>Este fue nuestro proceso</h3>
               <p className='text-2xl text-white mb-8 text-justify'>
                 Durante el período entre julio y diciembre de 2023, llevamos a cabo la primera fase,
@@ -158,10 +164,40 @@ export default function Home () {
             </div>
           </div>
         </div>
+        <div className='absolute -z-50 w-full bottom-0'>
+          <Image
+            src="/images/top-city.png"
+            alt="Imagen de portada"
+            layout='responsive'
+            width={1920}
+            height={250}
+            priority
+          />
+        </div>
+      </section>
+
+      {/* ---------- Consorcio ---------- */}
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16"> */}
+      <section className="bg-hcanewmelon">
+        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
+          <h2 className='text-6xl text-center text-hcaneworange font-bold '>!Así nos organizamos para<br/> alzar nuestras voces¡</h2>
+          <p className='text-hcablack text-2xl text-center mt-10'>
+            Nos hemos unido en un equipo poderoso liderado por LAB XXI, donde trabajamos en conjunto con la Alcaldía de Quevedo,
+            la Alcaldía de Riobamba, la ESPOCH, la Fundación Datalat y los grupos núcleos de Riobamba y Quevedo.
+            ¡Juntos hacemos de estas ciudades más saludables!
+          </p>
+          <Image
+            src="/images/grupo-nucleo.png"
+            alt="Foto grupo nucleo"
+            width={1304}
+            height={1333}
+            priority
+          />
+        </div>
       </section>
 
       {/* ---------- Etapas ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-10'>¿Cómo construimos el proyecto?</h2>
         <p className='text-black text-justify'>
           Te contamos sobre el trabajo que realizamos entre agosto y diciembre de 2023, para construir en conjunto un proyecto que transformará Quevedo y Riobamba.
@@ -217,10 +253,10 @@ export default function Home () {
               </li>
           </ol>
 
-      </section>
+      </section> */}
 
       {/* ---------- Conócenos ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold mb-10'>¡Así nos organizamos para alzar nuestras voces!</h2>
         <p className='text-black text-justify'>
           Para alzar nuestras voces, nos organizamos en un equipo poderoso, liderado por <a href="https://lab-xxi.com/" target='_blank' rel='noreferrer' className='underline text-hcalightblue'>LABXXI</a> y
@@ -238,7 +274,7 @@ export default function Home () {
               priority
             />
 
-        {/* <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Lab XXI</h3>
+        <h3 className='flex justify-center text-2xl text-hcadarkblue font-marker font-bold mt-10'>Lab XXI</h3>
         <div className='flex flex-col md:flex-row justify-center gap-10 items-center mt-10 mx-10 lg:mx-32'>
           <Link href='https://lab-xxi.com/' target='_blank'>
             <Image
@@ -334,8 +370,8 @@ export default function Home () {
               promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.
             </p>
           </div>
-        </div> */}
-      </section>
+        </div>
+      </section> */}
     </main>
   )
 }

@@ -101,7 +101,7 @@ export default function Home () {
           />
         </div>
 
-        <div className="relative text-right bg-cover bg-center pt-28 pb-8 xl:pt-10 xl:pb-10 xl:my-10 xl:mx-4 2xl:pt-28 2xl:pb-10 2xl:my-20 2xl:mx-8" style={{ backgroundImage: "url('/images/tools-background.png')" }}>
+        <div className="relative text-right bg-cover bg-center pt-28 pb-8 xl:pt-10 xl:pb-10 xl:my-10 xl:mx-4 2xl:pt-40 2xl:pb-10 2xl:my-20 2xl:mx-8" style={{ backgroundImage: "url('/images/tools-background.png')" }}>
           <div className=" max-w-6xl mx-auto px-4 py-16 my-10 flex flex-col items-end justify-center">
             <h2 className="text-5xl text-white font-bold mt-20">Conoce nuestras herramientas</h2>
             <p className="text-xl mt-4 text-white">
