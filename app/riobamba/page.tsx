@@ -159,6 +159,106 @@ export default function Home () {
       <p className='text-2xl mt-4 text-hcablack font-bold text-center'>¡Juntas y juntos convertiremos a Riobamba en una ciudad más saludable!</p>
     </section>
 
+    {/* ---------- Testimonios ---------- */}
+    <section className='relative'>
+      <div className='container mx-auto flex flex-col md:flex-row lg:mt-96 xl:mt-[30rem] justify-center items-center gap-96'>
+        <div className="flex justify-center md:p-4">
+          <Image
+            src="/images/riobamba/testimonio-1-riobamba.png"
+            alt="Primer testimonio"
+            width={567}
+            height={298}
+          />
+        </div>
+        <div className="flex justify-center md:p-4">
+          <Image
+            src="/images/riobamba/testimonio-1-riobamba.png"
+            alt="Primer testimonio"
+            width={567}
+            height={298}
+          />
+        </div>
+      </div>
+      <div className='absolute -z-50 w-full -top-20'>
+        <Image
+          src="/images/comments-background.png"
+          alt="Imagen de portada"
+          layout='responsive'
+          width={1920}
+          height={300}
+          priority
+        />
+      </div>
+    </section>
+
+    {/* ---------- Como nos sentimos ---------- */}
+    <section className='container mx-auto flex flex-col justify-center items-center mt-20'>
+      <div className='flex flex-col items-center'>
+        <Image
+          src="/images/happy-icon.svg"
+          alt="Happy icon"
+          width={75}
+          height={75}
+        />
+        <h2 className='text-6xl mt-4 font-bold text-hcablack text-center'>¿Cómo nos sentimos?</h2>
+      </div>
+      <p className='text-2xl mt-4 text-hcablack text-center'>
+        <span className='font-bold'>¡Tenemos un montón de historias para contar, y lo hacemos a través del arte!</span><br/>Con un rap y un mural, ¡queremos alzar nuestra voz!
+      </p>
+      <p className='text-2xl mt-4 text-hcablack text-center'>Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:</p>
+      <div className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
+        <div className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+        <div className="relative w-full lg:block">
+          <VideoCarousel videoUrls={['https://www.youtube.com/embed/Ss4d2bt2ePA?si=IpwZWwV1HKB2OWFp', 'https://www.youtube.com/embed/cb_ou_ru8Fk?si=ruAUwTtu8fdD7Dm0']} />
+            {/* <iframe
+              src="https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V"
+              className='absolute top-0 left-0 w-full h-full rounded-xl'
+              allowFullScreen={true}
+              name="Dashboard Quevedo"
+            ></iframe> */}
+          </div>
+        </div>
+      </div>
+      <p className='text-2xl mt-4 text-hcablack text-center mb-6'>
+        <span className='font-bold'>Conoce nuestro mural:</span>
+      </p>
+      <Carousel images={images} />
+    </section>
+
+    {/* ---------- Mapas parlantes ---------- */}
+    <section className='container mx-auto flex flex-col justify-center items-center mt-20'>
+      <div className='flex flex-col items-center'>
+        <Image
+          src="/images/grupo-icon-orange.svg"
+          alt="Group icon"
+          width={75}
+          height={75}
+        />
+        <h2 className='text-6xl mt-4 font-bold text-hcablack text-center'>¿Cómo percibimos nuestra ciudad?</h2>
+      </div>
+      <p className='text-2xl mt-4 text-hcablack text-center'>
+        Creamos mapas parlantes que cuentan cómo las y los jóvenes y adolescentes nos relacionamos con<br/> Riobamba y cómo nos gustaría que se transforme.
+      </p>
+      <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/riobamba/rio-mapa-parlante-1.png"
+              alt="Mapa parlante la Riobamba que soñamos"
+              width={602}
+              height={535}
+            />
+          </div>
+          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+            <Image
+              src="/images/riobamba/rio-mapa-parlante-2.png"
+              alt="Mapa parlante Riobamba transfórmate"
+              width={616}
+              height={535}
+            />
+          </div>
+        </div>
+    </section>
+
       {/* ---------- Intro ---------- */}
       {/* <div className="container mx-auto flex flex-col justify-center items-center text-center">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Riobamba</h1>
@@ -186,7 +286,7 @@ export default function Home () {
       </div> */}
 
       {/* ---------- Grupo nucleo ---------- */}
-      <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
+      {/* <section className=" container mx-auto flex flex-col justify-center items-center text-center mt-20">
         <h1 className='text-3xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo iniciamos? <br /> ¡Conformamos el grupo núcleo!</h1>
         <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
           <p className='text-black mt-10 text-justify mx-10 lg:mx-20'>
@@ -228,10 +328,10 @@ export default function Home () {
               />
             </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Videos ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
         <h2 className='text-3xl text-hcadarkblue font-marker text-center font-bold '>¿Cómo nos sentimos?</h2>
         <p className='text-black mt-10 text-justify'>
           ¡Tenemos un montón de historias para contar, y lo hacemos a través del arte! Con un rap y un mural, ¡queremos alzar nuestra voz!
@@ -246,10 +346,10 @@ export default function Home () {
           </p>
           <Carousel images={images} />
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Mapas parlantes ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
         <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>¿Cómo percibimos nuestra ciudad?</h2>
         <p className='text-black mt-10 text-justify'>
           Creamos <strong className='text-hcadarkblue'>mapas parlantes</strong> que cuentan cómo las y los jóvenes y adolescentes nos relacionamos con Riobamba y cómo nos
@@ -273,7 +373,7 @@ export default function Home () {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Mapas Interactivo ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
