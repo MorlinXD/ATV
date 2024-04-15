@@ -20,15 +20,15 @@ const Tabs: FC<TabsProps> = ({ children }) => {
 
   return (
     <div className="container mx-auto">
-      <div className="flex border-b border-hcalightblue">
+      <div className="flex border-b border-hcaneworange">
         {children.map((child: any) => (
           <button
             key={child.props.label}
             className={`${
               activeTab === child.props.label
-                ? 'border-b-4 border-hcalightblue text-hcalightblue text-xl'
+                ? 'border-b-4 border-hcanewblue text-hcanewblue text-xl'
                 : ''
-            } flex-1 font-marker text-hcadarkblue text-primary lg:text-4xl py-2`}
+            } flex-1 font-marker text-hcablack text-primary lg:text-4xl py-2`}
             onClick={(e) => { handleClick(e, child.props.label) }}
           >
             {child.props.label}

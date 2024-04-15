@@ -259,6 +259,149 @@ export default function Home () {
         </div>
     </section>
 
+    {/* ---------- Image top city ---------- */}
+    <div className='w-full bottom-0'>
+      <Image
+        src="/images/top-city.png"
+        alt="Imagen de portada"
+        layout='responsive'
+        width={1920}
+        height={250}
+        priority
+      />
+    </div>
+
+    {/* ---------- Mapas Interactivo ---------- */}
+    <section className='bg-hcanewmelon'>
+      <div className='container mx-auto flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center'>
+          <Image
+            src="/images/group-icon-black.svg"
+            alt="Group icon"
+            width={75}
+            height={75}
+          />
+          <h2 className='text-6xl mt-4 font-bold text-hcaneworange text-center'>¿Cómo quisiéramos que sea<br/> nuestra vida y nuestra ciudad?</h2>
+        </div>
+        <p className='text-2xl mt-4 text-hcablack text-center'>
+          Es muy emocionante compartir algunas de las aspiraciones y sueños que surgieron al imaginar nuestro <br/> futuro. Es interesante ver cómo varían según la parroquia en la que vivimos.
+        </p>
+      </div>
+      <div className="container mx-auto flex justify-center mt-10 mb-20">
+        <div className="w-11/12">
+          <div className="relative pt-30 lg:pt-0" style={{ paddingBottom: '100%' }}>
+            <iframe title="Mapa interactivo Riobamba" frameBorder="0" width="1200" height="675" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%' }} src="https://view.genial.ly/6578dd5d4e475f0014b2cfe7/dossier-reporting-copy-quevedo" scrolling='no' ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* ---------- Dashboard de resultados ---------- */}
+    <section className='bg-hcanewmelon'>
+      <div className='container mx-auto flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center'>
+          <Image
+            src="/images/dashboard-icon.svg"
+            alt="Dashboard icon"
+            width={75}
+            height={75}
+          />
+          <h2 className='text-6xl mt-4 font-bold text-hcanewblue text-center'>Riobamba en Datos</h2>
+        </div>
+        <p className='text-2xl mt-4 text-hcablack text-center mb-10'>
+          ¡Nuestra voz es importante! Por eso, participamos de encuestas por Whatsapp para contar nuestra experiencia en Riobamba y cómo pensamos que podríamos mejorarla.
+          <br/>
+          <br/>
+          Los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi futuro" tienen datos que dicen mucho sobre nosotros, las y los jóvenes. ¡Y nos ayudan a levantar nuestra voz aún más alto!
+          <br/>
+          <br/>
+          Conócelos, navegando en el visualizador de datos. ¡Te invitamos a descubrir lo que estamos pensando!
+        </p>
+      </div>
+      <Tabs>
+          <Tab label="Mi ciudad y yo">
+            <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0ZDE0YmMtYmIwMi00ZWUzLWE1NDMtODY5M2U0NTU3ZGQ2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Riobamba"
+              ></iframe>
+            </div>
+            {/* Dashboard responsive */}
+            <div className="relative w-full h-96 lg:hidden" >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiODUxMWZmNjUtYzhlNi00NjUxLTlhOGYtMDhhMWNmMjUyYjI0IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Riobamba"
+              ></iframe>
+            </div>
+          </Tab>
+          <Tab label="Imaginando mi futuro">
+            <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiYWE1ZTE2NWMtYTAxYy00MTg0LTg3OWMtMTY0ZTViNDczYzNmIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Riobamba"
+              ></iframe>
+            </div>
+            {/* Dashboard responsive */}
+            <div className="relative w-full h-96 lg:hidden" >
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiMTUyNjU1OWQtZmY2Ni00NjMzLWFkOTEtYTkwMTQ5YzI4M2MzIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                className='absolute top-0 left-0 w-full h-full'
+                allowFullScreen={true}
+                name="Dashboard Riobamba"
+              ></iframe>
+            </div>
+          </Tab>
+        </Tabs>
+        <div className='container mx-auto flex flex-col justify-center items-center'>
+          <p className='text-2xl mt-4 text-hcablack text-center'>
+            Támbien te dejamos un análisis de completo de cada uno de las encuestas para que puedas conocer
+            más sobre lo que sucede en Riobamba.
+          </p>
+          <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+            <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+              <ButtonTwo
+                label='Análisis “Mi ciudad y yo”'
+                link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
+                target='_blank'
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
+              <ButtonTwo
+                label='Análisis “Imaginando mi futuro”'
+                link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
+                target='_blank'
+              />
+            </div>
+          </div>
+        </div>
+    </section>
+
+    {/* ---------- Galería ---------- */}
+    <section className='mt-20'>
+      <div className='container mx-auto flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center'>
+          <Image
+            src="/images/gallery-icon.svg"
+            alt="Gallery icon"
+            width={75}
+            height={75}
+          />
+          <h2 className='text-6xl mt-4 font-bold text-hcaneworange text-center'>¡Las imágenes hablan más que mil palabras!</h2>
+        </div>
+        <p className='text-2xl mt-4 text-hcablack text-center mb-10'>
+          Estas son algunas fotografías de Riobamba en acción mientras alzamos nuestra voz:
+        </p>
+      </div>
+      <div className='container mx-auto mt-10 p-4 my-5 lg:my-10 px-8 md:px-16'>
+        <ImageGallery galleries={galleries} />
+      </div>
+    </section>
       {/* ---------- Intro ---------- */}
       {/* <div className="container mx-auto flex flex-col justify-center items-center text-center">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>Riobamba</h1>
@@ -376,7 +519,7 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Mapas Interactivo ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16 mt-20">
         <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>¿Cómo quisiéramos que sea nuestra vida y nuestra ciudad?</h2>
         <p className='text-black mt-10 text-justify'>
           Es muy emocionante compartir algunas de las aspiraciones y sueños que surgieron al imaginar nuestro futuro. Es interesante ver cómo varían según la parroquia en la que vivimos.
@@ -388,10 +531,10 @@ export default function Home () {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Dashboard de resultados ---------- */}
-      <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
+      {/* <section className="container mx-auto flex flex-col justify-center items-center text-center mt-10">
         <h2 className='text-3xl text-hcadarkblue font-bold font-marker'>Riobamba en Datos</h2>
         <p className='text-black my-10 text-justify px-8 md:px-16'>
           ¡Nuestra voz es importante! Por eso, participamos de encuestas por Whatsapp para contar nuestra
@@ -414,7 +557,6 @@ export default function Home () {
                 name="Dashboard Riobamba"
               ></iframe>
             </div>
-            {/* Dashboard responsive */}
             <div className="relative w-full h-96 lg:hidden" >
               <iframe
                 src="https://app.powerbi.com/view?r=eyJrIjoiODUxMWZmNjUtYzhlNi00NjUxLTlhOGYtMDhhMWNmMjUyYjI0IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
@@ -433,7 +575,6 @@ export default function Home () {
                 name="Dashboard Riobamba"
               ></iframe>
             </div>
-            {/* Dashboard responsive */}
             <div className="relative w-full h-96 lg:hidden" >
               <iframe
                 src="https://app.powerbi.com/view?r=eyJrIjoiMTUyNjU1OWQtZmY2Ni00NjMzLWFkOTEtYTkwMTQ5YzI4M2MzIiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
@@ -460,10 +601,10 @@ export default function Home () {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Galería ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-center text-hcadarkblue font-marker font-bold '>Riobamba en acción</h2>
         <p className='text-black mt-10 text-justify'>
           ¡Las imágenes hablan más que mil palabras!
@@ -474,7 +615,8 @@ export default function Home () {
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>
-      </section>
+      </section> */}
+
     </main>
   )
 }
