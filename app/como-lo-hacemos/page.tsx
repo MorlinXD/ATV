@@ -1,12 +1,13 @@
-'use client'
+// 'use client'
 /* eslint-disable react/no-unescaped-entities */
 // import React, { useState } from 'react'
 import Image from 'next/image'
-import ButtonTwo from '../Components/ButtonTwo'
+// import ButtonTwo from '../Components/ButtonTwo'
 
 // import PillarModal from '../Components/PillarModal'
-import ImageGallery from '../Components/ImageGallery'
+// import ImageGallery from '../Components/ImageGallery'
 import FlipCard from '../Components/FlipCard'
+import DownloadButton from '../Components/DownloadButton'
 
 // interface ImageModalProps {
 //   src: string
@@ -46,38 +47,38 @@ export default function Home () {
   // const [isModalOpen, setModalOpen] = useState<boolean>(false)
 
   const cardsInfo = [
-    { title: 'Formación y aprendizaje', src: '/images/clh-icon.svg', alt: 'Formación y aprendizaje', question: 'Destacamos la importancia de crear entornos de aprendizaje seguros a través de empoderar a los docentes, introducir metodologías innovadoras e implementar vías de aprendizaje adaptadas a los intereses de las y los adolescentes.' },
-    { title: 'Participación e incidencia', src: '/images/clh-icon.svg', alt: 'Participación e incidencia', question: 'Nos centramos en dotar a los adolescentes de redes y capacidades para influir en las políticas locales, combinando herramientas de incidencia físicas y digitales.' },
-    { title: 'Salud mental', src: '/images/clh-icon.svg', alt: 'Salud mental', question: 'Nuestro objetivo es establecer espacios seguros para que  adolescentes y jóvenes aprendan sobre salud mental a través de actividades artísticas y deportivas, desde un enfoque interseccional.' },
-    { title: 'Fortalecimiento digital', src: '/images/clh-icon.svg', alt: 'Fortalecimiento digital', question: 'Buscamos generar oportunidades globales mediante el fortalecimiento de habilidades digitales, el uso de herramientas tecnológicas y los datos para promover la participación e incidencia desde los adolescentes y jóvenes.' }
+    { title: 'Formación y aprendizaje', src: '/images/formacion-icon.svg', alt: 'Formación y aprendizaje', question: 'Destacamos la importancia de crear entornos de aprendizaje seguros a través de empoderar a los docentes, introducir metodologías innovadoras e implementar vías de aprendizaje adaptadas a los intereses de las y los adolescentes.' },
+    { title: 'Participación e incidencia', src: '/images/pertenencia-icon.svg', alt: 'Participación e incidencia', question: 'Nos centramos en dotar a los adolescentes de redes y capacidades para influir en las políticas locales, combinando herramientas de incidencia físicas y digitales.' },
+    { title: 'Salud mental', src: '/images/salud-icon.svg', alt: 'Salud mental', question: 'Nuestro objetivo es establecer espacios seguros para que  adolescentes y jóvenes aprendan sobre salud mental a través de actividades artísticas y deportivas, desde un enfoque interseccional.' },
+    { title: 'Fortalecimiento digital', src: '/images/proteccion-icon.svg', alt: 'Fortalecimiento digital', question: 'Buscamos generar oportunidades globales mediante el fortalecimiento de habilidades digitales, el uso de herramientas tecnológicas y los datos para promover la participación e incidencia desde los adolescentes y jóvenes.' }
   ]
 
-  const galleries = [
-    {
-      src: '/images/como-lo-hicimos/galeria/gal-como-1.webp',
-      alt: 'Imagen de gallería 1',
-      width: 868,
-      height: 1048
-    },
-    {
-      src: '/images/como-lo-hicimos/galeria/gal-como-2.webp',
-      alt: 'Imagen de gallería 2',
-      width: 1024,
-      height: 1056
-    },
-    {
-      src: '/images/como-lo-hicimos/galeria/gal-como-4.webp',
-      alt: 'Imagen de gallería 4',
-      width: 1024,
-      height: 1056
-    },
-    {
-      src: '/images/como-lo-hicimos/galeria/gal-como-5.webp',
-      alt: 'Imagen de gallería 5',
-      width: 1024,
-      height: 1056
-    }
-  ]
+  // const galleries = [
+  //   {
+  //     src: '/images/como-lo-hicimos/galeria/gal-como-1.webp',
+  //     alt: 'Imagen de gallería 1',
+  //     width: 868,
+  //     height: 1048
+  //   },
+  //   {
+  //     src: '/images/como-lo-hicimos/galeria/gal-como-2.webp',
+  //     alt: 'Imagen de gallería 2',
+  //     width: 1024,
+  //     height: 1056
+  //   },
+  //   {
+  //     src: '/images/como-lo-hicimos/galeria/gal-como-4.webp',
+  //     alt: 'Imagen de gallería 4',
+  //     width: 1024,
+  //     height: 1056
+  //   },
+  //   {
+  //     src: '/images/como-lo-hicimos/galeria/gal-como-5.webp',
+  //     alt: 'Imagen de gallería 5',
+  //     width: 1024,
+  //     height: 1056
+  //   }
+  // ]
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -111,7 +112,7 @@ export default function Home () {
         <div className=''>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>
-        <h2 className='text-6xl text-hcablack font-bold mx-4 text-center'>¿Cómo pensamos el bienestar adolescente?</h2>
+        <h2 className='text-6xl text-hcablack font-bold mx-4 text-center'>Nuestro enfoque</h2>
         <div className=''>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>
@@ -120,16 +121,21 @@ export default function Home () {
       {/* ---------- Principal text ---------- */}
       <section className="container mx-auto flex flex-col justify-center mt-20">
         <p className='text-black mt-10 text-justify text-2xl mx-4'>
-          Queremos entender qué es lo que los <strong>jóvenes y adolescentes </strong>jóvenes y adolescentes necesitan para sentirse mejor,
-          guiándonos por preguntas que nos ayudan a <strong>comprender </strong> aspectos como la salud, aprendizaje, participación, entre otros.
+          En el proyecto "Alza Tu Voz", adoptamos un enfoque participativo y centrado en los derechos,
+          con el objetivo de transformar las condiciones sistémicas en Quevedo y Riobamba. Además,
+          aprovechamos la transformación digital para ampliar nuestro alcance y fomentar una mayor participación.
           <br/>
           <br/>
-          Estamos trabajando para dar respuesta a estas preguntas y hacer que jóvenes y adolescentes cuenten con el respaldo,
-          la confianza y los recursos necesarios para desarrollarse de forma <strong>segura y saludable.</strong>
+          Nos enfocamos principalmente en cuatro áreas para el bienestar adolescente: participación, seguridad,
+          aprendizaje y agencia.
+          <br/>
+          <br/>
+          De estas áreas y como resultado de la fase de evaluación de necesidades y codiseño del proyecto,
+          priorizamos cuatro pilares de trabajo:
         </p>
       </section>
 
-      {/* Pilares */}
+      {/* ---------- Pilares ---------- */}
       <section className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[70rem] md:h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
         <div className="flex flex-wrap justify-center gap-20">
         {cardsInfo.map((card, index) => (
@@ -138,8 +144,101 @@ export default function Home () {
       </div>
       </section>
 
+      {/* ---------- Image top city ---------- */}
+      <div className='w-full bottom-0'>
+        <Image
+          src="/images/top-city-yellow.png"
+          alt="Imagen de portada"
+          layout='responsive'
+          width={1920}
+          height={250}
+          priority
+        />
+      </div>
+
+      {/* ----------- Herramientas ---------- */}
+      <section className='bg-hcalightyellow'>
+      <div className='container mx-auto flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center'>
+          <Image
+            src="/images/tools-icon.svg"
+            alt="Group icon"
+            width={120}
+            height={120}
+          />
+          <h2 className='text-6xl mt-4 font-bold text-hcaneworange text-center'>Accede a nuestros recursos y herramientas</h2>
+        </div>
+        <p className='text-2xl mt-4 text-hcablack text-center'>
+          Queremos que <strong>todo lo chévere</strong> que creamos como parte de "Alza Tu Voz" sea útil para otras iniciativas en todo el mundo.
+          En este espacio, vamos a compartir recursos y  herramientas que estamos usando para hacer que las ciudades sean un mejor
+          lugar para los  adolescentes y jóvenes.
+          <br />
+          <br />
+        </p>
+        <p className='text-2xl mt-4 text-hcablack font-bold text-center mb-20'>¡Nos emociona mucho compartir todo lo que estamos aprendiendo!</p>
+      </div>
+
+      {/* ---------- Resources ---------- */}
+      <div className='mb-20'>
+        <div className='container mx-auto flex flex-col justify-center items-center xl:flex-row gap-10 md:gap-20'>
+          <div className="md:w-1/3 mx-4 relative">
+            <Image
+                src="/images/atv-img-1.png"
+                alt="Mapa con lupa"
+                width={630}
+                height={684}
+              />
+          </div>
+          <div className='md:w-2/3 rounded-[4rem] mx-4'>
+            <div className='p-2 md:p-8 flex flex-col md:mb-4 gap-4'>
+              <div className="flex items-center justify-between bg-white rounded-xl 2xl:rounded-full px-10 py-2">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Guía para levantar la voz. Caja de herramientas participativas</p>
+                  <span className="text-lg">Herramientas para que adolescentes sean líderes en hacer que las cosas mejoren en sus comunidades. </span>
+                </div>
+                <DownloadButton
+                  link='https://drive.google.com/file/d/1th0SJu6gu4oKgPM7WMuiph9S7BpPF8Ee/view'
+                  target='_blank'
+                />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-xl 2xl:rounded-full px-10 py-2">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Caja de herramientas. Una guía para diseñar juntos soluciones a problemas sociales con la comunidad</p>
+                  <span className="text-lg">Metodologías para promover la participación, abordar las necesidades de adolescentes, y co-diseñar la Teoría del Cambio.</span>
+                </div>
+                <DownloadButton
+                  link='https://drive.google.com/file/d/1qO0TEfboNzN15W4dBY8e4irZysE4ymFM/view'
+                  target='_blank'
+                />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-xl 2xl:rounded-full px-10 py-2">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Resultados de la encuesta: "Mi ciudad y yo"</p>
+                  <span className="text-lg">Encuesta realizada en Quevedo y Riobamba para comprender la relación de adolescentes y jóvenes con su entorno, e identificar sus necesidades.</span>
+                </div>
+                <DownloadButton
+                  link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view'
+                  target='_blank'
+                />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-xl 2xl:rounded-full px-10 py-2">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Resultados de la encuesta: "Imaginando mi futuro"</p>
+                  <span className="text-lg">Encuesta realizada en Quevedo y Riobamba para comprender los sueños y la percepción de adolescentes y jóvenes sobre acciones positivas para construir su futuro.</span>
+                </div>
+                <DownloadButton
+                  link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view'
+                  target='_blank'
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
       {/* ---------- Intro ---------- */}
-      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-28">
+      {/* <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-10 px-8 md:px-28">
         <h1 className='text-4xl text-hcadarkblue font-bold mt-5 font-marker'>¿Cómo pensamos el bienestar adolescente?</h1>
         <p className='text-black mt-10 text-justify text-xl'>
           Queremos entender qué es lo que los <strong className='text-hcadarkblue'>jóvenes y adolescentes </strong>jóvenes y adolescentes necesitan para sentirse mejor,
@@ -147,7 +246,7 @@ export default function Home () {
           Estamos trabajando para dar respuesta a estas preguntas y hacer que jóvenes y adolescentes cuenten con el respaldo,
           la confianza y los recursos necesarios para desarrollarse de forma <strong className='text-hcadarkblue'>segura y saludable.</strong>
         </p>
-      </section>
+      </section> */}
 
       {/* ---------- Pilares ---------- */}
       {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
@@ -202,7 +301,7 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Nuestras herramientas ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16" id='herramientas'>
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16" id='herramientas'>
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Nuestras herramientas</h2>
         <p className='text-black mt-10 text-justify'>
           Queremos que todas las cosas geniales que estamos haciendo en el programa 'Alza Tu Voz' puedan ser útiles
@@ -220,7 +319,6 @@ export default function Home () {
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
               <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Diagnóstico participativo</h2>
-              {/* <p className="text-gray-700 text-sm mb-4">Breve descripción del recurso</p> */}
               <ButtonTwo
                 label='Descargar'
                 link='https://drive.google.com/file/d/1th0SJu6gu4oKgPM7WMuiph9S7BpPF8Ee/view?usp=sharing'
@@ -231,7 +329,6 @@ export default function Home () {
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
               <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Metodologías de co-diseño</h2>
-              {/* <p className="text-gray-700 text-sm mb-4">Breve descripción del recurso</p> */}
               <ButtonTwo
                 label='Descargar'
                 link='https://drive.google.com/file/d/1qO0TEfboNzN15W4dBY8e4irZysE4ymFM/view?usp=sharing'
@@ -244,7 +341,6 @@ export default function Home () {
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
               <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Resultados de la encuesta: "Mi ciudad y yo"</h2>
-              {/* <p className="text-gray-700 text-sm mb-4">Breve descripción del recurso</p> */}
               <ButtonTwo
                 label='Descargar'
                 link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
@@ -255,7 +351,6 @@ export default function Home () {
           <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
             <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
               <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Resultados de la encuesta: "Imaginando mi futuro"</h2>
-              {/* <p className="text-gray-700 text-sm mb-4">Breve descripción del recurso</p> */}
               <ButtonTwo
                 label='Descargar'
                 link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
@@ -264,15 +359,15 @@ export default function Home () {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Galería ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <h2 className='text-3xl text-left text-hcadarkblue font-marker font-bold '>Galería</h2>
         <div className=' mt-10 p-4'>
           <ImageGallery galleries={galleries} />
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
