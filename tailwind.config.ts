@@ -34,7 +34,8 @@ const config: Config = {
       hcablack: '#222222',
       hcamelon: '#FFF0DD',
       hcanewmelon: '#FFE8D4',
-      hcalightyellow: '#FFEDC6'
+      hcalightyellow: '#FFEDC6',
+      hcayellow: '#FFF8E8'
     }
   },
   plugins: []

@@ -21,11 +21,11 @@ const navItems = [
   {
     path: '/lo-que-se-viene',
     name: 'Lo que se viene'
-  },
-  {
-    path: '/convocatorias',
-    name: 'Convocatorias'
   }
+  // {
+  //   path: '/convocatorias',
+  //   name: 'Convocatorias'
+  // }
 ]
 
 export default function Navbar () {
