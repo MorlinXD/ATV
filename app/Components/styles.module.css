@@ -22,3 +22,21 @@
   padding-top: 20vh;
   /* text-shadow: 1px 1px 1px #3c5c5e; */
 }
+
+.perspective {
+  perspective: 1000px;
+}
+.card {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.is-flipped {
+  transform: rotateY(180deg);
+}
+.front {
+  backface-visibility: hidden;
+}
+.back {
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}

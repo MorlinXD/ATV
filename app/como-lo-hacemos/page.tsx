@@ -1,48 +1,56 @@
 'use client'
 /* eslint-disable react/no-unescaped-entities */
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import Image from 'next/image'
 import ButtonTwo from '../Components/ButtonTwo'
 
-import PillarModal from '../Components/PillarModal'
+// import PillarModal from '../Components/PillarModal'
 import ImageGallery from '../Components/ImageGallery'
+import FlipCard from '../Components/FlipCard'
 
-interface ImageModalProps {
-  src: string
-  alt: string
-  content: string
-}
+// interface ImageModalProps {
+//   src: string
+//   alt: string
+//   content: string
+// }
 
-const ImageWithModal: React.FC<ImageModalProps> = ({ src, alt, content }) => {
-  const [isOpen, setIsOpen] = useState(false)
+// const ImageWithModal: React.FC<ImageModalProps> = ({ src, alt, content }) => {
+//   const [isOpen, setIsOpen] = useState(false)
 
-  const handleImageClick = () => {
-    setIsOpen(true)
-  }
+//   const handleImageClick = () => {
+//     setIsOpen(true)
+//   }
 
-  const closeModal = () => {
-    setIsOpen(false)
-  }
+//   const closeModal = () => {
+//     setIsOpen(false)
+//   }
 
-  return (
-        <>
-            <img
-                src={src}
-                alt={alt}
-                className="cursor-pointer mx-2"
-                onClick={handleImageClick}
-            />
-            <PillarModal
-                isOpen={isOpen}
-                onClose={closeModal}
-                content={content}
-            />
-        </>
-  )
-}
+//   return (
+//         <>
+//             <img
+//                 src={src}
+//                 alt={alt}
+//                 className="cursor-pointer mx-2"
+//                 onClick={handleImageClick}
+//             />
+//             <PillarModal
+//                 isOpen={isOpen}
+//                 onClose={closeModal}
+//                 content={content}
+//             />
+//         </>
+//   )
+// }
 
 export default function Home () {
   // const [isModalOpen, setModalOpen] = useState<boolean>(false)
+
+  const cardsInfo = [
+    { title: 'Formación y aprendizaje', src: '/images/clh-icon.svg', alt: 'Formación y aprendizaje', question: 'Destacamos la importancia de crear entornos de aprendizaje seguros a través de empoderar a los docentes, introducir metodologías innovadoras e implementar vías de aprendizaje adaptadas a los intereses de las y los adolescentes.' },
+    { title: 'Participación e incidencia', src: '/images/clh-icon.svg', alt: 'Participación e incidencia', question: 'Nos centramos en dotar a los adolescentes de redes y capacidades para influir en las políticas locales, combinando herramientas de incidencia físicas y digitales.' },
+    { title: 'Salud mental', src: '/images/clh-icon.svg', alt: 'Salud mental', question: 'Nuestro objetivo es establecer espacios seguros para que  adolescentes y jóvenes aprendan sobre salud mental a través de actividades artísticas y deportivas, desde un enfoque interseccional.' },
+    { title: 'Fortalecimiento digital', src: '/images/clh-icon.svg', alt: 'Fortalecimiento digital', question: 'Buscamos generar oportunidades globales mediante el fortalecimiento de habilidades digitales, el uso de herramientas tecnológicas y los datos para promover la participación e incidencia desde los adolescentes y jóvenes.' }
+  ]
 
   const galleries = [
     {
@@ -72,9 +80,9 @@ export default function Home () {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center mt-16">
+    <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
-      <section>
+      {/* <section>
         <Image
           src="/hero-como-lo-hacemos.png"
           alt="Imagen de portada"
@@ -82,6 +90,52 @@ export default function Home () {
           height={350}
           priority
         />
+      </section> */}
+
+      {/* ---------- Hero ---------- */}
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-atv-hero.webp\')' }}>
+      </section>
+
+      {/* ---------- Principal icon ---------- */}
+      <section className='flex flex-col items-center'>
+        <Image
+          src="/images/clh-icon.svg"
+          alt="Rocket icon"
+          width={130}
+          height={130}
+        />
+      </section>
+
+      {/* ---------- Principal title ---------- */}
+      <section className='flex flex-col md:flex-row mt-20 justify-between'>
+        <div className=''>
+          <img src='/images/onda-blue.svg' alt="Onda" />
+        </div>
+        <h2 className='text-6xl text-hcaneworange font-bold mx-4 text-center'>¿Cómo pensamos el bienestar adolescente?</h2>
+        <div className=''>
+          <img src='/images/onda-blue.svg' alt="Onda" />
+        </div>
+      </section>
+
+      {/* ---------- Principal text ---------- */}
+      <section className="container mx-auto flex flex-col justify-center mt-20">
+        <p className='text-black mt-10 text-justify text-2xl mx-4'>
+          Queremos entender qué es lo que los <strong>jóvenes y adolescentes </strong>jóvenes y adolescentes necesitan para sentirse mejor,
+          guiándonos por preguntas que nos ayudan a <strong>comprender </strong> aspectos como la salud, aprendizaje, participación, entre otros.
+          <br/>
+          <br/>
+          Estamos trabajando para dar respuesta a estas preguntas y hacer que jóvenes y adolescentes cuenten con el respaldo,
+          la confianza y los recursos necesarios para desarrollarse de forma <strong>segura y saludable.</strong>
+        </p>
+      </section>
+
+      {/* Pilares */}
+      <section className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[70rem] md:h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
+        <div className="flex flex-wrap justify-center gap-20">
+        {cardsInfo.map((card, index) => (
+          <FlipCard key={index} title={card.title} src={card.src} alt={card.alt} question={card.question} />
+        ))}
+      </div>
       </section>
 
       {/* ---------- Intro ---------- */}
@@ -96,7 +150,7 @@ export default function Home () {
       </section>
 
       {/* ---------- Pilares ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
+      {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <p className='text-black text-xl mt-10 text-justify'>
           Da clic sobre cada tarjeta para conocer nuestras preguntas guía:
         </p>
@@ -145,7 +199,7 @@ export default function Home () {
               />
             </div>
         </div>
-      </section>
+      </section> */}
 
       {/* ---------- Nuestras herramientas ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16" id='herramientas'>
