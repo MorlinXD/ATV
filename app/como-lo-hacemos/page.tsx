@@ -111,7 +111,7 @@ export default function Home () {
         <div className=''>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>
-        <h2 className='text-6xl text-hcaneworange font-bold mx-4 text-center'>¿Cómo pensamos el bienestar adolescente?</h2>
+        <h2 className='text-6xl text-hcablack font-bold mx-4 text-center'>¿Cómo pensamos el bienestar adolescente?</h2>
         <div className=''>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>

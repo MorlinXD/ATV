@@ -19,7 +19,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ src, alt, title, question }) => {
   }
 
   return (
-    <div className={`${styles.perspective} w-72 h-40`} onClick={handleFlip}>
+    <div className={`${styles.perspective} w-72 h-40 cursor-pointer`} onClick={handleFlip}>
       {/* You need to use string concatenation properly */}
       <div className={`${styles.card} ${isFlipped ? styles['is-flipped'] : ''}`}>
         {/* Front of the card */}
