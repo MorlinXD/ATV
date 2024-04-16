@@ -11,13 +11,13 @@ import NewButtonTwo from './Components/NewButtonTwo'
 export default function Home () {
   const texts = [
     {
-      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para jóvenes y adolescentes de Quevedo y Riobamba.'
+      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para adolescentes y jóvenes de Quevedo y Riobamba.'
     },
     {
       text: 'Junto a ellas y ellos trabajamos para convertir sus ciudades en lugares más seguros, saludables e interculturales.'
     },
     {
-      text: '¡Te invitamos a unirte y convertirte en agente de cambio! Tu voz puede marcar la diferencia.'
+      text: '¡Te invitamos a unirte y convertirte en agente de cambio! Tu voz puede marcar la diferencia. '
     },
     {
       text: 'En Ecuador, LAB XXI lidera la implementación de la iniciativa en trabajo conjunto con organizaciones, instituciones y aliados locales.'
@@ -46,7 +46,7 @@ export default function Home () {
       </div>
     </section>
 
-      <section className="container mx-auto flex flex-col justify-center items-center text-center my-5 lg:my-20 px-8 md:px-16">
+      <section className="flex flex-col justify-center items-center text-center my-5 lg:my-20 md:px-4">
         {/* <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1> */}
         <MainCarousel texts={texts}/>
       </section>
