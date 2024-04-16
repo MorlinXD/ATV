@@ -128,7 +128,7 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Hero ----------- */}
-    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero.webp\')' }}>
+    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-1.webp\')' }}>
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-4 md:p-8">

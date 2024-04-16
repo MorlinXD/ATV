@@ -94,7 +94,7 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-atv-hero.webp\')' }}>
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-1.webp\')' }}>
       </section>
 
       {/* ---------- Principal icon ---------- */}
@@ -108,8 +108,8 @@ export default function Home () {
       </section>
 
       {/* ---------- Principal title ---------- */}
-      <section className='flex flex-col md:flex-row mt-20 justify-between'>
-        <div className=''>
+      <section className='flex flex-col md:flex-row mt-20 justify-between' id='nuestro-enfoque'>
+        <div>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>
         <h2 className='text-6xl text-hcablack font-bold mx-4 text-center'>Nuestro enfoque</h2>

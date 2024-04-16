@@ -23,7 +23,7 @@ export default function Home () {
       </section> */}
 
       {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-atv-hero.webp\')' }}>
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-1.webp\')' }}>
       </section>
 
       {/* ---------- Intro ---------- */}
@@ -35,7 +35,7 @@ export default function Home () {
           <strong className='text-hcadarkblue'> ¡Quevedo y Riobamba!</strong>
         </p>
       </section> */}
-      <section>
+      <section id='que-es'>
         <div className='container mx-auto flex flex-col md:flex-row justify-center items-center'>
           <div className="md:w-2/3 text-hcablack mx-4">
             <h1 className='text-7xl font-bold mb-10'>
@@ -97,7 +97,7 @@ export default function Home () {
       </section>
 
       {/* ---------- Title with svg ---------- */}
-      <section className='flex flex-col md:flex-row'>
+      <section className='flex flex-col md:flex-row' id='como-lo-creamos'>
         <div className='w-1/2'>
           <img src='/images/onda.png' alt="Onda" />
         </div>
@@ -183,7 +183,7 @@ export default function Home () {
 
       {/* ---------- Consorcio ---------- */}
       {/* <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16"> */}
-      <section className="bg-hcanewmelon">
+      <section className="bg-hcanewmelon" id='como-nos-organizamos'>
         <div className="container mx-auto flex flex-col justify-center items-center mt-20">
           <h2 className='text-6xl text-center text-hcaneworange font-bold '>!Así nos organizamos para<br/> alzar nuestras voces¡</h2>
           <p className='text-hcablack text-2xl text-center mt-10'>

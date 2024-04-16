@@ -36,7 +36,7 @@ export default function Home () {
       </section> */}
 
     {/* Hero */}
-    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero.webp\')' }}>
+    <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-1.webp\')' }}>
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-4 md:p-8">
@@ -78,7 +78,7 @@ export default function Home () {
       <section className="w-auto bg-cover" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}>
         <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
           <div className='flex flex-col mx-10 lg:mx-20'>
-            <h2 className='text-4xl text-hcaneworange font-bold mt-10'>¡Ayúdanos a fortalecer la red de jóvenes y adolescentes
+            <h2 className='text-4xl text-hcaneworange font-bold mt-10'>¡Ayúdanos a fortalecer la red de adolescentes y jóvenes
               en <span className='text-hcanewblue'>Quevedo y Riobamba!</span>
             </h2>
             <p className='text-hcablack text-2xl mt-10 text-justify'>
@@ -115,7 +115,7 @@ export default function Home () {
             <h2 className="text-5xl text-white font-bold mt-20">Conoce nuestras herramientas</h2>
             <p className="text-xl mt-4 text-white">
               ¡Queremos que todas las cosas chéveres que creamos como parte de "Alza Tu Voz" sean útiles para otros programas en todo el mundo!
-              En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
+              En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando para hacer que las ciudades sean un mejor lugar para adolescentes y jóvenes.
             </p>
             <p className=' text-xl font-semibold text-white 2xl:mb-6'>¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</p>
             <NewButtonTwo
