@@ -168,16 +168,16 @@ export default function Home () {
           <Image
             src="/images/riobamba/testimonio-1-riobamba.png"
             alt="Primer testimonio"
-            width={567}
-            height={298}
+            width={800}
+            height={324}
           />
         </div>
         <div className="flex justify-center md:p-4">
           <Image
             src="/images/riobamba/testimonio-2-riobamba.png"
             alt="Primer testimonio"
-            width={567}
-            height={298}
+            width={800}
+            height={324}
           />
         </div>
       </div>

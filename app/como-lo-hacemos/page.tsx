@@ -183,10 +183,10 @@ export default function Home () {
         <div className='container mx-auto flex flex-col justify-center items-center xl:flex-row gap-10 md:gap-20'>
           <div className="md:w-1/3 mx-4 relative">
             <Image
-                src="/images/atv-img-1.png"
+                src="/images/clh-img-1.png"
                 alt="Mapa con lupa"
-                width={630}
-                height={684}
+                width={645}
+                height={645}
               />
           </div>
           <div className='md:w-2/3 rounded-[4rem] mx-4'>

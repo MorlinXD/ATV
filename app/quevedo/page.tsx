@@ -80,6 +80,12 @@ export default function Home () {
       alt: 'Imagen de gallería 14',
       width: 1024,
       height: 1056
+    },
+    {
+      src: '/images/quevedo/galeria/new-quevedo-1.webp',
+      alt: 'Imagen de gallería 14',
+      width: 1024,
+      height: 1056
     }
   ]
 
@@ -163,16 +169,16 @@ export default function Home () {
           <Image
             src="/images/quevedo/testimonio-1-quevedo.png"
             alt="Primer testimonio"
-            width={567}
-            height={298}
+            width={800}
+            height={324}
           />
         </div>
         <div className="flex justify-center md:p-4">
           <Image
             src="/images/quevedo/testimonio-2-quevedo.png"
             alt="Primer testimonio"
-            width={567}
-            height={298}
+            width={800}
+            height={324}
           />
         </div>
       </div>
