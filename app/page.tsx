@@ -2,9 +2,11 @@
 import Image from 'next/image'
 // import ButtonOne from './Components/ButtonOne'
 import MainCarousel from './Components/MainCarousel'
-import ButtonQuevedo from './Components/ButtonQuevedo'
-import ButtonRiobamba from './Components/ButtonRiobamba'
-import ButtonTwo from './Components/ButtonTwo'
+// import ButtonQuevedo from './Components/ButtonQuevedo'
+// import ButtonRiobamba from './Components/ButtonRiobamba'
+// import ButtonTwo from './Components/ButtonTwo'
+import NewButtonOne from './Components/NewButtonOne'
+import NewButtonTwo from './Components/NewButtonTwo'
 
 export default function Home () {
   const texts = [
@@ -75,22 +77,28 @@ export default function Home () {
       {/* <section className=" flex flex-col justify-center items-center text-center mt-20" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}> */}
       <section className="w-auto bg-cover" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}>
         <div className='flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10'>
-          <div className='mx-10 lg:mx-20'>
+          <div className='flex flex-col mx-10 lg:mx-20'>
             <h2 className='text-4xl text-hcaneworange font-bold mt-10'>¡Ayúdanos a fortalecer la red de jóvenes y adolescentes
               en <span className='text-hcanewblue'>Quevedo y Riobamba!</span>
             </h2>
-            <p className='text-hcablack mt-10 text-justify'>
+            <p className='text-hcablack text-2xl mt-10 text-justify'>
               <span className='font-semibold text-hcaneworange'>Mapeo Colaborativo</span>
               <br />
               Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con jóvenes y adolescentes,
               déjanos sus datos aquí!
               Tu colaboración nos permitirá que más actores se sumen como aliados al proyecto "Alza Tu Voz".
-              <ButtonTwo
+              {/* <ButtonTwo
                 label='Formulario'
                 link='https://ee.kobotoolbox.org/x/KVdKs7lV'
                 target='_blank'
-              />
+              /> */}
             </p>
+            <NewButtonOne
+                color= 'bg-hcaneworange'
+                label='¡Llena el formulario!'
+                link='https://ee.kobotoolbox.org/x/KVdKs7lV'
+                target='_blank'
+              />
           </div>
           <Image
             src="/images/new-pic-mapeo.webp"
@@ -101,6 +109,7 @@ export default function Home () {
           />
         </div>
 
+        {/* ---------- Tools ----------- */}
         <div className="relative text-right bg-cover bg-center pt-28 pb-8 xl:pt-10 xl:pb-10 xl:my-10 xl:mx-4 2xl:pt-40 2xl:pb-10 2xl:my-20 2xl:mx-8" style={{ backgroundImage: "url('/images/tools-background.png')" }}>
           <div className=" max-w-6xl mx-auto px-4 py-16 my-10 flex flex-col items-end justify-center">
             <h2 className="text-5xl text-white font-bold mt-20">Conoce nuestras herramientas</h2>
@@ -109,10 +118,15 @@ export default function Home () {
               En este espacio, vamos a compartir todos los trucos, herramientas y formatos que estamos usando para hacer que las ciudades sean un mejor lugar para jóvenes y adolescentes.
             </p>
             <p className=' text-xl font-semibold text-white 2xl:mb-6'>¡Estamos emocionados de compartir todo lo que estamos aprendiendo!</p>
-            <ButtonTwo
+            <NewButtonTwo
+              color='bg-hcaneworange'
               label='Ver más...'
               link='/como-lo-hacemos#herramientas'
             />
+            {/* <ButtonTwo
+              label='Ver más...'
+              link='/como-lo-hacemos#herramientas'
+            /> */}
           </div>
         </div>
       </section>
@@ -126,12 +140,14 @@ export default function Home () {
               El proyecto se implementa en Quevedo y Riobamba, ciudades en la que fomentamos espacios físicos y digitales
               que prioricen la salud y el bienestar de adolescentes y jóvenes.
             </p>
-            <div className='flex flex-col md:flex-row'>
-              <ButtonRiobamba
+            <div className='flex flex-col md:flex-row gap-4'>
+              <NewButtonTwo
+                color= 'bg-hcanewblue'
                 label='Riobamba'
                 link='/riobamba'
               />
-              <ButtonQuevedo
+              <NewButtonTwo
+                color= 'bg-hcanewblue'
                 label='Quevedo'
                 link='/quevedo'
               />

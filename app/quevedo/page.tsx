@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-import ButtonTwo from '../Components/ButtonTwo'
+// import ButtonTwo from '../Components/ButtonTwo'
 import Carousel from '../Components/Carousel'
 import VideoCarousel from '../Components/VideoCarousel'
 import ImageGallery from '../Components/ImageGallery'
 import { Tab, Tabs } from '../Components/Tabs'
+import NewButtonOne from '../Components/NewButtonOne'
+import NewButtonTwo from '../Components/NewButtonTwo'
 
 export default function Home () {
   const images = [
@@ -356,15 +358,17 @@ export default function Home () {
           </Tab>
         </Tabs>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
-          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
-            <ButtonTwo
+          <div className="flex flex-col justify-center items-center h-auto">
+            <NewButtonTwo
+              color='bg-hcanewblue'
               label='Análisis “Mi ciudad y yo”'
               link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
               target='_blank'
             />
           </div>
-          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
-            <ButtonTwo
+          <div className="flex flex-col justify-center items-center h-auto">
+            <NewButtonOne
+              color='bg-hcaneworange'
               label='Análisis “Imaginando mi futuro”'
               link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
               target='_blank'

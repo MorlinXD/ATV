@@ -157,7 +157,7 @@ export default function Home () {
       </div>
 
       {/* ----------- Herramientas ---------- */}
-      <section className='bg-hcalightyellow'>
+      <section className='bg-hcalightyellow ' id='herramientas'>
       <div className='container mx-auto flex flex-col justify-center items-center'>
         <div className='flex flex-col items-center'>
           <Image
