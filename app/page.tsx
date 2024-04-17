@@ -102,9 +102,10 @@ export default function Home () {
           </div>
           <Image
             src="/images/new-pic-mapeo.webp"
+            className='md:mx-10 lg:mx-48'
             alt="Foto del grupo nucleo"
-            width={518}
-            height={621}
+            width={341}
+            height={659}
             priority
           />
         </div>
