@@ -84,7 +84,7 @@ export default function Home () {
             <p className='text-hcablack text-2xl mt-10 text-justify'>
               <span className='font-semibold text-hcaneworange'>Mapeo Colaborativo</span>
               <br />
-              Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con jóvenes y adolescentes,
+              Si conoces personas, grupos, colectivos, redes, instituciones u organizaciones de la sociedad civil que trabajen con adolescentes y jóvenes,
               déjanos sus datos aquí!
               Tu colaboración nos permitirá que más actores se sumen como aliados al proyecto "Alza Tu Voz".
               {/* <ButtonTwo

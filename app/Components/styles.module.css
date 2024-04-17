@@ -15,28 +15,26 @@
 }
 
 .bgText {
-  /* margin: 0; */
-  /* font-size: 2rem; */
-  /* line-height: 3rem; */
-  /* text-align: center; */
   padding-top: 20vh;
-  /* text-shadow: 1px 1px 1px #3c5c5e; */
 }
 
 .perspective {
   perspective: 1000px;
 }
+
 .card {
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
-.is-flipped {
+
+.card:hover {
   transform: rotateY(180deg);
 }
-.front {
+
+.front, .back {
   backface-visibility: hidden;
 }
+
 .back {
-  backface-visibility: hidden;
   transform: rotateY(180deg);
 }

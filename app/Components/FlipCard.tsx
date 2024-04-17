@@ -1,8 +1,5 @@
-/* eslint-disable no-template-curly-in-string */
-'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './styles.module.css'
-// import { Transition } from '@headlessui/react';
 
 interface FlipCardProps {
   src: string
@@ -12,23 +9,12 @@ interface FlipCardProps {
 }
 
 const FlipCard: React.FC<FlipCardProps> = ({ src, alt, title, question }) => {
-  const [isFlipped, setIsFlipped] = useState(false)
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped)
-  }
-
   return (
-    <div className={`${styles.perspective} w-72 h-40 cursor-pointer`} onClick={handleFlip}>
-      {/* You need to use string concatenation properly */}
-      <div className={`${styles.card} ${isFlipped ? styles['is-flipped'] : ''}`}>
+    <div className={`${styles.perspective} w-72 h-40 cursor-pointer`}>
+      <div className={styles.card}>
         {/* Front of the card */}
-        <div className={`${styles.front} inset-0 bg-white flex  flex-col justify-center items-center rounded-lg shadow-md p-6`}>
-          <img
-            src={src}
-            alt={alt}
-            className="h-24 mb-10"
-          />
+        <div className={`${styles.front} inset-0 bg-white flex flex-col justify-center items-center rounded-lg shadow-md p-6`}>
+          <img src={src} alt={alt} className="h-24 mb-10" />
           <span className="text-xl font-medium">{title}</span>
         </div>
         {/* Back of the card */}
