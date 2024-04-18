@@ -158,15 +158,52 @@ export default function Home () {
         </div>
       </section>
 
-      <section className='m-20'>
+      {/* <section className='m-20 flex flex-row gap-6'>
         {cardData.map((card, index) => (
           <TeamCard key={index} image={card.image} text={card.text} />
         ))}
+      </section> */}
+
+      <section className='container mx-auto grid grid-rows-2 gap-4 mt-20 grid-flow-col'>
+        <div>
+          <Image
+            src="/images/atv-img-1.png"
+            className='w-80 h-80'
+            alt="Mapa con lupa"
+            width={630}
+            height={684}
+          />
+        </div>
+        <div>
+          <div className='flex flex-row justify-end gap-4'>
+            <button type="button" className="flex justify-center cursor-pointer">
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-hcanewblue group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
+                </svg>
+              </span>
+            </button>
+            <button type="button" className="flex justify-center cursor-pointer">
+              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-hcanewblue group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http:www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div className='row-span-2'>
+          <div className='flex flex-row justify-center items-center mt-2 gap-4'>
+            {cardData.map((card, index) => (
+              <TeamCard key={index} image={card.image} text={card.text} />
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* ---------- Grupo núcleo ----------  */}
       <section>
-        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
+        <div className="container mx-auto flex flex-col justify-center items-center">
           <h2 className='text-6xl text-center text-hcaneworange font-bold mx-4'>¡Nuestros grupos núcleo son los protagonistas!</h2>
           <p className='text-hcablack text-2xl text-center mt-10 mb-20 mx-4'>
             Cada ciudad cuenta con un grupo núcleo con adolescentes y jóvenes lideres en su comunidad para aportar,
