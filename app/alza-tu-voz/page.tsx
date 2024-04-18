@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import AtvTabs from '../Components/AtvTabs'
 import Carousel from '../Components/Carousel'
+import TeamCard from '../Components/TeamCard'
 
 export default function Home () {
   const images = [
@@ -9,6 +10,15 @@ export default function Home () {
     '/images/atv-gal-2.webp',
     '/images/atv-gal-3.webp'
   ]
+
+  const cardData = [
+    { image: '/logos/logo-labxxi.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
+    { image: '/logos/logo-datalat.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
+    { image: '/logos/logo-espoch.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
+    { image: '/logos/logo-quevedo.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
+    { image: '/logos/logo-riobamba.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' }
+  ]
+
   return (
     <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
@@ -146,6 +156,12 @@ export default function Home () {
             priority
           />
         </div>
+      </section>
+
+      <section className='m-20'>
+        {cardData.map((card, index) => (
+          <TeamCard key={index} image={card.image} text={card.text} />
+        ))}
       </section>
 
       {/* ---------- Grupo núcleo ----------  */}
