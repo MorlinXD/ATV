@@ -62,12 +62,12 @@ export default function Home () {
       width: 1024,
       height: 1056
     },
-    {
-      src: '/images/quevedo/galeria/gal-quevedo-11.webp',
-      alt: 'Imagen de gallería 11',
-      width: 1024,
-      height: 1056
-    },
+    // {
+    //   src: '/images/quevedo/galeria/gal-quevedo-11.webp',
+    //   alt: 'Imagen de gallería 11',
+    //   width: 1024,
+    //   height: 1056
+    // },
     {
       src: '/images/quevedo/galeria/gal-quevedo-12.webp',
       alt: 'Imagen de gallería 12',
