@@ -26,7 +26,7 @@ export default function Home () {
               "Alza Tu Voz" es un proyecto en el que junto a adolescentes y jóvenes de Quevedo y Riobamba hacemos que sus ciudades sean más chéveres, seguras y saludables.
               <br />
               <br />
-              Nos enfocamos en tres aspectos clave: aprender y crecer juntos, participar para ser escuchados, y cuidar nuestra salud mental y bienestar.
+              Nos enfocamos en tres aspectos clave: aprender y crecer juntos, participar para que nos escuchen, y cuidar nuestra salud mental y bienestar.
             </p>
           </div>
           <div>

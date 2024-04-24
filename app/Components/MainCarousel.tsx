@@ -40,12 +40,12 @@ const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
         ))}
       </div>
 
-      <div className="absolute z-30 flex space-x-3 -translate-x-1/2 left-1/2">
+      <div className="absolute z-30 flex space-x-3 md:space-x-6 -translate-x-1/2 left-1/2">
         {texts.map((_, index) => (
           <button
             key={index}
             type="button"
-            className={`w-3 h-3 md:w-4 md:h-4 rounded-full ${index === activeIndex ? 'bg-hcanewblue' : 'bg-hcanewlightblue'}`}
+            className={`w-3 h-3 md:w-4 md:h-4 rounded-full hover:w-5 hover:h-5 ${index === activeIndex ? 'bg-hcanewblue w-4 h-4 md:w-5 md:h-5 rounded-full' : 'bg-hcanewlightblue'}`}
             aria-current={index === activeIndex ? 'true' : 'false'}
             aria-label={`Slide ${index + 1}`}
             onClick={() => { setActiveIndex(index) }}>

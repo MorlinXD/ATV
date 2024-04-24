@@ -40,7 +40,7 @@ const gilroy = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Ciudades Saludables | LabXXI',
+  title: 'Alza Tu Voz',
   description: 'Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba.'
 }
 

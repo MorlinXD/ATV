@@ -113,8 +113,8 @@ export default function Home () {
           vimos una oportunidad de transformar nuestros entornos.
           <br />
           <br />
-          Nos interesa aportar al desarrollo de Quevedo, al bienestar de todas y todos los jóvenes. Por esto, nos unimos a este increíble
-          programa, para ser agentes de cambio y levantar nuestras voces e ideas.
+          Nos interesa aportar al desarrollo de Quevedo y que nuestro bienestar sea una prioridad. Por esto, nos unimos a este increíble
+          proyecto, para ser agentes de cambio y levantar nuestras voces e ideas.
         </p>
         <p className='text-2xl mt-4 text-hcablack font-bold text-center mb-6 md:mb-0'>¡Juntas y juntos convertiremos a Quevedo en una ciudad más saludable!</p>
       </section>
