@@ -167,14 +167,21 @@ export default function Home () {
           <span className='font-bold'>¡Tenemos un montón de historias para contar, y lo hacemos a través del arte!</span><br/>Con un rap y un mural, ¡queremos alzar nuestra voz!
         </p>
         <p className='text-2xl mt-4 text-hcablack text-center'>Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:</p>
-        <div className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
+        {/* <div className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
           <div className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
           <div className="relative w-full lg:block">
             <VideoCarousel videoUrls={['https://www.youtube.com/embed/JjKzCsKU2Lw?si=DLoK9QNUnXM05W_C', 'https://www.youtube.com/embed/EzdcW37eJ30?si=sTow4NdopxYtLvNP']} />
             </div>
           </div>
+        </div> */}
+        <div className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-96 md:h-[40rem] lg:h-[68rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
+          <div className="container mx-auto my-5 lg:my-10 px-8 md:px-16">
+            <div className="relative w-full lg:block">
+              <VideoCarousel videoUrls={['JjKzCsKU2Lw', 'EzdcW37eJ30']} />
+            </div>
+          </div>
         </div>
-        <p className='text-2xl mt-4 text-hcablack text-center mb-6'>
+        <p className='text-2xl mt-10 text-hcablack text-center mb-6'>
           <span className='font-bold'>Conoce nuestro mural:</span>
         </p>
         <Carousel images={images} />
