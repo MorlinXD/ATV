@@ -67,7 +67,7 @@ export default function Home () {
         <div className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
         <div className="relative w-full lg:block" style={{ height: '350px' }} >
             <iframe
-              src="https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V"
+              src="https://www.youtube.com/embed/5OMgHvN96iY?si=CRqPGudL2y_VM_zn"
               className='absolute top-0 left-0 w-full h-full rounded-xl'
               allowFullScreen={true}
               name="Dashboard Quevedo"
