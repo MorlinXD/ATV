@@ -7,9 +7,9 @@ interface TeamCardProps {
 
 const TeamCard: React.FC<TeamCardProps> = ({ image, text }) => {
   return (
-    <figure className="flex flex-col justify-center items-center rounded-xl bg-white p-8 shadow-lg w-1/4">
-      <img className="pt-10 w-32 h-24" src={image} alt="Logo" width={186} height={136} />
-      <p className="mt-10">
+    <figure className="flex flex-col items-center justify-center bg-white p-8 shadow-lg rounded-xl m-2 flex-auto min-w-[200px]">
+      <img className="py-10" src={image} alt="Logo" />
+      <p className="text-center mt-2">
         {text}
       </p>
     </figure>

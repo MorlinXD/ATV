@@ -12,11 +12,11 @@ export default function Home () {
   ]
 
   const cardData = [
-    { image: '/logos/logo-labxxi.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
-    { image: '/logos/logo-datalat.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
-    { image: '/logos/logo-espoch.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
-    { image: '/logos/logo-quevedo.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' },
-    { image: '/logos/logo-riobamba.png', text: 'Tailwind CSS is the only framework that seen scale on large teams. easy to customize, adapts to any design, and the build size is tiny.' }
+    { image: '/logos/labxxi-logo.png', text: 'LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de los y las jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del consorcio de la iniciativa "Alza Tu Voz".' },
+    { image: '/logos/datalat-logo.png', text: 'Fundación Datalat implementa enfoques digitales e impulsa la transformación digital del proyecto, para promover el empoderamiento de adolescentes y jóvenes aprovechando medios virtuales y promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.' },
+    { image: '/logos/espoch-logo.png', text: 'La Escuela Superior Politécnica de Chimborazo proporciona apoyo en rutas de aprendizaje, y realiza investigación centrada en datos y experiencia del programa con enfoque en bienestar adolescente.' },
+    { image: '/logos/quevedo-logo.png', text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Quevedo.' },
+    { image: '/logos/riobamba-logo.png', text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Riobamba.' }
   ]
 
   return (
@@ -141,59 +141,14 @@ export default function Home () {
 
       {/* ---------- Consorcio ---------- */}
       <section className="bg-hcanewmelon" id='como-nos-organizamos'>
-        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
+        <div className="container mx-auto flex flex-col justify-center items-center my-20">
           <h2 className='text-6xl text-center text-hcaneworange font-bold '>¡Así nos organizamos para<br/> alzar nuestras voces!</h2>
           <p className='text-hcablack text-2xl text-center mt-10 mx-4'>
             Nos hemos unido en un equipo poderoso liderado por LAB XXI, donde trabajamos en conjunto con la Alcaldía de Quevedo,
             la Alcaldía de Riobamba, la ESPOCH, la Fundación Datalat y los grupos núcleos de Riobamba y Quevedo.
             ¡Juntos hacemos de estas ciudades más saludables!
           </p>
-          <Image
-            src="/images/grupo-nucleo.png"
-            alt="Foto grupo nucleo"
-            width={1304}
-            height={1333}
-            priority
-          />
-        </div>
-      </section>
-
-      {/* <section className='m-20 flex flex-row gap-6'>
-        {cardData.map((card, index) => (
-          <TeamCard key={index} image={card.image} text={card.text} />
-        ))}
-      </section> */}
-
-      <section className='container mx-auto grid grid-rows-2 gap-4 mt-20 grid-flow-col'>
-        <div>
-          <Image
-            src="/images/atv-img-1.png"
-            className='w-80 h-80'
-            alt="Mapa con lupa"
-            width={630}
-            height={684}
-          />
-        </div>
-        <div>
-          <div className='flex flex-row justify-end gap-4'>
-            <button type="button" className="flex justify-center cursor-pointer">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-hcanewblue group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
-                </svg>
-              </span>
-            </button>
-            <button type="button" className="flex justify-center cursor-pointer">
-              <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-hcanewblue group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg className="w-4 h-4 text-white" aria-hidden="true" xmlns="http:www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 9 4-4-4-4"/>
-                </svg>
-              </span>
-            </button>
-          </div>
-        </div>
-        <div className='row-span-2'>
-          <div className='flex flex-row justify-center items-center mt-2 gap-4'>
+          <div className='flex flex-col md:flex-row justify-center items-strech mt-6 gap-4 m-4'>
             {cardData.map((card, index) => (
               <TeamCard key={index} image={card.image} text={card.text} />
             ))}
@@ -203,7 +158,7 @@ export default function Home () {
 
       {/* ---------- Grupo núcleo ----------  */}
       <section>
-        <div className="container mx-auto flex flex-col justify-center items-center">
+        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
           <h2 className='text-6xl text-center text-hcaneworange font-bold mx-4'>¡Nuestros grupos núcleo son los protagonistas!</h2>
           <p className='text-hcablack text-2xl text-center mt-10 mb-20 mx-4'>
             Cada ciudad cuenta con un grupo núcleo con adolescentes y jóvenes lideres en su comunidad para aportar,
