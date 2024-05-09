@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import AtvTabs from '../Components/AtvTabs'
 import Carousel from '../Components/Carousel'
+import TeamCard from '../Components/TeamCard'
 
 export default function Home () {
   const images = [
@@ -9,6 +10,15 @@ export default function Home () {
     '/images/atv-gal-2.webp',
     '/images/atv-gal-3.webp'
   ]
+
+  const cardData = [
+    { image: '/logos/labxxi-logo.png', text: 'LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de los y las jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del consorcio de la iniciativa "Alza Tu Voz".' },
+    { image: '/logos/datalat-logo.png', text: 'Fundación Datalat implementa enfoques digitales e impulsa la transformación digital del proyecto, para promover el empoderamiento de adolescentes y jóvenes aprovechando medios virtuales y promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.' },
+    { image: '/logos/espoch-logo.png', text: 'La Escuela Superior Politécnica de Chimborazo proporciona apoyo en rutas de aprendizaje, y realiza investigación centrada en datos y experiencia del programa con enfoque en bienestar adolescente.' },
+    { image: '/logos/quevedo-logo.png', text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Quevedo.' },
+    { image: '/logos/riobamba-logo.png', text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Riobamba.' }
+  ]
+
   return (
     <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
@@ -131,20 +141,18 @@ export default function Home () {
 
       {/* ---------- Consorcio ---------- */}
       <section className="bg-hcanewmelon" id='como-nos-organizamos'>
-        <div className="container mx-auto flex flex-col justify-center items-center mt-20">
+        <div className="container mx-auto flex flex-col justify-center items-center my-20">
           <h2 className='text-6xl text-center text-hcaneworange font-bold '>¡Así nos organizamos para<br/> alzar nuestras voces!</h2>
           <p className='text-hcablack text-2xl text-center mt-10 mx-4'>
             Nos hemos unido en un equipo poderoso liderado por LAB XXI, donde trabajamos en conjunto con la Alcaldía de Quevedo,
             la Alcaldía de Riobamba, la ESPOCH, la Fundación Datalat y los grupos núcleos de Riobamba y Quevedo.
             ¡Juntos hacemos de estas ciudades más saludables!
           </p>
-          <Image
-            src="/images/grupo-nucleo.png"
-            alt="Foto grupo nucleo"
-            width={1304}
-            height={1333}
-            priority
-          />
+          <div className='flex flex-col md:flex-row justify-center items-strech mt-6 gap-4 m-4'>
+            {cardData.map((card, index) => (
+              <TeamCard key={index} image={card.image} text={card.text} />
+            ))}
+          </div>
         </div>
       </section>
 
