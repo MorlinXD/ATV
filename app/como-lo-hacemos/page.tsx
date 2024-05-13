@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import FlipCard from '../Components/FlipCard'
-import DownloadButton from '../Components/DownloadButton'
+import NewButtonTwo from '../Components/NewButtonTwo'
 
 export default function Home () {
   const cardsInfo = [
@@ -98,9 +98,81 @@ export default function Home () {
         </p>
         <p className='text-2xl mt-4 text-hcablack font-bold text-center mb-20'>¡Nos emociona mucho compartir todo lo que estamos aprendiendo!</p>
       </div>
+      {/* ----------- Resources ------------- */}
+      <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2 md:mb-10'>Guía para levantar la voz. Caja de herramientas participativas</p>
+                  <span className="text-lg">Herramientas para que adolescentes sean líderes en hacer que las cosas mejoren en sus comunidades. </span>
+                </div>
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Versión Español'
+                  link='https://drive.google.com/file/d/1th0SJu6gu4oKgPM7WMuiph9S7BpPF8Ee/view'
+                  target='_blank'
+                />
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='English Version'
+                  link='https://drive.google.com/file/d/1Il_PtZ3-BFvebJzuRkU3f_VrFcuXP_rG/view?usp=drive_link'
+                  target='_blank'
+                />
+              </div>
+          </div>
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Caja de herramientas. Una guía para diseñar juntos soluciones a problemas sociales con la comunidad</p>
+                  <span className="text-lg">Metodologías para promover la participación, abordar las necesidades de adolescentes, y co-diseñar la Teoría del Cambio.</span>
+                </div>
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Versión Español'
+                  link='https://drive.google.com/file/d/1qO0TEfboNzN15W4dBY8e4irZysE4ymFM/view'
+                  target='_blank'
+                />
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='English Version'
+                  link='https://drive.google.com/file/d/1tYeZ2_H-mKdDHcSER4MjXX767ybR8u1e/view?usp=sharing'
+                  target='_blank'
+                />
+              </div>
+          </div>
+        </div>
+        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Resultados de la encuesta: "Mi ciudad y yo"</p>
+                  <span className="text-lg">Encuesta realizada en Quevedo y Riobamba para comprender la relación de adolescentes y jóvenes con su entorno, e identificar sus necesidades.</span>
+                </div>
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Versión Español'
+                  link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view'
+                  target='_blank'
+                />
+              </div>
+          </div>
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+                <div className='flex flex-col'>
+                  <p className='text-2xl font-bold text-hcanewblue mb-2'>Resultados de la encuesta: "Imaginando mi futuro"</p>
+                  <span className="text-lg">Encuesta realizada en Quevedo y Riobamba para comprender los sueños y la percepción de adolescentes y jóvenes sobre acciones positivas para construir su futuro.</span>
+                </div>
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Versión Español'
+                  link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view'
+                  target='_blank'
+                />
+              </div>
+          </div>
+        </div>
 
-      {/* ---------- Resources ---------- */}
-      <div className='mb-20'>
+      {/* <div className='mb-20'>
         <div className='container mx-auto flex flex-col justify-center items-center xl:flex-row gap-10 md:gap-20'>
           <div className="md:w-1/3 mx-4 relative">
             <Image
@@ -110,7 +182,7 @@ export default function Home () {
                 height={645}
               />
           </div>
-          <div className='md:w-2/3 rounded-[4rem] mx-4'>
+          <div className=' rounded-[4rem] mx-4'>
             <div className='p-2 md:p-8 flex flex-col md:mb-4 gap-4'>
               <div className="flex items-center justify-between bg-white rounded-xl 2xl:rounded-full px-10 py-2">
                 <div className='flex flex-col'>
@@ -155,7 +227,7 @@ export default function Home () {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
     </main>
   )

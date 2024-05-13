@@ -40,7 +40,7 @@ export default function Home () {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 p-4 md:p-8">
-            <img src="/images/logo-hero.png" alt="Vector Image" className="w-auto h-auto" />
+            <img src="/images/logo-hero-1.png" alt="Vector Image" className="w-auto h-auto" />
           </div>
         </div>
       </div>
