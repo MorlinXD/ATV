@@ -41,7 +41,7 @@ export default function Home () {
           </div>
           <div>
             <Image
-                src="/images/atv-img-1.png"
+                src="/images/atv-img-3.png"
                 alt="Mapa con lupa"
                 width={630}
                 height={684}
