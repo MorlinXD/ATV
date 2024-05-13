@@ -6,6 +6,7 @@ import ImageGallery from '../Components/ImageGallery'
 import { Tab, Tabs } from '../Components/Tabs'
 import NewButtonOne from '../Components/NewButtonOne'
 import NewButtonTwo from '../Components/NewButtonTwo'
+import CommentsCard from '../Components/CommentsCard'
 
 export default function Home () {
   const images = [
@@ -120,26 +121,25 @@ export default function Home () {
       </section>
 
       {/* ---------- Testimonios ---------- */}
-    <section className='relative bg-hcayellow md:bg-opacity-0'>
-      <div className='container mx-auto flex flex-col md:flex-row lg:mt-40 xl:mt-[20rem] justify-center items-center gap-2'>
+    <section className='relative bg-hcalightyellow md:bg-opacity-0'>
+      {/* <div className='container mx-auto flex flex-col md:flex-row lg:mt-40 xl:mt-[20rem] justify-center items-center gap-2'> */}
+      <div className='container mx-auto flex flex-col md:flex-row lg:mt-20 xl:mt-[4rem] justify-center items-center gap-2'>
         <div className="flex justify-center md:p-4">
-          <Image
-            src="/images/quevedo/testimonio-1-quevedo.png"
-            alt="Primer testimonio"
-            width={800}
-            height={324}
+          <CommentsCard
+            image='/images/quevedo/mia.png'
+            name='Mia, 17 años'
+            text='Me he sentido muy feliz ya que he aprendido a convivir con más personas, a tratar con ellas, a cada quien dar nuestras opiniones y ser libres en nuestro propio pensar. Como jóvenes tenemos todos un pensar diferente y al hablar entre nosotros podemos compartir estas experiencias bonitas y también cada quien dar su perspectiva desde una manera diferente de pensar.'
           />
         </div>
         <div className="flex justify-center md:p-4">
-          <Image
-            src="/images/quevedo/testimonio-2-quevedo.png"
-            alt="Primer testimonio"
-            width={800}
-            height={324}
+          <CommentsCard
+            image='/images/quevedo/jander.png'
+            name='Jander, 18 años'
+            text='Quiero aprender más sobre justicia social y medio ambiente, crear lugares en la ciudad donde podamos ser nosotros mismo, divertirnos, sin sentirnos presionados por la inseguridad. Estamos contribuyendo activamente, y de aquí a buscamos un bienestar de los jóvenes ya que algunos años, hacer un cambio real y gratificante para la ciudad.'
           />
         </div>
       </div>
-      <div className='absolute -z-50 w-full -top-96 xl:-top-[28rem]'>
+      <div className='absolute -z-50 w-full -top-72 md:top-16 xl:-top-[23rem]'>
         <Image
           src="/images/comments-background-quevedo.png"
           alt="Imagen de portada"
@@ -152,7 +152,7 @@ export default function Home () {
     </section>
 
     {/* ---------- Como nos sentimos ---------- */}
-    <section className='bg-hcayellow'>
+    <section className='bg-hcalightyellow'>
       <div className='container mx-auto flex flex-col justify-center items-center mt-20'>
         <div className='flex flex-col items-center'>
           <Image

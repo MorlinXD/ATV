@@ -6,6 +6,7 @@ import ImageGallery from '../Components/ImageGallery'
 import { Tab, Tabs } from '../Components/Tabs'
 import NewButtonTwo from '../Components/NewButtonTwo'
 import NewButtonOne from '../Components/NewButtonOne'
+import CommentsCard from '../Components/CommentsCard'
 
 export default function Home () {
   const images = [
@@ -145,31 +146,29 @@ export default function Home () {
 
     {/* ---------- Testimonios ---------- */}
     <section className='relative'>
-      <div className='container mx-auto flex flex-col md:flex-row lg:mt-96 xl:mt-[30rem] justify-center items-center gap-2'>
+      <div className='container mx-auto flex flex-col md:flex-row lg:mt-20 xl:mt-[10rem] justify-center items-center gap-2'>
         <div className="flex justify-center md:p-4">
-          <Image
-            src="/images/riobamba/testimonio-1-riobamba.png"
-            alt="Primer testimonio"
-            width={800}
-            height={324}
+          <CommentsCard
+            image='/images/riobamba/samanta.png'
+            name='Samanta, 22 años'
+            text='Considero que la motivación es el primer paso para el accionar, el sentirse parte de algo también impulsa las habilidades de cada uno de   los integrantes del grupo núcleo, impulsa mis habilidades y las ganas de utilizarlas para crear una mejor realidad para los adolescentes de mi querida ciudad Riobamba.'
           />
         </div>
         <div className="flex justify-center md:p-4">
-          <Image
-            src="/images/riobamba/testimonio-2-riobamba.png"
-            alt="Primer testimonio"
-            width={800}
-            height={324}
+          <CommentsCard
+            image='/images/riobamba/diego.png'
+            name='Diego, 17 años'
+            text='Somos personas visionarias que generamos un gran valor, estamos aquí para ayudar a los demás, porque somos  agentes de cambio, Todos creemos en un bien común, tomamos decisiones fundamentales en el proyecto que vamos a desarrollar y valoramos las opiniones diversas porque buscamos un objetivo de bienestar común.'
           />
         </div>
       </div>
-      <div className='absolute -z-50 w-full -top-20'>
+      <div className='absolute -z-50 w-full -top-36'>
         <Image
-          src="/images/comments-background.png"
+          src="/images/comments-background-riobamba.png"
           alt="Imagen de portada"
           layout='responsive'
-          width={1920}
-          height={300}
+          width={1973}
+          height={590}
           priority
         />
       </div>
