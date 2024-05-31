@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 // import { Open_Sans, Permanent_Marker } from 'next/font/google'
 import localFont from 'next/font/local'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import Footer from './Components/Footer'
 import Header from './Components/Header'
@@ -57,6 +58,7 @@ export default function RootLayout ({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-CE9D162MK1" />
     </html>
   )
 }
