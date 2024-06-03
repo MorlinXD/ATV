@@ -18,7 +18,7 @@ export default function LoQueSeViene () {
       </section> */}
 
       {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-1.webp\')' }}>
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-3.webp\')' }}>
       </section>
 
       {/* ---------- Principal icon ---------- */}
