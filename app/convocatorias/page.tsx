@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-import ButtonTwo from '../Components/ButtonTwo'
+import NewButtonTwo from '../Components/NewButtonTwo'
 
 export default function LoQueSeViene () {
   return (
@@ -45,47 +45,74 @@ export default function LoQueSeViene () {
       {/* ---------- Principal text ---------- */}
       <section className="container mx-auto flex flex-col justify-center mt-20">
         <p className='text-black mt-10 text-justify text-2xl mx-4'>
-          Aquí encontrarás las <strong className='text-hcadarkblue'>convocatorias</strong> abiertas para trabajar en el
-          proyecto <strong className='text-hcadarkblue'>"Alza Tu Voz" - Ciudades Saludables para Adolescentes</strong>.
-          Para aplicar, <strong className='text-hcadarkblue'>revisa los TDR</strong> y sigue las
-          <strong className='text-hcadarkblue'> instrucciones especificadas</strong> en cada uno.
+          Aquí encontrarás las <strong>convocatorias</strong> abiertas para trabajar en el
+          proyecto <strong>"Alza Tu Voz" - Ciudades Saludables para Adolescentes</strong>.
+          Para aplicar, <strong>revisa los TDR</strong> y sigue las
+          <strong> instrucciones especificadas</strong> en cada uno.
         </p>
       </section>
 
       {/* ---------- Convocatorias ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16" id='herramientas'>
         <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
-          <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto">
-            <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
-              <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Organización especialista en participación juvenil e incidencia local</h2>
-              <Image
-                src="/convocatoria-1.webp"
-                alt="Imagen de convocatoria"
-                width={916}
-                height={1506}
-              />
-              <ButtonTwo
-                label='Descargar TDR'
-                link='https://drive.google.com/file/d/10uGVJhYTHOu_cW_OeM0mGGoYHu5mS-pc/view?usp=sharing'
-                target='_blank'
-              />
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+              <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+                <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
+                  <h2 className="text-lg font-bold mb-2 text-hcanewblue">
+                    Equipos consultores especialistas en salud mental comunitaria
+                  </h2>
+                  <Image
+                    src="/convocatoria-2.webp"
+                    alt="Imagen de convocatoria"
+                    width={550}
+                    height={900}
+                  />
+                    <NewButtonTwo
+                    color='bg-hcaneworange'
+                    label='Descargar TDR'
+                    link='https://drive.google.com/file/d/1d1xgOkB6tKP8K-A7XzGcRuj-8QJ4SsOF/view?usp=sharing'
+                    target='_blank'
+                  />
+              </div>
             </div>
-            {/* <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
-              <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Organización especialista en participación juvenil e incidencia local</h2>
-              <Image
-                src="/convocatoria-1.webp"
-                alt="Imagen de convocatoria"
-                width={916}
-                height={1506}
-              />
-              <ButtonTwo
-                label='Descargar TDR'
-                link='https://drive.google.com/file/d/10uGVJhYTHOu_cW_OeM0mGGoYHu5mS-pc/view?usp=sharing'
-                target='_blank'
-              />
-            </div> */}
+          </div>
+          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
+              <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
+                <h2 className="text-lg font-bold mb-2 text-hcanewblue">
+                  Líder de equipo Alza tu voz - Riobamba
+                </h2>
+                <Image
+                  src="/convocatoria-3.webp"
+                  alt="Imagen de convocatoria"
+                  width={550}
+                  height={900}
+                />
+                <NewButtonTwo
+                  color= 'bg-hcaneworange'
+                  label='Descargar TDR'
+                  link='https://drive.google.com/file/d/1i9N_d4Xa8RhPCVnU_7RmTDxBc2lT5kMz/view?usp=sharing'
+                  target='_blank'
+                />
+              </div>
+            </div>
           </div>
         </div>
+        `
+      {/* <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
+        <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Organización especialista en participación juvenil e incidencia local</h2>
+        <Image
+          src="/convocatoria-1.webp"
+          alt="Imagen de convocatoria"
+          width={916}
+          height={1506}
+        />
+        <ButtonTwo
+          label='Descargar TDR'
+          link='https://drive.google.com/file/d/10uGVJhYTHOu_cW_OeM0mGGoYHu5mS-pc/view?usp=sharing'
+          target='_blank'
+        />
+      </div> */}
       </section>
     </main>
   )

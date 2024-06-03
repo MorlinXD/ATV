@@ -26,6 +26,10 @@ const navItems = [
   {
     path: '/quevedo',
     name: 'Quevedo'
+  },
+  {
+    path: '/convocatorias',
+    name: 'Convocatorias'
   }
 ]
 
