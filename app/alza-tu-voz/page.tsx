@@ -22,7 +22,7 @@ export default function Home () {
   return (
     <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/new-home-hero-3.webp\')' }}>
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/atv-hero-2.webp\')' }}>
       </section>
 
       {/* ---------- Intro ---------- */}
