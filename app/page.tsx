@@ -1,28 +1,28 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
+import Image from 'next/image'
 // import ButtonOne from './Components/ButtonOne'
-import MainCarousel from "./Components/MainCarousel";
+import MainCarousel from './Components/MainCarousel'
 // import ButtonQuevedo from './Components/ButtonQuevedo'
 // import ButtonRiobamba from './Components/ButtonRiobamba'
 // import ButtonTwo from './Components/ButtonTwo'
-import NewButtonOne from "./Components/NewButtonOne";
-import NewButtonTwo from "./Components/NewButtonTwo";
+import NewButtonOne from './Components/NewButtonOne'
+import NewButtonTwo from './Components/NewButtonTwo'
 
-export default function Home() {
+export default function Home () {
   const texts = [
     {
-      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para adolescentes y jóvenes de Quevedo y Riobamba.',
+      text: '"Alza Tu Voz" es un proyecto para construir ciudades más saludables para adolescentes y jóvenes de Quevedo y Riobamba.'
     },
     {
-      text: "Junto a ellas y ellos trabajamos para convertir sus ciudades en lugares más seguros, saludables e interculturales.",
+      text: 'Junto a ellas y ellos trabajamos para convertir sus ciudades en lugares más seguros, saludables e interculturales.'
     },
     {
-      text: "¡Te invitamos a unirte y convertirte en agente de cambio! Tu voz puede marcar la diferencia. ",
+      text: '¡Te invitamos a unirte y convertirte en agente de cambio! Tu voz puede marcar la diferencia. '
     },
     {
-      text: "En Ecuador, LAB XXI lidera la implementación de la iniciativa en trabajo conjunto con organizaciones, instituciones y aliados locales.",
-    },
-  ];
+      text: 'En Ecuador, LAB XXI lidera la implementación de la iniciativa en trabajo conjunto con organizaciones, instituciones y aliados locales.'
+    }
+  ]
   return (
     <main className="flex min-h-screen flex-col">
       {/* <section>
@@ -70,7 +70,7 @@ export default function Home() {
 
       {/* ---------- Videos ---------- */}
       <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-        <div className="relative w-full lg:block" style={{ height: "350px" }}>
+        <div className="relative w-full lg:block" style={{ height: '350px' }}>
           <iframe
             src="https://www.youtube.com/embed/7LwdxSUqg9A?si=Z9epdI43-asgBA-V"
             className="absolute top-0 left-0 w-full h-full rounded-xl"
@@ -89,7 +89,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center items-center text-md gap-6 p-2 lg:p-10">
           <div className="flex flex-col mx-10 lg:mx-20">
             <h2 className="text-4xl text-hcaneworange font-bold mt-10">
-              ¡Ayúdanos a fortalecer la red de adolescentes y jóvenes en{" "}
+              ¡Ayúdanos a fortalecer la red de adolescentes y jóvenes en{' '}
               <span className="text-hcanewblue">Quevedo y Riobamba!</span>
             </h2>
             <p className="text-hcablack text-2xl mt-10 text-justify">
@@ -187,11 +187,11 @@ export default function Home() {
               src="/images/glass-1.png"
               alt="Mapa con lupa"
               width={937}
-              height={884}
+              height={885}
             />
           </div>
         </div>
       </section>
     </main>
-  );
+  )
 }

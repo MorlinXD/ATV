@@ -1,38 +1,38 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import AtvTabs from "../Components/AtvTabs";
-import Carousel from "../Components/Carousel";
-import TeamCard from "../Components/TeamCard";
+import Image from 'next/image'
+import AtvTabs from '../Components/AtvTabs'
+import Carousel from '../Components/Carousel'
+import TeamCard from '../Components/TeamCard'
 
-export default function Home() {
+export default function Home () {
   const images = [
-    "/images/atv-gal-1.webp",
-    "/images/atv-gal-2.webp",
-    "/images/atv-gal-3.webp",
-  ];
+    '/images/atv-gal-1.webp',
+    '/images/atv-gal-2.webp',
+    '/images/atv-gal-3.webp'
+  ]
 
   const cardData = [
     {
-      image: "/logos/labxxi-logo.png",
-      text: 'LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de los y las jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del consorcio de la iniciativa "Alza Tu Voz".',
+      image: '/logos/labxxi-logo.png',
+      text: 'LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de los y las jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del consorcio de la iniciativa "Alza Tu Voz".'
     },
     {
-      image: "/logos/datalat-logo.png",
-      text: "Fundación Datalat implementa enfoques digitales e impulsa la transformación digital del proyecto, para promover el empoderamiento de adolescentes y jóvenes aprovechando medios virtuales y promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.",
+      image: '/logos/datalat-logo.png',
+      text: 'Fundación Datalat implementa enfoques digitales e impulsa la transformación digital del proyecto, para promover el empoderamiento de adolescentes y jóvenes aprovechando medios virtuales y promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.'
     },
     {
-      image: "/logos/espoch-logo.png",
-      text: "La Escuela Superior Politécnica de Chimborazo proporciona apoyo en rutas de aprendizaje, y realiza investigación centrada en datos y experiencia del programa con enfoque en bienestar adolescente.",
+      image: '/logos/espoch-logo.png',
+      text: 'La Escuela Superior Politécnica de Chimborazo proporciona apoyo en rutas de aprendizaje, y realiza investigación centrada en datos y experiencia del programa con enfoque en bienestar adolescente.'
     },
     {
-      image: "/logos/quevedo-logo.png",
-      text: "La Alcaldía de Quevedo proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Quevedo.",
+      image: '/logos/quevedo-logo.png',
+      text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Quevedo.'
     },
     {
-      image: "/logos/riobamba-logo.png",
-      text: "La Alcaldía de Riobamba proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Riobamba.",
-    },
-  ];
+      image: '/logos/riobamba-logo.png',
+      text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Riobamba.'
+    }
+  ]
 
   return (
     <main className="flex min-h-screen flex-col">
@@ -79,7 +79,7 @@ export default function Home() {
           <br /> proyecto
         </h2>
         <p className="text-hcablack mt-10 text-justify text-2xl mx-4">
-          El programa{" "}
+          El programa{' '}
           <a
             href="https://www.fondationbotnar.org/project/the-botnar-healthy-cities-for-adolescents-program/"
             target="_blank"
@@ -88,28 +88,28 @@ export default function Home() {
           >
             Ciudades Saludables para Adolescentes (HCA, por sus siglas en
             inglés)
-          </a>{" "}
-          fue lanzado entre 2018 y 2021 por{" "}
+          </a>{' '}
+          fue lanzado entre 2018 y 2021 por{' '}
           <strong className="text-hcablack">Fundación Botnar</strong>, quien a
           nivel mundial busca propuestas innovadoras que pudieran hacer un gran
           cambio en cómo funcionan las ciudades y fomentar la igualdad. Desde
           mayo de 2022, comenzó la segunda fase del programa HCA, con la misión
           de conocer las necesidades relacionadas con el
           <strong className="text-hcablack">
-            {" "}
+            {' '}
             bienestar de los y las jóvenes de entre 14 y 19 años
           </strong>
           .
         </p>
         <p className="text-black mt-5 text-justify text-2xl mx-4">
           En Ecuador, el programa "Ciudades Saludables para Adolescentes" cobra
-          vida gracias a la iniciativa{" "}
+          vida gracias a la iniciativa{' '}
           <strong className="text-hcablack"> "Alza Tu Voz". </strong>
           Un proyecto liderado por LAB XXI en colaboración con socios y aliados
           locales: GAD de Quevedo, GAD de Riobamba, la Escuela Superior
-          Politécnica de Chimborazo (ESPOCH) y Fundación Datalat. Durante la{" "}
+          Politécnica de Chimborazo (ESPOCH) y Fundación Datalat. Durante la{' '}
           <strong className="text-hcablack">primera etapa</strong>, que abarcó
-          desde{" "}
+          desde{' '}
           <strong className="text-hcablack">
             agosto hasta diciembre de 2023
           </strong>
@@ -118,15 +118,15 @@ export default function Home() {
           proyecto que transformará las dos ciudades.
         </p>
         <p className="text-black mt-5 text-justify text-2xl mx-4">
-          Desde{" "}
+          Desde{' '}
           <strong className="text-hcablack">
             enero de 2024 hasta junio de 2026
           </strong>
           , estamos poniendo en marcha este proyecto en Riobamba y Quevedo.
           Nuestro objetivo principal es que adolescentes y jóvenes se empoderen
-          e{" "}
+          e{' '}
           <strong className="text-hcablack">
-            involucren activamente en la mejora de sus ciudades{" "}
+            involucren activamente en la mejora de sus ciudades{' '}
           </strong>
           . ¡Queremos crear espacios, tanto físicos como digitales, que
           promuevan la salud y el bienestar!
@@ -139,7 +139,7 @@ export default function Home() {
         style={{ backgroundImage: "url('/images/video-background.png')" }}
       >
         <div className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
-          <div className="relative w-full lg:block" style={{ height: "350px" }}>
+          <div className="relative w-full lg:block" style={{ height: '350px' }}>
             <iframe
               src="https://www.youtube.com/embed/5OMgHvN96iY?si=CRqPGudL2y_VM_zn"
               className="absolute top-0 left-0 w-full h-full rounded-xl"
@@ -248,5 +248,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  )
 }
