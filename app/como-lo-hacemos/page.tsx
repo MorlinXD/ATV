@@ -145,6 +145,33 @@ export default function Home () {
         />
       </div>
 
+      {/* ----------- Acciones ---------- */}
+      <section className='bg-hcalightyellow'>
+        <div className='container mx-auto flex flex-col justify-center items-center'>
+          <div className='flex flex-col items-center'>
+            <Image
+              src="/images/accion-icon.svg"
+              alt="Group icon"
+              width={120}
+              height={120}
+            />
+            <h2 className='text-6xl mt-4 font-bold text-hcaneworange text-center'>Nuestras acciones</h2>
+          </div>
+          <p className='text-2xl mt-4 text-hcablack text-center'>
+            En estos meses, hemos implementado varias acciones y estrategias para que sean cada vez más los
+            adolescentes que fortalezcan sus capacidades para convertirse en agentes de cambio en sus ciudades
+            desde diferentes puntos de acción.
+          </p>
+        </div>
+        <div className="container mx-auto flex justify-center mt-10 -mb-10 md:-mb-60">
+          <div className="w-11/12">
+            <div className="relative pt-30 lg:pt-0" style={{ paddingBottom: '100%' }}>
+              <iframe title="Línea de Tiempo" frameBorder="0" width="1200" height="500" style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '60%' }} src="https://view.genially.com/66982b20c8257f39137aaef3" scrolling="no"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ----------- Herramientas ---------- */}
       <section className='bg-hcalightyellow ' id='herramientas'>
       <div className='container mx-auto flex flex-col justify-center items-center'>
