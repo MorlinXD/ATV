@@ -65,6 +65,74 @@ export default function Home () {
       </div>
       </section>
 
+      {/* ----------- Resultados ---------- */}
+      <section>
+        <div className='container mx-auto flex flex-col justify-center items-center'>
+          <div className='flex flex-col items-center'>
+            <Image
+              src="/images/results-icon.svg"
+              alt="Group icon"
+              width={120}
+              height={120}
+            />
+            <h2 className='text-6xl mt-4 font-bold text-hcablack text-center'>Nuestros principales resultados</h2>
+          </div>
+          <p className='text-xl mt-4 text-hcablack text-center'>
+            (Actualizado a Junio 2024)
+          </p>
+        </div>
+        <div className='container mx-auto flex flex-col lg:flex-row justify-center items-center my-10 lg:gap-24'>
+          {/* ------- Dato 1 -------- */}
+          <div className='flex flex-col justify-center text-center mb-8'>
+            <h3 className='text-hcaneworange text-8xl font-bold'>157</h3>
+            <h4 className='text-hcablack text-3xl font-semibold'>adolescentes</h4>
+            <div className='flex flex-row justify-between gap-10'>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>Ciudad:</p>
+                <span>82 Riobamba</span>
+                <span>75 Quevedo</span>
+              </div>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>Género:</p>
+                <span>86 Masculino</span>
+                <span>71 Femenino</span>
+              </div>
+            </div>
+          </div>
+          {/* ------- Dato 2 -------- */}
+          <div className='flex flex-col justify-center text-center mb-8'>
+            <h3 className='text-hcaneworange text-8xl font-bold'>25</h3>
+            <h4 className='text-hcablack text-3xl font-semibold'>docentes</h4>
+            <div className='flex flex-row justify-between gap-10'>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>Ciudad:</p>
+                <span>25 Quevedo</span>
+              </div>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>Género:</p>
+                <span>7 Masculino</span>
+                <span>18 Femenino</span>
+              </div>
+            </div>
+          </div>
+          {/* ------- Dato 3 -------- */}
+          <div className='flex flex-col justify-center text-center mb-8'>
+            <h3 className='text-hcaneworange text-8xl font-bold'>308</h3>
+            <h4 className='text-hcablack text-3xl font-semibold'>seguidores</h4>
+            <div className='flex flex-row justify-between gap-10'>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>Instagram:</p>
+                <span>266 followers</span>
+              </div>
+              <div className='mt-2 flex flex-col text-start'>
+                <p className='text-md font-semibold'>TikTok:</p>
+                <span>42 followers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ---------- Image top city ---------- */}
       <div className='w-full bottom-0'>
         <Image
