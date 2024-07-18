@@ -67,7 +67,7 @@ export default function Home () {
 
       {/* ----------- Resultados ---------- */}
       <section>
-        <div className='container mx-auto flex flex-col justify-center items-center'>
+        <div className='container mx-auto flex flex-col justify-center items-center' id='resultados'>
           <div className='flex flex-col items-center'>
             <Image
               src="/images/results-icon.svg"

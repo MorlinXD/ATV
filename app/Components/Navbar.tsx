@@ -16,6 +16,7 @@ const navItems = [
     name: '¿Cómo lo hacemos?',
     submenu: [
       { path: '/como-lo-hacemos#nuestro-enfoque', name: 'Nuestro enfoque' },
+      { path: '/como-lo-hacemos#resultados', name: 'Resultados' },
       { path: '/como-lo-hacemos#herramientas', name: 'Recursos' }
     ]
   },
