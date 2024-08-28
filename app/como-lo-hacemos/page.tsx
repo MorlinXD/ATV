@@ -5,10 +5,10 @@ import NewButtonTwo from '../Components/NewButtonTwo'
 
 export default function Home () {
   const cardsInfo = [
-    { title: 'Formación y aprendizaje', src: '/images/formacion-icon.svg', alt: 'Formación y aprendizaje', question: 'Destacamos la importancia de crear entornos de aprendizaje seguros a través de empoderar a los docentes, introducir metodologías innovadoras e implementar vías de aprendizaje adaptadas a los intereses de las y los adolescentes.' },
-    { title: 'Participación e incidencia', src: '/images/pertenencia-icon.svg', alt: 'Participación e incidencia', question: 'Nos centramos en dotar a los adolescentes de redes y capacidades para influir en las políticas locales, combinando herramientas de incidencia físicas y digitales.' },
+    { title: 'Formación y aprendizaje', src: '/images/formacion-icon.svg', alt: 'Formación y aprendizaje', question: 'Destacamos la importancia de crear entornos de aprendizaje seguros a través de empoderar a las y los docentes, introducir metodologías innovadoras e implementar vías de aprendizaje adaptadas a los intereses de las y los adolescentes.' },
+    { title: 'Participación e incidencia', src: '/images/pertenencia-icon.svg', alt: 'Participación e incidencia', question: 'Nos centramos en dotar a las y los adolescentes de redes y capacidades para influir en las políticas locales, combinando herramientas de incidencia físicas y digitales.' },
     { title: 'Salud mental', src: '/images/salud-icon.svg', alt: 'Salud mental', question: 'Nuestro objetivo es establecer espacios seguros para que  adolescentes y jóvenes aprendan sobre salud mental a través de actividades artísticas y deportivas, desde un enfoque interseccional.' },
-    { title: 'Fortalecimiento digital', src: '/images/proteccion-icon.svg', alt: 'Fortalecimiento digital', question: 'Buscamos generar oportunidades globales mediante el fortalecimiento de habilidades digitales, el uso de herramientas tecnológicas y los datos para promover la participación e incidencia desde los adolescentes y jóvenes.' }
+    { title: 'Fortalecimiento digital', src: '/images/proteccion-icon.svg', alt: 'Fortalecimiento digital', question: 'Buscamos generar oportunidades globales mediante el fortalecimiento de habilidades digitales, el uso de herramientas tecnológicas y los datos para promover la participación e incidencia desde las y los adolescentes y jóvenes.' }
   ]
 
   return (
@@ -158,7 +158,7 @@ export default function Home () {
             <h2 className='text-6xl mt-4 font-bold text-hcaneworange text-center'>Nuestras acciones</h2>
           </div>
           <p className='text-2xl mt-4 text-hcablack text-center'>
-            En estos meses, hemos implementado varias acciones y estrategias para que sean cada vez más los
+            En estos meses, hemos implementado varias acciones y estrategias para que sean cada vez más las y los
             adolescentes que fortalezcan sus capacidades para convertirse en agentes de cambio en sus ciudades
             desde diferentes puntos de acción.
           </p>
@@ -187,7 +187,7 @@ export default function Home () {
         <p className='text-2xl mt-4 text-hcablack text-center'>
           Queremos que <strong>todo lo chévere</strong> que creamos como parte de "Alza Tu Voz" sea útil para otras iniciativas en todo el mundo.
           En este espacio, vamos a compartir recursos y  herramientas que estamos usando para hacer que las ciudades sean un mejor
-          lugar para los  adolescentes y jóvenes.
+          lugar para las y los adolescentes y jóvenes.
           <br />
           <br />
         </p>

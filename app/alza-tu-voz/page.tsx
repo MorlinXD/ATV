@@ -13,8 +13,12 @@ export default function Home () {
 
   const cardData = [
     {
-      image: '/logos/labxxi-logo.png',
-      text: 'LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de los y las jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del consorcio de la iniciativa "Alza Tu Voz".'
+      image: '/logos/riobamba-logo.png',
+      text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Riobamba.'
+    },
+    {
+      image: '/logos/quevedo-logo.png',
+      text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Quevedo.'
     },
     {
       image: '/logos/datalat-logo.png',
@@ -25,12 +29,8 @@ export default function Home () {
       text: 'La Escuela Superior Politécnica de Chimborazo proporciona apoyo en rutas de aprendizaje, y realiza investigación centrada en datos y experiencia del programa con enfoque en bienestar adolescente.'
     },
     {
-      image: '/logos/quevedo-logo.png',
-      text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Quevedo.'
-    },
-    {
-      image: '/logos/riobamba-logo.png',
-      text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo logístico en la ejecución del proyecto en Riobamba.'
+      image: '/logos/huasipichanga-logo.svg',
+      text: 'Huasipichanga encabeza la estrategia de incidencia y las intervenciones urbanas, promoviendo la participación activa de las y los adolescentes en la planificación urbana.'
     }
   ]
 
@@ -225,7 +225,13 @@ export default function Home () {
             Riobamba y Quevedo. ¡Juntos hacemos de estas ciudades más
             saludables!
           </p>
-          <div className="flex flex-col md:flex-row justify-center items-strech mt-6 gap-4 m-4">
+          <div className='mt-10 m-4 md:w-[500px]'>
+            <TeamCard
+              image='/logos/labxxi-logo.png'
+              text='LAB XXI es un laboratorio de innovación social y educativa que trabaja en pro de las y los jóvenes del Ecuador. Es quien lidera la implementación y organización de las acciones del Consorcio del proyecto "Alza Tu Voz".'
+            />
+          </div>
+          <div className="flex flex-col lg:flex-row justify-center items-strech mt-6 gap-4 m-4">
             {cardData.map((card, index) => (
               <TeamCard key={index} image={card.image} text={card.text} />
             ))}

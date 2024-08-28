@@ -17,97 +17,97 @@ export default function Home () {
   const galleries = [
     {
       src: '/images/riobamba/galeria/gal-riobamba-1.webp',
-      alt: 'Imagen de gallería 1',
+      alt: 'Imagen de galería 1',
       width: 1024,
       height: 1056
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-2.webp',
-      alt: 'Imagen de gallería 2',
+      alt: 'Imagen de galería 2',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-3.webp',
-      alt: 'Imagen de gallería 3',
+      alt: 'Imagen de galería 3',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-4.webp',
-      alt: 'Imagen de gallería 4',
+      alt: 'Imagen de galería 4',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-5.webp',
-      alt: 'Imagen de gallería 5',
+      alt: 'Imagen de galería 5',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-6.webp',
-      alt: 'Imagen de gallería 6',
+      alt: 'Imagen de galería 6',
       width: 1024,
       height: 1056
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-8.webp',
-      alt: 'Imagen de gallería 8',
+      alt: 'Imagen de galería 8',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-9.webp',
-      alt: 'Imagen de gallería 9',
+      alt: 'Imagen de galería 9',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-10.webp',
-      alt: 'Imagen de gallería 10',
+      alt: 'Imagen de galería 10',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-11.webp',
-      alt: 'Imagen de gallería 11',
+      alt: 'Imagen de galería 11',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-12.webp',
-      alt: 'Imagen de gallería 12',
+      alt: 'Imagen de galería 12',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-13.webp',
-      alt: 'Imagen de gallería 13',
+      alt: 'Imagen de galería 13',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-14.webp',
-      alt: 'Imagen de gallería 14',
+      alt: 'Imagen de galería 14',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-15.webp',
-      alt: 'Imagen de gallería 15',
+      alt: 'Imagen de galería 15',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-16.webp',
-      alt: 'Imagen de gallería 16',
+      alt: 'Imagen de galería 16',
       width: 868,
       height: 1048
     },
     {
       src: '/images/riobamba/galeria/gal-riobamba-17.webp',
-      alt: 'Imagen de gallería 17',
+      alt: 'Imagen de galería 17',
       width: 868,
       height: 1048
     }

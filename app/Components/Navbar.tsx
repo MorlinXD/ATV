@@ -17,7 +17,8 @@ const navItems = [
     submenu: [
       { path: '/como-lo-hacemos#nuestro-enfoque', name: 'Nuestro enfoque' },
       { path: '/como-lo-hacemos#resultados', name: 'Resultados' },
-      { path: '/como-lo-hacemos#herramientas', name: 'Recursos' }
+      { path: '/como-lo-hacemos#herramientas', name: 'Recursos' },
+      { path: '/convocatorias', name: 'Convocatorias' }
     ]
   },
   {
@@ -29,8 +30,8 @@ const navItems = [
     name: 'Quevedo'
   },
   {
-    path: '/convocatorias',
-    name: 'Convocatorias'
+    path: '/blog',
+    name: 'Blog'
   }
 ]
 
