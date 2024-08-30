@@ -1,32 +1,28 @@
 export default function Footer () {
   return (
     <footer>
-      <div className="container mx-auto py-10 px-8">
-        <div className="flex flex-col lg:flex-row justify-around items-center gap-8">
-          <div className="flex flex-col lg:flex-row items-center space-x-4">
-            <span>Socio Líder:</span>
+      <div className="container mx-auto py-10 px-8 flex justify-center">
+        <div className="flex flex-col md:flex-row items-center space-x-8 gap-8">
+          <div className="md:border-r-2 md:border-r-hcalightblue md:pr-10">
             <a href="https://lab-xxi.com" target="_blank" rel='noreferrer'>
               <img src="/logos/labxxi-logo.svg" alt="LabXXI" className="h-16"/>
             </a>
           </div>
-          <div className="flex flex-col xl:flex-row items-center space-x-8 gap-8">
-            <span>Consorcio Alza Tu Voz:</span>
-            <a href="https://www.gadmriobamba.gob.ec/" target="_blank" rel='noreferrer'>
-              <img src="/logos/gadriobamba-logo.svg" alt="Alcaldía de Riobamba" className="h-8"/>
-            </a>
-            <a href="https://quevedo.gob.ec/" target="_blank" rel='noreferrer'>
-              <img src="/logos/gadquevedo-logo.svg" alt="Alcaldía de Quevedo" className="h-8"/>
-            </a>
-            <a href="https://datalat.org" target="_blank" rel='noreferrer'>
-              <img src="/logos/datalat-logo.svg" alt="Datalat" className="h-8"/>
-            </a>
-            <a href="https://www.espoch.edu.ec/" target="_blank" rel='noreferrer'>
-              <img src="/logos/espoch-logo.svg" alt="Espoch" className="h-8"/>
-            </a>
-            <a href="https://www.huasipichanga.com/" target="_blank" rel='noreferrer'>
-              <img src="/logos/huasipichanga-logo.svg" alt="Espoch" className="h-8"/>
-            </a>
-          </div>
+          <a href="https://datalat.org" target="_blank" rel='noreferrer'>
+            <img src="/logos/datalat-logo.svg" alt="Datalat" className="h-8"/>
+          </a>
+          <a href="https://www.espoch.edu.ec/" target="_blank" rel='noreferrer'>
+            <img src="/logos/espoch-logo.svg" alt="Espoch" className="h-8"/>
+          </a>
+          <a href="https://www.huasipichanga.com/" target="_blank" rel='noreferrer'>
+            <img src="/logos/huasipichanga-logo.svg" alt="Espoch" className="h-8"/>
+          </a>
+          <a href="https://quevedo.gob.ec/" target="_blank" rel='noreferrer'>
+            <img src="/logos/gadquevedo-logo.svg" alt="Alcaldía de Quevedo" className="h-8"/>
+          </a>
+          <a href="https://www.gadmriobamba.gob.ec/" target="_blank" rel='noreferrer'>
+            <img src="/logos/gadriobamba-logo.svg" alt="Alcaldía de Riobamba" className="h-8"/>
+          </a>
         </div>
       </div>
       <div className="bg-hcanewblue text-white py-4">

@@ -13,14 +13,6 @@ export default function Home () {
 
   const cardData = [
     {
-      image: '/logos/riobamba-logo.png',
-      text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Riobamba.'
-    },
-    {
-      image: '/logos/quevedo-logo.png',
-      text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Quevedo.'
-    },
-    {
       image: '/logos/datalat-logo.png',
       text: 'Fundación Datalat implementa enfoques digitales e impulsa la transformación digital del proyecto, para promover el empoderamiento de adolescentes y jóvenes aprovechando medios virtuales y promoviendo el uso de herramientas tecnológicas innovadoras y la participación digital.'
     },
@@ -31,6 +23,14 @@ export default function Home () {
     {
       image: '/logos/huasipichanga-logo.svg',
       text: 'Huasipichanga encabeza la estrategia de incidencia y las intervenciones urbanas, promoviendo la participación activa de las y los adolescentes en la planificación urbana.'
+    },
+    {
+      image: '/logos/quevedo-logo.png',
+      text: 'La Alcaldía de Quevedo proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Quevedo.'
+    },
+    {
+      image: '/logos/riobamba-logo.png',
+      text: 'La Alcaldía de Riobamba proporciona espacios de incidencia para que las y los adolescentes y jóvenes transformen su comunidad. Además, brinda apoyo en la ejecución del proyecto en Riobamba.'
     }
   ]
 
