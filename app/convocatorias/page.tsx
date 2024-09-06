@@ -43,12 +43,15 @@ export default function LoQueSeViene () {
       </section>
 
       {/* ---------- Principal text ---------- */}
-      <section className="container mx-auto flex flex-col justify-center mt-20">
-        <p className='text-black mt-10 text-justify text-2xl mx-4'>
+      <section className="container mx-auto flex flex-col justify-center items-center mt-20">
+        {/* <p className='text-black mt-10 text-justify text-2xl mx-4'>
           Aquí encontrarás las <strong>convocatorias</strong> abiertas para trabajar en el
           proyecto <strong>"Alza Tu Voz" - Ciudades Saludables para Adolescentes</strong>.
           Para aplicar, <strong>revisa los TDR</strong> y sigue las
           <strong> instrucciones especificadas</strong> en cada uno.
+        </p> */}
+        <p className='text-black mt-10 text-justify text-2xl mx-4'>
+          Aquí encontrarás las <strong>convocatorias</strong>  en las que puedes participar para ser parte del proyecto <strong>"Alza Tu Voz"</strong>.
         </p>
       </section>
 
@@ -58,25 +61,25 @@ export default function LoQueSeViene () {
           <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
               <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
                 <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
-                  <h2 className="text-lg font-bold mb-2 text-hcanewblue">
+                  {/* <h2 className="text-lg font-bold mb-2 text-hcanewblue">
                     Equipos consultores especialistas en salud mental comunitaria
-                  </h2>
+                  </h2> */}
                   <Image
-                    src="/convocatoria-2.webp"
+                    src="/convocatoria-4.webp"
                     alt="Imagen de convocatoria"
                     width={550}
                     height={900}
                   />
                     <NewButtonTwo
                     color='bg-hcaneworange'
-                    label='Descargar TDR'
-                    link='https://drive.google.com/file/d/1d1xgOkB6tKP8K-A7XzGcRuj-8QJ4SsOF/view?usp=sharing'
+                    label='¡Regístrate aquí!'
+                    link='https://ee.kobotoolbox.org/x/iIrSyZmP'
                     target='_blank'
                   />
               </div>
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
+          {/* <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
             <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
               <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
                 <h2 className="text-lg font-bold mb-2 text-hcanewblue">
@@ -96,7 +99,7 @@ export default function LoQueSeViene () {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         `
       {/* <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">

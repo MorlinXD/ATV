@@ -80,6 +80,15 @@ export default function Home () {
         </div>
       </section>
 
+      {/* ---------- CTA ---------- */}
+      <section className="container mx-auto flex justify-center my-5">
+          <NewButtonTwo
+            color="bg-hcaneworange"
+            label="¡Únete a las actividades!"
+            link="/convocatorias"
+          />
+      </section>
+
       {/* ---------- Form and Tools ---------- */}
       {/* <section className=" flex flex-col justify-center items-center text-center mt-20" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}> */}
       <section

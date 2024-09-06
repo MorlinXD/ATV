@@ -44,16 +44,6 @@ export default function TransformandoLaEnsenanza () {
             módulo incluyó actividades prácticas y reflexivas que nos permitieron aplicar los conceptos en situaciones reales. Estos temas no solo son
             relevantes para nuestro bienestar como educadores, sino también para crear un entorno de aprendizaje positivo y comprensivo para nuestros estudiantes.
           </p>
-          <div className="flex flex-col items-center px-4 md:px-20 mb-10">
-            <Image
-              src="/images/blog/blog2_1.webp"
-              alt="La docente Yina Vélez junto a otras docentes del proceso. (De izq. a der.)"
-              width={1600}
-              height={1056}
-              className="rounded-3xl"
-            />
-            <span className="text-hcablack text-base text-center">La docente Yina Vélez junto a otras docentes del proceso. (De izq. a der.)</span>
-          </div>
           <h3 className="mx-8 md:mx-16 mb-10 font-semibold">Mi experiencia personal</h3>
           <p className="mx-8 md:mx-16 mb-10">
             Una de las actividades más impactantes fue la clase sobre la marca personal, donde aprendimos que todas las personas tenemos virtudes que nos hacen únicos y
