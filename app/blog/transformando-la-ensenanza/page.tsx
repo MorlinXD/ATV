@@ -44,6 +44,16 @@ export default function TransformandoLaEnsenanza () {
             módulo incluyó actividades prácticas y reflexivas que nos permitieron aplicar los conceptos en situaciones reales. Estos temas no solo son
             relevantes para nuestro bienestar como educadores, sino también para crear un entorno de aprendizaje positivo y comprensivo para nuestros estudiantes.
           </p>
+          <div className="flex flex-col items-center px-4 md:px-20 mb-10">
+            <Image
+              src="/images/blog/blog2_1.webp"
+              alt="La docente Yina Vélez junto a otras docentes del proceso. (De izq. a der.)"
+              width={1600}
+              height={1056}
+              className="rounded-3xl"
+            />
+            <span className="text-hcablack text-base text-center">La docente Yina Vélez junto a otras docentes del proceso. (De izq. a der.)</span>
+          </div>
           <h3 className="mx-8 md:mx-16 mb-10 font-semibold">Mi experiencia personal</h3>
           <p className="mx-8 md:mx-16 mb-10">
             Una de las actividades más impactantes fue la clase sobre la marca personal, donde aprendimos que todas las personas tenemos virtudes que nos hacen únicos y
@@ -52,6 +62,16 @@ export default function TransformandoLaEnsenanza () {
             aún más el aprendizaje. La oportunidad de compartir experiencias con más docentes y de aprender juntos fue una de las partes más valiosas del curso. Me di cuenta
             de que no estamos solos en los desafíos que enfrentamos y que juntos podemos encontrar soluciones efectivas.
           </p>
+          <div className="flex flex-col items-center px-4 md:px-20 mb-10">
+            <Image
+              src="/images/blog/blog2_2.webp"
+              alt="La docente Yina Vélez junto a otras docentes presentando cómo sería una unidad educativa del siglo XXI. (De izq. a der.)"
+              width={1600}
+              height={1200}
+              className="rounded-3xl"
+            />
+            <span className="text-hcablack text-base text-center">La docente Yina Vélez junto a otras docentes presentando cómo sería una unidad educativa del siglo XXI. (De izq. a der.)</span>
+          </div>
           <h3 className="mx-8 md:mx-16 mb-10 font-semibold">Aplicación en el Aula</h3>
           <p className="mx-8 md:mx-16 mb-10">
             Planeo incorporar técnicas de gestión emocional y habilidades de comunicación en mis clases. Por ejemplo, dedicaré unos minutos al inicio de cada clase para
@@ -66,6 +86,16 @@ export default function TransformandoLaEnsenanza () {
           <p className="mx-8 md:mx-16 mb-10 font-semibold">
             ¡Comparte tus experiencias y contribuyamos juntos a una educación más integral y humana!
           </p>
+          <div className="flex flex-col items-center px-4 md:px-20 mb-10">
+            <Image
+              src="/images/blog/blog2_3.webp"
+              alt="Docentes que culminaron el proceso Colegios XXI."
+              width={1600}
+              height={1200}
+              className="rounded-3xl"
+            />
+            <span className="text-hcablack text-base text-center">Docentes que culminaron el proceso Colegios XXI.</span>
+          </div>
         </section>
       </section>
 
