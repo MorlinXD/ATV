@@ -300,6 +300,14 @@ export default function Home () {
                 name="Dashboard Quevedo"
               ></iframe>
             </div>
+            <div className='flex justify-center p-4'>
+              <NewButtonOne
+                color='bg-hcanewblue'
+                label='Descarga los datos'
+                link='https://drive.google.com/drive/folders/1Qpb-TKFR_JNY77ums_N5Q9V5CPy6eQD1?usp=sharing'
+                target='_blank'
+              />
+            </div>
           </Tab>
           <Tab label="Imaginando mi futuro">
             <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
@@ -319,24 +327,38 @@ export default function Home () {
                 name="Dashboard Quevedo"
               ></iframe>
             </div>
+            <div className='flex justify-center p-4'>
+              <NewButtonOne
+                color='bg-hcanewblue'
+                label='Descarga los datos'
+                link='https://drive.google.com/drive/folders/1Ws9w8QLABnQEuxPK5JDLJ0Sw20DcL7HX?usp=sharing'
+                target='_blank'
+              />
+            </div>
           </Tab>
         </Tabs>
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
-          <div className="flex flex-col justify-center items-center h-auto">
-            <NewButtonTwo
-              color='bg-hcanewblue'
-              label='Análisis “Mi ciudad y yo”'
-              link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
-              target='_blank'
-            />
-          </div>
-          <div className="flex flex-col justify-center items-center h-auto">
-            <NewButtonOne
-              color='bg-hcaneworange'
-              label='Análisis “Imaginando mi futuro”'
-              link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
-              target='_blank'
-            />
+        <div className='container mx-auto flex flex-col justify-center items-center'>
+          <p className='text-2xl mt-4 text-hcablack text-center'>
+            Támbien te dejamos un análisis de completo de cada uno de las encuestas para que puedas conocer
+            más sobre lo que sucede en Quevedo.
+          </p>
+          <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
+            <div className="flex flex-col justify-center items-center h-auto">
+              <NewButtonTwo
+                color='bg-hcanewblue'
+                label='Análisis “Mi ciudad y yo”'
+                link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view?usp=sharing'
+                target='_blank'
+              />
+            </div>
+            <div className="flex flex-col justify-center items-center h-auto">
+              <NewButtonOne
+                color='bg-hcaneworange'
+                label='Análisis “Imaginando mi futuro”'
+                link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view?usp=sharing'
+                target='_blank'
+              />
+            </div>
           </div>
         </div>
     </section>

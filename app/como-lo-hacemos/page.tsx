@@ -249,6 +249,12 @@ export default function Home () {
                   link='https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view'
                   target='_blank'
                 />
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Descarga los datos'
+                  link='https://drive.google.com/drive/folders/1Qpb-TKFR_JNY77ums_N5Q9V5CPy6eQD1?usp=sharing'
+                  target='_blank'
+                />
               </div>
           </div>
           <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
@@ -261,6 +267,12 @@ export default function Home () {
                   color='bg-hcaneworange'
                   label='Versión Español'
                   link='https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view'
+                  target='_blank'
+                />
+                <NewButtonTwo
+                  color='bg-hcaneworange'
+                  label='Descarga los datos'
+                  link='https://drive.google.com/drive/folders/1Ws9w8QLABnQEuxPK5JDLJ0Sw20DcL7HX?usp=sharing'
                   target='_blank'
                 />
               </div>

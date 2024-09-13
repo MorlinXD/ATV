@@ -314,6 +314,14 @@ export default function Home () {
                 name="Dashboard Riobamba"
               ></iframe>
             </div>
+            <div className='flex justify-center p-4'>
+              <NewButtonOne
+                color='bg-hcanewblue'
+                label='Descarga los datos'
+                link='https://drive.google.com/drive/folders/1Qpb-TKFR_JNY77ums_N5Q9V5CPy6eQD1?usp=sharing'
+                target='_blank'
+              />
+            </div>
           </Tab>
           <Tab label="Imaginando mi futuro">
             <div className="relative w-full hidden lg:block" style={{ height: '1110px' }} >
@@ -332,6 +340,14 @@ export default function Home () {
                 allowFullScreen={true}
                 name="Dashboard Riobamba"
               ></iframe>
+            </div>
+            <div className='flex justify-center p-4'>
+              <NewButtonOne
+                color='bg-hcanewblue'
+                label='Descarga los datos'
+                link='https://drive.google.com/drive/folders/1Ws9w8QLABnQEuxPK5JDLJ0Sw20DcL7HX?usp=sharing'
+                target='_blank'
+              />
             </div>
           </Tab>
         </Tabs>

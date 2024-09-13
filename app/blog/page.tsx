@@ -5,7 +5,7 @@ export default function Blog () {
   return (
     <main>
       {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/convocatorias-hero-2.webp\')' }}>
+      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/blog-hero-1.webp\')' }}>
       </section>
 
       {/* ---------- Principal icon ---------- */}
@@ -27,6 +27,15 @@ export default function Blog () {
         <div className=''>
           <img src='/images/onda-blue.svg' alt="Onda" />
         </div>
+      </section>
+
+      {/* ---------- Principal text ---------- */}
+      <section className="container mx-auto flex flex-col justify-center items-center my-20">
+        <p className='text-black mt-10 text-center text-3xl mx-4'>
+          ¡Te contamos lo que estamos haciendo en Alza Tu Voz! Te invitamos a leer nuestro blog,
+          escrito por nosotr@s, l@s adolescentes que formamos parte de esta increíble iniciativa.
+          ¡No te lo pierdas!
+        </p>
       </section>
 
       {/* ---------- Image top city ---------- */}
