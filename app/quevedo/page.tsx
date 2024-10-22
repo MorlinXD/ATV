@@ -7,6 +7,7 @@ import { Tab, Tabs } from '../Components/Tabs'
 import NewButtonOne from '../Components/NewButtonOne'
 import NewButtonTwo from '../Components/NewButtonTwo'
 import CommentsCard from '../Components/CommentsCard'
+import GAEventButton from '../Components/GAEventButton'
 
 export default function Home () {
   const images = [
@@ -328,10 +329,11 @@ export default function Home () {
               ></iframe>
             </div>
             <div className='flex justify-center p-4'>
-              <NewButtonOne
+              <GAEventButton
                 color='bg-hcanewblue'
                 label='Descarga los datos'
                 link='https://drive.google.com/drive/folders/1Ws9w8QLABnQEuxPK5JDLJ0Sw20DcL7HX?usp=sharing'
+                eventName='datosQuevedo'
                 target='_blank'
               />
             </div>

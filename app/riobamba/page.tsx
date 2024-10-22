@@ -7,6 +7,7 @@ import { Tab, Tabs } from '../Components/Tabs'
 import NewButtonTwo from '../Components/NewButtonTwo'
 import NewButtonOne from '../Components/NewButtonOne'
 import CommentsCard from '../Components/CommentsCard'
+import GAEventButton from '../Components/GAEventButton'
 
 export default function Home () {
   const images = [
@@ -315,10 +316,11 @@ export default function Home () {
               ></iframe>
             </div>
             <div className='flex justify-center p-4'>
-              <NewButtonOne
+              <GAEventButton
                 color='bg-hcanewblue'
                 label='Descarga los datos'
                 link='https://drive.google.com/drive/folders/1Qpb-TKFR_JNY77ums_N5Q9V5CPy6eQD1?usp=sharing'
+                eventName='datosRiobamba'
                 target='_blank'
               />
             </div>
