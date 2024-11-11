@@ -65,6 +65,18 @@ export default function LoQueSeViene () {
                     Equipos consultores especialistas en salud mental comunitaria
                   </h2> */}
                   <Image
+                    src="/convocatoria-5.webp"
+                    alt="Imagen de convocatoria"
+                    width={550}
+                    height={900}
+                  />
+                    <NewButtonTwo
+                    color='bg-hcaneworange'
+                    label='¡Regístrate aquí!'
+                    link='https://ee.kobotoolbox.org/x/GZTMYceN?fbclid=PAY2xjawGfTT1leHRuA2FlbQIxMQABpnrTAGlZhlhsqVWKYk5tuIbKJb7cmMpBBeWP_0b3WGdpoUIO7XVFJr2oyw_aem_PEpfqr-UwaoQG2XjSLqg_Q'
+                    target='_blank'
+                  />
+                  {/* <Image
                     src="/convocatoria-4.webp"
                     alt="Imagen de convocatoria"
                     width={550}
@@ -75,7 +87,7 @@ export default function LoQueSeViene () {
                     label='¡Regístrate aquí!'
                     link='https://ee.kobotoolbox.org/x/iIrSyZmP'
                     target='_blank'
-                  />
+                  /> */}
               </div>
             </div>
           </div>
