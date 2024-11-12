@@ -36,6 +36,9 @@ const config: Config = {
       hcanewmelon: '#FFE8D4',
       hcalightyellow: '#FFEDC6',
       hcayellow: '#FFF8E8'
+    },
+    animation: {
+      'fade-in': 'fadeIn 0.3s ease-in-out'
     }
   },
   plugins: []

@@ -7,6 +7,7 @@ import MainCarousel from './Components/MainCarousel'
 // import ButtonTwo from './Components/ButtonTwo'
 import NewButtonOne from './Components/NewButtonOne'
 import NewButtonTwo from './Components/NewButtonTwo'
+import WelcomePopup from './Components/WelcomePopup'
 
 export default function Home () {
   const texts = [
@@ -25,6 +26,7 @@ export default function Home () {
   ]
   return (
     <main className="flex min-h-screen flex-col">
+      <WelcomePopup />
       {/* <section>
         <Image
           src="/images/young-girl.webp"
