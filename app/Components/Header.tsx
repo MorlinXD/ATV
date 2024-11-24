@@ -23,7 +23,7 @@ export default function Header () {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            className="inline-flex items-center ml-2 p-2 w-10 h-10 justify-center text-sm text-hcadarkblue rounded-lg md:hidden hover:bg-tertiary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex items-center ml-2 p-2 w-10 h-10 justify-center text-sm text-hcadarkblue rounded-lg lg:hidden hover:bg-tertiary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => { setIsOpen(!isOpen) }}
@@ -49,7 +49,7 @@ export default function Header () {
         {isOpen
           ? (
             <div
-              className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+              className="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1"
               id="navbar-sticky"
             >
               <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">

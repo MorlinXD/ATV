@@ -44,7 +44,7 @@ export default function Home () {
 
       {/* ---------- Intro ---------- */}
       <section id="que-es">
-        <div className="container mx-auto flex flex-col md:flex-row justify-center items-center">
+        <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center">
           <div className="md:w-2/3 mx-4">
             <h1 className="text-7xl text-hcaneworange font-bold mb-10">
               ¿Qué es
