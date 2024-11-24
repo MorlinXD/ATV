@@ -36,6 +36,7 @@ const navItems = [
 ]
 
 export default function Navbar () {
+  // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
   const pathname = usePathname() || '/'
 
   return (
@@ -47,7 +48,8 @@ export default function Navbar () {
 
           return (
             <div key={item.name} className="relative">
-              {isSubMenu ? (
+              {isSubMenu
+                ? (
                 <div className="group">
                   <p className={`px-4 py-2 md:rounded-full text-sm lg:text-base no-underline duration-300 ease-in text-white ${
                     isActive ? 'bg-hcaneworange' : 'bg-hcanewblue'
@@ -73,7 +75,8 @@ export default function Navbar () {
                     ))}
                   </div>
                 </div>
-              ) : (
+                  )
+                : (
                 <Link href={item.path}>
                   <p className={`px-4 py-2 md:rounded-full text-sm lg:text-base no-underline duration-300 ease-in text-white ${
                     isActive ? 'bg-hcaneworange' : 'bg-hcanewblue'
@@ -81,7 +84,7 @@ export default function Navbar () {
                     {item.name}
                   </p>
                 </Link>
-              )}
+                  )}
             </div>
           )
         })}
