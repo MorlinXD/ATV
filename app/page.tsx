@@ -1,13 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
-// import ButtonOne from './Components/ButtonOne'
 import MainCarousel from './Components/MainCarousel'
-// import ButtonQuevedo from './Components/ButtonQuevedo'
-// import ButtonRiobamba from './Components/ButtonRiobamba'
-// import ButtonTwo from './Components/ButtonTwo'
 import NewButtonOne from './Components/NewButtonOne'
 import NewButtonTwo from './Components/NewButtonTwo'
-import WelcomePopup from './Components/WelcomePopup'
 
 export default function Home () {
   const texts = [
@@ -26,16 +21,7 @@ export default function Home () {
   ]
   return (
     <main className="flex min-h-screen flex-col">
-      <WelcomePopup />
-      {/* <section>
-        <Image
-          src="/images/young-girl.webp"
-          alt="Imagen de portada"
-          width={1920}
-          height={500}
-          priority
-        />
-      </section> */}
+      {/* <WelcomePopup /> */}
 
       {/* Hero */}
       <section
