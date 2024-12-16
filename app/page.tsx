@@ -26,7 +26,7 @@ export default function Home () {
       {/* Hero */}
       <section
         className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]"
-        style={{ backgroundImage: "url('/images/new-home-hero-3.webp')" }}
+        style={{ backgroundImage: "url('/images/new-home-hero-4.webp')" }}
       >
         <div className="container mx-auto px-4 py-12">
           <div className="flex flex-col md:flex-row items-center">

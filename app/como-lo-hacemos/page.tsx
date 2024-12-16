@@ -78,7 +78,7 @@ export default function Home () {
             <h2 className='text-6xl mt-4 font-bold text-hcablack text-center'>Nuestros principales resultados</h2>
           </div>
           <p className='text-xl mt-4 text-hcablack text-center'>
-            (Actualizado a octubre 2024)
+            (Actualizado a diciembre 2024)
           </p>
         </div>
         <div className='container mx-auto flex flex-col lg:flex-row justify-center items-center my-10 lg:gap-24'>
@@ -119,17 +119,36 @@ export default function Home () {
           </div>
           {/* ------- Dato 3 -------- */}
           <div className='flex flex-col justify-center text-center mb-8'>
-            <h3 className='text-hcaneworange text-8xl font-bold'>476</h3>
+            <h3 className='text-hcaneworange text-8xl font-bold'>771</h3>
             <h4 className='text-hcablack text-3xl font-semibold'>seguidores</h4>
             <div className='flex flex-row justify-between gap-10'>
               <div className='mt-2 flex flex-col text-start'>
                 <p className='text-md font-semibold'>Instagram:</p>
-                <span>399 followers</span>
+                <span>655 followers</span>
               </div>
               <div className='mt-2 flex flex-col text-start'>
                 <p className='text-md font-semibold'>TikTok:</p>
-                <span>82 followers</span>
+                <span>116 followers</span>
               </div>
+            </div>
+          </div>
+        </div>
+        {/* ------- Dato 4 -------- */}
+        <div className='flex flex-col justify-center items-center text-center mb-8'>
+          <h3 className='text-hcaneworange text-8xl font-bold'>6360</h3>
+          <h4 className='text-hcablack text-3xl font-semibold'>beneficiarios indirectos</h4>
+          <div className='flex flex-row justify-between gap-6 mx-10'>
+            <div className='mt-2 flex flex-col text-start'>
+              <p className='text-md font-semibold'>Colegios XXI:</p>
+              <span>2650</span>
+            </div>
+            <div className='mt-2 flex flex-col text-start'>
+              <p className='text-md font-semibold'>Transforma Tu Cole:</p>
+              <span>3000</span>
+            </div>
+            <div className='mt-2 flex flex-col text-start'>
+              <p className='text-md font-semibold'>Festivales Urbanos:</p>
+              <span>710</span>
             </div>
           </div>
         </div>
