@@ -55,15 +55,15 @@ export default function Footer () {
           </div>
         </div>
       </div>
-      <div className="bg-hcanewblue text-white py-4 text-center">
+      <div className="bg-hcanewblue text-white text-lg lg:text-xl py-4 text-center">
         <div className="container mx-auto px-8 flex flex-col justify-center items-center">
           <p>
             ¿Has vivido o presenciado una situación de abuso de poder o violencia en el proyecto?
           </p>
           <p>
             Escríbenos tu queja a
-            <a href="mailto:hca@lab-xxi.com "><span className="font-semibold text-lg text-hcaneworange"> hca@lab-xxi.com </span></a>
-            o haz tu denuncia <a href="https://forms.gle/zeuTz3hxPBdpgMsT7" target="_blank" rel='noreferrer'><span className="font-semibold text-lg text-hcaneworange">aquí</span></a>.
+            <a href="mailto:hca@lab-xxi.com "><span className="font-semibold text-hcaneworange"> hca@lab-xxi.com </span></a>
+            o haz tu denuncia <a href="https://forms.gle/zeuTz3hxPBdpgMsT7" target="_blank" rel='noreferrer'><span className="font-semibold text-hcaneworange">aquí</span></a>.
           </p>
           <p>¡Gracias por contribuir a mantener un espacio seguro!</p>
         </div>
