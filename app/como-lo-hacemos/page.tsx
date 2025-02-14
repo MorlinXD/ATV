@@ -78,7 +78,7 @@ export default function Home () {
             <h2 className='text-6xl mt-4 font-bold text-hcablack text-center'>Nuestros principales resultados</h2>
           </div>
           <p className='text-xl mt-4 text-hcablack text-center'>
-            (Actualizado a diciembre 2024)
+            (Actualizado a enero 2025)
           </p>
         </div>
         <div className='container mx-auto flex flex-col lg:flex-row justify-center items-center my-10 lg:gap-24'>
@@ -119,16 +119,16 @@ export default function Home () {
           </div>
           {/* ------- Dato 3 -------- */}
           <div className='flex flex-col justify-center text-center mb-8'>
-            <h3 className='text-hcaneworange text-8xl font-bold'>771</h3>
+            <h3 className='text-hcaneworange text-8xl font-bold'>809</h3>
             <h4 className='text-hcablack text-3xl font-semibold'>seguidores</h4>
             <div className='flex flex-row justify-between gap-10'>
               <div className='mt-2 flex flex-col text-start'>
                 <p className='text-md font-semibold'>Instagram:</p>
-                <span>655 followers</span>
+                <span>672 followers</span>
               </div>
               <div className='mt-2 flex flex-col text-start'>
                 <p className='text-md font-semibold'>TikTok:</p>
-                <span>116 followers</span>
+                <span>137 followers</span>
               </div>
             </div>
           </div>
