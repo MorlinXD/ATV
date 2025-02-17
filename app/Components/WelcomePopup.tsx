@@ -39,10 +39,10 @@ const WelcomePopup = () => {
       onClick={handleBackdropClick}
     >
       <div className="bg-white rounded-lg p-4 md:p-6 w-full max-w-7xl animate-fade-in">
-        <div className="relative w-full" style={{ aspectRatio: '1920/627' }}>
+        <div className="relative w-full" style={{ aspectRatio: '1080/627' }}>
           <Image
-            src="/images/popup.webp"
-            alt="Bienvenida a Alza Tu Voz"
+            src="/convocatoria-6.webp"
+            alt="Aprende Programación Web desde Cero"
             fill
             className="object-contain rounded-lg"
             priority
@@ -51,7 +51,7 @@ const WelcomePopup = () => {
 
         <div className="flex justify-center mt-6">
           <a
-            href="https://ee.kobotoolbox.org/x/GZTMYceN?fbclid=PAY2xjawGfTT1leHRuA2FlbQIxMQABpnrTAGlZhlhsqVWKYk5tuIbKJb7cmMpBBeWP_0b3WGdpoUIO7XVFJr2oyw_aem_PEpfqr-UwaoQG2XjSLqg_Q"
+            href="https://bit.ly/TallerATV"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
