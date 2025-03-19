@@ -65,7 +65,7 @@ export default function LoQueSeViene () {
                     Equipos consultores especialistas en salud mental comunitaria
                   </h2> */}
                   <Image
-                    src="/convocatoria-6.webp"
+                    src="/convocatoria-7.webp"
                     alt="Imagen de convocatoria"
                     width={550}
                     height={900}
@@ -73,21 +73,9 @@ export default function LoQueSeViene () {
                     <NewButtonTwo
                     color='bg-hcaneworange'
                     label='¡Regístrate aquí!'
-                    link='https://bit.ly/TallerATV'
+                    link='https://ee.kobotoolbox.org/x/YLngD8Kx?fbclid=PAZXh0bgNhZW0CMTEAAaaf4ChmFSHHkkTcA-3lA-KPyqaExJk0epoBbwMjrGO4w1OHQnWsjo983iU_aem_tFPOcoHlqXOuBVKKsABwSg'
                     target='_blank'
                   />
-                  {/* <Image
-                    src="/convocatoria-4.webp"
-                    alt="Imagen de convocatoria"
-                    width={550}
-                    height={900}
-                  />
-                    <NewButtonTwo
-                    color='bg-hcaneworange'
-                    label='¡Regístrate aquí!'
-                    link='https://ee.kobotoolbox.org/x/iIrSyZmP'
-                    target='_blank'
-                  /> */}
               </div>
             </div>
           </div>
@@ -113,7 +101,6 @@ export default function LoQueSeViene () {
             </div>
           </div> */}
         </div>
-        `
       {/* <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
         <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Organización especialista en participación juvenil e incidencia local</h2>
         <Image

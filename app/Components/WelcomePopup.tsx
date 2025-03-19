@@ -41,7 +41,7 @@ const WelcomePopup = () => {
       <div className="bg-white rounded-lg p-4 md:p-6 w-full max-w-7xl animate-fade-in">
         <div className="relative w-full" style={{ aspectRatio: '1080/627' }}>
           <Image
-            src="/convocatoria-6.webp"
+            src="/convocatoria-7.webp"
             alt="Aprende Programación Web desde Cero"
             fill
             className="object-contain rounded-lg"
@@ -51,7 +51,7 @@ const WelcomePopup = () => {
 
         <div className="flex justify-center mt-6">
           <a
-            href="https://bit.ly/TallerATV"
+            href="https://ee.kobotoolbox.org/x/YLngD8Kx?fbclid=PAZXh0bgNhZW0CMTEAAaaf4ChmFSHHkkTcA-3lA-KPyqaExJk0epoBbwMjrGO4w1OHQnWsjo983iU_aem_tFPOcoHlqXOuBVKKsABwSg"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
