@@ -41,8 +41,8 @@ const WelcomePopup = () => {
       <div className="bg-white rounded-lg p-4 md:p-6 w-full max-w-7xl animate-fade-in">
         <div className="relative w-full" style={{ aspectRatio: '1080/627' }}>
           <Image
-            src="/convocatoria-7.webp"
-            alt="Aprende Programación Web desde Cero"
+            src="/convocatoria-8.webp"
+            alt="Incidiendo en el espacio público a través de los datos"
             fill
             className="object-contain rounded-lg"
             priority
@@ -51,7 +51,7 @@ const WelcomePopup = () => {
 
         <div className="flex justify-center mt-6">
           <a
-            href="https://ee.kobotoolbox.org/x/YLngD8Kx?fbclid=PAZXh0bgNhZW0CMTEAAaaf4ChmFSHHkkTcA-3lA-KPyqaExJk0epoBbwMjrGO4w1OHQnWsjo983iU_aem_tFPOcoHlqXOuBVKKsABwSg"
+            href="https://drive.google.com/file/d/1GjFGfUBmwU7zHlJgXSkOqFIdxaFYRRb3/view"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
@@ -59,7 +59,7 @@ const WelcomePopup = () => {
             }}
             className="bg-hcaneworange text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all text-lg font-semibold"
           >
-            ¡Inscríbete ahora!
+            Descubre los resultados
           </a>
         </div>
 

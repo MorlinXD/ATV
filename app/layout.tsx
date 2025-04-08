@@ -1,24 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
-// import { Open_Sans, Permanent_Marker } from 'next/font/google'
 import localFont from 'next/font/local'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 import Footer from './Components/Footer'
 import Header from './Components/Header'
-
-// const openSans = Open_Sans({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-opensans'
-// })
-
-// const permanentMarker = Permanent_Marker({
-//   subsets: ['latin'],
-//   display: 'swap',
-//   variable: '--font-permanent-marker',
-//   weight: '400'
-// })
 
 const gilroy = localFont({
   src: [
@@ -51,7 +37,6 @@ export default function RootLayout ({
   children: React.ReactNode
 }) {
   return (
-    // <html lang="es" className={`${gilroy.className} ${openSans.variable} ${permanentMarker.variable} font-sans`}>
     <html lang="es" className={`${gilroy.className}`}>
       <body >
         <Header />
