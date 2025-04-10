@@ -41,7 +41,7 @@ const WelcomePopup = () => {
       <div className="bg-white rounded-lg p-4 md:p-6 w-full max-w-7xl animate-fade-in">
         <div className="relative w-full" style={{ aspectRatio: '1080/627' }}>
           <Image
-            src="/convocatoria-8.webp"
+            src="/convocatoria-9.webp"
             alt="Incidiendo en el espacio público a través de los datos"
             fill
             className="object-contain rounded-lg"
