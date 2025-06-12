@@ -65,7 +65,7 @@ export default function LoQueSeViene () {
                     Equipos consultores especialistas en salud mental comunitaria
                   </h2> */}
                   <Image
-                    src="/convocatoria-7.webp"
+                    src="/convocatoria-9.webp"
                     alt="Imagen de convocatoria"
                     width={550}
                     height={900}
@@ -73,7 +73,7 @@ export default function LoQueSeViene () {
                     <NewButtonTwo
                     color='bg-hcaneworange'
                     label='¡Regístrate aquí!'
-                    link='https://ee.kobotoolbox.org/x/YLngD8Kx?fbclid=PAZXh0bgNhZW0CMTEAAaaf4ChmFSHHkkTcA-3lA-KPyqaExJk0epoBbwMjrGO4w1OHQnWsjo983iU_aem_tFPOcoHlqXOuBVKKsABwSg'
+                    link='https://bit.ly/UrbanoRiobamba'
                     target='_blank'
                   />
               </div>
