@@ -51,7 +51,7 @@ const WelcomePopup = () => {
 
         <div className="flex justify-center mt-6">
           <a
-            href="https://drive.google.com/file/d/1GjFGfUBmwU7zHlJgXSkOqFIdxaFYRRb3/view"
+            href="https://bit.ly/UrbanoRiobamba"
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
