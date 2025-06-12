@@ -59,7 +59,7 @@ const WelcomePopup = () => {
             }}
             className="bg-hcaneworange text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all text-lg font-semibold"
           >
-            Descubre los resultados
+            Regístrate aquí
           </a>
         </div>
 
