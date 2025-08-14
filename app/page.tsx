@@ -3,7 +3,6 @@ import Image from 'next/image'
 import MainCarousel from './Components/MainCarousel'
 import NewButtonOne from './Components/NewButtonOne'
 import NewButtonTwo from './Components/NewButtonTwo'
-// import WelcomePopup from './Components/WelcomePopup'
 
 export default function Home () {
   const texts = [
@@ -22,7 +21,6 @@ export default function Home () {
   ]
   return (
     <main className="flex min-h-screen flex-col">
-      {/* <WelcomePopup /> */}
 
       {/* Hero */}
       <section
