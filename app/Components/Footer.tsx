@@ -16,7 +16,7 @@ export default function Footer() {
 
         {/* Redes sociales al centro */}
         <div className="text-center flex flex-col items-center justify-center">
-          <p className="font-bold">¡Síguenos en nuestras redes sociales!</p>
+          <p className="font-bold">¡Síguenos en nuestras redes sociales!.</p>
           <div className="flex justify-center gap-4 mt-2">
             <a
               href="https://www.tiktok.com/@alzatuvoz.ec?_t=8nwUyNPC8da&_r=1"
