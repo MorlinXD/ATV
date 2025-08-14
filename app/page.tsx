@@ -3,7 +3,7 @@ import Image from 'next/image'
 import MainCarousel from './Components/MainCarousel'
 import NewButtonOne from './Components/NewButtonOne'
 import NewButtonTwo from './Components/NewButtonTwo'
-import WelcomePopup from './Components/WelcomePopup'
+// import WelcomePopup from './Components/WelcomePopup'
 
 export default function Home () {
   const texts = [
@@ -22,7 +22,7 @@ export default function Home () {
   ]
   return (
     <main className="flex min-h-screen flex-col">
-      <WelcomePopup />
+      {/* <WelcomePopup /> */}
 
       {/* Hero */}
       <section
@@ -43,7 +43,6 @@ export default function Home () {
       </section>
 
       <section className="flex flex-col justify-center items-center text-center my-5 lg:my-20 md:px-4">
-        {/* <h1 className='text-6xl text-hcadarkblue font-bold mt-10 font-marker'>¡Alza tu Voz!</h1> */}
         <MainCarousel texts={texts} />
       </section>
 
@@ -79,7 +78,6 @@ export default function Home () {
       </section>
 
       {/* ---------- Form and Tools ---------- */}
-      {/* <section className=" flex flex-col justify-center items-center text-center mt-20" style={{ backgroundImage: 'url(\'/images/home-background.png\')' }}> */}
       <section
         className="w-auto bg-cover"
         style={{ backgroundImage: "url('/images/home-background.png')" }}
@@ -99,11 +97,6 @@ export default function Home () {
               organizaciones de la sociedad civil que trabajen con adolescentes
               y jóvenes, déjanos sus datos aquí! Tu colaboración nos permitirá
               que más actores se sumen como aliados al proyecto "Alza Tu Voz".
-              {/* <ButtonTwo
-                label='Formulario'
-                link='https://ee.kobotoolbox.org/x/KVdKs7lV'
-                target='_blank'
-              /> */}
             </p>
             <NewButtonOne
               color="bg-hcaneworange"
@@ -146,10 +139,6 @@ export default function Home () {
               label="Ver más..."
               link="/como-lo-hacemos#herramientas"
             />
-            {/* <ButtonTwo
-              label='Ver más...'
-              link='/como-lo-hacemos#herramientas'
-            /> */}
           </div>
         </div>
       </section>
