@@ -5,8 +5,11 @@ import Image from 'next/image'
 
 const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const ENABLE_POPUP = false // Cambia a true si quieres volver a activarlo
 
   useEffect(() => {
+    if (!ENABLE_POPUP) return
+
     const popupData = localStorage.getItem('popupShown')
     const currentTime = new Date().getTime()
 
@@ -22,9 +25,8 @@ const WelcomePopup = () => {
         localStorage.setItem('popupShown', currentTime.toString())
       }
     }
-  }, [])
+  }, [ENABLE_POPUP])
 
-  // Manejador para cerrar el popup cuando se hace clic fuera
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
       setIsOpen(false)
