@@ -2,7 +2,6 @@ export default function Footer () {
   return (
     <footer className='bg-white text-black'>
       <div className='container mx-auto py-10 px-8 flex flex-col md:flex-row md:items-start md:justify-between gap-8'>
-        
         {/* Logos a la izquierda */}
         <div className='flex flex-col items-center md:items-start'>
           <div className='flex items-center gap-6'>
