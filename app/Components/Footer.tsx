@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Image from 'next/image'
+import Link from 'next/link'
+import React from 'react'
 
 const images = [
   '/logos/datalat-logo.png',
   '/logos/espoch-logo.png',
   '/logos/huasipichanga-logo.svg',
   '/logos/logo-quevedo.png',
-  '/logos/riobamba-logo.png',
-];
+  '/logos/riobamba-logo.png'
+]
 
 export default function Footer() {
   return (
@@ -131,5 +131,5 @@ export default function Footer() {
         ))}
       </ul>
     </footer>
-  );
+  )
 }
