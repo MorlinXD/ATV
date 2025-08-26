@@ -10,7 +10,7 @@ const images = [
   '/logos/riobamba-logo.png'
 ]
 
-export default function Footer() {
+export default function Footer () {
   return (
     <footer className="bg-hcanewblue text-white">
       {/* Contenedor principal */}
