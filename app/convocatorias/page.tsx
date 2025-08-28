@@ -65,7 +65,7 @@ export default function LoQueSeViene () {
                     Equipos consultores especialistas en salud mental comunitaria
                   </h2> */}
                   <Image
-                    src="/convocatoria-9.webp"
+                    src="/Hackathon.jpg"
                     alt="Imagen de convocatoria"
                     width={550}
                     height={900}
@@ -73,7 +73,7 @@ export default function LoQueSeViene () {
                     <NewButtonTwo
                     color='bg-hcaneworange'
                     label='¡Regístrate aquí!'
-                    link='https://bit.ly/UrbanoRiobamba'
+                    link='https://ee.kobotoolbox.org/x/rVFGeCzz'
                     target='_blank'
                   />
               </div>
