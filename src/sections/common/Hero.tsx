@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 type ItemHero = {
   id: number;
   description: string;
-  author: string;
+  author?: string;
   image: string;
 };
 
