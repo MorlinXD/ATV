@@ -1,0 +1,40 @@
+.bgWrap {
+  position: absolute;
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgWrapp {
+  position: absolute;
+  height: 68vh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgText {
+  padding-top: 20vh;
+}
+
+.perspective {
+  perspective: 1000px;
+}
+
+.card {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
