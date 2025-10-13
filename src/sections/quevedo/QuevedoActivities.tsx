@@ -28,7 +28,6 @@ const items = [
     date: 'Septiembre',
     image: '/images/quevedo/actividades/sonoro.jpg',
   },
-  
 ];
 
 export default function QuevedoActivities() {

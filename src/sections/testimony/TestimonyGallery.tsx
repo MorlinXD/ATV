@@ -12,7 +12,7 @@ const items = [
       sociable, trabajar en equipo, escuchar propuestas y apoyar más
       a mis compañeros."
     `,
-    author: '',//ORIGINAL "Will - Riobamba"
+    author: '', //ORIGINAL "Will - Riobamba"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const items = [
       soy buena, aunque tengo miedo de equivocarme. Tengo buenos
       compañeros y pude ver mis habilidades."
     `,
-    author: '',//ORIGINAL "Ruth - Riobamba"
+    author: '', //ORIGINAL "Ruth - Riobamba"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const items = [
       estudiantes en las clases de Química y a visualizar su destreza
       manual con el dibujo."
     `,
-    author: '',//ORIGINAL "Jaiross - Riobamba"
+    author: '', //ORIGINAL "Jaiross - Riobamba"
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const items = [
       libre y aprendo mucho para mi futuro profesional y personal, lo
       que me ayuda a crecer y desarrollarme mejor."
     `,
-    author: '',//ORIGINAL "Gardenia - Riobamba"
+    author: '', //ORIGINAL "Gardenia - Riobamba"
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const items = [
       de sus enseñanzas y espacios seguros, obviamente me han
       aportado mucho."
     `,
-    author: '',//ORIGINAL "Sky - Riobamba"
+    author: '', //ORIGINAL "Sky - Riobamba"
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ const items = [
       "Sentí emoción al saber que iba a conocer gente nueva y a
       aprender cosas nuevas, que por cierto, ha sido genial todo."
     `,
-    author: '',//ORIGINAL "Victor - Quevedo"
+    author: '', //ORIGINAL "Victor - Quevedo"
   },
 ];
 

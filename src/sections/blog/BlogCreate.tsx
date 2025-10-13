@@ -12,10 +12,9 @@ export default function BlogCreate() {
           ¡Miniblogs... cuéntanos tu experiencia!
         </h1>
         <p className="text-lg mb-10">
-          Lorem ipsum dolor sit amet consectetur. Elit faucibus id etiam velit
-          nunc ipsum sit. Quis malesuada sit placerat quis id nam. Cursus nibh
-          ornare augue sed netus sagittis sit tempus lorem. Justo turpis egestas
-          dis magna.
+          Lorem ipsum dolor sit amet consectetur. Elit faucibus id etiam velit nunc ipsum sit. Quis
+          malesuada sit placerat quis id nam. Cursus nibh ornare augue sed netus sagittis sit tempus
+          lorem. Justo turpis egestas dis magna.
         </p>
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <BlogListCreated />
@@ -168,11 +167,7 @@ function BlogForm() {
 
   return (
     <section className="flex flex-col">
-      <form
-        onSubmit={handleSubmit}
-        id="blogForm"
-        className="grid grid-cols-[3fr_1fr] gap-2"
-      >
+      <form onSubmit={handleSubmit} id="blogForm" className="grid grid-cols-[3fr_1fr] gap-2">
         {itemsForm.map((field, index) => {
           const isTwoColumns = index < 2;
           let input = (
@@ -227,10 +222,9 @@ function BlogForm() {
           <section>
             <h1 className="font-semibold text-sm">Disclaimer:</h1>
             <p className="text-xs leading-3">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Distinctio a, ratione eos est dolores, veniam nobis inventore
-              dicta at iure repellendus cupiditate porro autem officia dolore
-              quisquam maiores veritatis iusto.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a, ratione eos
+              est dolores, veniam nobis inventore dicta at iure repellendus cupiditate porro autem
+              officia dolore quisquam maiores veritatis iusto.
             </p>
           </section>
         </div>

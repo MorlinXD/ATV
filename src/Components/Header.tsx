@@ -8,14 +8,13 @@ import { usePathname } from 'next/navigation';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(true);
- 
+
   const pathname = usePathname(); // ← Detecta la ruta actual
 
   // Ocultar header completamente en la página principal
   if (pathname === '/') {
     return null;
   }
-
 
   return (
     <header className="w-full fixed top-0 bg-white shadow-md z-50">

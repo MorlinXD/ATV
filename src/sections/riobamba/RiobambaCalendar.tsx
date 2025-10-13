@@ -8,8 +8,7 @@ const items = [
     id: 1,
     date: '2025-08-20T18:40:02.075Z',
     title: 'FERIA ALZA TU VOZ',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
+    description: 'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
     location: 'Parque Eucaliptos Alto',
     images: [
       '/images/riobamba/galeria/gal-riobamba-1.webp',
@@ -20,8 +19,7 @@ const items = [
     id: 2,
     date: '2025-08-20T18:40:02.075Z',
     title: 'FERIA ALZA TU VOZ',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
+    description: 'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
     location: 'Parque Eucaliptos Alto',
     images: ['/images/atv-gal-1.webp', '/images/atv-gal-1.webp'],
   },
@@ -29,8 +27,7 @@ const items = [
     id: 1,
     date: '2025-08-20T18:40:02.075Z',
     title: 'FERIA ALZA TU VOZ',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
+    description: 'Lorem ipsum dolor sit amet consectetur. In in quis parturient lorem.',
     location: 'Parque Eucaliptos Alto',
     images: ['/images/atv-gal-1.webp', '/images/atv-gal-1.webp'],
   },
@@ -44,18 +41,12 @@ export default function RiobambaCalendar() {
   }
   return (
     <SectionLayout className="mb-20">
-      <h1 className="text-4xl font-semibold my-10">
-        ¡Conoce nuestras próximas actividades!
-      </h1>
+      <h1 className="text-4xl font-semibold my-10">¡Conoce nuestras próximas actividades!</h1>
 
       <section className="flex justify-center items-center flex-col">
         <ul className="flex flex-col gap-4 mb-20">
           {items.map((item) => (
-            <RiobambaCalendarCard
-              handleSelect={() => handleSelect(item)}
-              key={item.id}
-              {...item}
-            />
+            <RiobambaCalendarCard handleSelect={() => handleSelect(item)} key={item.id} {...item} />
           ))}
         </ul>
         <Carousel images={selectedItem.images} />
@@ -64,9 +55,7 @@ export default function RiobambaCalendar() {
   );
 }
 
-function RiobambaCalendarCard(
-  item: (typeof items)[number] & { handleSelect: () => void },
-) {
+function RiobambaCalendarCard(item: (typeof items)[number] & { handleSelect: () => void }) {
   const formatter = new Intl.DateTimeFormat('es-ES', { weekday: 'long' });
   console.log('iso', new Date().toISOString());
   const dayName = formatter.format(new Date(item.date));
@@ -84,9 +73,7 @@ function RiobambaCalendarCard(
         </div>
         <div className="flex justify-between items-center">
           <div>
-            <h2 className="text-2xl font-semibold text-hcaneworange">
-              {item.title}
-            </h2>
+            <h2 className="text-2xl font-semibold text-hcaneworange">{item.title}</h2>
             <p className="max-w-sm">{item.description}</p>
             <p className="font-semibold mt-2">{item.location}</p>
           </div>

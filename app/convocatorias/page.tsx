@@ -21,7 +21,7 @@ export default function LoQueSeViene() {
       <section
         className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]"
         style={{ backgroundImage: "url('/images/convocatorias-hero-2.webp')" }}
-      ></section>*/ }
+      ></section>*/}
 
       {/* ---------- Principal icon ---------- 
       <section className="flex flex-col items-center">
@@ -35,15 +35,11 @@ export default function LoQueSeViene() {
 
       {/* ---------- Principal title ---------- */}
       <section className="flex flex-col md:flex-row mt-8 md:mt-12 justify-between items-center">
-        <div>
-          {/*<img src="/images/onda-blue.svg" alt="Onda" />*/}
-        </div>
+        <div>{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
         <h1 className="text-hcaneworange text-4xl md:text-5xl lg:text-6xl text-hcablack font-bold mx-4 text-center py-8 md:py-14">
           Convocatorias
         </h1>
-        <div>
-          {/*<img src="/images/onda-blue.svg" alt="Onda" />*/}
-        </div>
+        <div>{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
       </section>
 
       {/* ---------- Principal text ---------- */}
@@ -55,8 +51,8 @@ export default function LoQueSeViene() {
           <strong> instrucciones especificadas</strong> en cada uno.
         </p> */}
         <p className="text-black mt-4 text-justify text-lg md:text-xl lg:text-2xl mx-4 text-center md:text-left max-w-4xl">
-          Aquí encontrarás las <strong>convocatorias</strong> en las que puedes
-          participar para ser parte del proyecto <strong>"Alza Tu Voz"</strong>.
+          Aquí encontrarás las <strong>convocatorias</strong> en las que puedes participar para ser
+          parte del proyecto <strong>"Alza Tu Voz"</strong>.
         </p>
       </section>
 
@@ -68,7 +64,6 @@ export default function LoQueSeViene() {
         <div className="flex justify-center p-4 md:p-6">
           {/* Tarjeta centrada */}
           <div className="flex flex-col md:flex-row items-center md:items-start bg-white rounded-xl shadow-lg p-4 md:p-6 lg:p-8 w-full md:w-3/4">
-            
             {/* Imagen + botón */}
             <div className="flex flex-col items-center w-full md:w-1/2">
               <Image
@@ -94,7 +89,9 @@ export default function LoQueSeViene() {
                 Convocatoria: Participa en Alza Tu Voz
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-                Buscamos personas y equipos apasionados por el desarrollo web este texto es de prueba escrito por Jean mientras esucha música para probar como se ve la vista desde una convocatoria real, saludos UwU!
+                Buscamos personas y equipos apasionados por el desarrollo web este texto es de
+                prueba escrito por Jean mientras esucha música para probar como se ve la vista desde
+                una convocatoria real, saludos UwU!
               </p>
             </div>
           </div>

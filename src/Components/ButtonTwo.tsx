@@ -1,11 +1,11 @@
-import { type FC, type HTMLAttributeAnchorTarget } from 'react'
-import Link from 'next/link'
+import { type FC, type HTMLAttributeAnchorTarget } from 'react';
+import Link from 'next/link';
 
 interface Props {
-  label: string
-  image?: string
-  link: string
-  target?: HTMLAttributeAnchorTarget
+  label: string;
+  image?: string;
+  link: string;
+  target?: HTMLAttributeAnchorTarget;
 }
 
 const ButtonTwo: FC<Props> = ({ label, link, image, target }) => {
@@ -15,11 +15,11 @@ const ButtonTwo: FC<Props> = ({ label, link, image, target }) => {
         className="flex gap-4 items-center text-lg font-bold text-white py-10 px-32 bg-no-repeat bg-center relative hover:opacity-80 transition-opacity duration-300"
         style={{ backgroundImage: 'url("images/button-two.png")' }}
       >
-          {label}
-          <img src={image}/>
+        {label}
+        <img src={image} />
       </button>
     </Link>
-  )
-}
+  );
+};
 
-export default ButtonTwo
+export default ButtonTwo;

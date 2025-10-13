@@ -47,13 +47,12 @@ export default function RiobambaGallery() {
         ¡Conócenos... somos el grupo núcleo de Riobamba!
       </h1>
       <p className="text-lg text-center">
-        Somos un grupo de diferentes de jóvenes y en su mayoría adolescentes los
-        cuales nos enfocamos en apropiarnos de espacios públicos para dar más
-        visibilidad a los adolescentes y demostrarle a esta ciudad de todo lo
-        que somos capaces cuando trabajamos en equipo realizando buenas acciones
-        y disfrutando en el proceso.
+        Somos un grupo de diferentes de jóvenes y en su mayoría adolescentes los cuales nos
+        enfocamos en apropiarnos de espacios públicos para dar más visibilidad a los adolescentes y
+        demostrarle a esta ciudad de todo lo que somos capaces cuando trabajamos en equipo
+        realizando buenas acciones y disfrutando en el proceso.
       </p>
-       {/* Contenedor de scroll horizontal para móviles */}
+      {/* Contenedor de scroll horizontal para móviles */}
       <div className="mt-10 overflow-x-auto sm:overflow-x-visible">
         <ul className="flex flex-row sm:flex-wrap gap-4 justify-start items-center px-4 sm:px-0 snap-x snap-mandatory">
           {items.map((item) => (

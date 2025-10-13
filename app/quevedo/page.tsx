@@ -11,10 +11,7 @@ import GAEventButton from '../../src/Components/GAEventButton';
 import QuevedoPage from '@/src/pages/QuevedoPage';
 
 export default function Home() {
-  const images = [
-    '/images/quevedo/quevedo-3.png',
-    '/images/quevedo/quevedo-4.png',
-  ];
+  const images = ['/images/quevedo/quevedo-3.png', '/images/quevedo/quevedo-4.png'];
 
   const galleries = [
     {
@@ -105,34 +102,24 @@ export default function Home() {
         {/* ---------- Intro ---------- */}
         <section className="container mx-auto flex flex-col justify-center items-center">
           <div className="flex flex-col items-center">
-            <Image
-              src="/images/rocket-icon.svg"
-              alt="Rocket icon"
-              width={75}
-              height={75}
-            />
-            <h3 className="text-4xl mt-4 font-bold text-hcablack">
-              ¿Cómo iniciamos?
-            </h3>
+            <Image src="/images/rocket-icon.svg" alt="Rocket icon" width={75} height={75} />
+            <h3 className="text-4xl mt-4 font-bold text-hcablack">¿Cómo iniciamos?</h3>
           </div>
           <h2 className="text-6xl mt-4 font-bold text-hcanewblue text-center">
-            ¡Conformamos el grupo núcleo en{' '}
-            <strong className="text-hcaneworange">Quevedo!</strong>
+            ¡Conformamos el grupo núcleo en <strong className="text-hcaneworange">Quevedo!</strong>
           </h2>
           <p className="text-2xl mt-4 text-hcablack text-center">
-            Somos un grupo de adolescentes y jóvenes de diferentes partes de
-            Quevedo que conocimos acerca de la iniciativa "Alza Tu Voz" y vimos
-            una oportunidad de transformar nuestros entornos.
+            Somos un grupo de adolescentes y jóvenes de diferentes partes de Quevedo que conocimos
+            acerca de la iniciativa "Alza Tu Voz" y vimos una oportunidad de transformar nuestros
+            entornos.
             <br />
             <br />
-            Nos interesa aportar al desarrollo de Quevedo y que nuestro
-            bienestar sea una prioridad. Por esto, nos unimos a este increíble
-            proyecto, para ser agentes de cambio y levantar nuestras voces e
-            ideas.
+            Nos interesa aportar al desarrollo de Quevedo y que nuestro bienestar sea una prioridad.
+            Por esto, nos unimos a este increíble proyecto, para ser agentes de cambio y levantar
+            nuestras voces e ideas.
           </p>
           <p className="text-2xl mt-4 text-hcablack font-bold text-center mb-6 md:mb-0">
-            ¡Juntas y juntos convertiremos a Quevedo en una ciudad más
-            saludable!
+            ¡Juntas y juntos convertiremos a Quevedo en una ciudad más saludable!
           </p>
         </section>
 
@@ -171,27 +158,20 @@ export default function Home() {
         <section className="bg-hcalightyellow">
           <div className="container mx-auto flex flex-col justify-center items-center mt-20">
             <div className="flex flex-col items-center">
-              <Image
-                src="/images/happy-icon.svg"
-                alt="Happy icon"
-                width={75}
-                height={75}
-              />
+              <Image src="/images/happy-icon.svg" alt="Happy icon" width={75} height={75} />
               <h2 className="text-6xl mt-4 font-bold text-hcablack text-center">
                 ¿Cómo nos sentimos?
               </h2>
             </div>
             <p className="text-2xl mt-4 text-hcablack text-center">
               <span className="font-bold">
-                ¡Tenemos un montón de historias para contar, y lo hacemos a
-                través del arte!
+                ¡Tenemos un montón de historias para contar, y lo hacemos a través del arte!
               </span>
               <br />
               Con un rap y un mural, ¡queremos alzar nuestra voz!
             </p>
             <p className="text-2xl mt-4 text-hcablack text-center">
-              Mira el video de nuestra canción y conoce nuestra experiencia en
-              el telar comunitario:
+              Mira el video de nuestra canción y conoce nuestra experiencia en el telar comunitario:
             </p>
             {/* <div className="container mx-auto flex justify-center items-center bg-cover bg-center my-20 h-[36rem]" style={{ backgroundImage: "url('/images/video-background-blue.png')" }}>
           <div className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16">
@@ -222,19 +202,14 @@ export default function Home() {
         {/* ---------- Mapas parlantes ---------- */}
         <section className="container mx-auto flex flex-col justify-center items-center mt-20">
           <div className="flex flex-col items-center">
-            <Image
-              src="/images/grupo-icon-orange.svg"
-              alt="Group icon"
-              width={75}
-              height={75}
-            />
+            <Image src="/images/grupo-icon-orange.svg" alt="Group icon" width={75} height={75} />
             <h2 className="text-6xl mt-4 font-bold text-hcablack text-center">
               ¿Cómo percibimos nuestra ciudad?
             </h2>
           </div>
           <p className="text-2xl mt-4 text-hcablack text-center">
-            Creamos mapas parlantes que cuentan cómo las y los adolescentes y
-            jóvenes nos relacionamos con
+            Creamos mapas parlantes que cuentan cómo las y los adolescentes y jóvenes nos
+            relacionamos con
             <br /> Quevedo y cómo nos gustaría que se transforme.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5">
@@ -273,29 +248,21 @@ export default function Home() {
         <section className="bg-hcanewmelon">
           <div className="container mx-auto flex flex-col justify-center items-center">
             <div className="flex flex-col items-center">
-              <Image
-                src="/images/group-icon-black.svg"
-                alt="Group icon"
-                width={75}
-                height={75}
-              />
+              <Image src="/images/group-icon-black.svg" alt="Group icon" width={75} height={75} />
               <h2 className="text-6xl mt-4 font-bold text-hcaneworange text-center">
                 ¿Cómo quisiéramos que sea
                 <br /> nuestra vida y nuestra ciudad?
               </h2>
             </div>
             <p className="text-2xl mt-4 text-hcablack text-center">
-              Es muy emocionante compartir algunas de las aspiraciones y sueños
-              que surgieron al imaginar nuestro <br /> futuro. Es interesante
-              ver cómo varían según la parroquia en la que vivimos.
+              Es muy emocionante compartir algunas de las aspiraciones y sueños que surgieron al
+              imaginar nuestro <br /> futuro. Es interesante ver cómo varían según la parroquia en
+              la que vivimos.
             </p>
           </div>
           <div className="container mx-auto flex justify-center mt-10 mb-20">
             <div className="w-11/12">
-              <div
-                className="relative pt-30 lg:pt-0"
-                style={{ paddingBottom: '100%' }}
-              >
+              <div className="relative pt-30 lg:pt-0" style={{ paddingBottom: '100%' }}>
                 <iframe
                   title="Mapa interactivo Quevedo"
                   frameBorder="0"
@@ -320,37 +287,28 @@ export default function Home() {
         <section className="bg-hcanewmelon">
           <div className="container mx-auto flex flex-col justify-center items-center">
             <div className="flex flex-col items-center">
-              <Image
-                src="/images/dashboard-icon.svg"
-                alt="Dashboard icon"
-                width={75}
-                height={75}
-              />
+              <Image src="/images/dashboard-icon.svg" alt="Dashboard icon" width={75} height={75} />
               <h2 className="text-6xl mt-4 font-bold text-hcanewblue text-center">
                 Quevedo en Datos
               </h2>
             </div>
             <p className="text-2xl mt-4 text-hcablack text-center mb-10">
-              ¡Nuestra voz es importante! Por eso, participamos de encuestas por
-              Whatsapp para contar nuestra experiencia en Riobamba y cómo
-              pensamos que podríamos mejorarla.
+              ¡Nuestra voz es importante! Por eso, participamos de encuestas por Whatsapp para
+              contar nuestra experiencia en Riobamba y cómo pensamos que podríamos mejorarla.
               <br />
               <br />
-              Los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi
-              futuro" tienen datos que dicen mucho sobre nosotros, las y los
-              jóvenes. ¡Y nos ayudan a levantar nuestra voz aún más alto!
+              Los resultados de las encuestas "Mi ciudad y yo" e "Imaginando mi futuro" tienen datos
+              que dicen mucho sobre nosotros, las y los jóvenes. ¡Y nos ayudan a levantar nuestra
+              voz aún más alto!
               <br />
               <br />
-              Conócelos, navegando en el visualizador de datos. ¡Te invitamos a
-              descubrir lo que estamos pensando!
+              Conócelos, navegando en el visualizador de datos. ¡Te invitamos a descubrir lo que
+              estamos pensando!
             </p>
           </div>
           <Tabs>
             <Tab label="Mi ciudad y yo">
-              <div
-                className="relative w-full hidden lg:block"
-                style={{ height: '1110px' }}
-              >
+              <div className="relative w-full hidden lg:block" style={{ height: '1110px' }}>
                 <iframe
                   src="https://app.powerbi.com/view?r=eyJrIjoiNDU1NmY4MzUtZDg4ZS00NGY5LWEyZDAtMWMwMWE0NzM3MjM2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
                   className="absolute top-0 left-0 w-full h-full"
@@ -377,10 +335,7 @@ export default function Home() {
               </div>
             </Tab>
             <Tab label="Imaginando mi futuro">
-              <div
-                className="relative w-full hidden lg:block"
-                style={{ height: '1110px' }}
-              >
+              <div className="relative w-full hidden lg:block" style={{ height: '1110px' }}>
                 <iframe
                   src="https://app.powerbi.com/view?r=eyJrIjoiYmY3N2U0ZTUtMTZkOC00NDZjLTkxNjUtODc3YzRjZTVhMDk3IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
                   className="absolute top-0 left-0 w-full h-full"
@@ -410,9 +365,8 @@ export default function Home() {
           </Tabs>
           <div className="container mx-auto flex flex-col justify-center items-center">
             <p className="text-2xl mt-4 text-hcablack text-center">
-              Támbien te dejamos un análisis de completo de cada uno de las
-              encuestas para que puedas conocer más sobre lo que sucede en
-              Quevedo.
+              Támbien te dejamos un análisis de completo de cada uno de las encuestas para que
+              puedas conocer más sobre lo que sucede en Quevedo.
             </p>
             <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5">
               <div className="flex flex-col justify-center items-center h-auto">
@@ -439,19 +393,13 @@ export default function Home() {
         <section className="mt-20">
           <div className="container mx-auto flex flex-col justify-center items-center">
             <div className="flex flex-col items-center">
-              <Image
-                src="/images/gallery-icon.svg"
-                alt="Gallery icon"
-                width={75}
-                height={75}
-              />
+              <Image src="/images/gallery-icon.svg" alt="Gallery icon" width={75} height={75} />
               <h2 className="text-6xl mt-4 font-bold text-hcaneworange text-center">
                 ¡Las imágenes hablan más que mil palabras!
               </h2>
             </div>
             <p className="text-2xl mt-4 text-hcablack text-center mb-10">
-              Estas son algunas fotografías de Quevedo en acción mientras
-              alzamos nuestra voz:
+              Estas son algunas fotografías de Quevedo en acción mientras alzamos nuestra voz:
             </p>
           </div>
           <div className="container mx-auto mt-10 p-4 my-5 lg:my-10 px-8 md:px-16">

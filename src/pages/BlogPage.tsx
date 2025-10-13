@@ -49,15 +49,11 @@ export default function BlogPage() {
 
         {/* ---------- Principal title ---------- */}
         <section className="flex flex-col md:flex-row my-20 justify-between pt-20">
-          <div>
-            {/*<img src="/images/onda-blue.svg" alt="Onda" />*/}
-          </div>
+          <div>{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
           <h2 className="text-hcaneworange text-6xl text-hcablack font-bold mx-4 text-center">
             Blog Alza Tu Voz
           </h2>
-          <div className="">
-            {/*<img src="/images/onda-blue.svg" alt="Onda" />*/}
-          </div>
+          <div className="">{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
         </section>
 
         {/* ---------- Two main blog cards ---------- */}
@@ -77,7 +73,6 @@ export default function BlogPage() {
             />
           </div>
         </section>
-        
       </main>
 
       {/* 

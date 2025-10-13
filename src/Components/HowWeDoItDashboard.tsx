@@ -6,9 +6,7 @@ export default function HowWeDoItDashboard() {
   return (
     <section id="atv-datosPWBI">
       <SectionLayout>
-        <h1 className="text-4xl font-semibold my-10 text-center">
-          Alza Tu Voz en datos
-        </h1>
+        <h1 className="text-4xl font-semibold my-10 text-center">Alza Tu Voz en datos</h1>
         <section id="Grafico-PWBI">
           <Tabs>
             <Tab label="Riobamba">

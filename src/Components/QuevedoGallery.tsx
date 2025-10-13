@@ -16,10 +16,10 @@ const items = [
   },
   {
     id: 4,
-    src: '/images/quevedo/page_quev/Galeria/09-55-00.jpg',    
+    src: '/images/quevedo/page_quev/Galeria/09-55-00.jpg',
   },
   {
-    id: 5,    
+    id: 5,
     src: '/images/quevedo/page_quev/Galeria/09-46-43.jpg',
   },
   {
@@ -47,10 +47,9 @@ export default function QuevedoGallery() {
         ¡Conócenos... somos el grupo núcleo de Quevedo!
       </h1>
       <p className="text-lg text-center">
-        Somos un grupo de adolescentes de Quevedo que buscamos mejorar nuestra
-        ciudad, convertirla en un lugar más sano y seguro en donde podamos
-        expresar nuestros sentimientos, voces e ideas, creando una comunidad de
-        adolescentes y jóvenes que sean escuchados/as y accionen.
+        Somos un grupo de adolescentes de Quevedo que buscamos mejorar nuestra ciudad, convertirla
+        en un lugar más sano y seguro en donde podamos expresar nuestros sentimientos, voces e
+        ideas, creando una comunidad de adolescentes y jóvenes que sean escuchados/as y accionen.
       </p>
       {/* Contenedor de scroll horizontal para móviles */}
       <div className="mt-10 overflow-x-auto sm:overflow-x-visible">

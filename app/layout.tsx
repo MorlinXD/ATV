@@ -25,11 +25,7 @@ export const metadata: Metadata = {
     'Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
 
   return (

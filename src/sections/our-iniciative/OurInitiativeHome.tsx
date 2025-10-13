@@ -15,14 +15,12 @@ export default function OurInitiativeHome() {
           </h1>
           <div className="text-pretty text-base sm:text-xl flex flex-col gap-y-4">
             <p>
-              &quot;Alza Tu Voz&quot; es un proyecto en el que junto a
-              adolescentes de Quevedo y Riobamba, hacemos que sus ciudades sean
-              más amigables, seguras y saludables.
+              &quot;Alza Tu Voz&quot; es un proyecto en el que junto a adolescentes de Quevedo y
+              Riobamba, hacemos que sus ciudades sean más amigables, seguras y saludables.
             </p>
             <p>
-              Nos enfocamos en tres aspectos clave: aprender y crecer en
-              conjunto, participar para que nos escuchen, y cuidar nuestra salud
-              mental y bienestar.
+              Nos enfocamos en tres aspectos clave: aprender y crecer en conjunto, participar para
+              que nos escuchen, y cuidar nuestra salud mental y bienestar.
             </p>
           </div>
 
@@ -34,27 +32,24 @@ export default function OurInitiativeHome() {
 
           <div className="text-pretty text-base sm:text-xl flex flex-col gap-y-4">
             <p>
-              El programa Ciudades Saludables para Adolescentes (HCA, por sus
-              siglas en inglés) fue lanzado a nivel global entre 2018 y 2021 por
-              Fundación Botnar, en su búsqueda de propuestas innovadoras que
-              mejoren las ciudades y sean más amigables para l@s adolescentes.
+              El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) fue
+              lanzado a nivel global entre 2018 y 2021 por Fundación Botnar, en su búsqueda de
+              propuestas innovadoras que mejoren las ciudades y sean más amigables para l@s
+              adolescentes.
             </p>
             <p>
-              En nuestro país, el programa &quot;Ciudades Saludables para
-              Adolescentes&quot; cobra vida gracias a la iniciativa &quot;Alza
-              Tu Voz&quot;, cuyo principal objetivo es fortalecer e involucrar
-              activamente a adolescentes de Riobamba y Quevedo en la apropiación
-              de sus ciudades.
+              En nuestro país, el programa &quot;Ciudades Saludables para Adolescentes&quot; cobra
+              vida gracias a la iniciativa &quot;Alza Tu Voz&quot;, cuyo principal objetivo es
+              fortalecer e involucrar activamente a adolescentes de Riobamba y Quevedo en la
+              apropiación de sus ciudades.
             </p>
             <p>
-              “Alza Tu Voz” es una iniciativa liderada por LAB XXI en
-              colaboración con aliados locales como Fundación Datalat,
-              Huasipichanga, los GAD Municipales de Quevedo y Riobamba, y la
-              Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto
-              es el resultado de un proceso participativo en el que adolescentes
-              comparten sus ideas, necesidades y propuestas, contribuyendo
-              activamente al co-diseño de acciones para transformar sus
-              ciudades.
+              “Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados
+              locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y
+              Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es
+              el resultado de un proceso participativo en el que adolescentes comparten sus ideas,
+              necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para
+              transformar sus ciudades.
             </p>
             <p>
               ¡Queremos crear espacios{' '}

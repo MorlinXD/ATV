@@ -1,40 +1,50 @@
-'use client'
-import React, { useState, useEffect } from 'react'
+'use client';
+import React, { useState, useEffect } from 'react';
 // import Image from 'next/image'
 
 interface CarouselProps {
   texts: Array<{
-    text: string
-  }>
+    text: string;
+  }>;
 }
 
 const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length)
-  }
+    setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
+  };
 
   // const handlePrev = () => {
   //   setActiveIndex((prevIndex) => (prevIndex - 1 + texts.length) % texts.length)
   // }
 
   useEffect(() => {
-    const interval = setInterval(handleNext, 5000)
+    const interval = setInterval(handleNext, 5000);
 
-    return () => { clearInterval(interval) }
-  }, [activeIndex, texts.length])
+    return () => {
+      clearInterval(interval);
+    };
+  }, [activeIndex, texts.length]);
 
   return (
-
     <div id="indicators-carousel" className=" w-full">
       <div className="coverflow-hidden">
         {texts.map((e, index) => (
-          <div key={index} className={index === activeIndex ? 'block duration-700 ease-in-out' : 'hidden duration-700 ease-in-out'}>
-            <div className='flex flex-col justify-center items-center'>
+          <div
+            key={index}
+            className={
+              index === activeIndex
+                ? 'block duration-700 ease-in-out'
+                : 'hidden duration-700 ease-in-out'
+            }
+          >
+            <div className="flex flex-col justify-center items-center">
               {/* <Image src="/carousel1.svg" alt="" width={1139} height={248} className='relative'/> */}
               {/* <p className='absolute font-marker font-bold text-hcablack text-sm md:text-xl lg:text-3xl p-2 mx-2 lg:p-32 xl:p-48'>{e.text}</p> */}
-              <p className='font-bold text-hcablack text-xl md:text-4xl lg:text-6xl p-2 mb-10'>{e.text}</p>
+              <p className="font-bold text-hcablack text-xl md:text-4xl lg:text-6xl p-2 mb-10">
+                {e.text}
+              </p>
             </div>
           </div>
         ))}
@@ -48,8 +58,10 @@ const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
             className={`w-3 h-3 md:w-4 md:h-4 rounded-full hover:w-5 hover:h-5 ${index === activeIndex ? 'bg-hcanewblue w-4 h-4 md:w-5 md:h-5 rounded-full' : 'bg-hcanewlightblue'}`}
             aria-current={index === activeIndex ? 'true' : 'false'}
             aria-label={`Slide ${index + 1}`}
-            onClick={() => { setActiveIndex(index) }}>
-          </button>
+            onClick={() => {
+              setActiveIndex(index);
+            }}
+          ></button>
         ))}
       </div>
 
@@ -70,7 +82,7 @@ const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
          </span>
       </button> */}
     </div>
-  )
-}
+  );
+};
 
-export default MainCarousel
+export default MainCarousel;

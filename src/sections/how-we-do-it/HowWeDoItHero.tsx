@@ -44,12 +44,7 @@ export default function HowWeDoItHero() {
 
       {/* ---------- Principal icon ---------- */}
       <section id="nuestro-enfoque" className="flex flex-col items-center">
-        <Image
-          src="/images/clh-icon.svg"
-          alt="Rocket icon"
-          width={130}
-          height={130}
-        />
+        <Image src="/images/clh-icon.svg" alt="Rocket icon" width={130} height={130} />
       </section>
 
       {/* ---------- Principal title ---------- */}
@@ -57,9 +52,7 @@ export default function HowWeDoItHero() {
         <div>
           <img src="/images/onda-blue.svg" alt="Onda" />
         </div>
-        <h2 className="text-6xl text-hcablack font-bold mx-4 text-center">
-          Nuestro enfoque
-        </h2>
+        <h2 className="text-6xl text-hcablack font-bold mx-4 text-center">Nuestro enfoque</h2>
         <div className="">
           <img src="/images/onda-blue.svg" alt="Onda" />
         </div>
@@ -68,20 +61,18 @@ export default function HowWeDoItHero() {
       {/* ---------- Principal text ---------- */}
       <section className="container mx-auto flex flex-col justify-center mt-20">
         <p className="text-black mt-10 text-justify text-2xl mx-4">
-          En el proyecto &quot;Alza Tu Voz&quot;, adoptamos un enfoque
-          participativo y centrado en los derechos, con el objetivo de
-          transformar las condiciones sistémicas en Quevedo y Riobamba. Además,
-          aprovechamos la transformación digital para ampliar nuestro alcance y
+          En el proyecto &quot;Alza Tu Voz&quot;, adoptamos un enfoque participativo y centrado en
+          los derechos, con el objetivo de transformar las condiciones sistémicas en Quevedo y
+          Riobamba. Además, aprovechamos la transformación digital para ampliar nuestro alcance y
           fomentar una mayor participación.
           <br />
           <br />
-          Nos enfocamos principalmente en cuatro áreas para el bienestar
-          adolescente: participación, seguridad, aprendizaje y agencia.
+          Nos enfocamos principalmente en cuatro áreas para el bienestar adolescente: participación,
+          seguridad, aprendizaje y agencia.
           <br />
           <br />
-          De estas áreas y como resultado de la fase de evaluación de
-          necesidades y codiseño del proyecto, priorizamos cuatro pilares de
-          trabajo:
+          De estas áreas y como resultado de la fase de evaluación de necesidades y codiseño del
+          proyecto, priorizamos cuatro pilares de trabajo:
         </p>
       </section>
 

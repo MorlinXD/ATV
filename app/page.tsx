@@ -2,10 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-
 export default function Home() {
   return (
-
     <main className="flex flex-col pt-10">
       {/* Bloque naranja */}
       <section className="bg-white flex flex-col items-center text-center py-10">
@@ -44,9 +42,7 @@ export default function Home() {
               />
             </div>
 
-            <span className="block text-center font-bold text-white pb-2">
-              Nuestra iniciativa
-            </span>
+            <span className="block text-center font-bold text-white pb-2">Nuestra iniciativa</span>
           </Link>
 
           {/* Resultados */}
@@ -61,9 +57,7 @@ export default function Home() {
               height={216}
               className="w-full h-32 object-contain p-3 pt-5"
             />
-            <span className="block text-center font-bold text-white pb-2">
-              Resultados
-            </span>
+            <span className="block text-center font-bold text-white pb-2">Resultados</span>
           </Link>
 
           {/* Riobamba */}
@@ -78,9 +72,7 @@ export default function Home() {
               height={216}
               className="w-full h-32 object-contain p-3 pt-5"
             />
-            <span className="block text-center font-bold text-white pb-2">
-              Riobamba
-            </span>
+            <span className="block text-center font-bold text-white pb-2">Riobamba</span>
           </Link>
 
           {/* Quevedo */}
@@ -95,9 +87,7 @@ export default function Home() {
               height={216}
               className="w-full h-32 object-contain p-3 pt-5"
             />
-            <span className="block text-center font-bold text-white pb-2">
-              Quevedo
-            </span>
+            <span className="block text-center font-bold text-white pb-2">Quevedo</span>
           </Link>
 
           {/* Participa */}
@@ -112,13 +102,10 @@ export default function Home() {
               height={216}
               className="w-full h-32 object-contain p-3 pt-5"
             />
-            <span className="block text-center font-bold text-white pb-2">
-              Participa
-            </span>
+            <span className="block text-center font-bold text-white pb-2">Participa</span>
           </Link>
         </div>
       </section>
-    </main >
-
+    </main>
   );
 }

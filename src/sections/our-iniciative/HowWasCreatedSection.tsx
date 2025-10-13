@@ -57,9 +57,9 @@ export default function HowWasCreatedSection() {
         Así fue como lo creamos
       </h1>
       <p className="text-center mx-auto max-w-5xl">
-        Entre julio y diciembre de 2023, fomentamos la participación activa de
-        adolescentes de Quevedo y Riobamba en la co-creación del proyecto.
-        Queríamos entender sus necesidades y cómo apoyar su bienestar.
+        Entre julio y diciembre de 2023, fomentamos la participación activa de adolescentes de
+        Quevedo y Riobamba en la co-creación del proyecto. Queríamos entender sus necesidades y cómo
+        apoyar su bienestar.
       </p>
       <section className="my-10 flex flex-wrap justify-center items-start lg:grid lg:grid-cols-3 gap-10">
         {items.map((item, index) => (
@@ -67,15 +67,9 @@ export default function HowWasCreatedSection() {
             key={index}
             className="flex flex-col justify-start items-center gap-7 max-w-sm lg:max-w-none"
           >
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-[165px] h-auto"
-            />
+            <img src={item.image} alt={item.title} className="w-[165px] h-auto" />
             <div className="">
-              <h2 className="text-2xl font-semibold mb-5 text-center">
-                {item.title}
-              </h2>
+              <h2 className="text-2xl font-semibold mb-5 text-center">{item.title}</h2>
               <p className="text-center">{item.description}</p>
             </div>
           </div>

@@ -6,7 +6,6 @@ export default function QuevedoBanner() {
   return (
     <div className="bg-hcanewlightblue/65 py-14">
       <SectionLayout className="flex flex-col md:flex-row items-center md:justify-between relative">
-
         {/* Imagen */}
         <div className="flex justify-center w-full md:w-[460px] mb-6 md:mb-0">
           <Image
@@ -24,9 +23,9 @@ export default function QuevedoBanner() {
             ¡Escucha nuestro podcast de salud mental!
           </h1>
           <p className="text-lg mb-5">
-            Junto al Ministerio de Salud creamos un espacio real, sin filtros,
-            para hablar de lo que importa: emociones, autocuidado y prevención
-            del suicidio. Porque hablar salva. Escúchanos y sé parte del cambio.
+            Junto al Ministerio de Salud creamos un espacio real, sin filtros, para hablar de lo que
+            importa: emociones, autocuidado y prevención del suicidio. Porque hablar salva.
+            Escúchanos y sé parte del cambio.
           </p>
           <a
             href="https://www.instagram.com/reel/DARmN2GyEPK/?utm_source=ig_web_button_share_sheet"
@@ -37,7 +36,6 @@ export default function QuevedoBanner() {
             Escúchanos
           </a>
         </section>
-
       </SectionLayout>
     </div>
   );

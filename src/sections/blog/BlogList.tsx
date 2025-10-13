@@ -198,10 +198,7 @@ function BlogCard({
 }: (typeof modules)[0]['items'][0] & { module: string }) {
   return (
     <li className="w-full max-w-72">
-      <a
-        href={link}
-        className="rounded-2xl shadow-lg w-full min-h-72 flex flex-col"
-      >
+      <a href={link} className="rounded-2xl shadow-lg w-full min-h-72 flex flex-col">
         <Image
           className="bg-[#D9D9D9] rounded-t-2xl"
           src={image}
@@ -223,11 +220,7 @@ function BlogCard({
                 stroke="currentColor"
                 className="size-6"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
-                />
+                <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
               </svg>
             </button>
           </section>

@@ -2,20 +2,14 @@ import React from 'react';
 
 export default function HowWeDoItActions() {
   return (
-    <section
-      className="bg-hcablue-light"
-      id="atv-datos"
-      style={{ backgroundColor: '#EDF5FD' }}
-    >
-      <div className="container mx-auto flex flex-col justify-center items-center py-5
-      ">
+    <section className="bg-hcablue-light" id="atv-datos" style={{ backgroundColor: '#EDF5FD' }}>
+      <div
+        className="container mx-auto flex flex-col justify-center items-center py-5
+      "
+      >
         <div className="flex flex-col items-center text-center">
-          <h2 className="text-4xl mt-4 font-bold text-hcaneworange">
-            Nuestras acciones
-          </h2>
-          <p className="text-sm mt-1 text-hca-gray italic">
-            Actualizadas hasta Agosto 2025
-          </p>
+          <h2 className="text-4xl mt-4 font-bold text-hcaneworange">Nuestras acciones</h2>
+          <p className="text-sm mt-1 text-hca-gray italic">Actualizadas hasta Agosto 2025</p>
         </div>
 
         <div className="mt-8 w-full flex justify-center">

@@ -18,9 +18,8 @@ export default function GallerySection() {
           ¡Alza Tu Voz! en acción
         </h2>
         <p className="text-hcablack text-2xl text-center mt-10 mb-20 mx-4">
-          Cada ciudad cuenta con un grupo núcleo con adolescentes y jóvenes
-          lideres en su comunidad para aportar, dar voz a sus ideas e incidir
-          durante todo el proyecto
+          Cada ciudad cuenta con un grupo núcleo con adolescentes y jóvenes lideres en su comunidad
+          para aportar, dar voz a sus ideas e incidir durante todo el proyecto
         </p>
         <Carousel images={images} />
       </div>

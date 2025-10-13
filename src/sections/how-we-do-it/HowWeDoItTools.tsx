@@ -7,22 +7,16 @@ export default function HowWeDoItTools() {
     <section className="bg-hcalightyellow " id="herramientas">
       <div className="container mx-auto flex flex-col justify-center items-center">
         <div className="flex flex-col items-center">
-          <Image
-            src="/images/tools-icon.svg"
-            alt="Group icon"
-            width={120}
-            height={120}
-          />
+          <Image src="/images/tools-icon.svg" alt="Group icon" width={120} height={120} />
           <h2 className="text-6xl mt-4 font-bold text-hcaneworange text-center">
             Accede a nuestros recursos y herramientas
           </h2>
         </div>
         <p className="text-2xl mt-4 text-hcablack text-center">
-          Queremos que <strong>todo lo chévere</strong> que creamos como parte
-          de &quot;Alza Tu Voz&quot; sea útil para otras iniciativas en todo el
-          mundo. En este espacio, vamos a compartir recursos y herramientas que
-          estamos usando para hacer que las ciudades sean un mejor lugar para
-          las y los adolescentes y jóvenes.
+          Queremos que <strong>todo lo chévere</strong> que creamos como parte de &quot;Alza Tu
+          Voz&quot; sea útil para otras iniciativas en todo el mundo. En este espacio, vamos a
+          compartir recursos y herramientas que estamos usando para hacer que las ciudades sean un
+          mejor lugar para las y los adolescentes y jóvenes.
           <br />
           <br />
         </p>
@@ -39,8 +33,8 @@ export default function HowWeDoItTools() {
                 Guía para levantar la voz. Caja de herramientas participativas
               </p>
               <span className="text-lg">
-                Herramientas para que adolescentes sean líderes en hacer que las
-                cosas mejoren en sus comunidades.{' '}
+                Herramientas para que adolescentes sean líderes en hacer que las cosas mejoren en
+                sus comunidades.{' '}
               </span>
             </div>
             <NewButtonTwo
@@ -61,12 +55,12 @@ export default function HowWeDoItTools() {
           <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
             <div className="flex flex-col">
               <p className="text-2xl font-bold text-hcanewblue mb-2">
-                Caja de herramientas. Una guía para diseñar juntos soluciones a
-                problemas sociales con la comunidad
+                Caja de herramientas. Una guía para diseñar juntos soluciones a problemas sociales
+                con la comunidad
               </p>
               <span className="text-lg">
-                Metodologías para promover la participación, abordar las
-                necesidades de adolescentes, y co-diseñar la Teoría del Cambio.
+                Metodologías para promover la participación, abordar las necesidades de
+                adolescentes, y co-diseñar la Teoría del Cambio.
               </span>
             </div>
             <NewButtonTwo
@@ -92,9 +86,8 @@ export default function HowWeDoItTools() {
                 Resultados de la encuesta: &quot;Mi ciudad y yo&quot;
               </p>
               <span className="text-lg">
-                Encuesta realizada en Quevedo y Riobamba para comprender la
-                relación de adolescentes y jóvenes con su entorno, e identificar
-                sus necesidades.
+                Encuesta realizada en Quevedo y Riobamba para comprender la relación de adolescentes
+                y jóvenes con su entorno, e identificar sus necesidades.
               </span>
             </div>
             <NewButtonTwo
@@ -118,9 +111,8 @@ export default function HowWeDoItTools() {
                 Resultados de la encuesta: &quot;Imaginando mi futuro&quot;
               </p>
               <span className="text-lg">
-                Encuesta realizada en Quevedo y Riobamba para comprender los
-                sueños y la percepción de adolescentes y jóvenes sobre acciones
-                positivas para construir su futuro.
+                Encuesta realizada en Quevedo y Riobamba para comprender los sueños y la percepción
+                de adolescentes y jóvenes sobre acciones positivas para construir su futuro.
               </span>
             </div>
             <NewButtonTwo
@@ -146,9 +138,8 @@ export default function HowWeDoItTools() {
                 Incidiendo en el espacio público a través de los datos
               </p>
               <span className="text-lg">
-                Resultado de los datos levantados en el espacio público de
-                Quevedo y Riobamba, antes y durante los “Festivales de
-                Intervenciones Urbanas Alza Tu Voz”.
+                Resultado de los datos levantados en el espacio público de Quevedo y Riobamba, antes
+                y durante los “Festivales de Intervenciones Urbanas Alza Tu Voz”.
               </span>
             </div>
             <NewButtonTwo

@@ -1,39 +1,39 @@
-'use client'
+'use client';
 
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
+import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const WelcomePopup = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const ENABLE_POPUP = false // Cambia a true si quieres volver a activarlo
+  const [isOpen, setIsOpen] = useState(false);
+  const ENABLE_POPUP = false; // Cambia a true si quieres volver a activarlo
 
   useEffect(() => {
-    if (!ENABLE_POPUP) return
+    if (!ENABLE_POPUP) return;
 
-    const popupData = localStorage.getItem('popupShown')
-    const currentTime = new Date().getTime()
+    const popupData = localStorage.getItem('popupShown');
+    const currentTime = new Date().getTime();
 
     if (popupData === null) {
-      setIsOpen(true)
-      localStorage.setItem('popupShown', currentTime.toString())
+      setIsOpen(true);
+      localStorage.setItem('popupShown', currentTime.toString());
     } else {
-      const lastShown = parseInt(popupData)
-      const oneDay = 24 * 60 * 60 * 1000
+      const lastShown = parseInt(popupData);
+      const oneDay = 24 * 60 * 60 * 1000;
 
       if (currentTime - lastShown >= oneDay) {
-        setIsOpen(true)
-        localStorage.setItem('popupShown', currentTime.toString())
+        setIsOpen(true);
+        localStorage.setItem('popupShown', currentTime.toString());
       }
     }
-  }, [ENABLE_POPUP])
+  }, [ENABLE_POPUP]);
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
-      setIsOpen(false)
+      setIsOpen(false);
     }
-  }
+  };
 
-  if (!isOpen) return null
+  if (!isOpen) return null;
 
   return (
     <div
@@ -57,7 +57,7 @@ const WelcomePopup = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {
-              setIsOpen(false)
+              setIsOpen(false);
             }}
             className="bg-hcaneworange text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-all text-lg font-semibold"
           >
@@ -67,7 +67,7 @@ const WelcomePopup = () => {
 
         <button
           onClick={() => {
-            setIsOpen(false)
+            setIsOpen(false);
           }}
           className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 p-2"
           aria-label="Cerrar"
@@ -89,7 +89,7 @@ const WelcomePopup = () => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default WelcomePopup
+export default WelcomePopup;

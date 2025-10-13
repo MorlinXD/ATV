@@ -10,7 +10,6 @@ import AlcaldiaRiobamba from 'public/logos/riobamba-logo.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
-
 const itemsTop = [
   {
     id: 1,
@@ -118,8 +117,8 @@ export default function HowWeOrganice() {
           ¡Así nos organizamos para <br /> alzar nuestras voces!
         </h1>
         <p>
-          Consolidamos un Consorcio poderoso para abordar los desafíos
-          prioritarios y promover un cambio sistémico en cada ciudad.
+          Consolidamos un Consorcio poderoso para abordar los desafíos prioritarios y promover un
+          cambio sistémico en cada ciudad.
         </p>
         <p>¡Conócenos!</p>
       </section>
@@ -170,8 +169,12 @@ function HowWeOrganiceCard({ description, image, type, link }: Props) {
       className={`bg-hcayellow px-4 pt-6 rounded-xl flex flex-col items-center h-full gap-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-xl ${className}`}
     >
       <section className="h-[80px] flex justify-center items-center">
-        <Image width={isLabXXI ? 100 : 135} // 👈 más pequeño solo para Lab XXI
-          height={isLabXXI ? 70 : 100} src={image} alt={description} />
+        <Image
+          width={isLabXXI ? 100 : 135} // 👈 más pequeño solo para Lab XXI
+          height={isLabXXI ? 70 : 100}
+          src={image}
+          alt={description}
+        />
       </section>
       <p className="text-center pb-8">{description}</p>
     </div>
@@ -184,5 +187,4 @@ function HowWeOrganiceCard({ description, image, type, link }: Props) {
   ) : (
     content
   );
-  
 }

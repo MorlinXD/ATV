@@ -94,8 +94,5 @@ const itemsRiobamba = [
 ];
 
 export default function RiobambaHero() {
-  return (
-    <HeroGeneric items={
-      itemsRiobamba} title="Riobamba desde nuestros ojos" />
-  );
+  return <HeroGeneric items={itemsRiobamba} title="Riobamba desde nuestros ojos" />;
 }

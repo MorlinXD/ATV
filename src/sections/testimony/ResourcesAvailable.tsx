@@ -80,9 +80,9 @@ const items = [
 ];
 
 export default function ResourcesAvailable() {
-  const pathname = usePathname()
+  const pathname = usePathname();
   // Si estamos en /alza-tu-voz -> no renderiza nada
-  if (pathname === "/alza-tu-voz") {
+  if (pathname === '/alza-tu-voz') {
     return null;
   }
 
@@ -92,11 +92,10 @@ export default function ResourcesAvailable() {
         Accede a nuestros recursos y herramientas
       </h1>
       <p className="text-lg text-justify mb-10">
-        Queremos que todo lo chévere que creamos como parte de &quot;Alza Tu
-        Voz&quot; sea útil para otras iniciativas en todo el mundo. En este
-        espacio, vamos a compartir recursos y herramientas que estamos usando
-        para hacer que las ciudades sean un mejor lugar para las y los
-        adolescentes y jóvenes.
+        Queremos que todo lo chévere que creamos como parte de &quot;Alza Tu Voz&quot; sea útil para
+        otras iniciativas en todo el mundo. En este espacio, vamos a compartir recursos y
+        herramientas que estamos usando para hacer que las ciudades sean un mejor lugar para las y
+        los adolescentes y jóvenes.
       </p>
       <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-4 gap-4 gap-y-8">
         {items.map((item) => (
@@ -141,13 +140,7 @@ function ResourceCard({
   );
 }
 
-function SourceLink({
-  sourceLink,
-  label,
-}: {
-  sourceLink: string;
-  label: string;
-}) {
+function SourceLink({ sourceLink, label }: { sourceLink: string; label: string }) {
   const thereIsSource = sourceLink && sourceLink.length > 0;
   if (!thereIsSource) {
     return (

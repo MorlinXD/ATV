@@ -31,7 +31,8 @@
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   backface-visibility: hidden;
 }
 

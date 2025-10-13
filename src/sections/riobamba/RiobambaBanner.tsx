@@ -6,7 +6,6 @@ export default function RiobambaBanner() {
   return (
     <div className="bg-hcanewlightblue/65 py-14">
       <SectionLayout className="flex flex-col md:flex-row items-center md:items-start relative">
-
         {/* Imagen */}
         <div className="w-full md:w-[460px] md:relative mb-6 md:mb-0">
           <Image
@@ -25,9 +24,9 @@ export default function RiobambaBanner() {
             ¡Únete en nuestro canal de Discord!
           </h1>
           <p className="text-lg mb-5">
-            Creamos una comunidad en Discord para conectar, inspirar y compartir
-            con adolescentes de toda Latinoamérica. No importa si eres de
-            Riobamba, Quevedo o más allá... ¡esto recién empieza!
+            Creamos una comunidad en Discord para conectar, inspirar y compartir con adolescentes de
+            toda Latinoamérica. No importa si eres de Riobamba, Quevedo o más allá... ¡esto recién
+            empieza!
           </p>
           <a
             href="https://discord.gg/y8twaHT6"
@@ -38,7 +37,6 @@ export default function RiobambaBanner() {
             ¿Te unes?
           </a>
         </section>
-
       </SectionLayout>
     </div>
   );

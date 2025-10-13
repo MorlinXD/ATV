@@ -13,9 +13,7 @@ const Carousel: React.FC<CarouselProps> = ({ images }) => {
   };
 
   const handlePrev = () => {
-    setActiveIndex(
-      (prevIndex) => (prevIndex - 1 + images.length) % images.length,
-    );
+    setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
   return (
     <div id="indicators-carousel" className="relative w-full">

@@ -52,9 +52,7 @@ export default function VideoSection() {
       </div>
       <ul className="bg-gradient-to-br from-black to-black/40 text-white rounded-md flex flex-col gap-3 shadow-[0_0_10px_-4px_#000]">
         <li>
-          <h1 className="font-semibold text-lg px-4 py-2">
-            Conoce al proyecto Alza Tu Voz
-          </h1>
+          <h1 className="font-semibold text-lg px-4 py-2">Conoce al proyecto Alza Tu Voz</h1>
         </li>
         <li className="max-h-[340px] overflow-y-auto">
           <section className="flex flex-col gap-1">
@@ -72,9 +70,7 @@ export default function VideoSection() {
                     height={40}
                     className="aspect-video h-full object-contain rounded-md"
                   ></Image>
-                  <p className="w-full h-full flex items-center text-white">
-                    {video.title}
-                  </p>
+                  <p className="w-full h-full flex items-center text-white">{video.title}</p>
                 </button>
               );
             })}

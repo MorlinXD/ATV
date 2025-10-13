@@ -14,7 +14,7 @@ pero me gustaría que hubiera más libertad
 para andar que la gente, que los jóvenes
 se junten más sin tener tantas
 complicaciones y poder crear.`,
-    author: '',//Original "Sky - Quevedo"
+    author: '', //Original "Sky - Quevedo"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
   {
@@ -24,7 +24,7 @@ complicaciones y poder crear.`,
 siente un poco insegura la ciudad pero se
 disfruta mucho lo bueno como el
 ambiente con tu familia y la comida.`,
-    author: '',//Original "Victor - Quevedo"
+    author: '', //Original "Victor - Quevedo"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
   {
@@ -49,7 +49,7 @@ gustaría que hubiera más lugares seguros
 y espacios donde podamos expresarnos
 sin miedo a ser juzgados, para ser
 nosotros mismos con libertad.`,
-    author: '',//ORIGINAL "Gardenia - Quevedo"
+    author: '', //ORIGINAL "Gardenia - Quevedo"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
   {
@@ -59,7 +59,7 @@ nosotros mismos con libertad.`,
       muchos lugares turísticos, divertidos y
       únicos que son perfectos para cualquier
       ocasión.`,
-    author: '',//ORIGINAL "Crystel - Quevedo"
+    author: '', //ORIGINAL "Crystel - Quevedo"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
   {
@@ -78,7 +78,7 @@ nosotros mismos con libertad.`,
       en cada rincón de nuestra ciudad pero me
       gustaría que haya más espacios donde
       podemos socializar más con las personas`,
-    author: '',//ORIGINAL "El delfín"
+    author: '', //ORIGINAL "El delfín"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
   {
@@ -92,13 +92,11 @@ inseguridad de ahora no nos deja pasear
 con tranquilidad en las calles, pese a todo
 ello, es lindo recorrer sus calles disfrutar
 de un buen chaulafan`,
-    author: '',//Original "Wilmer Rodriguez"
+    author: '', //Original "Wilmer Rodriguez"
     image: '/images/quevedo/page_quev/Usuario Quevedo.png',
   },
 ];
 
 export default function QuevedoHero() {
-  return (
-    <HeroGeneric items={itemsQuevedo} title="Quevedo desde nuestros ojos" />
-  );
+  return <HeroGeneric items={itemsQuevedo} title="Quevedo desde nuestros ojos" />;
 }

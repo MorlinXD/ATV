@@ -26,7 +26,6 @@ const items = [
     date: 'Agosto 2025',
     image: '/images/riobamba/actividades/tejiendo.jpg',
   },
-  
 ];
 
 export default function RiobambaActivities() {
