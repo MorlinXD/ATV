@@ -1,9 +1,9 @@
 import React from 'react';
 import BlogCard from '../Components/BlogCard';
-import Image from 'next/image';
-import BlogHero from '../sections/blog/BlogHero';
-import BlogList from '../sections/blog/BlogList';
-import BlogCreate from '../sections/blog/BlogCreate';
+//import Image from 'next/image';
+//import BlogHero from '../sections/blog/BlogHero';
+//import BlogList from '../sections/blog/BlogList';
+//import BlogCreate from '../sections/blog/BlogCreate';
 
 export default function BlogPage() {
   return (

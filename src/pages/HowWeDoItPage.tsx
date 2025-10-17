@@ -1,10 +1,10 @@
 import React from 'react';
 
-import HowWeDoItHero from '../sections/how-we-do-it/HowWeDoItHero';
+//import HowWeDoItHero from '../sections/how-we-do-it/HowWeDoItHero';
 import HowWeDoItIndicators from '../sections/how-we-do-it/HowWeDoItIndicators';
 import HowWeDoItResults from '../sections/how-we-do-it/HowWeDoItResults';
 import HowWeDoItActions from '../sections/how-we-do-it/HowWeDoItActions';
-import HowWeDoItTools from '../sections/how-we-do-it/HowWeDoItTools';
+//import HowWeDoItTools from '../sections/how-we-do-it/HowWeDoItTools';
 import HowWeDoItDashboard from '../Components/HowWeDoItDashboard';
 import GalleryHero from '../Components/GalleryHero';
 // import HowWeDoitIndicatorsPrev from '../sections/how-we-do-it/HowWeDoitIndicatorsPrev';

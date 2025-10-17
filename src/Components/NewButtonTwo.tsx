@@ -1,5 +1,6 @@
 import { type FC, type HTMLAttributeAnchorTarget } from 'react';
 import Link from 'next/link';
+import React from 'react';
 
 interface Props {
   label: string;
