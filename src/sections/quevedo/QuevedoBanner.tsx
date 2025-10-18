@@ -4,10 +4,10 @@ import React from 'react';
 
 export default function QuevedoBanner() {
   return (
-    <div className="bg-hcanewlightblue/65 py-14">
+    <div className="bg-hcanewlightblue/65 py-14 pb-0">
       <SectionLayout className="flex flex-col md:flex-row items-center md:justify-between relative">
         {/* Imagen */}
-        <div className="flex justify-center w-full md:w-[460px] mb-6 md:mb-0">
+        <div className="w-full md:w-[460px] md:absolute md:right-0 md:bottom-0">
           <Image
             src="/images/quevedo/New_Quevedo/pod.png"
             alt="Podcast"
@@ -18,7 +18,7 @@ export default function QuevedoBanner() {
         </div>
 
         {/* Texto */}
-        <section className="flex flex-col justify-center max-w-2xl w-full text-center md:text-end px-4">
+        <section className="flex flex-col justify-left max-w-2xl w-full text-center md:text-left px-2 py-6">
           <h1 className="text-3xl md:text-4xl font-semibold mb-2">
             ¡Escucha nuestro podcast de salud mental!
           </h1>
@@ -31,7 +31,7 @@ export default function QuevedoBanner() {
             href="https://www.instagram.com/reel/DARmN2GyEPK/?utm_source=ig_web_button_share_sheet"
             target="_blank"
             rel="noreferrer"
-            className="bg-hcaneworange w-max px-8 py-2 text-white font-semibold rounded-md self-end mt-5 mx-auto md:mx-0"
+            className="bg-hcaneworange w-max px-8 py-2 text-white font-semibold rounded-md self-start mt-5 mx-auto md:mx-0"
           >
             Escúchanos
           </a>

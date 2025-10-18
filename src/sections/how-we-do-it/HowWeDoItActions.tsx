@@ -4,7 +4,7 @@ export default function HowWeDoItActions() {
   return (
     <section className="bg-hcablue-light" id="atv-datos" style={{ backgroundColor: '#EDF5FD' }}>
       <div
-        className="container mx-auto flex flex-col justify-center items-center py-5
+        className="container mx-auto flex flex-col justify-center items-center py-20
       "
       >
         <div className="flex flex-col items-center text-center">

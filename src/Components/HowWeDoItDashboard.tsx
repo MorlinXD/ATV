@@ -4,9 +4,14 @@ import { Tab, Tabs } from './Tabs';
 
 export default function HowWeDoItDashboard() {
   return (
-    <section id="atv-datosPWBI">
+    <section id="atv-datosPWBI" className='bg-blue-50'>
       <SectionLayout>
-        <h1 className="text-4xl font-semibold my-10 text-center">Alza Tu Voz en datos</h1>
+        <h1 className=" text-4xl font-semibold my-10 text-center">Alza Tu Voz en datos</h1>
+        <p className='text-center'> ¡Nuestra voz es importante! Por eso, usamos datos para contar cómo nos sentimos y cómo vivimos nuestras ciudades </p>
+        <p className='text-center'> ¡Los datos nos ayudan a levantar nuestra voz aún más alto!</p>
+        <p className='text-center'> Conócelos, navegando en el visualizador. </p>
+        <p className='text-center mb-10' > ¡Te invitamos a descubrir lo que estamos pensando! </p>
+        
         <section id="Grafico-PWBI">
           <Tabs>
             <Tab label="Riobamba">

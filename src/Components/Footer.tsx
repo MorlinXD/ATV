@@ -4,8 +4,8 @@ import React from 'react';
 
 const items = [
   { id: 1, link: 'https://www.datalat.org/', src: '/logos/datalat-logo.png' },
-  { id: 2, link: 'https://www.espoch.edu.ec/', src: '/logos/espoch-logo.png' },
-  { id: 3, link: 'https://www.huasipichanga.com/', src: '/logos/huasipichanga-logo.svg' },
+  { id: 2, link: 'https://www.huasipichanga.com/', src: '/logos/huasipichanga-logo.svg' },
+  { id: 3, link: 'https://www.espoch.edu.ec/', src: '/logos/espoch-logo.png' },
   { id: 4, link: 'https://quevedo.gob.ec/', src: '/logos/logo-quevedo.png' },
   { id: 5, link: 'https://www.gadmriobamba.gob.ec/', src: '/logos/riobamba-logo.png' },
 ];

@@ -17,11 +17,11 @@ export default function HowWeDoItResults() {
       {/* Estadísticas principales (primera fila) */}
       <div className="flex flex-wrap justify-center items-center gap-6 w-full max-w-6xl mb-6">
         <ResultCard
-          title={282}
+          title={391}
           subtitle="adolescentes"
           data={[
-            { label: 'Ciudad:', values: ['139 Riobamba', '143 Quevedo'] },
-            { label: 'Género:', values: ['127 masculino', '151 femenino', '4 prefiero no decir'] },
+            { label: 'Ciudad:', values: ['219 Riobamba', '172 Quevedo'] },
+            { label: 'Género:', values: ['179 masculino', '207 femenino', '1 personas trans','4 prefiero no decir'] },
           ]}
         />
 
@@ -33,15 +33,15 @@ export default function HowWeDoItResults() {
             { label: 'Género:', values: ['18 masculino', '35 femenino'] },
           ]}
         />
-
         <ResultCard
-          title={809}
-          subtitle="seguidores"
+          title={25}
+          subtitle="cuidadores"
           data={[
-            { label: 'Instagram:', values: ['672 followers'] },
-            { label: 'TikTok:', values: ['137 followers'] },
+            { label: 'Riobamba:', values: ['femenino 23', 'masculino 2'] },
+            //{ label: 'Quevedo:', values: ['femenino', 'masculino '] },
           ]}
         />
+    
       </div>
 
       {/* Beneficiarios indirectos (segunda fila) */}
@@ -53,6 +53,14 @@ export default function HowWeDoItResults() {
             { label: 'Colegios XXI:', values: ['2650'] },
             { label: 'Transforma Tu Cole:', values: ['3000'] },
             { label: 'Festivales Urbanos:', values: ['710'] },
+          ]}
+        />
+        <ResultCard
+          title={1551}
+          subtitle="seguidores"
+          data={[
+            { label: 'Instagram:', values: ['1065 followers'] },
+            { label: 'TikTok:', values: ['486 followers'] },
           ]}
         />
       </div>

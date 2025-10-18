@@ -9,32 +9,14 @@ const items = [
     image: diagnosticoImage.src,
     title: 'Diagnóstico participativo',
     description: `
-    Colaboramos con
-    adolescentes, gobiernos
-    locales y sociedad civil para
-    identificar sus desafíos y
-    prioridades. Lo hicimos a
-    través de actividades
-    creativas como telares
-    comunitarios, encuestas por
-    WhatsApp, grupos focales,
-    mapas parlantes y espacios
-    de discusión y creación.
+    Junto a adolescentes, gobiernos locales y sociedad civil identificamos desafíos y prioridades mediante dinámicas creativas y espacios participativos.
 `,
   },
   {
     image: jornadasImage.src,
     title: 'Jornadas de priorización',
     description: `
-    Validamos resultados y
-    priorizamos de manera
-    conjunta las áreas más
-    importantes a abordar. En
-    laboratorios cívicos con los
-    Grupos Núcleo, el Consorcio
-    y la sociedad civil,
-    construimos una visión
-    común para el futuro.`,
+    Contrastamos resultados y, junto a los Grupos Núcleo, el Consorcio y la sociedad civil, definimos prioridades y una visión compartida para el futuro.`,
   },
   {
     image: disenioImage.src,

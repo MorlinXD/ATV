@@ -26,7 +26,7 @@ export default function Activities({ items }: Props) {
 
   return (
     <SectionLayout>
-      <h1 className="text-4xl font-semibold my-10 text-center sm:text-center">
+      <h1 className="py-5  text-4xl font-semibold my-10 text-center sm:text-center text-hcaneworange">
         ¡Conoce nuestras actividades!
       </h1>
 
@@ -61,7 +61,7 @@ export default function Activities({ items }: Props) {
 function ActivityCard({ title, image }: Item) {
   return (
     <div className="rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 bg-white flex flex-col overflow-hidden h-[340px] w-full">
-      <div className="relative w-full h-[180px]">
+      <div className="relative w-full h-[225px]">
         <Image src={image} alt={title} fill className="object-cover" />
       </div>
 

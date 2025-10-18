@@ -4,8 +4,8 @@ import React from 'react';
 
 const items = [
   { id: 1, link: 'https://www.datalat.org/', src: '/logos/datalat-logo.png' },
-  { id: 2, link: 'https://www.espoch.edu.ec/', src: '/logos/espoch-logo.png' },
-  { id: 3, link: 'https://www.huasipichanga.com/', src: '/logos/huasipichanga-logo.svg' },
+  { id: 2, link: 'https://www.huasipichanga.com/', src: '/logos/huasipichanga-logo.svg' },
+  { id: 3, link: 'https://www.espoch.edu.ec/', src: '/logos/espoch-logo.png' },
   { id: 4, link: 'https://quevedo.gob.ec/', src: '/logos/logo-quevedo.png' },
   { id: 5, link: 'https://www.gadmriobamba.gob.ec/', src: '/logos/riobamba-logo.png' },
 ];
@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-100 text-black">
       {/* Sección principal */}
-      <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start py-8 px-6 gap-10">
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start py-8 px-6 gap-0">
         {/* Logo izquierdo */}
         <div className="flex justify-center md:justify-start w-full md:w-1/3">
           <Link href="/">
@@ -23,7 +23,7 @@ export default function Footer() {
               alt="Logo Healthy Cities Ecuador"
               width={250}
               height={180}
-              className="w-52 sm:w-60 md:w-64 h-auto hover:scale-105 transition-transform duration-300"
+              className="w-50 sm:w-60 md:w-64 h-auto hover:scale-105 transition-transform duration-300"
             />
           </Link>
         </div>
@@ -91,29 +91,47 @@ export default function Footer() {
               <p className="font-semibold leading-tight">Correo electrónico:</p>
               <p>info@lab-xxi.com</p>
             </div>
-            <div>
-              <p className="font-semibold leading-tight mt-1">Contacto en Riobamba ATV:</p>
+
+            {/* Riobamba */}
+            <div className="flex flex-col items-center md:items-end mt-1">
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=593979831036"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:scale-110 transition-transform duration-200"
+                >
+                  <Image
+                    src="/logos/whatsapp.png"
+                    alt="WhatsApp Riobamba"
+                    width={26}
+                    height={26}
+                  />
+                </a>
+                <p className="font-semibold leading-tight">en Riobamba ATV:</p>
+              </div>
               <p>(+593) 0979831036</p>
-              <a
-                href="https://api.whatsapp.com/send?phone=593979831036"
-                target="_blank"
-                rel="noreferrer"
-                className="text-hcaneworange font-semibold"
-              >
-                Enviar mensaje
-              </a>
             </div>
-            <div>
-              <p className="font-semibold leading-tight mt-1">Contacto en Quevedo ATV:</p>
+
+            {/* Quevedo */}
+            <div className="flex flex-col items-center md:items-end mt-1">
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=593979833698"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:scale-110 transition-transform duration-200"
+                >
+                  <Image
+                    src="/logos/whatsapp.png"
+                    alt="WhatsApp Quevedo"
+                    width={26}
+                    height={26}
+                  />
+                </a>
+                <p className="font-semibold leading-tight">en Quevedo ATV:</p>
+              </div>
               <p>(+593) 0979833698</p>
-              <a
-                href="https://api.whatsapp.com/send?phone=593979833698"
-                target="_blank"
-                rel="noreferrer"
-                className="text-hcaneworange font-semibold"
-              >
-                Enviar mensaje
-              </a>
             </div>
           </div>
         </div>
@@ -121,18 +139,19 @@ export default function Footer() {
 
       {/* Logos inferiores */}
       <ul className="bg-white py-6 flex flex-wrap justify-center md:justify-between items-center gap-6 px-6 md:px-16">
-        <li>
+        <li className="hover:scale-105 transition-transform duration-200">
           <a href="https://lab-xxi.com/" target="_blank" rel="noreferrer">
             <Image src="/logos/labxxi-logo.png" alt="Logo LabXXI" width={80} height={80} />
           </a>
         </li>
 
-        {/* Separador solo en desktop */}
         <li className="hidden md:block bg-hcalightblue h-16 w-1 rounded-md"></li>
 
-        {/* Logos restantes */}
         {items.map((src) => (
-          <li key={src.id} className="flex justify-center">
+          <li
+            key={src.id}
+            className="flex justify-center hover:scale-105 transition-transform duration-200"
+          >
             <a href={src.link} target="_blank" rel="noreferrer">
               <Image src={src.src} alt={`Logo ${src.id}`} width={110} height={60} />
             </a>
