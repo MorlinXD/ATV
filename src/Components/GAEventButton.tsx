@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 
-
 import { type FC, type HTMLAttributeAnchorTarget } from 'react';
 import Link from 'next/link';
 import { sendGAEvent } from '@next/third-parties/google';

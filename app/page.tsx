@@ -48,60 +48,100 @@ export default function Home() {
           {/* Resultados */}
           <Link
             href="/resultados"
-            className="bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
-            <Image
-              src="/images/index/new_menu/Resultados.png"
-              alt="Resultados"
-              width={216}
-              height={216}
-              className="w-full h-32 object-contain p-3 pt-5"
-            />
+            {/* Contenedor para las dos imágenes */}
+            <div className="relative w-full h-32 flex items-center justify-center">
+              {/* Imagen normal */}
+              <Image
+                src="/images/menu_icon/Resultados Inactivo.png"
+                alt="Resultados"
+                fill
+                className="object-contain transition-opacity duration-300 group-hover:opacity-0 p-3 pt-5"
+              />
+              {/* Imagen al pasar el cursor */}
+              <Image
+                src="/images/menu_icon/Resultados_Activo.png"
+                alt="Resultados hover"
+                fill
+                className="object-contain transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-3 pt-5"
+              />
+            </div>
             <span className="block text-center font-bold text-white pb-2">Resultados</span>
           </Link>
 
           {/* Riobamba */}
           <Link
             href="/riobamba"
-            className="bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
-            <Image
-              src="/images/index/new_menu/Riobamba.png"
-              alt="Riobamba"
-              width={216}
-              height={216}
-              className="w-full h-32 object-contain p-3 pt-5"
-            />
+            {/* Contenedor para las dos imágenes */}
+            <div className="relative w-full h-32 flex items-center justify-center">
+              {/* Imagen normal */}
+              <Image
+                src="/images/menu_icon/Riobamba Inactivo.png"
+                alt="Resultados"
+                fill
+                className="object-contain transition-opacity duration-300 group-hover:opacity-0 p-3 pt-5"
+              />
+              {/* Imagen al pasar el cursor */}
+              <Image
+                src="/images/menu_icon/Riobamba Activo.png"
+                alt="Resultados hover"
+                fill
+                className="object-contain transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-3 pt-5"
+              />
+            </div>
             <span className="block text-center font-bold text-white pb-2">Riobamba</span>
           </Link>
 
           {/* Quevedo */}
           <Link
             href="/quevedo"
-            className="bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
-            <Image
-              src="/images/index/new_menu/Quevedo.png"
-              alt="Quevedo"
-              width={216}
-              height={216}
-              className="w-full h-32 object-contain p-3 pt-5"
-            />
+            {/* Contenedor para las dos imágenes */}
+            <div className="relative w-full h-32 flex items-center justify-center">
+              {/* Imagen normal */}
+              <Image
+                src="/images/menu_icon/Quevedo Inactivo.png"
+                alt="Resultados"
+                fill
+                className="object-contain transition-opacity duration-300 group-hover:opacity-0 p-3 pt-5"
+              />
+              {/* Imagen al pasar el cursor */}
+              <Image
+                src="/images/menu_icon/Quevedo Activo.png"
+                alt="Resultados hover"
+                fill
+                className="object-contain transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-3 pt-5"
+              />
+            </div>
             <span className="block text-center font-bold text-white pb-2">Quevedo</span>
           </Link>
 
           {/* Participa */}
           <Link
             href="/blog"
-            className="bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
-            <Image
-              src="/images/index/new_menu/Participa.png"
-              alt="Participa"
-              width={216}
-              height={216}
-              className="w-full h-32 object-contain p-3 pt-5"
-            />
+            {/* Contenedor para las dos imágenes */}
+            <div className="relative w-full h-32 flex items-center justify-center">
+              {/* Imagen normal */}
+              <Image
+                src="/images/menu_icon/Participa Inactivo.png"
+                alt="Resultados"
+                fill
+                className="object-contain transition-opacity duration-300 group-hover:opacity-0 p-3 pt-5"
+              />
+              {/* Imagen al pasar el cursor */}
+              <Image
+                src="/images/menu_icon/Participa Activo.png"
+                alt="Resultados hover"
+                fill
+                className="object-contain transition-opacity duration-300 opacity-0 group-hover:opacity-100 p-3 pt-5"
+              />
+            </div>
             <span className="block text-center font-bold text-white pb-2">Participa</span>
           </Link>
         </div>

@@ -90,8 +90,8 @@ export default function LoQueSeViene() {
               </h2>
               <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
                 Buscamos personas y equipos apasionados por el desarrollo web este texto es de
-                prueba escrito mientras esucha música para probar como se ve la vista desde
-                una convocatoria real, saludos UwU!
+                prueba escrito mientras esucha música para probar como se ve la vista desde una
+                convocatoria real, saludos UwU!
               </p>
             </div>
           </div>

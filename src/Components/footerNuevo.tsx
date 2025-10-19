@@ -14,7 +14,7 @@ export default function Footer() {
   return (
     <footer className="bg-neutral-100 text-black">
       {/* Sección principal */}
-      <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start py-8 px-6 gap-0">
+      <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center md:items-start py-8 px-6 gap-2">
         {/* Logo izquierdo */}
         <div className="flex justify-center md:justify-start w-full md:w-1/3">
           <Link href="/">
@@ -101,12 +101,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <Image
-                    src="/logos/whatsapp.png"
-                    alt="WhatsApp Riobamba"
-                    width={26}
-                    height={26}
-                  />
+                  <Image src="/logos/whatsapp.png" alt="WhatsApp Riobamba" width={26} height={26} />
                 </a>
                 <p className="font-semibold leading-tight">en Riobamba ATV:</p>
               </div>
@@ -122,12 +117,7 @@ export default function Footer() {
                   rel="noreferrer"
                   className="hover:scale-110 transition-transform duration-200"
                 >
-                  <Image
-                    src="/logos/whatsapp.png"
-                    alt="WhatsApp Quevedo"
-                    width={26}
-                    height={26}
-                  />
+                  <Image src="/logos/whatsapp.png" alt="WhatsApp Quevedo" width={26} height={26} />
                 </a>
                 <p className="font-semibold leading-tight">en Quevedo ATV:</p>
               </div>

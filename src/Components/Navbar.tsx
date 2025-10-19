@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 
-
 type SubItem = { path: string; name: string };
 type NavItem = { name: string; path?: string; submenu?: SubItem[] };
 

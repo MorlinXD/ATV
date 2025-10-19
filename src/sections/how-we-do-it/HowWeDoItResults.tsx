@@ -21,7 +21,10 @@ export default function HowWeDoItResults() {
           subtitle="adolescentes"
           data={[
             { label: 'Ciudad:', values: ['219 Riobamba', '172 Quevedo'] },
-            { label: 'Género:', values: ['179 masculino', '207 femenino', '1 personas trans','4 prefiero no decir'] },
+            {
+              label: 'Género:',
+              values: ['179 masculino', '207 femenino', '1 personas trans', '4 prefiero no decir'],
+            },
           ]}
         />
 
@@ -41,7 +44,6 @@ export default function HowWeDoItResults() {
             //{ label: 'Quevedo:', values: ['femenino', 'masculino '] },
           ]}
         />
-    
       </div>
 
       {/* Beneficiarios indirectos (segunda fila) */}
