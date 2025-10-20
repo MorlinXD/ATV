@@ -29,7 +29,7 @@ export default function Footer() {
         </div>
 
         {/* Centro: redes y texto */}
-        <div className="w-full md:w-1/3 flex flex-col items-center text-center gap-6">
+        <div className="w-full md:w-2/3 flex flex-col items-center text-center gap-6">
           <div className="flex gap-6 justify-center">
             <a
               href="https://www.tiktok.com/@alzatuvoz.ec?_t=8nwUyNPC8da&_r=1"
@@ -88,8 +88,9 @@ export default function Footer() {
           <p className="font-bold mb-3">Contactos:</p>
           <div className="text-sm flex flex-col gap-3">
             <div>
-              <p className="font-semibold leading-tight">Correo electrónico:</p>
-              <p>info@lab-xxi.com</p>
+              <p className="font-semibold leading-tight" >Correo electrónico:</p>
+              <a href="mailto:info@lab-xxi.com" className="hover:underline hover:text-hcaneworange">
+              <p>info@lab-xxi.com</p></a>
             </div>
 
             {/* Riobamba */}
