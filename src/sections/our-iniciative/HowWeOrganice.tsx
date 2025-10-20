@@ -43,7 +43,6 @@ const itemsBottom = [
   {
     id: 1,
     description: `
-      
         Fundación Datalat aporta con
         enfoques digitales y lidera la
         transformación digital del
@@ -111,46 +110,66 @@ const itemsBottom = [
 
 export default function HowWeOrganice() {
   return (
-    <SectionLayout>
-      <section className="flex flex-col gap-y-5 mb-10 text-center text-lg">
-        <h1 className="text-hcaneworange font-semibold text-5xl">
-          ¡Así nos organizamos para <br /> alzar nuestras voces!
-        </h1>
-        <p>
-          Consolidamos un Consorcio poderoso para abordar los desafíos prioritarios y promover un
-          cambio sistémico en cada ciudad.
-        </p>
-        <p>¡Conócenos!</p>
-      </section>
+    // SECTION con fondo celeste y elipse que sobresale hacia arriba
+    <section className="relative bg-hcanewlightblue/65 overflow-hidden">
+      {/* === Elipse invertida blanca (parte superior) === */}
+      <div
+        className="
+          absolute top-0 left-1/2 -translate-x-1/2
+          w-[200%] h-[350px]
+          bg-white
+          rounded-[50%]
+          -translate-y-1/2
+          z-10
+        "
+      ></div>
 
-      {/* TOP */}
-      <ul className="flex justify-center gap-24 flex-wrap mb-10">
-        {itemsTop.map((item) => (
-          <li key={item.id}>
-            <HowWeOrganiceCard
-              type={1}
-              description={item.description}
-              image={item.image}
-              link={item.src}
-            />
-          </li>
-        ))}
-      </ul>
+      {/* Padding superior para que el contenido no quede encima de la elipse */}
+      <div className="pt-[240px] md:pt-[200px]">
 
-      {/* BOTTOM */}
-      <ul className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-5 gap-6 mb-10">
-        {itemsBottom.map((item) => (
-          <li key={item.id}>
-            <HowWeOrganiceCard
-              type={2}
-              description={item.description}
-              image={item.image}
-              link={item.src}
-            />
-          </li>
-        ))}
-      </ul>
-    </SectionLayout>
+        {/* Contenido principal */}
+        <SectionLayout>
+          <section className="flex flex-col gap-y-5 mb-10 text-center text-lg">
+            <h1 className="text-hcaneworange font-semibold text-5xl">
+              ¡Así nos organizamos para <br /> alzar nuestras voces!
+            </h1>
+            <p>
+              Consolidamos un Consorcio poderoso para abordar los desafíos prioritarios y promover un
+              cambio sistémico en cada ciudad.
+            </p>
+            <p>¡Conócenos!</p>
+          </section>
+
+          {/* TOP */}
+          <ul className="flex justify-center gap-24 flex-wrap mb-10">
+            {itemsTop.map((item) => (
+              <li key={item.id}>
+                <HowWeOrganiceCard
+                  type={1}
+                  description={item.description}
+                  image={item.image}
+                  link={item.src}
+                />
+              </li>
+            ))}
+          </ul>
+
+          {/* BOTTOM */}
+          <ul className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] lg:grid-cols-5 gap-6 mb-10">
+            {itemsBottom.map((item) => (
+              <li key={item.id}>
+                <HowWeOrganiceCard
+                  type={2}
+                  description={item.description}
+                  image={item.image}
+                  link={item.src}
+                />
+              </li>
+            ))}
+          </ul>
+        </SectionLayout>
+      </div>
+    </section>
   );
 }
 
@@ -166,11 +185,11 @@ function HowWeOrganiceCard({ description, image, type, link }: Props) {
   const isLabXXI = link === 'https://lab-xxi.com/';
   const content = (
     <div
-      className={`bg-hcayellow px-4 pt-6 rounded-xl flex flex-col items-center h-full gap-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-xl ${className}`}
+      className={`bg-white px-4 pt-6 rounded-xl flex flex-col items-center h-full gap-5 shadow-md transition-transform transform hover:scale-105 hover:shadow-xl ${className}`}
     >
       <section className="h-[80px] flex justify-center items-center">
         <Image
-          width={isLabXXI ? 100 : 135} // 👈 más pequeño solo para Lab XXI
+          width={isLabXXI ? 100 : 135}
           height={isLabXXI ? 70 : 100}
           src={image}
           alt={description}
