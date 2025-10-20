@@ -16,6 +16,25 @@ export default function HowWeDoItDashboard() {
         <p className="text-center"> Conócelos, navegando en el visualizador. </p>
         <p className="text-center mb-10"> ¡Te invitamos a descubrir lo que estamos pensando! </p>
 
+        <section id='tarjetas' className="text-center mb-10 flex flex-wrap justify-center gap-6">
+          <img
+            src="/images/resultados/img1.png"
+            alt="Ilustración de caminatas dateras"
+            className="w-48 sm:w-56 md:w-64 h-auto"
+          />
+          <img
+            src="/images/resultados/Group 201.png"
+            alt="Ilustración de Mi ciudad y yo"
+            className="w-48 sm:w-56 md:w-64 h-auto"
+          />
+          <img
+            src="/images/resultados/Group 202.png"
+            alt="Ilustración de  Imaginando mi futuro"
+            className="w-48 sm:w-56 md:w-64 h-auto"
+          />
+        </section>
+
+
         <section id="Grafico-PWBI">
           <Tabs>
             <Tab label="Riobamba">
