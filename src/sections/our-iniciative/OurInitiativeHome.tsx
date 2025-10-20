@@ -43,20 +43,8 @@ export default function OurInitiativeHome() {
               fortalecer e involucrar activamente a adolescentes de Riobamba y Quevedo en la
               apropiación de sus ciudades.
             </p>
-            <p>
-              “Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados
-              locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y
-              Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es
-              el resultado de un proceso participativo en el que adolescentes comparten sus ideas,
-              necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para
-              transformar sus ciudades.
-            </p>
-            <p>
-              ¡Queremos crear espacios{' '}
-              <strong className="text-hcablack">
-                físicos y digitales, que promuevan la inclusión y el bienestar!
-              </strong>
-            </p>
+
+
           </div>
         </div>
 
@@ -70,6 +58,27 @@ export default function OurInitiativeHome() {
             className="w-full max-w-sm lg:max-w-full h-auto"
           />
         </div>
+
+      </div>
+      <div className="text-justify text-pretty text-base sm:text-xl flex flex-col gap-y-4 mt-10">
+        <p>
+          “Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados
+          locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y
+          Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es
+          el resultado de un proceso participativo en el que adolescentes comparten sus ideas,
+          necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para
+          transformar sus ciudades.
+        </p>
+        
+        <div className="w-full flex justify-center mt-4 py-10">
+          <p>
+            ¡Queremos crear espacios{' '}
+            <strong className="text-hcablack text-center">
+              físicos y digitales, que promuevan la inclusión y el bienestar!
+            </strong>
+          </p>
+        </div>
+
       </div>
     </SectionLayout>
   );
