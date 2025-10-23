@@ -22,7 +22,7 @@ export default function Home() {
           {/* Nuestra iniciativa */}
           <Link
             href="/alza-tu-voz#que-es"
-            className="group bg-blue-500 text-white w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-3 border hover:bg-hcaneworange hover:text-black relative hover:scale-105"
+            className="group bg-blue-500 text-white w-40 h-25 rounded-lg shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden p-3 border hover:bg-hcaneworange hover:text-black relative hover:scale-105"
           >
             {/* Contenedor para las dos imágenes */}
             <div className="relative w-full h-32 flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function Home() {
           {/* Resultados */}
           <Link
             href="/resultados"
-            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-40 h-25 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
             {/* Contenedor para las dos imágenes */}
             <div className="relative w-full h-32 flex items-center justify-center">
@@ -73,7 +73,7 @@ export default function Home() {
           {/* Riobamba */}
           <Link
             href="/riobamba"
-            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-40 h-25 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
             {/* Contenedor para las dos imágenes */}
             <div className="relative w-full h-32 flex items-center justify-center">
@@ -98,7 +98,7 @@ export default function Home() {
           {/* Quevedo */}
           <Link
             href="/quevedo"
-            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-40 h-25 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
           >
             {/* Contenedor para las dos imágenes */}
             <div className="relative w-full h-32 flex items-center justify-center">
@@ -123,7 +123,7 @@ export default function Home() {
           {/* Participa */}
           <Link
             href="/blog"
-            className="group bg-blue-500 w-52 h-56 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105"
+            className="group bg-blue-500 w-40 h-25 rounded-lg shadow-md hover:shadow-xl transition-colors duration-300 flex flex-col justify-between overflow-hidden p-3 border border-white hover:bg-hcaneworange hover:text-white hover:scale-105" //w-52 h-56
           >
             {/* Contenedor para las dos imágenes */}
             <div className="relative w-full h-32 flex items-center justify-center">

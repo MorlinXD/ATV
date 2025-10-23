@@ -104,7 +104,7 @@ export default function Footer() {
                 >
                   <Image src="/logos/whatsapp.png" alt="WhatsApp Riobamba" width={26} height={26} />
                 </a>
-                <p className="font-semibold leading-tight">en Riobamba ATV:</p>
+                <p className="font-semibold leading-tight"> Riobamba ATV:</p>
               </div>
               <p>(+593) 0979831036</p>
             </div>
@@ -120,7 +120,7 @@ export default function Footer() {
                 >
                   <Image src="/logos/whatsapp.png" alt="WhatsApp Quevedo" width={26} height={26} />
                 </a>
-                <p className="font-semibold leading-tight">en Quevedo ATV:</p>
+                <p className="font-semibold leading-tight"> Quevedo ATV:</p>
               </div>
               <p>(+593) 0979833698</p>
             </div>

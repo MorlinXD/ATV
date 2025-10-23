@@ -20,17 +20,17 @@ export default function HowWeDoItDashboard() {
           <img
             src="/images/resultados/img1.png"
             alt="Ilustración de caminatas dateras"
-            className="w-48 sm:w-56 md:w-64 h-auto"
+            className="w-48 sm:w-56 md:w-64 h-auto hover:scale-105 transition-transform"
           />
           <img
             src="/images/resultados/Group 201.png"
             alt="Ilustración de Mi ciudad y yo"
-            className="w-48 sm:w-56 md:w-64 h-auto"
+            className="w-48 sm:w-56 md:w-64 h-auto hover:scale-105 transition-transform"
           />
           <img
             src="/images/resultados/Group 202.png"
             alt="Ilustración de  Imaginando mi futuro"
-            className="w-48 sm:w-56 md:w-64 h-auto"
+            className="w-48 sm:w-56 md:w-64 h-auto hover:scale-105 transition-transform"
           />
         </section>
 

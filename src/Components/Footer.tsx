@@ -57,60 +57,71 @@ export default function Footer() {
         </div>
 
         {/* Texto central */}
-        <div className="text-center px-4 py-6 text-sm md:text-base max-w-4xl mx-auto">
-          <p>
-            ¿Has vivido o presenciado una situación de abuso de poder o violencia en el proyecto?
-          </p>
-          <p>
-            Escríbenos tu queja a{' '}
-            <a href="mailto:hca@lab-xxi.com" className="text-hcaneworange font-semibold">
-              hca@lab-xxi.com
-            </a>{' '}
-            o haz tu denuncia{' '}
-            <a
-              href="https://forms.gle/zeuTz3hxPBdpgMsT7"
-              target="_blank"
-              rel="noreferrer"
-              className="text-hcaneworange font-semibold"
-            >
-              aquí
-            </a>
-            .
-          </p>
-          <p>¡Gracias por contribuir a mantener un espacio seguro!</p>
+        <div className="text-center md:w-2/3 px-4 py-2 text-sm md:text-base max-w-4xl mx-auto">
+          <div className="text-center px-4 py-2 text-sm md:text-base max-w-4xl mx-auto md:col-start-2 md:col-span-1">
+            <p>
+              ¿Has vivido o presenciado una situación de abuso de poder o violencia en el proyecto?
+            </p>
+            <p>
+              Escríbenos tu queja a{' '}
+              <a href="mailto:hca@lab-xxi.com" className="text-hcaneworange font-semibold">
+                hca@lab-xxi.com
+              </a>{' '}
+              o haz tu denuncia{' '}
+              <a
+                href="https://forms.gle/zeuTz3hxPBdpgMsT7"
+                target="_blank"
+                rel="noreferrer"
+                className="text-hcaneworange font-semibold"
+              >
+                aquí
+              </a>
+              .
+            </p>
+            <p>¡Gracias por contribuir a mantener un espacio seguro!</p>
+          </div>
         </div>
 
-        {/* Contactos */}
-        <div className="text-center md:text-right">
+        {/* Derecha: contactos */}
+        <div className="w-full md:w-1/3 flex flex-col items-center md:items-end text-center md:text-right">
           <p className="font-bold mb-3">Contactos:</p>
-          <div className="text-sm flex flex-col gap-2">
+          <div className="text-sm flex flex-col gap-3">
             <div>
-              <p className="font-semibold leading-tight">Correo electrónico:</p>
-              <p>info@lab-xxi.com</p>
+              <p className="font-semibold leading-tight" >Correo electrónico:</p>
+              <a href="mailto:info@lab-xxi.com" className="hover:underline hover:text-hcaneworange">
+                <p>info@lab-xxi.com</p></a>
             </div>
-            <div>
-              <p className="font-semibold leading-tight mt-1">Contacto en Riobamba ATV:</p>
+
+            {/* Riobamba */}
+            <div className="flex flex-col items-center md:items-end mt-1">
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=593979831036"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:scale-110 transition-transform duration-200"
+                >
+                  <Image src="/logos/whatsapp.png" alt="WhatsApp Riobamba" width={26} height={26} />
+                </a>
+                <p className="font-semibold leading-tight"> Riobamba ATV:</p>
+              </div>
               <p>(+593) 0979831036</p>
-              <a
-                href="https://api.whatsapp.com/send?phone=593979831036"
-                target="_blank"
-                rel="noreferrer"
-                className="text-hcaneworange font-semibold"
-              >
-                Enviar mensaje
-              </a>
             </div>
-            <div>
-              <p className="font-semibold leading-tight mt-1">Contacto en Quevedo ATV:</p>
+
+            {/* Quevedo */}
+            <div className="flex flex-col items-center md:items-end mt-1">
+              <div className="flex items-center gap-2">
+                <a
+                  href="https://api.whatsapp.com/send?phone=593979833698"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:scale-110 transition-transform duration-200"
+                >
+                  <Image src="/logos/whatsapp.png" alt="WhatsApp Quevedo" width={26} height={26} />
+                </a>
+                <p className="font-semibold leading-tight"> Quevedo ATV:</p>
+              </div>
               <p>(+593) 0979833698</p>
-              <a
-                href="https://api.whatsapp.com/send?phone=593979833698"
-                target="_blank"
-                rel="noreferrer"
-                className="text-hcaneworange font-semibold"
-              >
-                Enviar mensaje
-              </a>
             </div>
           </div>
         </div>
