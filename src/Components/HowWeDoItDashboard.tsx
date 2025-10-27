@@ -4,19 +4,37 @@ import { Tab, Tabs } from './Tabs';
 
 export default function HowWeDoItDashboard() {
   return (
-    <section id="atv-datosPWBI" className="bg-blue-50">
+    <section id="atv-datosPWBI" className="bg-blue-50 relative overflow-hidden">
+      {/* Imagen de fondo */}
+      <img
+        src="/images/actividades/fondo.png"
+        alt="Fondo decorativo"
+        className="absolute top-0 left-0 w-full h-120 object-cover z-0"
+        style={{ pointerEvents: 'none' }}
+      />
       <SectionLayout>
-        <h1 className=" text-4xl font-semibold my-10 text-center">Alza Tu Voz en datos</h1>
-        <p className="text-center">
+        <h1 className=" text-4xl font-semibold my-10 text-center relative z-10">
+          Alza Tu Voz en datos
+        </h1>
+        <p className="text-center relative z-10">
           {' '}
           ¡Nuestra voz es importante! Por eso, usamos datos para contar cómo nos sentimos y cómo
           vivimos nuestras ciudades{' '}
         </p>
-        <p className="text-center"> ¡Los datos nos ayudan a levantar nuestra voz aún más alto!</p>
-        <p className="text-center"> Conócelos, navegando en el visualizador. </p>
-        <p className="text-center mb-10"> ¡Te invitamos a descubrir lo que estamos pensando! </p>
+        <p className="text-center relative z-10">
+          {' '}
+          ¡Los datos nos ayudan a levantar nuestra voz aún más alto!
+        </p>
+        <p className="text-center relative z-10"> Conócelos, navegando en el visualizador. </p>
+        <p className="text-center mb-10 relative z-10">
+          {' '}
+          ¡Te invitamos a descubrir lo que estamos pensando!{' '}
+        </p>
 
-        <section id="tarjetas" className="text-center mb-10 flex flex-row justify-center items-center gap-6">
+        <section
+          id="tarjetas"
+          className="text-center mb-10 flex flex-row justify-center items-center gap-6 relative z-10"
+        >
           <img
             src="/images/resultados/img1.png"
             alt="Ilustración de caminatas dateras"
@@ -33,7 +51,7 @@ export default function HowWeDoItDashboard() {
             className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
           />
         </section>
-        <section id="Grafico-PWBI">
+        <section id="Grafico-PWBI" className="relative z-10">
           <Tabs>
             <Tab label="Riobamba">
               <div className="relative w-full" style={{ height: '1110px' }}>
