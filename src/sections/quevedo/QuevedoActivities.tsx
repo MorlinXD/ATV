@@ -52,8 +52,25 @@ const items = [
     date: 'Septiembre',
     image: '/images/quevedo/actividades/quevedo/Webinar.jpg',
   },
+  {
+    id: 9,
+    title: 'Capacitación sobre cuidado del medio ambiente - UTEQ',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/quevedo/ambiente.HEIC',
+  },
+  {
+    id: 10,
+    title: 'Taller de salud mental y sexualidad a través del arte - CEMOPLAF',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/quevedo/cemoplaf.HEIC',
+  },
+  {
+    id: 10,
+    title: 'Taller de oratoria y dominio escenico a traves del arte',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/quevedo/arte.jpg',
+  },
 ];
-
 export default function QuevedoActivities() {
   return <Activities items={items} />;
 }
