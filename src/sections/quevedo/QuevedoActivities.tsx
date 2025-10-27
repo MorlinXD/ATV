@@ -44,13 +44,13 @@ const items = [
     id: 7,
     title: 'Capacitación sobre cuidado del medio ambiente - UTEQ',
     date: 'Septiembre',
-    image: '/images/actividades/quevedo/ambiente.HEIC',
+    image: '/images/actividades/quevedo/ambiente.jpg',
   },
   {
     id: 8,
     title: 'Taller de salud mental y sexualidad a través del arte - CEMOPLAF',
     date: 'Septiembre',
-    image: '/images/actividades/quevedo/cemoplaf.HEIC',
+    image: '/images/actividades/quevedo/cemoplaf.jpg',
   },
   {
     id: 9,
