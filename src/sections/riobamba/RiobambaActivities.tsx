@@ -40,9 +40,9 @@ const items = [
   },
   {
     id: 7,
-    title: '',
+    title: 'Actividad por San Valentín - Abrazos gratis',
     date: 'Agosto 2025',
-    image: '/images/riobamba/actividades/.jpg',
+    image: '/images/riobamba/actividades/abrazo.jpg',
   },
   {
     id: 8,
