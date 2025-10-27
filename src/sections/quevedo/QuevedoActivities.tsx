@@ -18,13 +18,25 @@ const items = [
   },
   {
     id: 3,
-    title: 'Huertos Orgánicos',
+    title: 'Semillas que hablan - Huertos Orgánicos',
     date: 'cada lunes',
     image: '/images/quevedo/actividades/Huertos.jpg',
   },
   {
     id: 4,
     title: 'Club Sonoro Musicoterapia',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/sonoro.jpg',
+  },
+  {
+    id: 5,
+    title: 'Feria de Integración Juvenil',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/sonoro.jpg',
+  },
+  {
+    id: 6,
+    title: 'Capacitación de primeros auxilios psicológicos - GAD Municipal',
     date: 'Septiembre',
     image: '/images/quevedo/actividades/sonoro.jpg',
   },

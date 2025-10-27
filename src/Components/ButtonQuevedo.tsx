@@ -17,7 +17,7 @@ const ButtonTwo: FC<Props> = ({ label, link, image, target }) => {
         style={{ backgroundImage: 'url("images/button-three.png")' }}
       >
         {label}
-        <img src={image} />
+        <img src={image} alt="descarga" />
       </button>
     </Link>
   );

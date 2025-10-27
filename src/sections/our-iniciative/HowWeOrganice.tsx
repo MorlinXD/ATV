@@ -126,7 +126,6 @@ export default function HowWeOrganice() {
 
       {/* Padding superior para que el contenido no quede encima de la elipse */}
       <div className="pt-[240px] md:pt-[200px]">
-
         {/* Contenido principal */}
         <SectionLayout>
           <section className="flex flex-col gap-y-5 mb-10 text-center text-lg">
@@ -134,8 +133,8 @@ export default function HowWeOrganice() {
               ¡Así nos organizamos para <br /> alzar nuestras voces!
             </h1>
             <p>
-              Consolidamos un Consorcio poderoso para abordar los desafíos prioritarios y promover un
-              cambio sistémico en cada ciudad.
+              Consolidamos un Consorcio poderoso para abordar los desafíos prioritarios y promover
+              un cambio sistémico en cada ciudad.
             </p>
             <p>¡Conócenos!</p>
           </section>

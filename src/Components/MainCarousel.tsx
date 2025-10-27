@@ -11,21 +11,13 @@ interface CarouselProps {
 const MainCarousel: React.FC<CarouselProps> = ({ texts }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
-  };
-
-  // const handlePrev = () => {
-  //   setActiveIndex((prevIndex) => (prevIndex - 1 + texts.length) % texts.length)
-  // }
-
   useEffect(() => {
-    const interval = setInterval(handleNext, 5000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [activeIndex, texts.length]);
+    // Fixed typo here
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [texts.length]);
 
   return (
     <div id="indicators-carousel" className=" w-full">

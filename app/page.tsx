@@ -3,14 +3,13 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Slider from '../src/Components/slider_principal';
 
 export default function Home() {
   return (
-    
     <main className="flex flex-col bg-white">
       {/* Sección principal */}
       <section className="flex flex-col md:flex-row justify-between items-center max-w-6xl mx-auto py-12 px-6 gap-10 relative">
-
         {/* Columna izquierda: Logo + botones */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           {/* Logo */}
@@ -32,7 +31,6 @@ export default function Home() {
             >
               {/* Contenedor de imágenes */}
               <div className="relative w-[80px] h-[80px]">
-
                 <Image
                   src="/images/index/new_menu/Nuestra iniciativa.png"
                   alt="Nuestra iniciativa"
@@ -48,7 +46,6 @@ export default function Home() {
               </div>
               <span className="text-sm font-semibold mt-2">Nuestra iniciativa</span>
             </Link>
-
             {/* Resultados */}
             <Link
               href="/resultados"
@@ -56,7 +53,6 @@ export default function Home() {
             >
               {/* Contenedor de imágenes */}
               <div className="relative w-[60px] h-[60px]">
-
                 <Image
                   src="/images/menu_icon/Resultados Inactivo.png"
                   alt="Nuestra iniciativa"
@@ -64,7 +60,7 @@ export default function Home() {
                   className="object-contain transition-opacity duration-300 group-hover:opacity-0"
                 />
                 <Image
-                  src="/images/menu_icon/Resultados Activo.png"
+                  src="/images/menu_icon/Resultados_Activo.png"
                   alt="Nuestra iniciativa hover"
                   fill
                   className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -90,11 +86,9 @@ export default function Home() {
                   fill
                   className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 />
-
               </div>
               <span className="text-sm font-semibold mt-2">Participa</span>
             </Link>
-
             {/* Riobamba */}
             <Link
               href="/riobamba"
@@ -113,11 +107,9 @@ export default function Home() {
                   fill
                   className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 />
-
               </div>
               <span className="text-sm font-semibold mt-2">Riobamba</span>
             </Link>
-
             {/* Quevedo */}
             <Link
               href="/quevedo"
@@ -136,7 +128,6 @@ export default function Home() {
                   fill
                   className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 />
-
               </div>
               <span className="text-sm font-semibold mt-2">Quevedo</span>
             </Link>
@@ -160,54 +151,36 @@ export default function Home() {
                   fill
                   className="object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100"
                 />
-
               </div>
-              <span className="text-sm font-semibold mt-2 text-center">Nuevo Estreno “Talismán”</span>
+              <span className="text-sm font-semibold mt-2 text-center">
+                Nuevo Estreno 'Talismán'
+              </span>
             </Link>
           </div>
         </div>
-
         {/* Columna derecha: Foto */}
-        
-        <div className="hidden md:block w-80 lg:w-96 relative">
-          <div className="group relative bg-white transition-shadow shadow-md hover:shadow-xl rounded-lg overflow-hidden">
-
-          <Image
-            src="/images/menu_icon/slides/sinfon.png"
-            alt="Foto1"
-            width={500}
-            height={400}
-            className="rounded-lg object-contain"
-          />
-          <Image
-            src="/images/menu_icon/slides/sinfon2.png"
-            alt="Foto 2"
-            width={500}
-            height={400}
-            className="rounded-lg object-contain"
-          />
-          <Image
-            src="/images/menu_icon/slides/sinfon3.png"
-            alt="Foto 3"
-            width={500}
-            height={400}
-            className="rounded-lg object-contain"
-          />
-        </div>
-        
-
-          {/* Burbuja naranja */}
-          <div className="absolute -top-8 -right-8 bg-hcaneworange text-white rounded-full w-40 h-40 flex flex-col items-center justify-center text-center text-sm font-semibold shadow-md">
-            <p>¡Dale play</p>
-            <p>y diviértete!</p>
+        <Slider />
+        {/* Burbuja naranja */}
+        <div
+          className="md:fixed md:right-6 md:top-6 
+  bg-hcaneworange text-white rounded-full 
+  w-28 h-28 
+  flex flex-col items-center justify-center text-center 
+  text-xs font-semibold shadow-lg 
+  hover:scale-105 transition-transform duration-300 
+  z-50 block"
+        >
+          <p className="leading-tight">¡Dale play</p>
+          <p className="leading-tight">y diviértete!</p>
+          <Link href="https://scratch.mit.edu/projects/1228973662/" target="_blank">
             <Image
-              src="/images/icons/gamepad.png" // ícono de control
+              src="/images/menu_icon/mando1.png"
               alt="Icono juego"
-              width={30}
-              height={30}
-              className="mt-1"
+              width={40}
+              height={40}
+              className="mt-1 animate-bounce"
             />
-          </div>
+          </Link>
         </div>
       </section>
     </main>

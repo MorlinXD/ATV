@@ -7,7 +7,9 @@ export default function HowWeDoItResults() {
     <section className="flex flex-col justify-center items-center py-16" id="resultados">
       {/* Título */}
       <div className="flex flex-col items-center text-center mb-8">
-        <h2 className="text-5xl sm:text-6xl text-hcaneworange font-bold leading-tight">Nuestros principales resultados</h2>
+        <h2 className="text-5xl sm:text-6xl text-hcaneworange font-bold leading-tight">
+          Nuestros principales resultados
+        </h2>
         <p className="text-base mt-1 text-hcablack italic">
           (Actualizado a{' '}
           {new Date().toLocaleDateString('es-EC', { year: 'numeric', month: 'long' })})
@@ -81,7 +83,9 @@ function ResultCard({
 }) {
   // Si el subtitle es "beneficiarios indirectos" usamos 3 columnas en pantallas >= sm
   const colsClass =
-    subtitle === 'beneficiarios indirectos' ? 'grid-cols-1 sm:grid-cols-3' : 'grid-cols-1 sm:grid-cols-2';
+    subtitle === 'beneficiarios indirectos'
+      ? 'grid-cols-1 sm:grid-cols-3'
+      : 'grid-cols-1 sm:grid-cols-2';
 
   return (
     <div className="flex flex-col items-center text-center p-6 animate-fade-in min-w-[220px]">

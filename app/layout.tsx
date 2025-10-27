@@ -1,11 +1,9 @@
-'use client';
-
 import type { Metadata } from 'next';
 import React from 'react';
 import './globals.css';
 import localFont from 'next/font/local';
 import { GoogleAnalytics } from '@next/third-parties/google';
-import { usePathname } from 'next/navigation';
+import dynamic from 'next/dynamic';
 
 import Footer2 from '../src/Components/footerNuevo';
 import Header from '../src/Components/Header';
@@ -20,23 +18,36 @@ const gilroy = localFont({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://labxxi.datalat.org'),
   title: 'Alza Tu Voz',
   description:
     'Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba.',
+  openGraph: {
+    title: 'Alza Tu Voz',
+    description:
+      'Construimos colaborativamente un proyecto para impulsar el bienestar adolescente en Quevedo y Riobamba.',
+    url: 'https://labxxi.datalat.org',
+    siteName: 'Alza Tu Voz',
+    locale: 'es_ES',
+    type: 'website',
+  },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
+// Componente cliente para manejar la lógica del footer
+const FooterSelector = dynamic(
+  () => import('../src/Components/FooterContainer').then((mod) => mod.default),
+  { ssr: false }
+);
 
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es" className={gilroy.className}>
       <body className="overflow-x-hidden">
         <Header />
         {children}
-        {/* Si está en la página principal ("/"), muestra Footer2; si no, Footer */}
-        {pathname === '/' ? <Footer2 /> : <Footer />}
+        <FooterSelector />
+        <GoogleAnalytics gaId="G-CE9D162MK1" />
       </body>
-      <GoogleAnalytics gaId="G-CE9D162MK1" />
     </html>
   );
 }

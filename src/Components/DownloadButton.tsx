@@ -17,7 +17,7 @@ const DownloadButton: FC<Props> = ({ label, link, image, target }) => {
         style={{ backgroundImage: 'url("images/download-icon.svg")' }}
       >
         {label}
-        <img src={image} />
+        <img src={image} alt="descarga" />
       </button>
     </Link>
   );

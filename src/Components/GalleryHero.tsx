@@ -15,11 +15,11 @@ const items = [
   },
   {
     id: 4,
-    src: '/images/home/new_gallery/Portada1.jpg',
+    src: '/images/home/new_gallery/Portada2.jpg',
   },
   {
     id: 5,
-    src: '/images/home/new_gallery/Portada2.jpg',
+    src: '/images/home/new_gallery/docente.jpg',
   },
   {
     id: 6,

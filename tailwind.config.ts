@@ -51,13 +51,43 @@ const config: Config = {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
+        tectonic: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-2px)' },
+          '50%': { transform: 'translateX(2px)' },
+          '75%': { transform: 'translateX(-1px)' },
+        },
+        slideGrow: {
+          '0%': { transform: 'scale(0.9) translateX(0)', opacity: '0' },
+          '10%': { transform: 'scale(1) translateX(0)', opacity: '1' },
+          '50%': { transform: 'scale(1.05) translateX(10px)', opacity: '1' },
+          '100%': { transform: 'scale(1.05) translateX(40px)', opacity: '1' },
+        },
+        'zoom-slide-in': {
+          '0%': { transform: 'scale(0.8) translateX(50px)', opacity: '0' },
+          '100%': { transform: 'scale(1) translateX(0)', opacity: '1' },
+        },
+        'scale-slide-out': {
+          '0%': { transform: 'scale(1) translateX(0)', opacity: '1' },
+          '100%': { transform: 'scale(0.8) translateX(-50px)', opacity: '0' },
+        },
+        'slide-loop': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out forwards',
+        'tectonic': 'tectonic 0.5s ease-in-out infinite',
+        'slide-grow': 'slideGrow 3s ease-in-out forwards',
+        'zoom-slide-in': 'zoom-slide-in 0.7s ease-out forwards',
+        'scale-slide-out': 'scale-slide-out 0.6s ease-in forwards',
+        'slide-loop': 'slide-loop 15s linear infinite',
       },
     },
   },
   plugins: [],
+
 };
 
 export default config;

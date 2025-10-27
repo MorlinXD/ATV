@@ -34,7 +34,7 @@ const items = [
 
 export default function HowWasCreatedSection() {
   return (
-    <SectionLayout className="container mx-auto flex flex-col gap-5 p-5 mb-10">
+    <SectionLayout className="container mx-auto flex flex-col gap-5 p-5 mb-4 mt-0">
       <h1 className="text-4xl text-hcaneworange font-semibold text-center">
         Así fue como lo creamos
       </h1>

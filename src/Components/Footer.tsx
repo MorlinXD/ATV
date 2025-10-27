@@ -87,9 +87,10 @@ export default function Footer() {
           <p className="font-bold mb-3">Contactos:</p>
           <div className="text-sm flex flex-col gap-3">
             <div>
-              <p className="font-semibold leading-tight" >Correo electrónico:</p>
+              <p className="font-semibold leading-tight">Correo electrónico:</p>
               <a href="mailto:info@lab-xxi.com" className="hover:underline hover:text-hcaneworange">
-                <p>info@lab-xxi.com</p></a>
+                <p>info@lab-xxi.com</p>
+              </a>
             </div>
 
             {/* Riobamba */}

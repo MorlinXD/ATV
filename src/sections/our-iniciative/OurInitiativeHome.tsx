@@ -23,13 +23,11 @@ export default function OurInitiativeHome() {
               que nos escuchen, y cuidar nuestra salud mental y bienestar.
             </p>
           </div>
-
           <h1 className="text-3xl sm:text-4xl text-hcaneworange font-bold my-8">
             Acerca del
             <br />
             proyecto
           </h1>
-
           <div className="text-pretty text-base sm:text-xl flex flex-col gap-y-4">
             <p>
               El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) fue
@@ -43,33 +41,28 @@ export default function OurInitiativeHome() {
               fortalecer e involucrar activamente a adolescentes de Riobamba y Quevedo en la
               apropiación de sus ciudades.
             </p>
-
-
           </div>
         </div>
-
         {/* Imagen */}
         <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
           <Image
-            src="/images/Adicionales/QueEsATV.png"
+            src="/images/Adicionales/ATV.png"
             alt="Ilustración"
             width={400} // tamaño reducido en móviles
             height={435} // ajustado proporcionalmente
             className="w-full max-w-sm lg:max-w-full h-auto"
           />
         </div>
-
       </div>
       <div className="text-justify text-pretty text-base sm:text-xl flex flex-col gap-y-4 mt-10">
         <p>
-          “Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados
-          locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y
-          Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es
-          el resultado de un proceso participativo en el que adolescentes comparten sus ideas,
-          necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para
-          transformar sus ciudades.
+          “Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados locales
+          como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y Riobamba, y la
+          Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es el resultado de un
+          proceso participativo en el que adolescentes comparten sus ideas, necesidades y
+          propuestas, contribuyendo activamente al co-diseño de acciones para transformar sus
+          ciudades.
         </p>
-        
         <div className="w-full flex justify-center mt-4 py-10">
           <p>
             ¡Queremos crear espacios{' '}
@@ -78,7 +71,6 @@ export default function OurInitiativeHome() {
             </strong>
           </p>
         </div>
-
       </div>
     </SectionLayout>
   );
