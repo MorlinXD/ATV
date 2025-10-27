@@ -29,7 +29,7 @@ export default function RiobambaBanner() {
             empieza!
           </p>
           <a
-            href="https://discord.gg/F67nbjHJ73 "
+            href="https://discord.gg/F67nbjHJ73"
             target="_blank"
             rel="noreferrer"
             className="bg-hcaneworange w-max px-8 py-2 text-white font-semibold rounded-md self-end mt-5 mx-auto md:mx-0"
