@@ -6,13 +6,13 @@ const items = [
     id: 1,
     title: 'Pincelada de los Andes',
     date: 'Septiembre 2025',
-    image: '/images/riobamba/actividades/pincelada.jpg',
+    image: '/images/riobamba/actividades/pincelada.JPG',
   },
   {
     id: 2,
     title: 'Voluntariado Biblioteca Municipal',
     date: 'Septiembre 2025',
-    image: '/images/riobamba/actividades/biblioteca.jpg',
+    image: '/images/riobamba/actividades/biblioteca.JPG',
   },
   {
     id: 3,

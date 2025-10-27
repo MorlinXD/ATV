@@ -5,13 +5,13 @@ import { Tab, Tabs } from './Tabs';
 export default function HowWeDoItDashboard() {
   return (
     <section id="atv-datosPWBI" className="bg-blue-50 relative overflow-hidden">
-      {/* Imagen de fondo */}
+      {/* Imagen de fondo */}{/* 
       <img
         src="/images/actividades/fondo.png"
         alt="Fondo decorativo"
         className="absolute top-0 left-0 w-full h-120 object-cover z-0"
         style={{ pointerEvents: 'none' }}
-      />
+      />*/}
       <SectionLayout>
         <h1 className=" text-4xl font-semibold my-10 text-center relative z-10">
           Alza Tu Voz en datos
