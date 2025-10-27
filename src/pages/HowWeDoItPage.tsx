@@ -17,7 +17,7 @@ export default function HowWeDoItPage() {
       <HowWeDoItResults />
       <HowWeDoItActions />
       {/* <HowWeDoitIndicatorsPrev /> */}
-      <GalleryActivities/>
+      <GalleryActivities />
       <HowWeDoItIndicators />
       <HowWeDoItDashboard />
       {/* <HowWeDoItTools /> */}
