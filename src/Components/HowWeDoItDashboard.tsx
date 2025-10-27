@@ -4,8 +4,9 @@ import { Tab, Tabs } from './Tabs';
 
 export default function HowWeDoItDashboard() {
   return (
-    <section id="atv-datosPWBI" className="bg-blue-50 relative overflow-hidden">
-      {/* Imagen de fondo */}{/* 
+    <section id="atv-datosPWBI" className="bg-hcanewlightblue/65 relative overflow-hidden">
+      {/* Imagen de fondo */}
+      {/* 
       <img
         src="/images/actividades/fondo.png"
         alt="Fondo decorativo"
