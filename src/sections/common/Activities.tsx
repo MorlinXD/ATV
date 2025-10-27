@@ -16,9 +16,9 @@ type Props = {
 };
 
 export default function Activities({ items }: Props) {
-  const [filteredList, setFilteredList] = useState(items.slice(0, 4));
-  const isOpen = filteredList.length > 4;
-  //const textButton = isOpen ? 'Ver menos' : 'Ver más';
+  const [filteredList, setFilteredList] = useState(items.slice(0, 6));
+  const isOpen = filteredList.length > 6;
+  const textButton = isOpen ? 'Ver menos' : 'Ver más';
 
   function handleChangeFilter() {
     setFilteredList(isOpen ? items.slice(0, 4) : items);
@@ -51,7 +51,7 @@ export default function Activities({ items }: Props) {
           onClick={handleChangeFilter}
           className="px-6 py-2 bg-hcaneworange text-white rounded-lg hover:bg-orange-500 transition"
         >
-          {/*{textButton}*/}
+          {textButton}
         </button>
       </div>
     </SectionLayout>
