@@ -15,7 +15,7 @@ const items = [
   },
   {
     id: 4,
-    src: '/images/actividades/MuralLomadeQuito.jpg',
+    src: '/images/actividades/MuralLomadeQuito.JPG',
   },
   {
     id: 5,
