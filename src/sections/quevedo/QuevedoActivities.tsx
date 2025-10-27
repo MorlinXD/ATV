@@ -58,6 +58,24 @@ const items = [
     date: 'Septiembre',
     image: '/images/actividades/quevedo/arte.jpg',
   },
+  {
+    id: 10,
+    title: 'Capacitación sobre medio ambiente - JCI',
+    date: 'Septiembre',
+    image: '/images/actividades/quevedo/jci.jpg',
+  },
+  {
+    id: 11,
+    title: 'Exploración de nuevos liderazgos',
+    date: 'Septiembre',
+    image: '/images/actividades/quevedo/lider.JPG',
+  },
+  {
+    id: 12,
+    title: 'Creación de video por la Batalla de Pichincha',
+    date: 'Septiembre',
+    image: '/images/actividades/quevedo/pichincha.jpg',
+  },
 ];
 export default function QuevedoActivities() {
   return <Activities items={items} />;
