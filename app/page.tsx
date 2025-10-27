@@ -14,7 +14,7 @@ export default function Home() {
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           {/* Logo */}
           <Image
-            src="/images/index/new_menu/lgATV.png"
+            src="/images/index/new_menu/logATV.png"
             alt="Logo Alza Tu Voz"
             width={420}
             height={210}
