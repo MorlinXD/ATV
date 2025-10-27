@@ -7,6 +7,7 @@ import HowWeDoItActions from '../sections/how-we-do-it/HowWeDoItActions';
 //import HowWeDoItTools from '../sections/how-we-do-it/HowWeDoItTools';
 import HowWeDoItDashboard from '../Components/HowWeDoItDashboard';
 import GalleryHero from '../Components/GalleryHero';
+import GalleryActivities from '../Components/GalleryActivities';
 // import HowWeDoitIndicatorsPrev from '../sections/how-we-do-it/HowWeDoitIndicatorsPrev';
 
 export default function HowWeDoItPage() {
@@ -16,7 +17,7 @@ export default function HowWeDoItPage() {
       <HowWeDoItResults />
       <HowWeDoItActions />
       {/* <HowWeDoitIndicatorsPrev /> */}
-      <GalleryHero />
+      <GalleryActivities/>
       <HowWeDoItIndicators />
       <HowWeDoItDashboard />
       {/* <HowWeDoItTools /> */}
