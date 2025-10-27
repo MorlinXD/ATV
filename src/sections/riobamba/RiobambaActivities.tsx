@@ -26,6 +26,36 @@ const items = [
     date: 'Agosto 2025',
     image: '/images/riobamba/actividades/tejiendo.jpg',
   },
+  /*{
+    id: 5,
+    title: '',
+    date: 'Agosto 2025',
+    image: '/images/riobamba/actividades/.jpg',
+  },
+  {
+    id: 6,
+    title: '',
+    date: 'Agosto 2025',
+    image: '/images/riobamba/actividades/.jpg',
+  },
+  {
+    id: 7,
+    title: '',
+    date: 'Agosto 2025',
+    image: '/images/riobamba/actividades/.jpg',
+  },
+  {
+    id: 8,
+    title: '',
+    date: 'Agosto 2025',
+    image: '/images/riobamba/actividades/.jpg',
+  },
+  {
+    id: 9,
+    title: '',
+    date: 'Agosto 2025',
+    image: '/images/riobamba/actividades/.jpg',
+  },*/
 ];
 
 export default function RiobambaActivities() {

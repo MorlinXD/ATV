@@ -30,14 +30,14 @@ const navItems: NavItem[] = [
     path: '/quevedo',
     name: 'Quevedo',
   },
-  /*{
+  {
     path: '/blog',
     name: 'Participa',
     submenu: [
-      { path: '/convocatorias', name: 'Convocatorias' },
+      //{ path: '/convocatorias', name: 'Convocatorias' },
       { path: '/blog', name: 'Blog' },
     ],
-  },*/
+  },
 ];
 
 export default function Navbar(): JSX.Element {
