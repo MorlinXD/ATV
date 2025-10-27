@@ -40,6 +40,18 @@ const items = [
     date: 'Septiembre',
     image: '/images/quevedo/actividades/sonoro.jpg',
   },
+  {
+    id: 7,
+    title: 'Feria de integración juvenil',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/quevedo/feria.jpg',
+  },
+  {
+    id: 8,
+    title: 'Webinar: Celebrando la diversidad',
+    date: 'Septiembre',
+    image: '/images/quevedo/actividades/quevedo/Webinar.jpg',
+  },
 ];
 
 export default function QuevedoActivities() {
