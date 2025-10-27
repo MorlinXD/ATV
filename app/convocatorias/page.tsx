@@ -1,121 +1,102 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from 'next/image'
-import NewButtonTwo from '../Components/NewButtonTwo'
+import Image from 'next/image';
+import NewButtonTwo from '../../src/Components/NewButtonTwo';
 
-export default function LoQueSeViene () {
+export default function LoQueSeViene() {
   return (
-
     <main className="flex min-h-screen flex-col">
       {/* ---------- Hero ---------- */}
-      {/* <section>
+      <section>
         <Image
-          src="/hero-alza-tu-voz.png"
+          src=""
+          //src="/hero-alza-tu-voz.png"
           alt="Imagen de portada"
-          width={1440}
-          height={370}
+          width={10}
+          height={10}
           priority
         />
-      </section> */}
-
-      {/* ---------- Hero ---------- */}
-      <section className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]" style={{ backgroundImage: 'url(\'/images/convocatorias-hero-2.webp\')' }}>
       </section>
 
-      {/* ---------- Principal icon ---------- */}
-      <section className='flex flex-col items-center'>
+      {/* ---------- Hero ---------- 
+      <section
+        className=" w-auto bg-cover bg-center text-white h-96 lg:h-[36rem]"
+        style={{ backgroundImage: "url('/images/convocatorias-hero-2.webp')" }}
+      ></section>*/}
+
+      {/* ---------- Principal icon ---------- 
+      <section className="flex flex-col items-center">
         <Image
           src="/images/conv-icon.svg"
           alt="Rocket icon"
           width={130}
           height={130}
         />
-      </section>
+      </section>*/}
 
       {/* ---------- Principal title ---------- */}
-      <section className='flex flex-col md:flex-row mt-20 justify-between'>
-        <div className=''>
-          <img src='/images/onda-blue.svg' alt="Onda" />
-        </div>
-        <h2 className='text-6xl text-hcablack font-bold mx-4 text-center'>Convocatorias</h2>
-        <div className=''>
-          <img src='/images/onda-blue.svg' alt="Onda" />
-        </div>
+      <section className="flex flex-col md:flex-row mt-8 md:mt-12 justify-between items-center">
+        <div>{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
+        <h1 className="text-hcaneworange text-4xl md:text-5xl lg:text-6xl text-hcablack font-bold mx-4 text-center py-8 md:py-14">
+          Convocatorias
+        </h1>
+        <div>{/*<img src="/images/onda-blue.svg" alt="Onda" />*/}</div>
       </section>
 
       {/* ---------- Principal text ---------- */}
-      <section className="container mx-auto flex flex-col justify-center items-center mt-20">
+      <section className="container mx-auto flex flex-col justify-center items-center mt-4 md:mt-6">
         {/* <p className='text-black mt-10 text-justify text-2xl mx-4'>
           Aquí encontrarás las <strong>convocatorias</strong> abiertas para trabajar en el
           proyecto <strong>"Alza Tu Voz" - Ciudades Saludables para Adolescentes</strong>.
           Para aplicar, <strong>revisa los TDR</strong> y sigue las
           <strong> instrucciones especificadas</strong> en cada uno.
         </p> */}
-        <p className='text-black mt-10 text-justify text-2xl mx-4'>
-          Aquí encontrarás las <strong>convocatorias</strong>  en las que puedes participar para ser parte del proyecto <strong>"Alza Tu Voz"</strong>.
+        <p className="text-black mt-4 text-justify text-lg md:text-xl lg:text-2xl mx-4 text-center md:text-left max-w-4xl">
+          Aquí encontrarás las <strong>convocatorias</strong> en las que puedes participar para ser
+          parte del proyecto <strong>"Alza Tu Voz"</strong>.
         </p>
       </section>
 
       {/* ---------- Convocatorias ---------- */}
-      <section className="container mx-auto flex flex-col justify-center my-5 lg:my-10 px-8 md:px-16" id='herramientas'>
-        <div className='flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4 p-8 mt-5'>
-          <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
-              <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
-                <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
-                  {/* <h2 className="text-lg font-bold mb-2 text-hcanewblue">
-                    Equipos consultores especialistas en salud mental comunitaria
-                  </h2> */}
-                  <Image
-                    src="/Hackathon.jpg"
-                    alt="Imagen de convocatoria"
-                    width={550}
-                    height={900}
-                  />
-                    <NewButtonTwo
-                    color='bg-hcaneworange'
-                    label='¡Regístrate aquí!'
-                    link='https://ee.kobotoolbox.org/x/rVFGeCzz'
-                    target='_blank'
-                  />
+      <section
+        className="container mx-auto flex flex-col justify-center my-6 md:my-8 px-4 md:px-8 lg:px-16"
+        id="herramientas"
+      >
+        <div className="flex justify-center p-4 md:p-6">
+          {/* Tarjeta centrada */}
+          <div className="flex flex-col md:flex-row items-center md:items-start bg-white rounded-xl shadow-lg p-4 md:p-6 lg:p-8 w-full md:w-3/4">
+            {/* Imagen + botón */}
+            <div className="flex flex-col items-center w-full md:w-1/2">
+              <Image
+                src="/images/Adicionales/comingsoon.jpg"
+                alt="Imagen de convocatoria"
+                width={500}
+                height={700}
+                className="rounded-lg w-full max-w-md"
+              />
+              <div className="mt-4">
+                <NewButtonTwo
+                  color="bg-hcaneworange"
+                  label="¡Regístrate aquí!"
+                  link=""
+                  target="_blank"
+                />
               </div>
+            </div>
+
+            {/* Texto dentro de la tarjeta */}
+            <div className="flex flex-col justify-center w-full md:w-1/2 mt-6 md:mt-0 md:pl-6 lg:pl-8 text-center md:text-left">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-hcanewblue">
+                Convocatoria: Participa en Alza Tu Voz
+              </h2>
+              <p className="text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
+                Buscamos personas y equipos apasionados por el desarrollo web este texto es de
+                prueba escrito mientras esucha música para probar como se ve la vista desde una
+                convocatoria real, saludos UwU!
+              </p>
             </div>
           </div>
-          {/* <div className="flex flex-col justify-center items-center w-full mx-20 md:w-1/2 h-auto">
-            <div className="flex flex-col items-center justify-between bg-white rounded-xl p-10">
-              <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-md">
-                <h2 className="text-lg font-bold mb-2 text-hcanewblue">
-                  Líder de equipo Alza tu voz - Riobamba
-                </h2>
-                <Image
-                  src="/convocatoria-3.webp"
-                  alt="Imagen de convocatoria"
-                  width={550}
-                  height={900}
-                />
-                <NewButtonTwo
-                  color= 'bg-hcaneworange'
-                  label='Descargar TDR'
-                  link='https://drive.google.com/file/d/1i9N_d4Xa8RhPCVnU_7RmTDxBc2lT5kMz/view?usp=sharing'
-                  target='_blank'
-                />
-              </div>
-            </div>
-          </div> */}
         </div>
-      {/* <div className="bg-hcasilver rounded-lg shadow-lg p-6 max-w-sm">
-        <h2 className="text-lg font-bold mb-2 text-hcadarkblue">Organización especialista en participación juvenil e incidencia local</h2>
-        <Image
-          src="/convocatoria-1.webp"
-          alt="Imagen de convocatoria"
-          width={916}
-          height={1506}
-        />
-        <ButtonTwo
-          label='Descargar TDR'
-          link='https://drive.google.com/file/d/10uGVJhYTHOu_cW_OeM0mGGoYHu5mS-pc/view?usp=sharing'
-          target='_blank'
-        />
-      </div> */}
       </section>
     </main>
-  )
+  );
 }
