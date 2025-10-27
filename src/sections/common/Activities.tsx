@@ -21,7 +21,7 @@ export default function Activities({ items }: Props) {
   const textButton = isOpen ? 'Ver menos' : 'Ver más';
 
   function handleChangeFilter() {
-    setFilteredList(isOpen ? items.slice(0, 4) : items);
+    setFilteredList(isOpen ? items.slice(0, 6) : items);
   }
 
   return (
