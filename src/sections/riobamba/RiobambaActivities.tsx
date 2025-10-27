@@ -26,17 +26,17 @@ const items = [
     date: 'Agosto 2025',
     image: '/images/riobamba/actividades/tejiendo.jpg',
   },
-  /*{
+  {
     id: 5,
-    title: '',
+    title: 'Bootcamp de Grupo Núcleo',
     date: 'Agosto 2025',
-    image: '/images/riobamba/actividades/.jpg',
+    image: '/images/riobamba/actividades/Bootcamp.JPG',
   },
   {
     id: 6,
-    title: '',
+    title: 'Formación en comunicación',
     date: 'Agosto 2025',
-    image: '/images/riobamba/actividades/.jpg',
+    image: '/images/riobamba/actividades/comunicacion.jpg',
   },
   {
     id: 7,
@@ -46,16 +46,16 @@ const items = [
   },
   {
     id: 8,
-    title: '',
+    title: 'Declaratoria del Barrio Bellavista como barrio de adolescentes',
     date: 'Agosto 2025',
-    image: '/images/riobamba/actividades/.jpg',
+    image: '/images/riobamba/actividades/bellavista.jpg',
   },
   {
     id: 9,
-    title: '',
+    title: 'Picnic de colores',
     date: 'Agosto 2025',
-    image: '/images/riobamba/actividades/.jpg',
-  },*/
+    image: '/images/riobamba/actividades/picnic.jpg',
+  },
 ];
 
 export default function RiobambaActivities() {
