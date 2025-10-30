@@ -30,10 +30,18 @@ export default function OurInitiativeHome() {
           </h1>
           <div className="text-pretty text-base sm:text-xl flex flex-col gap-y-4">
             <p>
-              El programa Ciudades Saludables para Adolescentes (HCA, por sus siglas en inglés) fue
-              lanzado a nivel global entre 2018 y 2021 por Fundación Botnar, en su búsqueda de
-              propuestas innovadoras que mejoren las ciudades y sean más amigables para l@s
-              adolescentes.
+              El programa{' '}
+              <a
+                href="https://healthy-cities.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-hcanewblue hover:underline font-semibold"
+              >
+                Ciudades Saludables para Adolescentes (HCA)
+              </a>{' '}
+              para Adolescentes (HCA, por sus siglas en inglés) fue lanzado a nivel global entre
+              2018 y 2021 por Fundación Botnar, en su búsqueda de propuestas innovadoras que mejoren
+              las ciudades y sean más amigables para l@s adolescentes.
             </p>
             <p>
               En nuestro país, el programa &quot;Ciudades Saludables para Adolescentes&quot; cobra
