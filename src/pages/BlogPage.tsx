@@ -3,7 +3,7 @@ import BlogCard from '../Components/BlogCard';
 //import Image from 'next/image';
 //import BlogHero from '../sections/blog/BlogHero';
 //import BlogList from '../sections/blog/BlogList';
-//import BlogCreate from '../sections/blog/BlogCreate';
+import BlogCreate from '../sections/blog/BlogCreate';
 
 export default function BlogPage() {
   return (
@@ -73,8 +73,10 @@ export default function BlogPage() {
             />
           </div>
         </section>
+        <section>
+          <BlogCreate />
+        </section>
       </main>
-
       {/* 
       <BlogHero />
       <BlogList />

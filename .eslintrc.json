@@ -15,13 +15,23 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react"],
+  "plugins": [
+    "react"
+  ],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
-    "prettier/prettier": ["error", { "singleQuote": true }],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ],
     "@next/next/no-img-element": "off",
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-unused-vars": "off"
-  }
+  },
+  "ignorePatterns": [
+    "src/api/sendEmail/route.js"
+  ]
 }
