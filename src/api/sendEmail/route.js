@@ -9,14 +9,14 @@ export async function POST(request) {
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: process.env.EMAIL_USER='Comunicacion@datalat.org',
+        pass: process.env.EMAIL_PASS='jvgmvrkicnfyofuj',
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO,
+      from: process.env.EMAIL_USER='Comunicacion@datalat.org',
+      to: process.env.EMAIL_TO='Comunicacion@datalat.org',
       subject: `Nuevo miniblog de ${name}`,
       text: `
 📘 Nuevo Miniblog Recibido
