@@ -32,6 +32,9 @@ importers:
       next:
         specifier: 13.4.12
         version: 13.4.12(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      nodemailer:
+        specifier: ^7.0.10
+        version: 7.0.10
       postcss:
         specifier: 8.4.29
         version: 8.4.29
@@ -1531,6 +1534,10 @@ packages:
 
   node-releases@2.0.26:
     resolution: {integrity: sha512-S2M9YimhSjBSvYnlr5/+umAnPHE++ODwt5e2Ij6FoX45HA/s4vHdkDx1eax2pAPeAOqu4s9b7ppahsyEFdVqQA==}
+
+  nodemailer@7.0.10:
+    resolution: {integrity: sha512-Us/Se1WtT0ylXgNFfyFSx4LElllVLJXQjWi2Xz17xWw7amDKO2MLtFnVp1WACy7GkVGs+oBlRopVNUzlrGSw1w==}
+    engines: {node: '>=6.0.0'}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -3650,6 +3657,8 @@ snapshots:
       - babel-plugin-macros
 
   node-releases@2.0.26: {}
+
+  nodemailer@7.0.10: {}
 
   normalize-path@3.0.0: {}
 
