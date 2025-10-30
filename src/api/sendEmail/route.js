@@ -3,11 +3,6 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
-    console.log('EMAIL_USER:', process.env.EMAIL_USER);
-    console.log('EMAIL_PASS:', process.env.EMAIL_PASS ? '******' : undefined);
-    console.log('EMAIL_TO:', process.env.EMAIL_TO);
-
-    return new Response(JSON.stringify({ success: true }), { status: 200 });
     const body = await request.json();
     const { name, age, activity, title, text } = body;
 
