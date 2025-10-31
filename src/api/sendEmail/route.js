@@ -1,6 +1,5 @@
 import nodemailer from 'nodemailer';
 
-
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -42,5 +41,4 @@ ${text}
       status: 500,
     });
   }
-
 }
