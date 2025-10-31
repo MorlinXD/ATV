@@ -10,14 +10,14 @@ export async function POST(request) {
       port: 587,
       secure: false,
       auth: {
-        user: 'AKIA4JIH5MS3PU72FBGK',
-        pass: 'BBWP+GsfvbwloJ9IgR4uxUJk7/xiiohnZP3MxMfXlKOv',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: 'plataformas@datalat.org',
-      to: 'plataformas@datalat.org',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_TO,
       subject: `Nuevo miniblog de ${name}`,
       text: `
 📘 Nuevo Miniblog Recibido
