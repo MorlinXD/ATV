@@ -1,21 +1,24 @@
 import nodemailer from 'nodemailer';
 
+
 export async function POST(request) {
   try {
     const body = await request.json();
     const { name, age, activity, title, text } = body;
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      host: 'email-smtp.us-east-1.amazonaws.com',
+      port: 587,
+      secure: false,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: 'AKIA4JIH5MS3PU72FBGK',
+        pass: 'BBWP+GsfvbwloJ9IgR4uxUJk7/xiiohnZP3MxMfXlKOv',
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_TO,
+      from: 'plataformas@datalat.org',
+      to: 'plataformas@datalat.org',
       subject: `Nuevo miniblog de ${name}`,
       text: `
 📘 Nuevo Miniblog Recibido
@@ -39,4 +42,5 @@ ${text}
       status: 500,
     });
   }
+
 }
