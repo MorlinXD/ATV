@@ -7,7 +7,7 @@ export async function POST(request) {
     const { name, age, activity, title, text } = body;
 
     const transporter = nodemailer.createTransport({
-      service: 'email-smtp.us-east-1.amazonaws.com',
+      host: 'email-smtp.us-east-1.amazonaws.com',
       port: 587,
       secure: false,
       auth: {
