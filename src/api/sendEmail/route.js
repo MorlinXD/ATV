@@ -17,8 +17,8 @@ export async function POST(request) {
     });
 
     const mailOptions = {
-      from: 'jean@datalat.org',
-      to: 'jean@datalat.org',
+      from: 'plataformas@datalat.org',
+      to: 'plataformas@datalat.org',
       subject: `Nuevo miniblog de ${name}`,
       text: `
 📘 Nuevo Miniblog Recibido
