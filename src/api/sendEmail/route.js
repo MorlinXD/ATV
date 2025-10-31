@@ -8,6 +8,8 @@ export async function POST(request) {
 
     const transporter = nodemailer.createTransport({
       service: 'email-smtp.us-east-1.amazonaws.com',
+      port: 465,
+      secure: true,
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
