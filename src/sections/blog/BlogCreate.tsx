@@ -93,9 +93,9 @@ const fields: Field[] = [
   {
     id: 'activity',
     label: 'Actividad en la que participaste',
-    type: 'comboBox',
+    type: 'text',
     value: '',
-    placeHolder: 'Selecciona una opción',
+    placeHolder: 'Escribe la actividad',
     options: ['Opción 1', 'Opción 2', 'Opción 3'],
   },
   {
