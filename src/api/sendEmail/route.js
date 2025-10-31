@@ -7,16 +7,16 @@ export async function POST(request) {
     const { name, age, activity, title, text } = body;
 
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: 'email-smtp.us-east-1.amazonaws.com',
       auth: {
-        user: process.env.EMAIL_USER='Comunicacion@datalat.org',
-        pass: process.env.EMAIL_PASS='jvgmvrkicnfyofuj',
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER='Comunicacion@datalat.org',
-      to: process.env.EMAIL_TO='Comunicacion@datalat.org',
+      from: process.env.EMAIL_USER,
+      to: process.env.EMAIL_TO,
       subject: `Nuevo miniblog de ${name}`,
       text: `
 📘 Nuevo Miniblog Recibido
