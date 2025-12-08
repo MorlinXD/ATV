@@ -1,18 +1,17 @@
 {
-  "whyContinueWithGen1": "Prefer not to answer",
-  "projectName": "ATVLOGIN",
+  "providers": [
+    "awscloudformation"
+  ],
+  "projectName": "labxxi2025",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {
     "framework": "react",
     "config": {
-      "SourceDir": "src",
-      "DistributionDir": "build",
-      "BuildCommand": "npm.cmd run-script build",
-      "StartCommand": "npm.cmd run-script start"
+      "SourceDir": ".",
+      "DistributionDir": ".next",
+      "BuildCommand": "npm run build",
+      "StartCommand": "npm run start"
     }
-  },
-  "providers": [
-    "awscloudformation"
-  ]
+  }
 }

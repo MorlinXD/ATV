@@ -1,15 +1,20 @@
 {
-  "nuevo": {
+  "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-atvlogin-nuevo-edb1e-authRole",
-      "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-atvlogin-nuevo-edb1e-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::844514550966:role/amplify-atvlogin-nuevo-edb1e-authRole",
+      "AuthRoleName": "amplify-labxxi2025-dev-29d45-authRole",
+      "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-atvlogin-nuevo-edb1e-deployment",
-      "UnauthRoleName": "amplify-atvlogin-nuevo-edb1e-unauthRole",
-      "StackName": "amplify-atvlogin-nuevo-edb1e",
-      "StackId": "arn:aws:cloudformation:us-east-1:844514550966:stack/amplify-atvlogin-nuevo-edb1e/9ff10760-d3ff-11f0-aa98-0afffd86e00f",
-      "AmplifyAppId": "dyx82gje7hquy"
+      "DeploymentBucketName": "amplify-labxxi2025-dev-29d45-deployment",
+      "UnauthRoleName": "amplify-labxxi2025-dev-29d45-unauthRole",
+      "StackName": "amplify-labxxi2025-dev-29d45",
+      "StackId": "arn:aws:cloudformation:us-east-1:844514550966:stack/amplify-labxxi2025-dev-29d45/0d8bad60-d3e3-11f0-a3e2-0affd10e0751",
+      "AmplifyAppId": "d3tjdy8535efoc"
+    },
+    "categories": {
+      "auth": {
+        "labxxi20255ef78b81": {}
+      }
     }
   }
 }

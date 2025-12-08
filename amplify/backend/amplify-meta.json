@@ -1,15 +1,58 @@
 {
   "providers": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-atvlogin-nuevo-edb1e-authRole",
-      "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-atvlogin-nuevo-edb1e-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::844514550966:role/amplify-atvlogin-nuevo-edb1e-authRole",
+      "AuthRoleName": "amplify-labxxi2025-dev-29d45-authRole",
+      "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-atvlogin-nuevo-edb1e-deployment",
-      "UnauthRoleName": "amplify-atvlogin-nuevo-edb1e-unauthRole",
-      "StackName": "amplify-atvlogin-nuevo-edb1e",
-      "StackId": "arn:aws:cloudformation:us-east-1:844514550966:stack/amplify-atvlogin-nuevo-edb1e/9ff10760-d3ff-11f0-aa98-0afffd86e00f",
-      "AmplifyAppId": "dyx82gje7hquy"
+      "DeploymentBucketName": "amplify-labxxi2025-dev-29d45-deployment",
+      "UnauthRoleName": "amplify-labxxi2025-dev-29d45-unauthRole",
+      "StackName": "amplify-labxxi2025-dev-29d45",
+      "StackId": "arn:aws:cloudformation:us-east-1:844514550966:stack/amplify-labxxi2025-dev-29d45/0d8bad60-d3e3-11f0-a3e2-0affd10e0751",
+      "AmplifyAppId": "d3tjdy8535efoc"
+    }
+  },
+  "auth": {
+    "labxxi20255ef78b81": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/auth/labxxi20255ef78b81-cloudformation-template.json",
+        "logicalId": "authlabxxi20255ef78b81"
+      },
+      "lastPushTimeStamp": "2025-12-08T08:08:17.494Z",
+      "output": {
+        "UserPoolId": "us-east-1_z7jOqWS6U",
+        "AppClientIDWeb": "274827165rf54lgsb0krufvv25",
+        "AppClientID": "79q1ls3mfp25e8ska1nnva702o",
+        "IdentityPoolId": "us-east-1:bc021529-1ad9-4708-80b4-9c482f2c4f50",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:844514550966:userpool/us-east-1_z7jOqWS6U",
+        "IdentityPoolName": "labxxi20255ef78b81_identitypool_5ef78b81__dev",
+        "UserPoolName": "labxxi20255ef78b81_userpool_5ef78b81"
+      },
+      "lastPushDirHash": "0kiQz8+IVLElzl5pWwV+Fyinl9E="
     }
   }
 }
