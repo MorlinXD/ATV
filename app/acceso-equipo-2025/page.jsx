@@ -14,14 +14,12 @@ export default function AccesoEquipoPage() {
   const [loading, setLoading] = useState(false);
   const [checkingSession, setCheckingSession] = useState(true);
 
-  // Si ya hay sesión, saltamos directo al panel
   useEffect(() => {
     const checkAuth = async () => {
       try {
         await getCurrentUser();
         router.replace('/admin');
       } catch {
-        // No autenticado: se queda en el login
         console.log('No hay sesión, mostrando login…');
       } finally {
         setCheckingSession(false);
@@ -67,7 +65,6 @@ export default function AccesoEquipoPage() {
     <main className="min-h-[60vh] flex items-center justify-center px-4 py-12 bg-gradient-to-b from-sky-50 to-slate-100">
       <div className="w-full max-w-4xl mx-auto">
         <div className="grid gap-8 md:grid-cols-[1.1fr,1fr] items-stretch">
-          {/* Lado izquierdo: texto institucional */}
           <section className="hidden md:flex flex-col justify-center rounded-3xl bg-white/70 border border-sky-100 shadow-sm px-8 py-10">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-sky-500 mb-3">
               Acceso interno
@@ -95,15 +92,12 @@ export default function AccesoEquipoPage() {
             </ul>
           </section>
 
-          {/* Lado derecho: formulario de login */}
           <section className="bg-white rounded-3xl shadow-xl shadow-sky-100/70 border border-sky-100 px-6 py-8 sm:px-8">
             <header className="mb-6 text-center md:text-left">
               <p className="text-xs font-semibold tracking-[0.2em] uppercase text-sky-500 mb-2">
                 Inicia sesión
               </p>
-              <h2 className="text-xl font-semibold text-slate-900">
-                Acceso al panel interno
-              </h2>
+              <h2 className="text-xl font-semibold text-slate-900">Acceso al panel interno</h2>
               <p className="text-xs text-slate-500 mt-1">
                 Usa tu correo institucional y la contraseña asignada por el equipo técnico.
               </p>
