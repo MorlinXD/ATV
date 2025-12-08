@@ -13,10 +13,20 @@
     },
     "categories": {
       "auth": {
-        "labxxi20255ef78b81": {}
+        "labxxi20255ef78b81": {},
+        "userPoolGroups": {}
       },
       "storage": {
         "ATVImagenes": {}
+      },
+      "function": {
+        "AdminQueries927e9089": {
+          "deploymentBucketName": "amplify-labxxi2025-dev-29d45-deployment",
+          "s3Key": "amplify-builds/AdminQueries927e9089-496a577068732b746673-build.zip"
+        }
+      },
+      "api": {
+        "AdminQueries": {}
       }
     }
   }

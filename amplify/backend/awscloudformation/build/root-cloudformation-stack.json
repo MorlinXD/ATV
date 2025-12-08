@@ -205,7 +205,7 @@
         "TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/auth/labxxi20255ef78b81-cloudformation-template.json",
         "Parameters": {
           "identityPoolName": "labxxi20255ef78b81_identitypool_5ef78b81",
-          "allowUnauthenticatedIdentities": true,
+          "allowUnauthenticatedIdentities": false,
           "resourceNameTruncated": "labxxi5ef78b81",
           "userPoolName": "labxxi20255ef78b81_userpool_5ef78b81",
           "autoVerifiedAttributes": "email",
@@ -231,7 +231,7 @@
           "authSelections": "identityPoolAndUserPool",
           "useDefault": "default",
           "usernameAttributes": "email",
-          "userPoolGroupList": "",
+          "userPoolGroupList": "atvpool",
           "serviceName": "Cognito",
           "usernameCaseSensitive": false,
           "useEnabledMfas": true,
@@ -249,6 +249,61 @@
           },
           "breakCircularDependency": true,
           "dependsOn": "",
+          "userPoolGroups": true,
+          "adminQueries": true,
+          "triggers": "{}",
+          "hostedUI": false,
+          "adminQueryGroup": "atvpool",
+          "parentStack": {
+            "Ref": "AWS::StackId"
+          },
+          "permissions": "",
+          "authProviders": "",
+          "env": "dev"
+        }
+      }
+    },
+    "authuserPoolGroups": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/auth/userPoolGroups-cloudformation-template.json",
+        "Parameters": {
+          "AuthRoleArn": {
+            "Fn::GetAtt": [
+              "AuthRole",
+              "Arn"
+            ]
+          },
+          "UnauthRoleArn": {
+            "Fn::GetAtt": [
+              "UnauthRole",
+              "Arn"
+            ]
+          },
+          "authlabxxi20255ef78b81UserPoolId": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "authlabxxi20255ef78b81AppClientIDWeb": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.AppClientIDWeb"
+            ]
+          },
+          "authlabxxi20255ef78b81AppClientID": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.AppClientID"
+            ]
+          },
+          "authlabxxi20255ef78b81IdentityPoolId": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.IdentityPoolId"
+            ]
+          },
           "env": "dev"
         }
       }
@@ -282,6 +337,50 @@
           "s3PermissionsAuthenticatedUploads": "s3:PutObject",
           "s3PermissionsGuestPublic": "s3:PutObject,s3:GetObject,s3:DeleteObject",
           "s3PermissionsGuestUploads": "s3:PutObject",
+          "env": "dev"
+        }
+      }
+    },
+    "functionAdminQueries927e9089": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/function/AdminQueries927e9089-cloudformation-template.json",
+        "Parameters": {
+          "deploymentBucketName": "amplify-labxxi2025-dev-29d45-deployment",
+          "s3Key": "amplify-builds/AdminQueries927e9089-496a577068732b746673-build.zip",
+          "authlabxxi20255ef78b81UserPoolId": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "env": "dev"
+        }
+      }
+    },
+    "apiAdminQueries": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/api/AdminQueries-cloudformation-template.json",
+        "Parameters": {
+          "authlabxxi20255ef78b81UserPoolId": {
+            "Fn::GetAtt": [
+              "authlabxxi20255ef78b81",
+              "Outputs.UserPoolId"
+            ]
+          },
+          "functionAdminQueries927e9089Arn": {
+            "Fn::GetAtt": [
+              "functionAdminQueries927e9089",
+              "Outputs.Arn"
+            ]
+          },
+          "functionAdminQueries927e9089Name": {
+            "Fn::GetAtt": [
+              "functionAdminQueries927e9089",
+              "Outputs.Name"
+            ]
+          },
           "env": "dev"
         }
       }

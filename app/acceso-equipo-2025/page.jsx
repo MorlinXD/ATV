@@ -1,6 +1,6 @@
 'use client';
 
-import '../../lib/amplifyClient';
+import '@/lib/amplifyClient';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn, getCurrentUser } from 'aws-amplify/auth';

@@ -3,9 +3,18 @@
 
 const awsmobile = {
   aws_project_region: 'us-east-1',
+
+  // Cognito (User Pool)
   aws_cognito_region: 'us-east-1',
   aws_user_pools_id: 'us-east-1_z7jOqWS6U',
   aws_user_pools_web_client_id: '274827165rf54lgsb0krufvv25',
+
+  // ⚠️ Identity Pool (para credenciales IAM → S3)
+  aws_cognito_identity_pool_id: 'us-east-1:27c2bf64-52c7-4053-b368-8afb921726bb',
+
+  // S3 Storage
+  aws_user_files_s3_bucket: 'atv-img29d45-dev',
+  aws_user_files_s3_bucket_region: 'us-east-1',
 };
 
 export default awsmobile;
