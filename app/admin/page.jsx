@@ -55,8 +55,7 @@ export default function AdminDashboardPage() {
           <div>
             <h1 className="text-3xl font-bold text-gray-800">Panel de administración</h1>
             <p className="text-sm text-gray-500 mt-1">
-              Sesión iniciada como{' '}
-              <span className="font-semibold text-gray-700">{userEmail}</span>
+              Sesión iniciada como <span className="font-semibold text-gray-700">{userEmail}</span>
             </p>
           </div>
           <button
@@ -96,14 +95,14 @@ export default function AdminDashboardPage() {
             onClick={() => goTo('/admin/resultados')}
           >
             <div>
-              <h2 className="font-semibold text-lg text-gray-800 mb-1">Editar sección Resultados</h2>
+              <h2 className="font-semibold text-lg text-gray-800 mb-1">
+                Editar sección Resultados
+              </h2>
               <p className="text-sm text-gray-500 mb-3">
                 Actualizar logros, métricas e historias de impacto.
               </p>
             </div>
-            <span className="text-sm font-semibold text-emerald-600 mt-2">
-              Ir a resultados →
-            </span>
+            <span className="text-sm font-semibold text-emerald-600 mt-2">Ir a resultados →</span>
           </div>
 
           {/* Riobamba */}
@@ -117,9 +116,7 @@ export default function AdminDashboardPage() {
                 Gestionar contenido específico de la sede Riobamba.
               </p>
             </div>
-            <span className="text-sm font-semibold text-sky-600 mt-2">
-              Ir a Riobamba →
-            </span>
+            <span className="text-sm font-semibold text-sky-600 mt-2">Ir a Riobamba →</span>
           </div>
 
           {/* Quevedo */}
@@ -133,9 +130,7 @@ export default function AdminDashboardPage() {
                 Actualizar información, actividades y recursos de Quevedo.
               </p>
             </div>
-            <span className="text-sm font-semibold text-amber-600 mt-2">
-              Ir a Quevedo →
-            </span>
+            <span className="text-sm font-semibold text-amber-600 mt-2">Ir a Quevedo →</span>
           </div>
 
           {/* Nuestra iniciativa */}
@@ -144,7 +139,9 @@ export default function AdminDashboardPage() {
             onClick={() => goTo('/admin/nuestra-iniciativa')}
           >
             <div>
-              <h2 className="font-semibold text-lg text-gray-800 mb-1">Editar Nuestra Iniciativa</h2>
+              <h2 className="font-semibold text-lg text-gray-800 mb-1">
+                Editar Nuestra Iniciativa
+              </h2>
               <p className="text-sm text-gray-500 mb-3">
                 Modificar el relato, objetivos y enfoque de la iniciativa.
               </p>
@@ -173,9 +170,7 @@ export default function AdminDashboardPage() {
                 Espacio para futuros módulos de edición de contenido estático.
               </p>
             </div>
-            <span className="text-sm font-semibold text-slate-600 mt-2">
-              Ver secciones →
-            </span>
+            <span className="text-sm font-semibold text-slate-600 mt-2">Ver secciones →</span>
           </div>
         </div>
       </div>

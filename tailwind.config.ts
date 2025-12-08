@@ -78,7 +78,7 @@ const config: Config = {
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-in-out forwards',
-        'tectonic': 'tectonic 0.5s ease-in-out infinite',
+        tectonic: 'tectonic 0.5s ease-in-out infinite',
         'slide-grow': 'slideGrow 3s ease-in-out forwards',
         'zoom-slide-in': 'zoom-slide-in 0.7s ease-out forwards',
         'scale-slide-out': 'scale-slide-out 0.6s ease-in forwards',
@@ -87,7 +87,6 @@ const config: Config = {
     },
   },
   plugins: [],
-
 };
 
 export default config;

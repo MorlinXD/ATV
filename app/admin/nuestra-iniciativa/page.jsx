@@ -23,8 +23,7 @@ export default function AdminNuestraIniciativaPage() {
     p4: 'En nuestro país, el programa "Ciudades Saludables para Adolescentes" cobra vida gracias a la iniciativa "Alza Tu Voz", cuyo principal objetivo es fortalecer e involucrar activamente a adolescentes de Riobamba y Quevedo en la apropiación de sus ciudades.',
     bottomText:
       '“Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es el resultado de un proceso participativo en el que adolescentes comparten sus ideas, necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para transformar sus ciudades.',
-    bottomStrong:
-      'físicos y digitales, que promuevan la inclusión y el bienestar!',
+    bottomStrong: 'físicos y digitales, que promuevan la inclusión y el bienestar!',
     imageSrc: '/images/Adicionales/ATV.png', // puede ser ruta local o path de bucket
   });
 
@@ -105,11 +104,7 @@ export default function AdminNuestraIniciativaPage() {
         })
       );
 
-      conUrls.sort(
-        (a, b) =>
-          new Date(b.lastModified || 0) -
-          new Date(a.lastModified || 0)
-      );
+      conUrls.sort((a, b) => new Date(b.lastModified || 0) - new Date(a.lastModified || 0));
 
       setBucketImages(conUrls);
       bucketLoadedRef.current = true;
@@ -169,8 +164,7 @@ export default function AdminNuestraIniciativaPage() {
               Editar sección: Nuestra Iniciativa
             </h1>
             <p className="text-sm text-gray-500 mt-1">
-              Sesión iniciada como{' '}
-              <span className="font-semibold text-gray-700">{userEmail}</span>
+              Sesión iniciada como <span className="font-semibold text-gray-700">{userEmail}</span>
             </p>
           </div>
           <div className="flex gap-3">
@@ -193,9 +187,7 @@ export default function AdminNuestraIniciativaPage() {
         <div className="grid gap-6 lg:grid-cols-2">
           {/* Columna izquierda: formulario */}
           <div className="bg-white rounded-2xl shadow-lg p-6 space-y-5">
-            <h2 className="text-lg font-semibold text-gray-800 mb-2">
-              Contenido editable
-            </h2>
+            <h2 className="text-lg font-semibold text-gray-800 mb-2">Contenido editable</h2>
 
             <div className="space-y-4 max-h-[70vh] overflow-y-auto pr-1">
               {/* Título 1 */}
@@ -216,9 +208,7 @@ export default function AdminNuestraIniciativaPage() {
 
               {/* Párrafo 1 */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Párrafo 1
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Párrafo 1</label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
                   rows={3}
@@ -229,9 +219,7 @@ export default function AdminNuestraIniciativaPage() {
 
               {/* Párrafo 2 */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Párrafo 2
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Párrafo 2</label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
                   rows={3}
@@ -258,9 +246,7 @@ export default function AdminNuestraIniciativaPage() {
 
               {/* Párrafo 3 */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Párrafo 3
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Párrafo 3</label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
                   rows={4}
@@ -271,9 +257,7 @@ export default function AdminNuestraIniciativaPage() {
 
               {/* Párrafo 4 */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Párrafo 4
-                </label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Párrafo 4</label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
                   rows={4}
@@ -319,7 +303,8 @@ export default function AdminNuestraIniciativaPage() {
                     onChange={handleChange('imageSrc')}
                   />
                   <p className="text-xs text-gray-400">
-                    Puedes usar una ruta local (ej. /images/Adicionales/ATV.png) o un path de bucket (admin/...).
+                    Puedes usar una ruta local (ej. /images/Adicionales/ATV.png) o un path de bucket
+                    (admin/...).
                   </p>
                   <button
                     type="button"
@@ -344,9 +329,7 @@ export default function AdminNuestraIniciativaPage() {
 
           {/* Columna derecha: vista previa */}
           <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 overflow-y-auto max-h-[80vh]">
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-              Vista previa
-            </h2>
+            <h2 className="text-lg font-semibold text-gray-800 mb-4">Vista previa</h2>
 
             <SectionLayout>
               <div className="flex flex-col lg:flex-row justify-center items-center w-full gap-10 lg:gap-20 text-justify">
@@ -396,10 +379,8 @@ export default function AdminNuestraIniciativaPage() {
                 <div className="w-full flex justify-center mt-4 py-10">
                   <p>
                     ¡Queremos crear espacios{' '}
-                    <strong className="text-hcablack text-center">
-                      {formData.bottomStrong}
-                    </strong>
-                    </p>
+                    <strong className="text-hcablack text-center">{formData.bottomStrong}</strong>
+                  </p>
                 </div>
               </div>
             </SectionLayout>
@@ -449,9 +430,7 @@ export default function AdminNuestraIniciativaPage() {
                           />
                         </div>
                         <div className="px-2 py-2 text-left">
-                          <p className="text-xs font-medium text-gray-800 truncate">
-                            {name}
-                          </p>
+                          <p className="text-xs font-medium text-gray-800 truncate">{name}</p>
                           <p className="text-[10px] text-gray-400 truncate">
                             {(img.size / 1024).toFixed(1)} KB
                           </p>

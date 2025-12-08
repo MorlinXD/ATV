@@ -15,9 +15,7 @@
     "sourceType": "module",
     "project": "./tsconfig.json"
   },
-  "plugins": [
-    "react"
-  ],
+  "plugins": ["react"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
@@ -31,7 +29,5 @@
     "react/no-unescaped-entities": "off",
     "@typescript-eslint/no-unused-vars": "off"
   },
-  "ignorePatterns": [
-    "src/api/sendEmail/route.js"
-  ]
+  "ignorePatterns": ["src/api/sendEmail/route.js"]
 }
