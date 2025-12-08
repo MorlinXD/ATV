@@ -42,7 +42,7 @@
         "s3TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/auth/labxxi20255ef78b81-cloudformation-template.json",
         "logicalId": "authlabxxi20255ef78b81"
       },
-      "lastPushTimeStamp": "2025-12-08T08:08:17.494Z",
+      "lastPushTimeStamp": "2025-12-08T13:58:51.802Z",
       "output": {
         "UserPoolId": "us-east-1_z7jOqWS6U",
         "AppClientIDWeb": "274827165rf54lgsb0krufvv25",
@@ -52,7 +52,24 @@
         "IdentityPoolName": "labxxi20255ef78b81_identitypool_5ef78b81__dev",
         "UserPoolName": "labxxi20255ef78b81_userpool_5ef78b81"
       },
-      "lastPushDirHash": "0kiQz8+IVLElzl5pWwV+Fyinl9E="
+      "lastPushDirHash": "EejiYxwF61OmWLwWHRkRljgGhMs="
+    }
+  },
+  "storage": {
+    "ATVImagenes": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2025-12-08T13:58:51.802Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageATVImagenes"
+      },
+      "output": {
+        "BucketName": "atv-img29d45-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "UZg9utOcErf+WsqhiL0Q2YQlQ7Q="
     }
   }
 }

@@ -153,7 +153,15 @@ export default function AdminDashboardPage() {
               Ir a Nuestra Iniciativa →
             </span>
           </div>
-
+          <div
+            onClick={() => router.push('/admin/imagenes')}
+            className="border rounded-xl p-4 cursor-pointer hover:shadow-md transition bg-white"
+          >
+            <h2 className="font-semibold mb-2">Gestionar imágenes</h2>
+            <p className="text-sm text-gray-500">
+              Sube y revisa las imágenes que se usan en la web.
+            </p>
+          </div>
           {/* Extra: Contenido general / estático */}
           <div
             className="border rounded-2xl p-5 bg-gradient-to-br from-slate-50 to-white hover:shadow-md transition cursor-pointer flex flex-col justify-between"
