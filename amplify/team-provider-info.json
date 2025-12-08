@@ -1,5 +1,5 @@
 {
-  "providers": {
+  "nuevo": {
     "awscloudformation": {
       "AuthRoleName": "amplify-atvlogin-nuevo-edb1e-authRole",
       "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-atvlogin-nuevo-edb1e-unauthRole",
