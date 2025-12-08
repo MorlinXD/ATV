@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-labxxi2025-dev-29d45-authRole",
+      "UnauthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::844514550966:role/amplify-labxxi2025-dev-29d45-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-labxxi2025-dev-29d45-deployment",
+      "UnauthRoleName": "amplify-labxxi2025-dev-29d45-unauthRole",
+      "StackName": "amplify-labxxi2025-dev-29d45",
+      "StackId": "arn:aws:cloudformation:us-east-1:844514550966:stack/amplify-labxxi2025-dev-29d45/0d8bad60-d3e3-11f0-a3e2-0affd10e0751",
+      "AmplifyAppId": "d3tjdy8535efoc"
+    }
+  },
+  "auth": {
+    "labxxi20257f80cc9e": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-labxxi2025-dev-29d45-deployment/amplify-cfn-templates/auth/labxxi20257f80cc9e-cloudformation-template.json",
+        "logicalId": "authlabxxi20257f80cc9e"
+      },
+      "lastPushTimeStamp": "2025-12-08T03:15:38.402Z",
+      "output": {
+        "UserPoolId": "us-east-1_p5iYMI7Cy",
+        "AppClientIDWeb": "2spe0gkth0d4eoch06e16q3eal",
+        "AppClientID": "6qki9rloj75aor6vh3ep7c7bcq",
+        "IdentityPoolId": "us-east-1:d8562eaf-4a54-44b5-9c7e-487e4e5688dd",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:844514550966:userpool/us-east-1_p5iYMI7Cy",
+        "IdentityPoolName": "labxxi20257f80cc9e_identitypool_7f80cc9e__dev",
+        "UserPoolName": "labxxi20257f80cc9e_userpool_7f80cc9e"
+      },
+      "lastPushDirHash": "A17xaCu986vInBMC0L8mnl4wxkE="
+    }
+  }
+}
