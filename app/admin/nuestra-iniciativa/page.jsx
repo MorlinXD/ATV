@@ -1,19 +1,19 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { getCurrentUser, signOut } from 'aws-amplify/auth';
+import { list, getUrl } from 'aws-amplify/storage';
 import SectionLayout from '@/src/layouts/SectionLayout';
 import Image from 'next/image';
 import '../../../lib/amplifyClient';
-
 
 export default function AdminNuestraIniciativaPage() {
   const router = useRouter();
   const [checking, setChecking] = useState(true);
   const [userEmail, setUserEmail] = useState(null);
 
-  // Estado del contenido (inicializado con lo que ya tienes en producción)
+  // Estado del contenido
   const [formData, setFormData] = useState({
     title1: '¿Qué es Alza\n tu Voz?',
     p1: '"Alza Tu Voz" es un proyecto en el que junto a adolescentes de Quevedo y Riobamba, hacemos que sus ciudades sean más amigables, seguras y saludables.',
@@ -25,10 +25,10 @@ export default function AdminNuestraIniciativaPage() {
       '“Alza Tu Voz” es una iniciativa liderada por LAB XXI en colaboración con aliados locales como Fundación Datalat, Huasipichanga, los GAD Municipales de Quevedo y Riobamba, y la Escuela Superior Politécnica de Chimborazo (ESPOCH). Este proyecto es el resultado de un proceso participativo en el que adolescentes comparten sus ideas, necesidades y propuestas, contribuyendo activamente al co-diseño de acciones para transformar sus ciudades.',
     bottomStrong:
       'físicos y digitales, que promuevan la inclusión y el bienestar!',
-    imageSrc: '/images/Adicionales/ATV.png',
+    imageSrc: '/images/Adicionales/ATV.png', // puede ser ruta local o path de bucket
   });
 
-  // Protección de ruta (igual que en /admin)
+  // 🔐 Protección de ruta
   useEffect(() => {
     const checkAuth = async () => {
       try {
@@ -62,9 +62,81 @@ export default function AdminNuestraIniciativaPage() {
   };
 
   const handleSave = () => {
-    // Aquí luego conectamos a Amplify / API / CMS
-    console.log('Contenido Nuestra Iniciativa:', formData);
+    console.log('Contenido Nuestra Iniciativa (demo, aún sin backend):', formData);
     alert('(Demo) Contenido preparado en consola. Luego lo conectamos a guardado real.');
+  };
+
+  // ============ IMÁGENES DESDE BUCKET (S3) ============
+
+  const [bucketImages, setBucketImages] = useState([]); // { path, url, size, lastModified }
+  const [loadingBucket, setLoadingBucket] = useState(false);
+  const [showImagePicker, setShowImagePicker] = useState(false);
+  const [selectedImageUrl, setSelectedImageUrl] = useState(null); // para preview de bucket
+
+  const bucketLoadedRef = useRef(false);
+
+  const fetchBucketImages = async () => {
+    try {
+      setLoadingBucket(true);
+      const { items } = await list({
+        path: '',
+        options: { accessLevel: 'protected' },
+      });
+
+      // Solo las de carpeta admin/
+      const soloAdmin = items.filter((it) => it.path.includes('/admin/'));
+
+      const conUrls = await Promise.all(
+        soloAdmin.map(async (it) => {
+          const { url } = await getUrl({
+            path: it.path,
+            options: {
+              accessLevel: 'protected',
+              expiresIn: 3600,
+            },
+          });
+
+          return {
+            path: it.path,
+            size: it.size,
+            lastModified: it.lastModified,
+            url: url.toString(),
+          };
+        })
+      );
+
+      conUrls.sort(
+        (a, b) =>
+          new Date(b.lastModified || 0) -
+          new Date(a.lastModified || 0)
+      );
+
+      setBucketImages(conUrls);
+      bucketLoadedRef.current = true;
+    } catch (error) {
+      console.error('Error al listar imágenes del bucket:', error);
+      alert('No se pudieron cargar las imágenes del bucket. Revisa la consola.');
+    } finally {
+      setLoadingBucket(false);
+    }
+  };
+
+  const openImagePicker = async () => {
+    setShowImagePicker(true);
+    if (!bucketLoadedRef.current) {
+      await fetchBucketImages();
+    }
+  };
+
+  const handleSelectBucketImage = (img) => {
+    // Guardamos el PATH en el formulario (para futuro backend)
+    setFormData((prev) => ({
+      ...prev,
+      imageSrc: img.path,
+    }));
+    // Y usamos la URL firmada solo para la vista previa
+    setSelectedImageUrl(img.url);
+    setShowImagePicker(false);
   };
 
   if (checking) {
@@ -75,14 +147,17 @@ export default function AdminNuestraIniciativaPage() {
     );
   }
 
-  // Helper para respetar saltos de línea en los títulos (ej: "¿Qué es Alza\n tu Voz?")
+  // Helper para respetar saltos de línea en los títulos
   const renderTitle = (text) =>
-    text.split('\n').map((line, idx) => (
+    text.split('\n').map((line, idx, arr) => (
       <span key={idx}>
         {line}
-        {idx < text.split('\n').length - 1 && <br />}
+        {idx < arr.length - 1 && <br />}
       </span>
     ));
+
+  // Saber si la imagen actual es del bucket
+  const isBucketImage = formData.imageSrc && formData.imageSrc.includes('/admin/');
 
   return (
     <main className="min-h-screen bg-gray-100 px-4 py-8 pt-24">
@@ -126,7 +201,10 @@ export default function AdminNuestraIniciativaPage() {
               {/* Título 1 */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Título 1 (¿Qué es Alza tu Voz?) <span className="text-xs text-gray-400">(puedes usar salto de línea con Enter)</span>
+                  Título 1 (¿Qué es Alza tu Voz?){' '}
+                  <span className="text-xs text-gray-400">
+                    (puedes usar salto de línea con Enter)
+                  </span>
                 </label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
@@ -165,7 +243,10 @@ export default function AdminNuestraIniciativaPage() {
               {/* Título 2 */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  Título 2 (Acerca del proyecto) <span className="text-xs text-gray-400">(puedes usar salto de línea con Enter)</span>
+                  Título 2 (Acerca del proyecto){' '}
+                  <span className="text-xs text-gray-400">
+                    (puedes usar salto de línea con Enter)
+                  </span>
                 </label>
                 <textarea
                   className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
@@ -229,16 +310,25 @@ export default function AdminNuestraIniciativaPage() {
               {/* Imagen */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  URL de la imagen
+                  Imagen principal
                 </label>
-                <input
-                  className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
-                  value={formData.imageSrc}
-                  onChange={handleChange('imageSrc')}
-                />
-                <p className="text-xs text-gray-400 mt-1">
-                  Actualmente: {formData.imageSrc}
-                </p>
+                <div className="flex flex-col gap-2">
+                  <input
+                    className="w-full border rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-hcaneworange"
+                    value={formData.imageSrc}
+                    onChange={handleChange('imageSrc')}
+                  />
+                  <p className="text-xs text-gray-400">
+                    Puedes usar una ruta local (ej. /images/Adicionales/ATV.png) o un path de bucket (admin/...).
+                  </p>
+                  <button
+                    type="button"
+                    onClick={openImagePicker}
+                    className="inline-flex items-center justify-center px-4 py-2 rounded-full border border-gray-300 text-xs font-medium text-gray-700 hover:bg-gray-100 transition self-start"
+                  >
+                    Elegir desde bucket
+                  </button>
+                </div>
               </div>
             </div>
 
@@ -252,7 +342,7 @@ export default function AdminNuestraIniciativaPage() {
             </div>
           </div>
 
-          {/* Columna derecha: vista previa con el MISMO layout que producción */}
+          {/* Columna derecha: vista previa */}
           <div className="bg-white rounded-2xl shadow-lg p-4 lg:p-6 overflow-y-auto max-h-[80vh]">
             <h2 className="text-lg font-semibold text-gray-800 mb-4">
               Vista previa
@@ -280,13 +370,24 @@ export default function AdminNuestraIniciativaPage() {
 
                 {/* Imagen */}
                 <div className="w-full lg:w-1/2 flex justify-center mt-8 lg:mt-0">
-                  <Image
-                    src={formData.imageSrc || '/images/Adicionales/ATV.png'}
-                    alt="Ilustración"
-                    width={400}
-                    height={435}
-                    className="w-full max-w-sm lg:max-w-full h-auto"
-                  />
+                  {isBucketImage ? (
+                    <img
+                      src={
+                        selectedImageUrl ||
+                        'https://via.placeholder.com/400x435?text=Imagen+desde+bucket'
+                      }
+                      alt="Ilustración desde bucket"
+                      className="w-full max-w-sm lg:max-w-full h-auto rounded-lg object-contain"
+                    />
+                  ) : (
+                    <Image
+                      src={formData.imageSrc || '/images/Adicionales/ATV.png'}
+                      alt="Ilustración"
+                      width={400}
+                      height={435}
+                      className="w-full max-w-sm lg:max-w-full h-auto"
+                    />
+                  )}
                 </div>
               </div>
 
@@ -298,13 +399,72 @@ export default function AdminNuestraIniciativaPage() {
                     <strong className="text-hcablack text-center">
                       {formData.bottomStrong}
                     </strong>
-                  </p>
+                    </p>
                 </div>
               </div>
             </SectionLayout>
           </div>
         </div>
       </div>
+
+      {/* MODAL SELECTOR DE IMAGEN DESDE BUCKET */}
+      {showImagePicker && (
+        <div className="fixed inset-0 bg-black/40 z-50 flex items-center justify-center px-4">
+          <div className="bg-white rounded-2xl shadow-xl max-w-3xl w-full max-h-[80vh] flex flex-col">
+            <div className="px-5 py-4 border-b flex items-center justify-between">
+              <h3 className="text-sm font-semibold text-gray-800">
+                Seleccionar imagen desde bucket (carpeta admin/)
+              </h3>
+              <button
+                onClick={() => setShowImagePicker(false)}
+                className="text-xs text-gray-500 hover:text-gray-700"
+              >
+                Cerrar ✕
+              </button>
+            </div>
+
+            <div className="p-4 overflow-y-auto flex-1">
+              {loadingBucket ? (
+                <p className="text-sm text-gray-500">Cargando imágenes…</p>
+              ) : bucketImages.length === 0 ? (
+                <p className="text-sm text-gray-500">
+                  No se encontraron imágenes en admin/. Sube primero desde el módulo de imágenes.
+                </p>
+              ) : (
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {bucketImages.map((img) => {
+                    const name = img.path.split('/').pop();
+                    return (
+                      <button
+                        key={img.path}
+                        type="button"
+                        onClick={() => handleSelectBucketImage(img)}
+                        className="group border border-gray-200 rounded-xl overflow-hidden bg-gray-50 hover:border-hcaneworange hover:shadow-md transition flex flex-col"
+                      >
+                        <div className="w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+                          <img
+                            src={img.url}
+                            alt={name}
+                            className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform"
+                          />
+                        </div>
+                        <div className="px-2 py-2 text-left">
+                          <p className="text-xs font-medium text-gray-800 truncate">
+                            {name}
+                          </p>
+                          <p className="text-[10px] text-gray-400 truncate">
+                            {(img.size / 1024).toFixed(1)} KB
+                          </p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </main>
   );
 }
