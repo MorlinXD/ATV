@@ -1,13 +1,39 @@
 'use client';
 
-import '../../lib/amplifyClient'; // asegura que Amplify.configure se ejecute
+import '../../lib/amplifyClient';
 import { Authenticator } from '@aws-amplify/ui-react';
 import '@aws-amplify/ui-react/styles.css';
 import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { getCurrentUser } from 'aws-amplify/auth';
 
 export default function AdminLoginPage() {
   const router = useRouter();
+  const [checking, setChecking] = useState(true);
+
+  useEffect(() => {
+    const checkUser = async () => {
+      try {
+        // Si hay usuario autenticado, lo mandamos directo al panel
+        await getCurrentUser();
+        router.replace('/admin');
+      } catch (error) {
+        // Si NO hay usuario, mostramos el login
+        console.log('No autenticado, mostrando login');
+        setChecking(false);
+      }
+    };
+
+    checkUser();
+  }, [router]);
+
+  if (checking) {
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <p className="text-gray-500">Verificando sesión…</p>
+      </main>
+    );
+  }
 
   return (
     <main className="min-h-screen flex items-center justify-center bg-white px-4">
@@ -16,22 +42,7 @@ export default function AdminLoginPage() {
           Acceso equipo <span className="text-hcanewblue">Alza Tu Voz</span>
         </h1>
 
-        <Authenticator>
-          {({ user }) => {
-            useEffect(() => {
-              if (user) {
-                // si ya está autenticado, mandarlo al panel
-                router.push('/admin');
-              }
-            }, [user, router]);
-
-            return (
-              <p className="text-center text-gray-500">
-                Verificando sesión…
-              </p>
-            );
-          }}
-        </Authenticator>
+        <Authenticator />
       </div>
     </main>
   );

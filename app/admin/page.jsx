@@ -2,8 +2,8 @@
 
 import '../../lib/amplifyClient';
 import { useEffect, useState } from 'react';
-import { Auth } from 'aws-amplify';
 import { useRouter } from 'next/navigation';
+import { getCurrentUser, signOut } from 'aws-amplify/auth';
 
 export default function AdminDashboardPage() {
   const router = useRouter();
@@ -13,11 +13,16 @@ export default function AdminDashboardPage() {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const user = await Auth.currentAuthenticatedUser();
-        setUserEmail(user?.attributes?.email || user?.username || null);
+        const user = await getCurrentUser();
+        const email =
+          user?.signInDetails?.loginId ||
+          user?.username ||
+          null;
+
+        setUserEmail(email);
       } catch (error) {
         console.error('No autenticado, redirigiendo…', error);
-        router.push('/acceso-equipo-2025');
+        router.replace('/acceso-equipo-2025');
       } finally {
         setChecking(false);
       }
@@ -27,7 +32,7 @@ export default function AdminDashboardPage() {
   }, [router]);
 
   const handleLogout = async () => {
-    await Auth.signOut();
+    await signOut();
     router.push('/');
   };
 
@@ -49,7 +54,8 @@ export default function AdminDashboardPage() {
             </h1>
             {userEmail && (
               <p className="text-sm text-gray-500">
-                Sesión iniciada como <span className="font-semibold">{userEmail}</span>
+                Sesión iniciada como{' '}
+                <span className="font-semibold">{userEmail}</span>
               </p>
             )}
           </div>
@@ -62,20 +68,21 @@ export default function AdminDashboardPage() {
         </div>
 
         <p className="text-gray-600 mb-4">
-          Aquí luego podemos agregar módulos para editar el blog, resultados, secciones, etc.
+          Aquí después podemos agregar módulos para editar el blog, resultados,
+          secciones, etc.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">
           <div className="border rounded-xl p-4">
             <h2 className="font-semibold mb-2">Gestión del blog</h2>
             <p className="text-sm text-gray-500">
-              (Pendiente de implementar) Crear, editar y ocultar entradas del blog.
+              (Pendiente) Crear, editar y ocultar entradas del blog.
             </p>
           </div>
           <div className="border rounded-xl p-4">
             <h2 className="font-semibold mb-2">Contenido de secciones</h2>
             <p className="text-sm text-gray-500">
-              (Pendiente) Controlar textos e imágenes de las secciones principales de la web.
+              (Pendiente) Actualizar textos e imágenes de la web.
             </p>
           </div>
         </div>
