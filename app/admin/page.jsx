@@ -14,10 +14,7 @@ export default function AdminDashboardPage() {
     const checkAuth = async () => {
       try {
         const user = await getCurrentUser();
-        const email =
-          user?.signInDetails?.loginId ||
-          user?.username ||
-          null;
+        const email = user?.signInDetails?.loginId || user?.username || null;
 
         setUserEmail(email);
       } catch (error) {
@@ -49,13 +46,10 @@ export default function AdminDashboardPage() {
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h1 className="text-2xl font-bold text-gray-800">
-              Panel de administración
-            </h1>
+            <h1 className="text-2xl font-bold text-gray-800">Panel de administración</h1>
             {userEmail && (
               <p className="text-sm text-gray-500">
-                Sesión iniciada como{' '}
-                <span className="font-semibold">{userEmail}</span>
+                Sesión iniciada como <span className="font-semibold">{userEmail}</span>
               </p>
             )}
           </div>
@@ -68,8 +62,7 @@ export default function AdminDashboardPage() {
         </div>
 
         <p className="text-gray-600 mb-4">
-          Aquí después podemos agregar módulos para editar el blog, resultados,
-          secciones, etc.
+          Aquí después podemos agregar módulos para editar el blog, resultados, secciones, etc.
         </p>
 
         <div className="grid gap-4 md:grid-cols-2">
