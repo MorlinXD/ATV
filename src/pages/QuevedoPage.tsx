@@ -4,6 +4,7 @@ import QuevedoBanner from '../sections/quevedo/QuevedoBanner';
 import QuevedoActivities from '../sections/quevedo/QuevedoActivities';
 //import QuevedoCalendar from '../sections/quevedo/QuevedoCalendar';
 import QuevedoGallery from '../Components/QuevedoGallery';
+import ViewBIQuevedo from '../Components/ViewBIQuevedo';
 
 export default function QuevedoPage() {
   return (
@@ -16,6 +17,7 @@ export default function QuevedoPage() {
       <QuevedoHero />
       <QuevedoGallery />
       <QuevedoBanner />
+      <ViewBIQuevedo />
       <QuevedoActivities />
       {/*<QuevedoCalendar />*/}
     </main>

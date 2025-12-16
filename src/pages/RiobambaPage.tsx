@@ -4,6 +4,7 @@ import RiobambaGallery from '../sections/riobamba/RiobambaGallery';
 import RiobambaBanner from '../sections/riobamba/RiobambaBanner';
 //import RiobambaCalendar from '../sections/riobamba/RiobambaCalendar';
 import RiobambaActivities from '../sections/riobamba/RiobambaActivities';
+import ViewBIRiobamba from '../Components/ViewBIRiobamba';
 
 export default function RiobambaPage() {
   return (
@@ -16,6 +17,7 @@ export default function RiobambaPage() {
       <RiobambaHero />
       <RiobambaGallery />
       <RiobambaBanner />
+      <ViewBIRiobamba />
       <RiobambaActivities />
       {/*<RiobambaCalendar />*/}
     </main>
