@@ -67,7 +67,7 @@ const DashboardTabs = () => {
               color="bg-hcanewblue"
               label="Descarga los datos"
               link="https://drive.google.com/drive/folders/1Ws9w8QLABnQEuxPK5JDLJ0Sw20DcL7HX?usp=sharing"
-              eventName="daqtos Riobamba"
+              eventName="datos Riobamba"
               target="_blank"
             />
           </div>

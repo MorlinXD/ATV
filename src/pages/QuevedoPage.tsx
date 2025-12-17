@@ -17,7 +17,8 @@ export default function QuevedoPage() {
       <QuevedoHero />
       <QuevedoGallery />
       <QuevedoBanner />
-      <ViewBIQuevedo />
+
+      {/*<ViewBIQuevedo />*/}
       <QuevedoActivities />
       {/*<QuevedoCalendar />*/}
     </main>

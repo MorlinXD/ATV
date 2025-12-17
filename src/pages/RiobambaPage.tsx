@@ -17,7 +17,7 @@ export default function RiobambaPage() {
       <RiobambaHero />
       <RiobambaGallery />
       <RiobambaBanner />
-      <ViewBIRiobamba />
+      {/*<ViewBIRiobamba />*/}
       <RiobambaActivities />
       {/*<RiobambaCalendar />*/}
     </main>
