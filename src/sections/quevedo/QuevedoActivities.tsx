@@ -76,6 +76,18 @@ const items = [
     date: 'Septiembre',
     image: '/images/actividades/quevedo/pichincha.jpg',
   },
+  {
+    id: 13,
+    title: 'Primera cosecha en Huertos Orgánicos',
+    date: 'Diciembre',
+    image: '/images/actividades/quevedo/huerto.jpg',
+  },
+  {
+    id: 14,
+    title: 'Voceros/a del Festival Alza Tu Voz',
+    date: 'Diciembre',
+    image: '/images/actividades/quevedo/medios.jpg',
+  },
 ];
 export default function QuevedoActivities() {
   return <Activities items={items} />;
