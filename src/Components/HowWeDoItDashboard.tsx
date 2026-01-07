@@ -54,20 +54,20 @@ export default function HowWeDoItDashboard() {
         </section>
         <section id="Grafico-PWBI" className="relative z-10">
           <Tabs>
-            <Tab label="Riobamba">
+            <Tab label="Mi ciudad y yo">
               <div className="relative w-full" style={{ height: '1110px' }}>
                 <iframe
-                  src="https://app.powerbi.com/view?r=eyJrIjoiNDQ0ZDE0YmMtYmIwMi00ZWUzLWE1NDMtODY5M2U0NTU3ZGQ2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                  src="https://app.powerbi.com/view?r=eyJrIjoiNDEwNDY1YTQtZTdmMi00MjQwLTgyZWEtMDRhMTA5ZDU0MzQ5IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
                   className="absolute top-0 left-0 w-full h-full"
                   allowFullScreen={true}
-                  name="Dashboard Riobamba"
+                  name="Mi ciudad y yo Dashboard"
                 ></iframe>
               </div>
             </Tab>
-            <Tab label="Quevedo">
+            <Tab label="Imaginando mi futuro">
               <div className="relative w-full" style={{ height: '1110px' }}>
                 <iframe
-                  src="https://app.powerbi.com/view?r=eyJrIjoiNDU1NmY4MzUtZDg4ZS00NGY5LWEyZDAtMWMwMWE0NzM3MjM2IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
+                  src="https://app.powerbi.com/view?r=eyJrIjoiOGZhZWY3MjUtNjk5Yy00OWVlLTkwODAtODAwMTI0ZWJiMWU0IiwidCI6IjAwYzQ4YTUwLWY0MWItNDg2YS1iYjNmLTliNjJjOTFmOWU2NyJ9&pageName=ReportSection"
                   className="absolute top-0 left-0 w-full h-full"
                   allowFullScreen={true}
                   name="Dashboard Quevedo"
