@@ -7,6 +7,11 @@ export default function Slider(): JSX.Element {
     '/images/menu_icon/slides/sinfon.png',
     '/images/menu_icon/slides/prueba2.png',
     '/images/menu_icon/slides/prueba.png',
+    '/images/menu_icon/slides/nuevo1.png',
+    '/images/menu_icon/slides/nuevo2.png',
+    '/images/menu_icon/slides/nuevo3.png', 
+    '/images/menu_icon/slides/nuevo4.png',
+    '/images/menu_icon/slides/nuevo5.png',
   ];
   const loopImages = [...images, ...images];
   const [current, setCurrent] = useState<number>(0);
