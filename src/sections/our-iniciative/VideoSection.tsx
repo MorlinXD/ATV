@@ -6,31 +6,36 @@ import React, { useState } from 'react';
 const videos = [
   {
     id: 1,
+    link: 'https://youtu.be/1gRT13sQ7U4?si=KljZ7sZezrAD4_Re',
+    title: 'Talismán - Alza Tu Voz Ecuador',
+  },
+  {
+    id: 2,
     link: 'https://www.youtube.com/embed/5OMgHvN96iY?si=Pv4viBqQPm-UglH8',
     title: '¿Qué es el proyecto Alza Tu Voz?',
   },
   {
-    id: 2,
+    id: 3,
     link: 'https://www.youtube.com/embed/Ss4d2bt2ePA?si=fHhwZRnZmKSCUKo-',
     title: 'Escucha nuestra canción - Riobamba',
   },
   {
-    id: 3,
+    id: 4,
     link: 'https://www.youtube.com/embed/JjKzCsKU2Lw?si=q1ydBPNiJYDeH4Nw',
     title: 'Escucha nuestra canción - Quevedo',
   },
   {
-    id: 4,
+    id: 5,
     link: 'https://www.youtube.com/embed/wGrxMKPqlWI?si=bwoBkrPOgSzVg1Cc',
     title: 'Conoce el proceso de co-creación',
   },
   {
-    id: 5,
+    id: 6,
     link: 'https://www.youtube.com/embed/cb_ou_ru8Fk?si=Ltef9vLa0P4hObhS',
     title: 'Telar comunitario - Riobamba',
   },
   {
-    id: 6,
+    id: 7,
     link: 'https://www.youtube.com/embed/EzdcW37eJ30?si=tleBEqRaT-0hEPIk',
     title: 'Telar comunitario - Quevedo',
   },
