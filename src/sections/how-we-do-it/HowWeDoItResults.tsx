@@ -17,15 +17,15 @@ export default function HowWeDoItResults() {
       </div>
 
       {/* Estadísticas principales (primera fila) */}
-      <div className="flex flex-wrap justify-center items-center gap-8 w-full max-w-6xl mb-6">
+      <div className="flex flex-wrap justify-center items-top gap-8 w-full max-w-6xl mb-6">
         <ResultCard
-          title={391}
+          title={437}
           subtitle="adolescentes"
           data={[
-            { label: 'Ciudad:', values: ['219 Riobamba', '172 Quevedo'] },
+            { label: 'Ciudad:', values: ['253 Riobamba', '184 Quevedo'] },
             {
               label: 'Género:',
-              values: ['179 masculino', '207 femenino', '1 personas trans', '4 prefiero no decir'],
+              values: ['202 masculino', '226 femenino', '1 personas trans', '8 prefiero no decir'],
             },
           ]}
         />
@@ -39,11 +39,11 @@ export default function HowWeDoItResults() {
           ]}
         />
         <ResultCard
-          title={25}
+          title={62}
           subtitle="cuidadores"
           data={[
             { label: 'Riobamba:', values: ['femenino 23', 'masculino 2'] },
-            //{ label: 'Quevedo:', values: ['femenino', 'masculino '] },
+            { label: 'Quevedo:', values: ['femenino 32', 'masculino 5'] },
           ]}
         />
       </div>
