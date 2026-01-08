@@ -18,7 +18,7 @@ const items = [
     id: 3,
     title: 'Taller junto a ESPOCH',
     date: 'Octubre 2025',
-    image: '/images/riobamba/actividades/spoch.jpg',
+    image: '/images/riobamba/actividades/spoch.JPG',
   },
   {
     id: 4,
