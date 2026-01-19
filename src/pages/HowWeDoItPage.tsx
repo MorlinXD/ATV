@@ -8,6 +8,7 @@ import HowWeDoItActions from '../sections/how-we-do-it/HowWeDoItActions';
 import HowWeDoItDashboard from '../Components/HowWeDoItDashboard';
 import GalleryHero from '../Components/GalleryHero';
 import GalleryActivities from '../Components/GalleryActivities';
+import Reportes from '../sections/our-iniciative/MensualReport';
 // import HowWeDoitIndicatorsPrev from '../sections/how-we-do-it/HowWeDoitIndicatorsPrev';
 
 export default function HowWeDoItPage() {
@@ -17,6 +18,7 @@ export default function HowWeDoItPage() {
       <HowWeDoItResults />
       <HowWeDoItActions />
       {/* <HowWeDoitIndicatorsPrev /> */}
+      <Reportes />
       <GalleryActivities />
       <HowWeDoItIndicators />
       <HowWeDoItDashboard />
