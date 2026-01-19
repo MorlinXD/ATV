@@ -12,7 +12,7 @@ const items = [
   },
   {
     id: 2,
-    title: 'Voceros/a del Festival Alza Tu Voz',
+    title: 'Voceros/as del Festival Alza Tu Voz',
     date: 'Diciembre',
     image: '/images/actividades/quevedo/medios.jpg',
   },
