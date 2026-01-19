@@ -7,7 +7,7 @@ import React from 'react';
 const items = [
   {
     id: 1,
-    image: '/images/reportes/portadas/Marzo Es.jpg',
+    image: '/images/reportes/portadas/MarzoES.jpg',
     sources: {
       esp: 'https://drive.google.com/file/d/1wyjMKDKpwpIziLyxTjh6ElLz0nTrwyq6/view?usp=sharing',
       eng: 'https://drive.google.com/file/d/1Sd4o5x_uQX0rRYvcsehcgkXrRV3swxhZ/view?usp=sharing',
@@ -15,7 +15,7 @@ const items = [
   },
   {
     id: 2,
-    image: '/images/reportes/portadas/Abril ES.jpg',
+    image: '/images/reportes/portadas/AbrilES.jpg',
     sources: {
       esp: 'https://drive.google.com/file/d/1-Ain4BEPYGv_E1uqfmdZBWWahRuU0g9s/view?usp=sharing',
       eng: 'https://drive.google.com/file/d/1WzKg16pCX4-DisXGOPtoayoCCvvbbRPy/view?usp=sharing',
@@ -23,7 +23,7 @@ const items = [
   },
   {
     id: 3,
-    image: '/images/reportes/portadas/Mayo ES.jpg',
+    image: '/images/reportes/portadas/MayoES.jpg',
     sources: {
       esp: 'https://drive.google.com/file/d/1QQog2V42nqoxOW66LZw1tF2XnahqpPKf/view?usp=sharing',
       eng: 'https://drive.google.com/file/d/1_6ZEk32H3A3aKuLeRzLi90kG7MOYNjzQ/view?usp=sharing',
@@ -31,7 +31,7 @@ const items = [
   },
   {
     id: 4,
-    image: '/images/reportes/portadas/Junio ES.jpg',
+    image: '/images/reportes/portadas/JunioES.jpg',
     sources: {
       esp: 'https://drive.google.com/file/d/1cSd9VA0ghUp0dYUCVI_uPbdfgCbCHIJo/view?usp=sharing',
       eng: 'https://drive.google.com/file/d/1HQs6YI19VIAEZ1Gc5_hqzFTUEfXGluLc/view?usp=sharing',
@@ -39,7 +39,7 @@ const items = [
   },
   {
     id: 5,
-    image: '/images/reportes/portadas/Julio IN.jpg',
+    image: '/images/reportes/portadas/JulioIN.jpg',
     sources: {
       esp: '',
       eng: 'https://drive.google.com/file/d/1Tv8g5b8PyzeiYyAYEC2ww4piPWszrEha/view?usp=sharing',
@@ -47,7 +47,7 @@ const items = [
   },
   {
     id: 6,
-    image: '/images/reportes/portadas/Agosto IN.jpg',
+    image: '/images/reportes/portadas/AgostoIN.jpg',
     sources: {
       esp: '',
       eng: 'https://drive.google.com/file/d/14Hfj68Ne7v-rFPRJWd6TrMlm9ILWK-3y/view?usp=sharing',
@@ -55,7 +55,7 @@ const items = [
   },
   {
     id: 7,
-    image: '/images/reportes/portadas/Septiembre IN.jpg',
+    image: '/images/reportes/portadas/SeptiembreIN.jpg',
     sources: {
       esp: '',
       eng: 'https://drive.google.com/file/d/1U7UVcvNE0lCVtjSL_xa-BhcJijqPSuXn/view?usp=sharing',
@@ -63,7 +63,7 @@ const items = [
   },
   {
     id: 8,
-    image: '/images/reportes/portadas/Octubre IN.jpg',
+    image: '/images/reportes/portadas/OctubreIN.jpg',
     sources: {
       esp: '',
       eng: 'https://drive.google.com/file/d/1pcbnCCCjnS7R8kTEzHIYT2Y2R7_v3OpC/view?usp=sharing',
@@ -71,7 +71,7 @@ const items = [
   },
   {
     id: 9,
-    image: '/images/reportes/portadas/Noviembre IN.jpg',
+    image: '/images/reportes/portadas/NoviembreIN.jpg',
     sources: {
       esp: '',
       eng: 'https://drive.google.com/file/d/1O2RuS2HFobSJtoRDWnmXzUq-q-PNqzkZ/view?usp=sharing',
@@ -79,7 +79,7 @@ const items = [
   },
   {
     id: 10,
-    image: '/images/reportes/portadas/Wrapped 2025.jpg',
+    image: '/images/reportes/portadas/Wrapped2025.jpg',
     sources: {
       esp: 'https://drive.google.com/file/d/1t4gYyZjwCKJ8SzOkXOGe4g9ZImdLbYl-/view?usp=sharing',
       eng: '',
