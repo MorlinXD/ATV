@@ -16,9 +16,9 @@ export default function HowWeDoItPage() {
     <main className="flex min-h-screen flex-col pt-32">
       {/* <HowWeDoItHero /> */}
       <HowWeDoItResults />
+      <Reportes />
       <HowWeDoItActions />
       {/* <HowWeDoitIndicatorsPrev /> */}
-      <Reportes />
       <GalleryActivities />
       <HowWeDoItIndicators />
       <HowWeDoItDashboard />
