@@ -100,9 +100,8 @@ export default function ResourcesAvailable() {
         Nuestros logros mes a mes
       </h1>
       <p className="text-lg text-justify mb-10">
-        Queremos que todo lo chévere que creamos como parte de &quot;Alza Tu Voz&quot; Lo conoscas y
-        lo uses. Aquí te dejamos nuestros reportes mensuales con toda la información sobre las
-        actividades, recursos y avances del proyecto.
+        Aquí te dejamos nuestros reportes mensuales con toda la información sobre las actividades y
+        avances del proyecto.
       </p>
       <ul className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] lg:grid-cols-4 gap-4 gap-y-8">
         {items.map((item) => (
