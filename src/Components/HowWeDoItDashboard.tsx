@@ -36,21 +36,39 @@ export default function HowWeDoItDashboard() {
           id="tarjetas"
           className="text-center mb-10 flex flex-row justify-center items-center gap-6 relative z-10"
         >
-          <img
-            src="/images/resultados/img1.png"
-            alt="Ilustración de caminatas dateras"
-            className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
-          />
-          <img
-            src="/images/resultados/Group 201.png"
-            alt="Ilustración de Mi ciudad y yo"
-            className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
-          />
-          <img
-            src="/images/resultados/Group 202.png"
-            alt="Ilustración de  Imaginando mi futuro"
-            className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
-          />
+          <a
+            href="https://drive.google.com/file/d/1GjFGfUBmwU7zHlJgXSkOqFIdxaFYRRb3/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/resultados/img1.png"
+              alt="Ilustración de caminatas dateras"
+              className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
+            />
+          </a>
+          <a
+            href=" https://drive.google.com/file/d/19cynme6_Zo8SySp3Ose20GiIOIB3qn8e/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/resultados/Group 201.png"
+              alt="Ilustración de Mi ciudad y yo"
+              className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
+            />
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1IsIxLvpdS4vAjOtjWaqvN3G69XDUIkVq/view"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/images/resultados/Group 202.png"
+              alt="Ilustración de  Imaginando mi futuro"
+              className="w-56 sm:w-64 md:w-72 h-auto hover:scale-105 transition-transform"
+            />
+          </a>
         </section>
         <section id="Grafico-PWBI" className="relative z-10">
           <Tabs>
